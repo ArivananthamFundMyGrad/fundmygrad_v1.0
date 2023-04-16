@@ -13,7 +13,7 @@ function student() {
         <title>Student Login</title>
       </Head>
       <div className="w-screen h-screen bg-light-color relative flex items-center justify-center">
-        <div className="w-9/12 h-4/5 shadow-2xl bg-white rounded-2xl flex">
+        <div className="w-9/12 desktop:w-custom996 h-4/5 shadow-2xl bg-white rounded-2xl flex">
           <div className="w-2/5 bg-primary-color h-full rounded-l-lg">
             <h1 className="font-gola text-4xl font-bold text-white pl-10 pt-10 leading-snug mr-14">
               Welcome to fundmygrad student portal

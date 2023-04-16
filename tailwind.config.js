@@ -46,6 +46,15 @@ module.exports = {
       },
       width: {
         width95: "90%",
+        custom996 : "996px",
+        custom600:"600px"
+      },
+      maxWidth:{
+        custom600:"600px",
+        custom120:"120px"
+      },
+      minWidth:{
+        custom600:"600px"
       },
       blur: {
         blur150: '150px',

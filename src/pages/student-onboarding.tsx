@@ -18,7 +18,7 @@ function StudentOnboarding() {
             src="./logo.svg"
             alt="fundmygrad logo"
           />
-          <div className="w-full pl-20 pt-7 relative h-full">
+          <div className="w-full pl-20 pt-7 relative">
             <div className="h-full" style={{ width: "250px" }}>
               <h1 className="text-4xl font-gola font-semibold text-onboarding-text">
                 Let's Get Started
@@ -150,8 +150,8 @@ function StudentOnboarding() {
                 </ol>
               </div>
             </div>
-            <div className="absolute bottom-20 right-10 flex justify-end w-full">
-              <img style={{width:"30%"}} src="../studentOnboarding.svg" />
+            <div className="absolute -bottom-96 right-10 flex justify-end w-full">
+              <img style={{width:"30%"}} src="./studentOnboarding.svg" />
             </div>
           </div>
         </div>
@@ -164,8 +164,7 @@ function StudentOnboarding() {
                 </h1>
               </div>
           {currentStep === "1" && (
-            <div className="w-3/5 ">
-             
+            <div className="max-w-custom600 min-w-custom600 min-w-custom600">
               <div className="w-full">
                 <h1 className="text-2xl font-gola font-semibold text-button-text">
                   Select your admission status
@@ -297,7 +296,7 @@ function StudentOnboarding() {
                 <button
                   onClick={() => setCurrentStep("2")}
                   type="button"
-                  className="h-10 w-20 mt-6 w-full font-gola text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                  className="h-10 max-w-custom120 mt-6 w-full font-gola text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                 >
                   Next
                 </button>
@@ -305,7 +304,7 @@ function StudentOnboarding() {
             </div>
           )}
           {currentStep === "2" && (
-            <div className="w-3/5 ">
+            <div className="max-w-custom600 min-w-custom600 min-w-custom600">
               <div className="w-full">
                 <h1 className="text-2xl font-gola font-semibold text-button-text">
                 Course Details
@@ -313,7 +312,7 @@ function StudentOnboarding() {
                 <p className="text-sm font-gola font-normal opacity-50 mt-2">
                   This will help us tailor fundmygrad for you
                 </p>
-                <p className="text-sm	font-normal text-subtext opacity-70 mt-5">
+                <p className="text-sm font-gola	font-normal text-subtext opacity-70 mt-5">
                   When does the program start?
                 </p>
                 <div className="relative mt-3">
@@ -338,7 +337,7 @@ function StudentOnboarding() {
                 </div>
                 <div>
                   <div>
-                    <p className="text-sm	font-normal text-subtext opacity-70 mt-3">
+                    <p className="text-sm font-gola	font-normal text-subtext opacity-70 mt-3">
                       Select University
                     </p>
                     <div style={{ height: "48px" }} className="flex mt-1.5">
@@ -354,7 +353,7 @@ function StudentOnboarding() {
 
                   <div className="w-full justify-between flex items-center">
                     <div style={{ width: "49%" }}>
-                      <p className="text-sm	font-normal text-subtext opacity-70 mt-5">
+                      <p className="font-gola text-sm	font-normal text-subtext opacity-70 mt-5">
                         Select Program
                       </p>
                       <div style={{ height: "48px" }} className="flex mt-1.5">
@@ -382,7 +381,7 @@ function StudentOnboarding() {
                     </div>
                   </div>
                   <div>
-                    <p className="text-sm	font-normal text-subtext opacity-70 mt-5">
+                    <p className="font-gola text-sm	font-normal text-subtext opacity-70 mt-5">
                       Course Duration (in months)
                     </p>
                     <div style={{ height: "48px" }} className="flex mt-1.5">
@@ -400,14 +399,14 @@ function StudentOnboarding() {
                 <button
                   onClick={() => setCurrentStep("1")}
                   type="button"
-                  className="h-10 w-20 mt-6 w-full font-gola text-primary-color bg-light-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                  className="h-10 max-w-custom120 mt-6 w-full font-gola text-primary-color bg-light-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                 >
                   Back
                 </button>
                 <button
                   onClick={() => setCurrentStep("3")}
                   type="button"
-                  className="h-10 w-20 mt-6 w-full font-gola text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                  className="h-10 max-w-custom120 mt-6 w-full font-gola text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                 >
                   Next
                 </button>
@@ -415,7 +414,7 @@ function StudentOnboarding() {
             </div>
           )}
           {currentStep === "3" && (
-            <div className="w-3/5 ">
+            <div className="max-w-custom600 min-w-custom600 min-w-custom600">
               <div className="w-full">
                 <h1 className="text-2xl font-gola font-semibold text-button-text">
                   Loan Details
@@ -424,7 +423,7 @@ function StudentOnboarding() {
                   This will help us tailor fundmygrad for you
                 </p>
                 <div>
-                  <p className="text-sm	font-normal text-subtext opacity-70 mt-5">
+                  <p className="font-gola text-sm	font-normal text-subtext opacity-70 mt-5">
                     Loan Requirement (in rupees)
                   </p>
                   <div className="mt-2">
@@ -503,14 +502,14 @@ function StudentOnboarding() {
                 <button
                   onClick={() => setCurrentStep("2")}
                   type="button"
-                  className="h-10 w-20 mt-6 w-full font-gola text-primary-color bg-light-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                  className="h-10 max-w-custom120 mt-6 w-full font-gola text-primary-color bg-light-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                 >
                   Back
                 </button>
                 <button
                   onClick={() => setCurrentStep("4")}
                   type="button"
-                  className="h-10 w-20 mt-6 w-full font-gola text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                  className="h-10 max-w-custom120 mt-6 w-full font-gola text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                 >
                   Next
                 </button>
@@ -518,7 +517,7 @@ function StudentOnboarding() {
             </div>
           )}
           {currentStep === "4" && (
-            <div className="w-3/5 ">
+            <div className="max-w-custom600 min-w-custom600 min-w-custom600">
               <div className="w-full">
                 <h1 className="text-2xl font-gola font-semibold text-button-text">
                   Co-applicant Details
@@ -527,7 +526,7 @@ function StudentOnboarding() {
                   This will help us tailor fundmygrad for you
                 </p>
                 <div>
-                  <p className="text-sm	font-normal text-subtext opacity-70 mt-5">
+                  <p className="font-gola text-sm	font-normal text-subtext opacity-70 mt-5">
                     Co-applicant relation
                   </p>
                   <div style={{ height: "48px" }} className="flex mt-1.5">
@@ -568,7 +567,7 @@ function StudentOnboarding() {
                   </div>
                 </div>
                 <div>
-                  <p className="text-sm	font-normal text-subtext opacity-70 mt-5">
+                  <p className="font-gola text-sm	font-normal text-subtext opacity-70 mt-5">
                     Enter mobile number
                   </p>
                   <div style={{ height: "48px" }} className="flex mt-1.5">
@@ -601,14 +600,14 @@ function StudentOnboarding() {
                 <button
                   onClick={() => setCurrentStep("3")}
                   type="button"
-                  className="h-10 w-20 mt-6 w-full font-gola text-primary-color bg-light-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                  className="h-10 max-w-custom120 mt-6 w-full font-gola text-primary-color bg-light-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                 >
                   Back
                 </button>
                 <button
                   onClick={() => setCurrentStep("5")}
                   type="button"
-                  className="h-10 w-20 mt-6 w-full font-gola text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                  className="h-10 max-w-custom120 mt-6 w-full font-gola text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                 >
                   Next
                 </button>
@@ -616,7 +615,7 @@ function StudentOnboarding() {
             </div>
           )}
           {currentStep === "5" && (
-            <div className="w-3/5 ">
+            <div className="max-w-custom600 min-w-custom600 min-w-custom600">
               <div className="w-full">
                 <h1 className="text-2xl font-gola font-semibold text-button-text">
                   Education details{" "}
@@ -625,7 +624,7 @@ function StudentOnboarding() {
                   This will help us tailor fundmygrad for you
                 </p>
                 <div>
-                  <p className="text-sm	font-normal text-subtext opacity-70 mt-5">
+                  <p className="font-gola text-sm	font-normal text-subtext opacity-70 mt-5">
                     School / College Name
                   </p>
                   <div className="mt-2">
@@ -697,14 +696,14 @@ function StudentOnboarding() {
                 <button
                   onClick={() => setCurrentStep("4")}
                   type="button"
-                  className="h-10 w-20 mt-6 w-full font-gola text-primary-color bg-light-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                  className="h-10 max-w-custom120 mt-6 w-full font-gola text-primary-color bg-light-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                 >
                   Back
                 </button>
                 <button
                   onClick={() => setCurrentStep("6")}
                   type="button"
-                  className="h-10 w-20 mt-6 w-full font-gola text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                  className="h-10 max-w-custom120 mt-6 w-full font-gola text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                 >
                   Next
                 </button>
@@ -712,7 +711,7 @@ function StudentOnboarding() {
             </div>
           )}
           {currentStep === "6" && (
-            <div className="w-3/5 ">
+            <div className="max-w-custom600 min-w-custom600">
               <div className="w-full">
                 <h1 className="text-2xl font-gola font-semibold text-button-text">
                   Education details{" "}
@@ -824,14 +823,14 @@ function StudentOnboarding() {
                 <button
                   onClick={() => setCurrentStep("5")}
                   type="button"
-                  className="h-10 w-20 mt-6 w-full font-gola text-primary-color bg-light-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                  className="h-10 max-w-custom120 mt-6 w-full font-gola text-primary-color bg-light-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                 >
                   Back
                 </button>
                 <button
                   onClick={() => setCurrentStep("7")}
                   type="button"
-                  className="h-10 w-20 mt-6 w-full font-gola text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                  className="h-10 max-w-custom120 mt-6 w-full font-gola text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                 >
                   Next
                 </button>
@@ -839,7 +838,7 @@ function StudentOnboarding() {
             </div>
           )}
           {currentStep === "7" && (
-            <div className="w-3/5 ">
+            <div className="max-w-custom600 min-w-custom600">
               <div className="w-full">
                 <h1 className="text-2xl font-gola font-semibold text-button-text">
                   Work Experience
@@ -848,7 +847,7 @@ function StudentOnboarding() {
                   This will help us tailor fundmygrad for you
                 </p>
                 <div>
-                  <p className="text-sm	font-normal text-subtext opacity-70 mt-5">
+                  <p className="font-gola text-sm	font-normal text-subtext opacity-70 mt-5">
                     Previous Work Experience (in months)
                   </p>
                   <div className="mt-2">
@@ -874,18 +873,18 @@ function StudentOnboarding() {
                   </div>
                 </div>
               </div>
-              <div className="w-full flex justify-between	">
+              <div className="w-full flex justify-between">
                 <button
                   onClick={() => setCurrentStep("6")}
                   type="button"
-                  className="h-10 w-20 mt-6 w-full font-gola text-primary-color bg-light-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                  className="h-10 max-w-custom120 mt-6 w-full font-gola text-primary-color bg-light-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                 >
                   Back
                 </button>
                 <button
                   // onClick={() => setCurrentStep("6")}
                   type="button"
-                  className="h-10 w-20 mt-6 w-full font-gola text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                  className="h-10 max-w-custom120 mt-6 w-full font-gola text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                 >
                   Submit
                 </button>
