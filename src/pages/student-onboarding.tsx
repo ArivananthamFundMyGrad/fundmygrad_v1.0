@@ -200,7 +200,7 @@ function StudentOnboarding() {
                           Yet to apply for colleges
                         </div>
                       </div>
-                      {option === "1" && <img src="../tick.svg" alt="Tick" />}
+                      {option === "1" && <img src="../Tick.svg" alt="Tick" />}
                     </label>
                   </li>
                   <li onClick={() => setOption("2")} className="mt-3">
@@ -229,7 +229,7 @@ function StudentOnboarding() {
                           In the process of applying to colleges
                         </div>
                       </div>
-                      {option === "2" && <img src="../tick.svg" alt="Tick" />}
+                      {option === "2" && <img src="../Tick.svg" alt="Tick" />}
                     </label>
                   </li>
                   <li onClick={() => setOption("3")} className="mt-3">
@@ -258,7 +258,7 @@ function StudentOnboarding() {
                           Awaiting response from colleges
                         </div>
                       </div>
-                      {option === "3" && <img src="../tick.svg" alt="Tick" />}
+                      {option === "3" && <img src="../Tick.svg" alt="Tick" />}
                     </label>
                   </li>
                   <li onClick={() => setOption("4")} className="mt-3">
@@ -287,7 +287,7 @@ function StudentOnboarding() {
                           Admission received
                         </div>
                       </div>
-                      {option === "4" && <img src="../tick.svg" alt="Tick" />}
+                      {option === "4" && <img src="../Tick.svg" alt="Tick" />}
                     </label>
                   </li>
                 </ul>
