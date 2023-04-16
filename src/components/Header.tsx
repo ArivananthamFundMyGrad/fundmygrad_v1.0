@@ -1,6 +1,8 @@
 import React from "react";
+import { useRouter } from "next/router";
 
 function Header() {
+  const router = useRouter()
   return (
     <div className="bg-light-color w-full flex flex-col items-center">
       <div className="w-11/12 flex justify-between mt-5">
@@ -14,6 +16,7 @@ function Header() {
             &nbsp; Need assitance?
           </button>
           <button
+          onClick={()=>router.push("/student-auth")}
             type="button"
             className="h-10 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
           >
