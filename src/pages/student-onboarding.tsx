@@ -150,9 +150,9 @@ function StudentOnboarding() {
                 </ol>
               </div>
             </div>
-            <div className="absolute -bottom-96 right-10 flex justify-end w-full">
+            {/* <div className="absolute -bottom-96 right-10 flex justify-end w-full">
               <img style={{width:"30%"}} src="./studentOnboarding.svg" />
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="relative w-8/12 h-full flex justify-center items-center">
