@@ -3,7 +3,7 @@ import React from "react";
 function Stats() {
   return (
     <div className="w-full flex flex justify-center">
-      <div className="desktop:w-3/4 tablet:width95	flex flex-col items-center">
+      <div className="desktop:w-3/4 desktop:max-w-custom1300 tablet:width95	flex flex-col items-center">
         <h1 className="mt-12 text-2xl text-primary-color font-semibold font-gola">
           STATS SO FAR
         </h1>

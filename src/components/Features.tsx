@@ -3,7 +3,7 @@ import React from "react";
 function Features() {
   return (
     <div className="w-full flex flex justify-center">
-      <div className="w-10/12 flex flex-col items-center">
+      <div className="w-10/12 desktop:max-w-custom1300 flex flex-col items-center">
         <h1 className="mt-12 text-primary-color text-2xl font-semibold font-gola">
           WHY GO WITH US
         </h1>
@@ -19,9 +19,13 @@ function Features() {
                   Get the best loan offer you can
                 </h4>
                 <p className="font-gola text-base tabanddesk:leading-8	mobile:leading-7">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                  cum, quaerat enim voluptate natus nesciunt velit magni
-                  cupiditate placeat quae onsectetur adipisicing elit
+                  We allow the banks to bid, thus allowing you to get the
+                  competitive interest rates. As multiple banks will be
+                  accessing your profile, it creates a competitive environment
+                  among banks in providing you the better rates, better
+                  repayment options and other You can then compare and evaluate
+                  different offers from various banks and choose the one which
+                  you are comfortable with
                 </p>
               </div>
             </div>
@@ -29,44 +33,51 @@ function Features() {
         </section>
         <div className="relative">
           <div className="feature2blob"></div>
-        <section>
-          <div className="container py-5">
-            <div className="flex flex-col-reverse	items-center justify-between md:flex-row">
-            <div className="tabanddesk:text-center md:text-left md:w-1/2 md:ml-20">
-                <h4 className="font-bold tabanddesk:text-size32 mobile:text-xl font-gola text-about-text-color mb-4">
-                Reach all the best banks with one application
-                </h4>
-                <p className="font-gola text-base tabanddesk:leading-8	mobile:leading-7">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                  cum, quaerat enim voluptate natus nesciunt velit magni
-                  cupiditate placeat quae onsectetur adipisicing elit
-                </p>
-              </div>
-              <div className="mb-12 flex justify-center md:w-1/2">
-                <img src="./feature2.svg" alt="" />
-              </div>
-            </div>
-          </div>
-        </section>
-        <section>
-          <div className="container py-5">
-            <div className="flex flex-col items-center justify-between md:flex-row">
-              <div className="mb-12 flex justify-center md:w-1/2">
-                <img src="./feature3.svg" alt="" />
-              </div>
-              <div className="tabanddesk:text-center md:text-left md:w-1/2 md:ml-20">
-                <h4 className="font-bold tabanddesk:text-size32 mobile:text-xl font-gola text-about-text-color mb-4">
-                Quick turn around times
-                </h4>
-                <p className="font-gola text-base leading-8	">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-                  cum, quaerat enim voluptate natus nesciunt velit magni
-                  cupiditate placeat quae onsectetur adipisicing elit
-                </p>
+          <section>
+            <div className="container py-5">
+              <div className="flex flex-col-reverse	items-center justify-between md:flex-row">
+                <div className="tabanddesk:text-center md:text-left md:w-1/2 md:ml-20">
+                  <h4 className="font-bold tabanddesk:text-size32 mobile:text-xl font-gola text-about-text-color mb-4">
+                    Reach all the best banks with one application
+                  </h4>
+                  <p className="font-gola text-base tabanddesk:leading-8	mobile:leading-7">
+                    you can save time and energy while still getting access to
+                    the best rates and loan terms available. You can compare
+                    offers from multiple lenders and choose the one that works
+                    best for you. So why spend weeks and months filling out
+                    multiple applications (talking to multiple banks) when you
+                    can reach all the best banks with just one application?
+                  </p>
+                </div>
+                <div className="mb-12 flex justify-center md:w-1/2">
+                  <img src="./feature2.svg" alt="" />
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+          <section>
+            <div className="container relative py-5">
+            <div className="feature1blob"></div>
+              <div className="flex flex-col items-center justify-between md:flex-row">
+                <div className="mb-12 flex justify-center md:w-1/2">
+                  <img src="./feature3.svg" alt="" />
+                </div>
+                <div className="tabanddesk:text-center md:text-left md:w-1/2 md:ml-20">
+                  <h4 className="font-bold tabanddesk:text-size32 mobile:text-xl font-gola text-about-text-color mb-4">
+                    Quick turn around times
+                  </h4>
+                  <p className="font-gola text-base leading-8	">
+                    Time is of the essence. All our partner banks try their best
+                    in offering you accelerated processing for loan
+                    disbursement. By providing complete and accurate information
+                    on your form, you increase your chances of being approved
+                    for a loan and receiving the funds quickly We provide you an
+                    advisor who support you throughout the entire loan process.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
         {/* <div className="w-full grid tabanddesk:grid-cols-3 my-10 gap-20">
           <div className="flex flex-col w-full items-center">

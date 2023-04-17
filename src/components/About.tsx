@@ -5,7 +5,7 @@ function About() {
   return (
     <div className="w-full flex flex justify-center relative">
       <div className="aboutblob"></div>
-      <div className="desktop:w-10/12 tablet:w-11/12 mobile:w-11/12	flex flex-col items-center">
+      <div className="desktop:w-10/12 desktop:max-w-custom1300 tablet:w-11/12 mobile:w-11/12	flex flex-col items-center">
         <h1 className="mt-12 text-primary-color text-2xl font-semibold font-gola">
           HOW IT WORKS
         </h1>

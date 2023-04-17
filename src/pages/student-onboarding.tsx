@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import Head from "next/head";
+import { useRouter } from "next/router";
 
 function StudentOnboarding() {
   const [currentStep, setCurrentStep] = useState("1");
   const [option, setOption] = useState("1");
+  const router = useRouter();
 
   return (
     <>
@@ -11,14 +13,15 @@ function StudentOnboarding() {
         <title>Student Onboarding</title>
       </Head>
       <div className="w-screen h-screen flex">
-        <div className="w-4/12 bg-light-color h-full">
+        <div className="tablet:hidden mobile:hidden w-4/12 desktop:min-w-[350px] relative overflow-hidden desktop:max-w-custom460 bg-light-color h-full">
           <img
+            onClick={() => router.push("/")}
             className="pl-12 pt-6"
             width={160}
             src="./logo.svg"
             alt="fundmygrad logo"
           />
-          <div className="w-full pl-20 pt-7 relative">
+          <div className=" w-full pt-10 flex justify-center">
             <div className="h-full" style={{ width: "250px" }}>
               <h1 className="text-4xl font-gola font-semibold text-onboarding-text">
                 Let's Get Started
@@ -150,21 +153,65 @@ function StudentOnboarding() {
                 </ol>
               </div>
             </div>
-            {/* <div className="absolute -bottom-96 right-10 flex justify-end w-full">
-              <img style={{width:"30%"}} src="./studentOnboarding.svg" />
-            </div> */}
           </div>
+          <img
+            style={{ width: "500px", bottom: "-100px", left: "-100px" }}
+            className="absolute"
+            src="./OnboardingPattern.svg"
+          />
         </div>
-        <div className="relative w-8/12 h-full flex justify-center items-center">
-        <div style={{width:"188px"}} className=" absolute top-5 right-10 flex items-center border border-button-text rounded-lg py-2 px-3">
-              <img src="../Assitance.svg" alt="" />
+        <div className="relative w-full h-full flex tablet:flex-col mobile:flex-col justify-center items-center">
+          <div
+            style={{ width: "188px" }}
+            className=" absolute top-5 right-10 flex items-center border border-button-text rounded-lg py-2 px-3"
+          >
+            <img src="../Assitance.svg" alt="" />
 
-                <h1 className="ml-3 font-gola font-semibold text-base">
-                  Need Guidance?
-                </h1>
-              </div>
+            <h1 className="ml-3 font-gola font-semibold text-base">
+              Need Guidance?
+            </h1>
+          </div>
+
+          <ol className="mb-10 desktop:hidden flex items-center tabanddesk:min-w-custom600 mobile:w-4/5">
+            <li className="flex w-full items-center text-blue-600 after:content-[''] after:w-full after:h-1 after:border-b after:border-light-color after:border-4 after:inline-block ">
+              <span className={`${currentStep === "1" ? "bg-primary-color text-white" : "bg-light-color text-black"} flex items-center justify-center w-10 h-10 rounded-full lg:h-12 lg:w-22 shrink-0 `}>
+               1
+              </span>
+            </li>
+            <li className="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-light-color after:border-4 after:inline-block ">
+              <span className={`${currentStep === "2" ? "bg-primary-color text-white" : "bg-light-color text-black"} flex items-center justify-center w-10 h-10 rounded-full lg:h-12 lg:w-22 shrink-0 `}>
+                2
+              </span>
+            </li>
+            <li className="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-light-color after:border-4 after:inline-block ">
+              <span className={`${currentStep === "3" ? "bg-primary-color text-white" : "bg-light-color text-black"} flex items-center justify-center w-10 h-10 rounded-full lg:h-12 lg:w-22 shrink-0 `}>
+                3
+              </span>
+            </li>
+            <li className="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-light-color after:border-4 after:inline-block ">
+              <span className={`${currentStep === "4" ? "bg-primary-color text-white" : "bg-light-color text-black"} flex items-center justify-center w-10 h-10 rounded-full lg:h-12 lg:w-22 shrink-0 `}>
+                4
+              </span>
+            </li>
+            <li className="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-light-color after:border-4 after:inline-block ">
+              <span className={`${currentStep === "5" ? "bg-primary-color text-white" : "bg-light-color text-black"} flex items-center justify-center w-10 h-10 rounded-full lg:h-12 lg:w-22 shrink-0 `}>
+                5
+              </span>
+            </li>
+            <li className="flex w-full items-center after:content-[''] after:w-full after:h-1 after:border-b after:border-light-color after:border-4 after:inline-block ">
+              <span className={`${currentStep === "6" ? "bg-primary-color text-white" : "bg-light-color text-black"} flex items-center justify-center w-10 h-10 rounded-full lg:h-12 lg:w-22 shrink-0 `}>
+                6
+              </span>
+            </li>
+            <li className="flex items-center w-full">
+            <span className={`${currentStep === "7" ? "bg-primary-color text-white" : "bg-light-color text-black"} flex items-center justify-center w-10 h-10 rounded-full lg:h-12 lg:w-22 shrink-0 `}>
+                7
+              </span>
+            </li>
+          </ol>
+
           {currentStep === "1" && (
-            <div className="max-w-custom600 min-w-custom600 min-w-custom600">
+            <div className="tabanddesk:max-w-custom600 tabanddesk:min-w-custom600 mobile:w-4/5">
               <div className="w-full">
                 <h1 className="text-2xl font-gola font-semibold text-button-text">
                   Select your admission status
@@ -304,10 +351,10 @@ function StudentOnboarding() {
             </div>
           )}
           {currentStep === "2" && (
-            <div className="max-w-custom600 min-w-custom600 min-w-custom600">
+            <div className="tabanddesk:max-w-custom600 tabanddesk:min-w-custom600 mobile:w-4/5">
               <div className="w-full">
                 <h1 className="text-2xl font-gola font-semibold text-button-text">
-                Course Details
+                  Course Details
                 </h1>
                 <p className="text-sm font-gola font-normal opacity-50 mt-2">
                   This will help us tailor fundmygrad for you
@@ -414,7 +461,7 @@ function StudentOnboarding() {
             </div>
           )}
           {currentStep === "3" && (
-            <div className="max-w-custom600 min-w-custom600 min-w-custom600">
+            <div className="tabanddesk:max-w-custom600 tabanddesk:min-w-custom600 mobile:w-4/5">
               <div className="w-full">
                 <h1 className="text-2xl font-gola font-semibold text-button-text">
                   Loan Details
@@ -517,7 +564,7 @@ function StudentOnboarding() {
             </div>
           )}
           {currentStep === "4" && (
-            <div className="max-w-custom600 min-w-custom600 min-w-custom600">
+            <div className="tabanddesk:max-w-custom600 tabanddesk:min-w-custom600 mobile:w-4/5">
               <div className="w-full">
                 <h1 className="text-2xl font-gola font-semibold text-button-text">
                   Co-applicant Details
@@ -615,7 +662,7 @@ function StudentOnboarding() {
             </div>
           )}
           {currentStep === "5" && (
-            <div className="max-w-custom600 min-w-custom600 min-w-custom600">
+            <div className="tabanddesk:max-w-custom600 tabanddesk:min-w-custom600 mobile:w-4/5">
               <div className="w-full">
                 <h1 className="text-2xl font-gola font-semibold text-button-text">
                   Education details{" "}
@@ -711,7 +758,7 @@ function StudentOnboarding() {
             </div>
           )}
           {currentStep === "6" && (
-            <div className="max-w-custom600 min-w-custom600">
+            <div className="tabanddesk:max-w-custom600 tabanddesk:min-w-custom600 mobile:w-4/5">
               <div className="w-full">
                 <h1 className="text-2xl font-gola font-semibold text-button-text">
                   Education details{" "}
@@ -838,7 +885,7 @@ function StudentOnboarding() {
             </div>
           )}
           {currentStep === "7" && (
-            <div className="max-w-custom600 min-w-custom600">
+            <div className="tabanddesk:max-w-custom600 tabanddesk:min-w-custom600 mobile:w-4/5">
               <div className="w-full">
                 <h1 className="text-2xl font-gola font-semibold text-button-text">
                   Work Experience

@@ -3,7 +3,7 @@ import React from "react";
 function Partners() {
   return (
     <div className="w-full flex flex justify-center">
-      <div className="tabanddesk:w-10/12	mobile:w-11/12 flex flex-col items-center tabanddesk:pb-12">
+      <div className="tabanddesk:w-10/12 desktop:max-w-custom1300	mobile:w-11/12 flex flex-col items-center tabanddesk:pb-12">
         <h1 className="mt-12 text-primary-color text-2xl font-semibold font-gola">
           PARTNERS
         </h1>

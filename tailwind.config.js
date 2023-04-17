@@ -51,10 +51,13 @@ module.exports = {
       },
       maxWidth:{
         custom600:"600px",
-        custom120:"120px"
+        custom120:"120px",
+        custom460:"500px",
+        custom1300:"1300px"
       },
       minWidth:{
-        custom600:"600px"
+        custom600:"600px",
+        custom350:"350px"
       },
       blur: {
         blur150: '150px',

@@ -13,8 +13,8 @@ function student() {
         <title>Student Login</title>
       </Head>
       <div className="w-screen h-screen bg-light-color relative flex items-center justify-center">
-        <div className="w-9/12 desktop:w-custom996 h-4/5 shadow-2xl bg-white rounded-2xl flex">
-          <div className="w-2/5 bg-primary-color h-full rounded-l-lg">
+        <div className="tabanddesk:w-9/12 mobile:w-11/12 desktop:w-custom996 h-4/5 shadow-2xl bg-white rounded-2xl flex">
+          <div className="w-2/5 tablet:hidden mobile:hidden bg-primary-color h-full rounded-l-lg">
             <h1 className="font-gola text-4xl font-bold text-white pl-10 pt-10 leading-snug mr-14">
               Welcome to fundmygrad student portal
             </h1>
@@ -23,7 +23,16 @@ function student() {
               bidding from top banks for your overseas education
             </p>
           </div>
-          <div className="w-3/5 pl-pad74 pr-pad74 flex flex-col justify-center">
+          <div className="desktop:w-3/5 tablet:w-full mobile:w-full tabanddesk:pl-pad74 tabanddesk:pr-pad74 mobile:pl-8 mobile:pr-8 flex flex-col justify-center">
+          <div className="desktop:hidden rounded-l-lg">
+            <h1 className="font-gola text-2xl font-bold text-primary-color pt-10 leading-snug">
+              Welcome to fundmygrad student portal
+            </h1>
+            <p className="opacity-70 font-gola text-base text-about-text-color mt-6 mb-20 font-normal">
+              Create your account and start your process of receiving loan
+              bidding from top banks for your overseas education
+            </p>
+          </div>
             {choosenTab === "mobileSignIn" && (
               <div>
                 <h1 className="text-3xl font-semibold">Sign in</h1>

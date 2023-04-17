@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <div className="w-full flex flex justify-center">
-      <div className="tabanddesk:w-10/12 mobile:w-11/12 flex mobile:flex-col tabanddesk:justify-between tabanddesk:py-12 mobile:pt-12 mobile:pb-6">
+      <div className="tabanddesk:w-10/12 desktop:max-w-custom1300 mobile:w-11/12 flex mobile:flex-col tabanddesk:justify-between tabanddesk:py-12 mobile:pt-12 mobile:pb-6">
         <img
           className="mobile:w-2/5 tabanddesk:h-8"
           src="./footerlogo.svg"

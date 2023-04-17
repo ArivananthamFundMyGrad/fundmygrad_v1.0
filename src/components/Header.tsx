@@ -5,7 +5,7 @@ function Header() {
   const router = useRouter()
   return (
     <div className="bg-light-color w-full flex flex-col items-center">
-      <div className="w-11/12 flex justify-between mt-5">
+      <div className="w-11/12 desktop:max-w-custom1300 flex justify-between mt-5">
         <img width={180} src="./logo.svg" alt="fundmygrad logo" />
         <div className="mobile:hidden flex">
           <button
@@ -87,7 +87,7 @@ function Header() {
           </ul>
         </div> */}
       </div>
-      <div className="tabanddesk:w-11/12 mobile:w-width95 flex justify-between mt-5">
+      <div className="tabanddesk:w-11/12 desktop:max-w-custom1300 mobile:w-width95 flex justify-between mt-5">
         <div className=" mobile:my-10 tabanddesk:w-1/2 mobile:w-full flex mobile:flex-col items-center">
           <div className="tabanddesk:hidden w-full flex justify-center mb-16">
             <img width={"80%"} src="./header.svg" alt="Header Image" />

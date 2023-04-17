@@ -12,12 +12,14 @@ export default function Home() {
       <Head>
         <title>fundmygrad</title>
       </Head>
-      <Header />
-      <Stats />
-      <Features />
-      <About />
-      <Partners />
-      <Footer />
+      <div className="w-screen">
+        <Header />
+        <Stats />
+        <Features />
+        <About />
+        <Partners />
+        <Footer />
+      </div>
     </>
   );
 }

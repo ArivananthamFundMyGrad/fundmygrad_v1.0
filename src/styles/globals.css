@@ -5,15 +5,15 @@
 @tailwind utilities;
 
 .feature1blob{
-  @apply w-screen h-full bg-[linear-gradient(255.15deg,_#51E0FF_18.61%,_#00D0FF_18.62%,_#FF0DE7_93.07%)] absolute top-0 -left-40 -z-10 blur-blur150 opacity-5 overflow-hidden rounded-full;
+  @apply w-full h-full bg-[linear-gradient(255.15deg,_#51E0FF_18.61%,_#00D0FF_18.62%,_#FF0DE7_93.07%)] absolute top-0 desktop:-left-40 -z-10 blur-blur150 opacity-5 overflow-hidden rounded-full;
 }
 
 .feature2blob{
-  @apply w-screen h-full bg-[linear-gradient(255.15deg,_#51E0FF_18.61%,_#00D0FF_18.62%,_#FF0DE7_93.07%)] scale-x-[-1] absolute top-0 -left-40 -z-10 blur-blur150 opacity-5 overflow-hidden rounded-full;
+  @apply w-full h-full bg-[linear-gradient(255.15deg,_#51E0FF_18.61%,_#00D0FF_18.62%,_#FF0DE7_93.07%)] scale-x-[-1] absolute top-0 desktop:-left-40 -z-10 blur-blur150 opacity-5 overflow-hidden rounded-full;
 }
 
 .aboutblob{
-  @apply w-screen h-full bg-[linear-gradient(255.15deg,_#51E0FF_18.61%,_#00D0FF_18.62%,_#FF0DE7_93.07%)] absolute top-0 -left-40 -z-10 blur-blur150 opacity-5 overflow-hidden rounded-full;
+  @apply w-full h-full bg-[linear-gradient(255.15deg,_#51E0FF_18.61%,_#00D0FF_18.62%,_#FF0DE7_93.07%)] absolute top-0 desktop:-left-40 -z-10 blur-blur150 opacity-5 overflow-hidden rounded-full;
 }
 
 .otp-group {
