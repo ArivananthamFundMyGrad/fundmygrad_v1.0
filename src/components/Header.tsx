@@ -98,14 +98,14 @@ function Header() {
           <div className="tabanddesk:hidden mt-10 w-full flex item-start justify-start">
             <button
               type="button"
-              className="h-10 mr-5 font-gola text-button-text hover:text-black border border-border-color focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
+              className="h-10 mr-3 font-gola text-button-text hover:text-black border border-border-color focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2 text-center inline-flex items-center"
             >
               <img width={20} src="./whatsapp.png" alt="Whatsapp Image" />
               &nbsp; Need assitance?
             </button>
             <button
               type="button"
-              className="h-10 font-gola text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+              className="h-10 font-gola text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 focus:outline-none"
             >
               Student Login
             </button>

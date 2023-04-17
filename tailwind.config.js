@@ -19,7 +19,8 @@ module.exports = {
         "about-text-color":"#363840",
         "subtext":"#333333",
         "onboarding-text":"#1F2633",
-        'tab-background':"#F6F6FF"
+        'tab-background':"#F6F6FF",
+        "secondary-color":"#178F51"
       },
       borderRadius: {
         lg: "10px",

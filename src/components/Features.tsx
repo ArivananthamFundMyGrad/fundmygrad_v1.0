@@ -3,18 +3,18 @@ import React from "react";
 function Features() {
   return (
     <div className="w-full flex flex justify-center">
-      <div className="w-10/12 desktop:max-w-custom1300 flex flex-col items-center">
+      <div className="tabanddesk:w-10/12 mobile:w-full desktop:max-w-custom1300 flex flex-col items-center">
         <h1 className="mt-12 text-primary-color text-2xl font-semibold font-gola">
           WHY GO WITH US
         </h1>
         <section className="mt-5">
-          <div className="container py-5 relative">
+          <div className="container tabanddesk:py-5 relative">
             <div className="feature1blob"></div>
             <div className="flex flex-col items-center justify-between md:flex-row">
               <div className="mb-12 flex justify-center md:w-1/2">
                 <img src="./feature1.svg" alt="" />
               </div>
-              <div className="tabanddesk:text-center md:text-left md:w-1/2 md:ml-20">
+              <div className="tabanddesk:text-left md:text-left md:w-1/2 md:ml-20">
                 <h4 className="font-bold tabanddesk:text-size32 mobile:text-xl font-gola text-about-text-color mb-4">
                   Get the best loan offer you can
                 </h4>
@@ -36,7 +36,7 @@ function Features() {
           <section>
             <div className="container py-5">
               <div className="flex flex-col-reverse	items-center justify-between md:flex-row">
-                <div className="tabanddesk:text-center md:text-left md:w-1/2 md:ml-20">
+                <div className="tabanddesk:text-left md:text-left md:w-1/2 md:ml-20">
                   <h4 className="font-bold tabanddesk:text-size32 mobile:text-xl font-gola text-about-text-color mb-4">
                     Reach all the best banks with one application
                   </h4>
@@ -62,7 +62,7 @@ function Features() {
                 <div className="mb-12 flex justify-center md:w-1/2">
                   <img src="./feature3.svg" alt="" />
                 </div>
-                <div className="tabanddesk:text-center md:text-left md:w-1/2 md:ml-20">
+                <div className="tabanddesk:text-left md:text-left md:w-1/2 md:ml-20">
                   <h4 className="font-bold tabanddesk:text-size32 mobile:text-xl font-gola text-about-text-color mb-4">
                     Quick turn around times
                   </h4>

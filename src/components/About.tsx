@@ -98,8 +98,37 @@ function About() {
                 </h1>
               </div>
             </div>
+            <div
+              onClick={() => setCurrentTab("4")}
+              className={`transition-all duration-200 opacity-100 cursor-pointer flex items-center py-5 px-5 tababdedesk:mr-16 ${
+                currentTab === "4"
+                  ? "bg-tab-color border border-tab-border-color rounded-md"
+                  : ""
+              }`}
+            >
+              <h1
+                className={`transition-all duration-200 font-gola desktop:text-2xl tablet:text-xl font-semibold rounded-full bg-grey-bg tabanddesk:w-14 tabanddesk:h-14 flex items-center justify-center
+                ${
+                  currentTab === "4"
+                    ? "bg-primary-color text-white"
+                    : "bg-grey-bg text-black"
+                }
+                `}
+                style={{ minWidth: "55px", height: "55px" }}
+              >
+                04
+              </h1>
+              <div className="ml-6">
+                <h1 className="font-gola desktop:text-size28 tablet:text-xl font-semibold">
+                  Choose Best Offers
+                </h1>
+                <h1 className="font-gola text-base font-light">
+                  Choose from various loan offers from banks
+                </h1>
+              </div>
+            </div>
           </div>
-          <div className="desktop:w-1/2 tablet:w-1/2 tabanddesk:block mobile:hidden opacity-100">
+          <div className="desktop:w-1/2 tablet:w-1/2 flex items-center h-full mobile:hidden opacity-100">
             <img
               className="transition-all duration-200 opacity-100"
               src={`${currentTab === "1" ? "./tab1.png" : "./tab2.png"}`}
