@@ -12,7 +12,7 @@ export default function Home() {
       <Head>
         <title>fundmygrad</title>
       </Head>
-      <div className="w-screen">
+      <div>
         <Header />
         <Stats />
         <Features />
