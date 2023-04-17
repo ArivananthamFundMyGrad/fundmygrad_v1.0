@@ -159,6 +159,11 @@ function StudentOnboarding() {
             className="absolute"
             src="./OnboardingPattern.svg"
           />
+          <img
+            style={{ width: "200px", bottom: "20px", right: "30px" }}
+            className="absolute"
+            src="./StudentOnboarding.svg"
+          />
         </div>
         <div className="tablet:pt-32 mobile:pt-32 relative w-full h-full flex tablet:flex-col mobile:flex-col desktop:justify-center items-center">
           <img
@@ -379,7 +384,7 @@ function StudentOnboarding() {
                       )}
                     </span>
                   </li>
-                  <li className="relative flex items-center w-full">
+                  <li className="relative flex items-center">
                     <span
                       className={`${
                         currentStep === "4"
@@ -444,7 +449,7 @@ function StudentOnboarding() {
                       )}
                     </span>
                   </li>
-                  <li className="relative flex items-center w-full">
+                  <li className="relative flex items-center">
                     <span
                       className={`${
                         currentStep === "7"

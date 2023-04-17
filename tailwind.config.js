@@ -62,6 +62,9 @@ module.exports = {
       },
       blur: {
         blur150: '150px',
+      },
+      height:{
+        h90:"90%"
       }
     },
   },
