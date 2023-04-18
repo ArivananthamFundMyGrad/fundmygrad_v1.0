@@ -25,10 +25,10 @@ function student() {
           </div>
           <div className="desktop:w-3/5 tablet:w-full mobile:w-full tabanddesk:pl-pad74 tabanddesk:pr-pad74 mobile:pl-8 mobile:pr-8 flex flex-col justify-center">
           <div className="desktop:hidden rounded-l-lg">
-            <h1 className="font-gola text-2xl font-bold text-primary-color pt-10 leading-snug">
+            <h1 className="font-gola text-2xl mobile:mb-8 font-bold text-primary-color pt-10 leading-snug">
               Welcome to fundmygrad student portal
             </h1>
-            <p className="opacity-70 font-gola text-base text-about-text-color mt-6 mb-20 font-normal">
+            <p className="opacity-70 font-gola text-base text-about-text-color tabanddesk:mt-6 tabanddesk:mb-20 mobile:mb-8 font-normal">
               Create your account and start your process of receiving loan
               bidding from top banks for your overseas education
             </p>

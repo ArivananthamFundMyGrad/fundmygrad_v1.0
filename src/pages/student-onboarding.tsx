@@ -16,7 +16,7 @@ function StudentOnboarding() {
         <div className="tablet:hidden mobile:hidden w-4/12 desktop:min-w-[350px] relative overflow-hidden desktop:max-w-custom460 bg-light-color h-full">
           <img
             onClick={() => router.push("/")}
-            className="pl-12 pt-6"
+            className="cursor-pointer pl-12 pt-6"
             width={160}
             src="./logo.svg"
             alt="fundmygrad logo"
@@ -168,17 +168,33 @@ function StudentOnboarding() {
         <div className="tablet:pt-32 mobile:pt-32 relative w-full h-full flex tablet:flex-col mobile:flex-col desktop:justify-center items-center">
           <img
             onClick={() => router.push("/")}
-            className="absolute pt-2 top-5 left-10 desktop:hidden mobile:hidden"
+            className="cursor-pointer absolute pt-2 top-5 left-10 desktop:hidden mobile:hidden"
             width={160}
+            src="./logo.svg"
+            alt="fundmygrad logo"
+          />
+          <img
+            onClick={() => router.push("/")}
+            className="cursor-pointer absolute pt-7 top-0 left-5 tabanddesk:hidden"
+            width={130}
             src="./logo.svg"
             alt="fundmygrad logo"
           />
           <div
             style={{ width: "188px" }}
-            className="absolute top-5 right-10 bg-secondary-color flex items-center border border-button-text rounded-lg py-2 px-3"
+            className="mobile:hidden absolute top-5 right-10 bg-secondary-color flex items-center border border-button-text rounded-lg py-2 px-3"
           >
             <img src="../Assitance.svg" alt="Contact Image" />
             <h1 className="ml-3 font-gola text-white font-semibold text-base">
+              Need Guidance?
+            </h1>
+          </div>
+          <div
+            style={{ width: "158px" }}
+            className="tabanddesk:hidden absolute top-5 right-5 bg-secondary-color flex items-center border border-button-text rounded-lg py-2 px-1.5"
+          >
+            <img src="../Assitance.svg" alt="Contact Image" />
+            <h1 className="ml-3 font-gola text-white font-semibold text-sm">
               Need Guidance?
             </h1>
           </div>
