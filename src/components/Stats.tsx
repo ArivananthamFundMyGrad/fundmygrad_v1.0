@@ -9,25 +9,29 @@ function Stats() {
         </h1>
         <div className="w-full grid tabanddesk:grid-cols-4 mt-10 mb-16">
           <div className="flex flex-col w-full items-center">
-            <h1 className="font-gola text-4xl font-medium">400+</h1>
+            <img style={{height:'70px'}} src="../stat1.svg" alt="Stat Image 1" />
+            <h1 className="font-gola text-2xl font-medium mt-5">400+</h1>
             <h1 className="font-gola text-base font-normal mt-2">
               Loan processed
             </h1>
           </div>
           <div className="mobile:mt-8 flex flex-col w-full items-center">
-            <h1 className="font-gola text-4xl font-medium">121 Cr+</h1>
+          <img style={{height:'70px'}} src="../stat2.svg" alt="Stat Image 2" />
+            <h1 className="font-gola text-2xl font-medium mt-5">121 Cr+</h1>
             <h1 className="font-gola text-base font-normal mt-2">
               Rupees processed
             </h1>
           </div>
           <div className="mobile:mt-8 flex flex-col w-full items-center">
-            <h1 className="font-gola text-4xl font-medium">{"<12hrs"}</h1>
+          <img style={{height:'70px'}} src="../stat3.svg" alt="Stat Image 3" />
+            <h1 className="font-gola text-2xl font-medium mt-5">{"<12hrs"}</h1>
             <h1 className="font-gola text-base font-normal mt-2">
               Average turn around time
             </h1>
           </div>
           <div className="mobile:mt-8 flex flex-col w-full items-center">
-            <h1 className="font-gola text-4xl font-medium">25+</h1>
+          <img style={{height:'70px'}} src="../stat4.svg" alt="Stat Image 4" />
+            <h1 className="font-gola text-2xl font-medium mt-5">25+</h1>
             <h1 className="font-gola text-base font-normal mt-2">
               Partner banks
             </h1>
