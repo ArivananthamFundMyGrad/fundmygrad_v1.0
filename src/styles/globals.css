@@ -34,3 +34,19 @@
   font-weight: bold;
   line-height: 1;
 }
+
+.legend-item-0{
+  display: flex !important;
+  align-items: center;
+  margin-right: 2rem !important;
+  font-size: 11px;
+}
+.legend-item-1{
+  display: flex !important;
+  align-items: center;
+  font-size: 11px;
+}
+
+.recharts-default-legend{
+  display: flex;
+}

@@ -1,23 +1,22 @@
 import React, { useEffect, useState } from "react";
 import Head from "next/head";
+import {
+  Drawer,
+  DrawerContent,
+  DrawerOverlay,
+  useDisclosure,
+} from "@chakra-ui/react";
 
 function offers() {
   const [activeTab, setActiveTab] = useState("1");
-  const [openSidebar, setOpenSidebar] = useState(false);
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
-  useEffect(() => {
-    if (openSidebar) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "unset";
-    }
-  }, [openSidebar]);
   return (
     <div className="w-full flex justify-center">
       <Head>
         <title>Loan Offers</title>
       </Head>
-      <div className="relative w-11/12 mt-5 mb-20">
+      <div className="w-11/12 mt-5 mb-20">
         <div style={{ height: "30px" }} className="w-full flex justify-between">
           <img width={100} src="../logo.svg" alt="" />
           <img src="../avatar.svg" alt="" />
@@ -261,7 +260,7 @@ function offers() {
               ></div>
               <div className="flex justify-end w-full">
                 <button
-                  onClick={() => setOpenSidebar(true)}
+                  onClick={onOpen}
                   type="button"
                   className="h-10 mt-5 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                 >
@@ -398,6 +397,7 @@ function offers() {
               ></div>
               <div className="flex justify-end w-full">
                 <button
+                  onClick={onOpen}
                   type="button"
                   className="h-10 mt-5 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                 >
@@ -697,217 +697,230 @@ function offers() {
           </>
         )}
       </div>
-      {openSidebar && (
-        <div className="absolute flex justify-end bg-[#000]/[.46] w-full h-full">
-          <div className="w-[75%] bg-[#fff] p-6">
+      <Drawer
+        isOpen={isOpen}
+        variant="secondary"
+        placement="right"
+        onClose={onClose}
+      >
+        <DrawerOverlay />
+        <DrawerContent>
+          <div className="w-full p-6 min-h-screen">
             <div className="flex justify-between">
               <h1 className="text-3xl font-semibold font-gola">Loan Offers</h1>
-              <h1
+              <img
+                onClick={onClose}
                 className="cursor-pointer"
-                onClick={() => setOpenSidebar(false)}
-              >
-                X
-              </h1>
+                src="../close.svg"
+                alt="Close Icon"
+              />
             </div>
-            <div style={{ border: "1px solid #E8E8E8",marginTop:'20px' }}></div>
+            <div
+              style={{ border: "1px solid #E8E8E8", marginTop: "20px" }}
+            ></div>
             <div className="flex flex-col h-[90%] justify-between">
-            <div className="flex justify-between">
-              <div className="w-[40%]">
-                <div className="flex items-center mt-5">
-                  <img src="../axis.svg" alt="" />
-                  <div className="pl-4">
-                    <h1 className="text-[#292929] text-xl font-gola font-semibold">
-                      Axis Bank
+              <div className="flex justify-between">
+                <div className="w-[40%]">
+                  <div className="flex items-center mt-5">
+                    <img src="../axis.svg" alt="" />
+                    <div className="pl-4">
+                      <h1 className="text-[#292929] text-xl font-gola font-semibold">
+                        Axis Bank
+                      </h1>
+                    </div>
+                  </div>
+                  <div className=" flex justify-between items-center mt-5">
+                    <p className="text-sm font-gola font-semibold opacity-30">
+                      Max. loan amount
+                    </p>
+                    <h1 className="ml-5 text-2xl font-gola font-semibold text-[#292929]">
+                      ₹2 crores
                     </h1>
                   </div>
-                </div>
-                <div className=" flex justify-between items-center mt-5">
-                  <p className="text-sm font-gola font-semibold opacity-30">
-                    Max. loan amount
-                  </p>
-                  <h1 className="ml-5 text-2xl font-gola font-semibold text-[#292929]">
-                    ₹2 crores
-                  </h1>
-                </div>
-                <div
-                  style={{ border: "1px solid #E8E8E8", margin: "20px 0" }}
-                ></div>
-                <div className="flex justify-between">
-                  <div>
-                    <p className="mt-[12px] text-sm font-gola font-semibold opacity-30">
-                      Interest Rate
-                    </p>
-                    <p className="mt-[12px] text-sm font-gola font-semibold opacity-30">
-                      Tenure
-                    </p>
-                    <p className="mt-[12px] text-sm font-gola font-semibold opacity-30">
-                      Emi Range
-                    </p>
-                    <p className="mt-[12px] text-sm font-gola font-semibold opacity-30">
-                      Processing Time
-                    </p>
-                    <p className="mt-[12px] text-sm font-gola font-semibold opacity-30">
-                      Processing Fee
-                    </p>
-                    <p className="mt-[12px] text-sm font-gola font-semibold opacity-30">
-                      Repayment Type
-                    </p>
-                    <p className="mt-[12px] text-sm font-gola font-semibold opacity-30">
-                      Collateral
-                    </p>
-                  </div>
-                  <div>
-                    <p className="mt-[12px] text-right  text-sm font-gola font-semibold text-[#292929]">
-                      from 9.85% p.a
-                    </p>
-                    <p className="mt-[12px] text-right  text-sm font-gola font-semibold text-[#292929]">
-                      8 to 10 years
-                    </p>
-                    <p className="mt-[12px] text-right  text-sm font-gola font-semibold text-[#292929]">
-                      ₹2,00,000 - ₹3,00,000
-                    </p>
-                    <p className="mt-[12px] text-right  text-sm font-gola font-semibold text-[#292929]">
-                      2 weeks
-                    </p>
-                    <p className="mt-[12px] text-right  text-sm font-gola font-semibold text-[#292929]">
-                      2%+GST (non-refundable)
-                    </p>
-                    <p className="mt-[12px] text-right  text-sm font-gola font-semibold text-[#292929]">
-                      After Course completion
-                    </p>
-                    <p className="mt-[12px] text-right  text-sm font-gola font-semibold text-[#292929]">
-                      Fixed Deposit, Fresh Property
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="min-w-[48%]">
-                <h1 className="mt-[26px] text-[20px] font-gola font-semibold text-[#313131]">
-                  Required Documents
-                </h1>
-                <div className="flex items-center mt-3">
-                  <input
-                    defaultChecked
-                    id="checked-checkbox"
-                    type="checkbox"
-                    value=""
-                    className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                  />
-                  <label
-                    htmlFor="checked-checkbox"
-                    className="ml-2 text-sm font-medium text-[#202020] font-gola"
-                  >
-                    Fetch from your saved documents
-                  </label>
-                </div>
-                <div className="mt-10">
+                  <div
+                    style={{ border: "1px solid #E8E8E8", margin: "20px 0" }}
+                  ></div>
                   <div className="flex justify-between">
-                    <h1 className="w-[40%] text-base font-gola font-normal">
-                      Aadhar Card
-                    </h1>
-                    <div className="flex w-[60%] justify-between">
-                      <h1 className="text-[#A3A3A3] ">1/2 files</h1>
-                      <div className="flex w-[150px] justify-start">
-                      <h1 className="ml-3 text-[#FF2222] text-sm font-medium bg-[#FFECEC] px-2 py-1 rounded-md">
-                        Pending
-                      </h1>
-                      </div>
-                      
-                      <img
-                        className="ml-10"
-                        src="../rightIconGray.svg"
-                        alt=""
-                      />
+                    <div>
+                      <p className="mt-[12px] text-sm font-gola font-semibold opacity-30">
+                        Interest Rate
+                      </p>
+                      <p className="mt-[12px] text-sm font-gola font-semibold opacity-30">
+                        Tenure
+                      </p>
+                      <p className="mt-[12px] text-sm font-gola font-semibold opacity-30">
+                        Emi Range
+                      </p>
+                      <p className="mt-[12px] text-sm font-gola font-semibold opacity-30">
+                        Processing Time
+                      </p>
+                      <p className="mt-[12px] text-sm font-gola font-semibold opacity-30">
+                        Processing Fee
+                      </p>
+                      <p className="mt-[12px] text-sm font-gola font-semibold opacity-30">
+                        Repayment Type
+                      </p>
+                      <p className="mt-[12px] text-sm font-gola font-semibold opacity-30">
+                        Collateral
+                      </p>
+                    </div>
+                    <div>
+                      <p className="mt-[12px] text-right  text-sm font-gola font-semibold text-[#292929]">
+                        from 9.85% p.a
+                      </p>
+                      <p className="mt-[12px] text-right  text-sm font-gola font-semibold text-[#292929]">
+                        8 to 10 years
+                      </p>
+                      <p className="mt-[12px] text-right  text-sm font-gola font-semibold text-[#292929]">
+                        ₹2,00,000 - ₹3,00,000
+                      </p>
+                      <p className="mt-[12px] text-right  text-sm font-gola font-semibold text-[#292929]">
+                        2 weeks
+                      </p>
+                      <p className="mt-[12px] text-right  text-sm font-gola font-semibold text-[#292929]">
+                        2%+GST (non-refundable)
+                      </p>
+                      <p className="mt-[12px] text-right  text-sm font-gola font-semibold text-[#292929]">
+                        After Course completion
+                      </p>
+                      <p className="mt-[12px] text-right  text-sm font-gola font-semibold text-[#292929]">
+                        Fixed Deposit, Fresh Property
+                      </p>
                     </div>
                   </div>
-                  <div className="flex justify-between mt-3">
-                    <h1 className="text-base font-gola font-normal">
-                      Voter ID
-                    </h1>
-                    <div className="flex w-[60%] justify-between">
-                      <h1 className="text-[#A3A3A3] ">2/2 files</h1>
-                      <div className="flex w-[150px] justify-start">
-
-                      <h1 className="ml-3 text-[#1EA808] text-sm font-medium bg-[#E6FFE2] px-2 py-1 rounded-md">
-                        Uploaded All
-                      </h1>
-                      </div>
-                      <img
-                        className="ml-10"
-                        src="../rightIconGray.svg"
-                        alt=""
-                      />
-                    </div>
+                </div>
+                <div className="min-w-[48%]">
+                  <h1 className="mt-[26px] text-[20px] font-gola font-semibold text-[#313131]">
+                    Required Documents
+                  </h1>
+                  <div className="flex items-center mt-3">
+                    <input
+                      defaultChecked
+                      id="checked-checkbox"
+                      type="checkbox"
+                      value=""
+                      className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                    />
+                    <label
+                      htmlFor="checked-checkbox"
+                      className="ml-2 text-sm font-medium text-[#202020] font-gola"
+                    >
+                      Fetch from your saved documents
+                    </label>
                   </div>
-                  <div
-                    style={{ border: "1px solid #E8E8E8", margin: "15px 0" }}
-                  ></div>
-                  <div className="flex justify-between mt-3">
-                    <h1 className="text-base font-gola font-normal">
-                      PAN Card
-                    </h1>
-                    <div className="flex w-[60%] justify-between">
-                      <h1 className="text-[#A3A3A3] ">1/2 files</h1>
-                      <div className="flex w-[150px] justify-start">
-
-                      <h1 className="ml-3 text-[#FF2222] text-sm font-medium bg-[#FFECEC] px-2 py-1 rounded-md">
-                        Pending
+                  <div className="mt-10">
+                    <div className="flex justify-between">
+                      <h1 className="w-[40%] text-base font-gola font-normal">
+                        Aadhar Card
                       </h1>
+                      <div className="flex w-[60%] justify-between">
+                        <h1 className="text-[#A3A3A3] ">1/2 files</h1>
+                        <div className="flex w-[150px] justify-start">
+                          <h1 className="ml-3 text-[#FF2222] text-sm font-medium bg-[#FFECEC] px-2 py-1 rounded-md">
+                            Pending
+                          </h1>
+                        </div>
+
+                        <img
+                          className="ml-10"
+                          src="../rightIconGray.svg"
+                          alt=""
+                        />
                       </div>
-                      <img
-                        className="ml-10"
-                        src="../rightIconGray.svg"
-                        alt=""
-                      />
                     </div>
-                  </div>
-                  <div
-                    style={{ border: "1px solid #E8E8E8", margin: "15px 0" }}
-                  ></div>
-                  <div className="flex justify-between mt-3">
-                    <h1 className="text-base font-gola font-normal">
-                      Work Experience
-                    </h1>
-                    <div className="flex w-[60%] justify-between">
-                      <h1 className="text-[#A3A3A3] ">1/2 files</h1>
-                      <div className="flex w-[150px] justify-start">
-
-                      <h1 className="ml-3 text-[#FF2222] text-sm font-medium bg-[#FFECEC] px-2 py-1 rounded-md">
-                        Pending
+                    <div className="flex justify-between mt-3">
+                      <h1 className="text-base font-gola font-normal">
+                        Voter ID
                       </h1>
+                      <div className="flex w-[60%] justify-between">
+                        <h1 className="text-[#A3A3A3] ">2/2 files</h1>
+                        <div className="flex w-[150px] justify-start">
+                          <h1 className="ml-3 text-[#1EA808] text-sm font-medium bg-[#E6FFE2] px-2 py-1 rounded-md">
+                            Uploaded All
+                          </h1>
+                        </div>
+                        <img
+                          className="ml-10"
+                          src="../rightIconGray.svg"
+                          alt=""
+                        />
                       </div>
-                      <img
-                        className="ml-10"
-                        src="../rightIconGray.svg"
-                        alt=""
-                      />
                     </div>
-                  </div>
-                  <div
-                    style={{ border: "1px solid #E8E8E8", margin: "15px 0" }}
-                  ></div>
-                  <div className="flex justify-between mt-3">
-                    <h1 className="text-base font-gola font-normal">
-                      College Degree
-                    </h1>
-                    <div className="flex w-[60%] justify-between">
-                      <h1 className="text-[#A3A3A3] ">2/2 files</h1>
-                      <div className="flex w-[150px] justify-start">
-
-                      <h1 className="ml-3 text-[#1EA808] text-sm font-medium bg-[#E6FFE2] px-2 py-1 rounded-md">
-                        Uploaded All
+                    <div
+                      style={{
+                        border: "1px solid #E8E8E8",
+                        margin: "15px 0",
+                      }}
+                    ></div>
+                    <div className="flex justify-between mt-3">
+                      <h1 className="text-base font-gola font-normal">
+                        PAN Card
                       </h1>
+                      <div className="flex w-[60%] justify-between">
+                        <h1 className="text-[#A3A3A3] ">1/2 files</h1>
+                        <div className="flex w-[150px] justify-start">
+                          <h1 className="ml-3 text-[#FF2222] text-sm font-medium bg-[#FFECEC] px-2 py-1 rounded-md">
+                            Pending
+                          </h1>
+                        </div>
+                        <img
+                          className="ml-10"
+                          src="../rightIconGray.svg"
+                          alt=""
+                        />
                       </div>
-                      <img
-                        className="ml-10"
-                        src="../rightIconGray.svg"
-                        alt=""
-                      />
+                    </div>
+                    <div
+                      style={{
+                        border: "1px solid #E8E8E8",
+                        margin: "15px 0",
+                      }}
+                    ></div>
+                    <div className="flex justify-between mt-3">
+                      <h1 className="text-base font-gola font-normal">
+                        Work Experience
+                      </h1>
+                      <div className="flex w-[60%] justify-between">
+                        <h1 className="text-[#A3A3A3] ">1/2 files</h1>
+                        <div className="flex w-[150px] justify-start">
+                          <h1 className="ml-3 text-[#FF2222] text-sm font-medium bg-[#FFECEC] px-2 py-1 rounded-md">
+                            Pending
+                          </h1>
+                        </div>
+                        <img
+                          className="ml-10"
+                          src="../rightIconGray.svg"
+                          alt=""
+                        />
+                      </div>
+                    </div>
+                    <div
+                      style={{
+                        border: "1px solid #E8E8E8",
+                        margin: "15px 0",
+                      }}
+                    ></div>
+                    <div className="flex justify-between mt-3">
+                      <h1 className="text-base font-gola font-normal">
+                        College Degree
+                      </h1>
+                      <div className="flex w-[60%] justify-between">
+                        <h1 className="text-[#A3A3A3] ">2/2 files</h1>
+                        <div className="flex w-[150px] justify-start">
+                          <h1 className="ml-3 text-[#1EA808] text-sm font-medium bg-[#E6FFE2] px-2 py-1 rounded-md">
+                            Uploaded All
+                          </h1>
+                        </div>
+                        <img
+                          className="ml-10"
+                          src="../rightIconGray.svg"
+                          alt=""
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
               <button
                 type="button"
                 className="h-10 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
@@ -916,8 +929,8 @@ function offers() {
               </button>
             </div>
           </div>
-        </div>
-      )}
+        </DrawerContent>
+      </Drawer>
     </div>
   );
 }
