@@ -54,7 +54,8 @@ module.exports = {
         custom600:"600px",
         custom120:"120px",
         custom460:"500px",
-        custom1300:"1300px"
+        custom1300:"1300px",
+        custom1500:"1500px"
       },
       minWidth:{
         custom600:"600px",

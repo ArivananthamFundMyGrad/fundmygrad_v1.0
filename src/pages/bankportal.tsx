@@ -32,7 +32,7 @@ function dashboard() {
             <img width={120} src="../logo.svg" alt="" />
             <img src="../avatar.svg" alt="" />
           </div>
-          <div className="w-full tabanddesk:px-10 mobile:pl-[16px] mobile:pr-[16px]  bg-[#F1F4FA] h-full mt-5">
+          <div className="w-full max-w-custom1500 tabanddesk:px-10 mobile:pl-[16px] mobile:pr-[16px]  bg-[#F1F4FA] h-full mt-5">
             <div className="tabanddesk:hidden">
               <div className="flex items-center mb-10">
                 <img onClick={onOpen} src="../menu.svg" alt="Menu Icon" />
@@ -160,10 +160,10 @@ function dashboard() {
               <div className="w-full px-3 pl-5 py-5 block bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100">
                 <div className="flex justify-between">
                   <h1 className="font-gola font-sm uppercase font-semibold">
-                    Average <br /> Processing Time
+                    Average {isMobile && <br />} Processing Time
                   </h1>
                   <p className="text-right">
-                    23% higher than <br /> prev. year
+                    23% higher than {isMobile && <br />} prev. year
                   </p>
                 </div>
 
@@ -173,7 +173,7 @@ function dashboard() {
             <div className="grid desktop:grid-cols-2 gap-2 mt-5 mb-5">
               <div className="w-full px-3 pl-5 py-5 block bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100">
                 <h1 className="font-gola font-sm uppercase font-semibold">
-                  Average - Offered time vs <br /> Accepted time
+                  Average - Offered time vs {isMobile && <br />} Accepted time
                 </h1>
                 <BarChart3 />
               </div>

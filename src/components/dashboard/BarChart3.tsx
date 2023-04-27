@@ -176,7 +176,7 @@ export default function BarChart3() {
     minWidth={isMobile ? 320 : 400}
     maxHeight={500}
       minHeight={300}
-      width="95%"
+      width={isMobile ? "95%" : "100%"}
       height="80%"
     >
       <BarChart
@@ -185,7 +185,7 @@ export default function BarChart3() {
         data={data}
         margin={{
           top: 30,
-          right: isMobile? 0 :30,
+          right: isMobile? 0 :10,
           left: 10,
           bottom: 5,
         }}
