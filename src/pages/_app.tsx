@@ -14,6 +14,12 @@ const theme = extendTheme({
           minW: "1000px",
           maxW: "1000px",
         }
+      },
+      sidebardrawer: {
+        dialog: {
+          minW: "80px",
+          maxW: "80px",
+        }
       }
     },  
    }

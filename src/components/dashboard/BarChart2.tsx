@@ -1,3 +1,4 @@
+import screens from "@/utils/screens";
 import React from "react";
 import {
   BarChart,
@@ -156,21 +157,22 @@ const CustomTooltip = ({
 };
 
 export default function BarChart2() {
+  const {isMobile} = screens()
   return (
     <ResponsiveContainer
-      minWidth={500}
+      minWidth={isMobile ? 320 : 400}
       maxHeight={500}
       minHeight={300}
-      width="100%"
+      width="95%"
       height="80%"
     >
       <BarChart
-        width={500}
+        width={400}
         height={200}
         data={data}
         margin={{
           top: 30,
-          right: 30,
+          right: isMobile? 0 :30,
           left: 10,
           bottom: 5,
         }}

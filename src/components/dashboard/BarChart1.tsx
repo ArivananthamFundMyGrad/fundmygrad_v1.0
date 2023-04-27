@@ -15,7 +15,7 @@ import {
   NameType,
   ValueType,
 } from "recharts/types/component/DefaultTooltipContent";
-
+import { useMediaQuery } from '@chakra-ui/react'
 const data = [
   {
     name: "JAN",
@@ -167,21 +167,23 @@ const CustomTooltip = ({
 };
 
 export default function BarChart1() {
+  const [isMobile] = useMediaQuery('(max-width: 767px)')  
+
   return (
     <ResponsiveContainer
-      minWidth={500}
+      minWidth={isMobile ? 300 : 400}
       maxHeight={500}
       minHeight={300}
-      width="100%"
+      width="95%"
       height="80%"
     >
       <BarChart
-        width={500}
+        width={300}
         height={200}
         data={data}
         margin={{
           top: 30,
-          right: 30,
+          right: isMobile? 0 :30,
           left: 10,
           bottom: 5,
         }}

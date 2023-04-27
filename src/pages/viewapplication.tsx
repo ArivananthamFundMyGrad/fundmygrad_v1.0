@@ -6,7 +6,6 @@ import {
   Drawer,
   DrawerOverlay,
   DrawerContent,
-  DrawerCloseButton,
 } from "@chakra-ui/react";
 import Sidebar from "@/components/dashboard/Sidebar";
 
