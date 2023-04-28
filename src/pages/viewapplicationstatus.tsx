@@ -4,41 +4,47 @@ import React from "react";
 import { useRouter } from "next/router";
 import { Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/tabs";
 import { Drawer, DrawerContent, DrawerOverlay } from "@chakra-ui/modal";
-import { useDisclosure } from "@chakra-ui/react";
+import { useDisclosure, useMediaQuery } from "@chakra-ui/react";
 
 function viewapplicationstatus() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const router = useRouter();
+  const [isMobile] = useMediaQuery("(max-width: 767px)");
+
   return (
     <div className="flex w-full">
       <Head>
         <title>Application Status</title>
       </Head>
-      <Sidebar />
+
       <div className="w-full flex flex-col">
-        <div className="w-full px-10 flex flex-col ">
+        <div className="w-full tabanddesk:px-10 mobile:px-5 flex flex-col ">
           <div className="bg-white pt-3 pb-3 w-full items-center flex justify-between">
             <img width={120} src="../logo.svg" alt="" />
             <img src="../avatar.svg" alt="" />
           </div>
-          <div className="flex itesm-center mt-3">
-            <img
-              className="cursor-pointer"
-              onClick={() => router.push("/applicants")}
-              src="arrow_back.svg"
-              alt="Back Arrow"
-            />
-            <h1 className="font-gola text-2xl text-[#252525] font-semibold ml-3">
-              Nikhil Mathew
-            </h1>
-            <h1 className="ml-5 mt-1 px-3 rounded-full text-sm font-gola font-medium text-[#254472] bg-[#EEEEEE] pt-1 text-center">
-              Sent Level 2 Offer
-            </h1>
-            <h1 className="ml-5 mt-1 px-3 rounded-full text-sm font-gola font-medium text-[#254472] bg-[#EEEEEE] pt-1 text-center">
-              Not yet accepted
-            </h1>
+          <div className="flex mobile:flex-col itesm-center mt-3">
+            <div className="flex item-center">
+              <img
+                className="cursor-pointer"
+                onClick={() => router.push("/applicants")}
+                src="arrow_back.svg"
+                alt="Back Arrow"
+              />
+              <h1 className="font-gola text-2xl text-[#252525] font-semibold ml-3">
+                Nikhil Mathew
+              </h1>
+            </div>
+            <div className="mobile:mt-5 flex item-center">
+              <h1 className="tabanddesk:ml-5 mt-1 px-3 rounded-full text-sm font-gola font-medium text-[#254472] bg-[#EEEEEE] pt-1 text-center">
+                Sent Level 2 Offer
+              </h1>
+              <h1 className="ml-5 mt-1 px-3 rounded-full text-sm font-gola font-medium text-[#254472] bg-[#EEEEEE] pt-1 text-center">
+                Not yet accepted
+              </h1>
+            </div>
           </div>
-          <div className="flex justify-between items-center">
+          <div className="flex mobile:flex-col tabanddesk:mt-5 mobile:mt-2 justify-between tabanddesk:items-center">
             <div className="flex items-center mt-5">
               <h1 className="font-gola text-base font-medium opacity-30">
                 Last offer:-
@@ -50,7 +56,7 @@ function viewapplicationstatus() {
             <button
               onClick={onOpen}
               type="button"
-              className="h-10 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+              className="mobile:mt-5 h-10 min-w-[130px] font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
             >
               Send Offer
             </button>
@@ -58,7 +64,7 @@ function viewapplicationstatus() {
         </div>
         <div className="w-full mt-5">
           <Tabs>
-            <TabList style={{ padding: "0 2rem" }}>
+            <TabList className="desktop:p-[36px] tablet:p-[16px] mobile:p-[16px]">
               <Tab
                 _selected={{
                   color: "#0052CC",
@@ -79,121 +85,162 @@ function viewapplicationstatus() {
               </Tab>
             </TabList>
             <TabPanels>
-              <TabPanel className="bg-[#F2F2F2]" style={{ padding: "2rem" }}>
-                <div className="bg-white rounded-lg px-10 py-10 h-full">
+              <TabPanel className="!desktop:p-[36px] !p-[8px] bg-[#F2F2F2]">
+                <div className="bg-white rounded-lg desktop:px-10 desktop:py-10 px-3 py-3 h-full">
                   <h1 className="font-gola text-xl text-[#313131] font-semibold">
                     Documents
                   </h1>
-                  <div className="flex justify-between mt-10">
-                    <h1 className="font-gola text-base">Aadhar Card</h1>
-                    <div className="flex items-center">
-                      <h1 className="text-[#A3A3A3] font-gola text-sm">
+
+                  <div className="flex items-center mobile:items-start justify-between mt-10">
+                    <div className="flex mobile:flex-col">
+                      <h1 className="mobile:min-w-[100px] font-gola text-base">
+                        Aadhar Card
+                      </h1>
+                      <h1 className="mt-3 tabanddesk:hidden w-[110px] text-center tabanddesk:ml-10 font-gola text-sm text-[#FF2222] bg-[#FFECEC] py-1 px-2 rounded-full">
+                        Pending
+                      </h1>
+                    </div>
+
+                    <div className="mobile:ml-3 flex items-center mobile:items-center">
+                      <h1 className="mobile:mr-5 text-[#A3A3A3] font-gola text-sm">
                         1/2 files
                       </h1>
-                      <h1 className="w-[110px] text-center ml-10 font-gola text-sm text-[#FF2222] bg-[#FFECEC] py-1 px-2 rounded-full">
+                      <h1 className="mobile:hidden mobile:mr-3 w-[110px] text-center tabanddesk:ml-10 font-gola text-sm text-[#FF2222] bg-[#FFECEC] py-1 px-2 rounded-full">
                         Pending
                       </h1>
                       <img
-                        className="ml-10"
+                        className="mobile:mr-3 tabanddesk:ml-10"
                         src="../download.svg"
                         alt="Download SVG"
                       />
                       <button
                         onClick={() => router.push("/viewapplicationstatus")}
                         type="button"
-                        className="ml-10 h-10 font-gola border border-[#D5D5D5] text-[#0057E4] bg-[#F5F9FF] font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                        className="mobile:ml-3 tabanddesk:ml-10 h-10 font-gola border border-[#D5D5D5] text-[#0057E4] bg-[#F5F9FF] font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                       >
                         View
                       </button>
                     </div>
                   </div>
-                  <div className="flex justify-between mt-10">
-                    <h1 className="font-gola text-base">Voter ID</h1>
-                    <div className="flex items-center">
-                      <h1 className="text-[#A3A3A3] font-gola text-sm">
+                  <div className="flex items-center mobile:items-start justify-between mt-10">
+                    <div className="flex mobile:flex-col">
+                      <h1 className="mobile:min-w-[100px] font-gola text-base">
+                        Voter ID
+                      </h1>
+                      <h1 className="mt-3 tabanddesk:hidden w-[110px] text-center tabanddesk:ml-10 font-gola text-sm text-[#1EA808] bg-[#E6FFE2] py-1 px-2 rounded-full">
+                        Uploaded All
+                      </h1>
+                    </div>
+
+                    <div className="mobile:ml-3 flex items-center mobile:items-center">
+                      <h1 className="mobile:mr-5 text-[#A3A3A3] font-gola text-sm">
                         2/2 files
                       </h1>
-                      <h1 className="w-[110px] ml-10 font-gola text-sm text-[#1EA808] bg-[#E6FFE2] py-1 px-2 rounded-full">
+                      <h1 className="mobile:hidden mobile:mr-3 w-[110px] text-center tabanddesk:ml-10 font-gola text-sm text-[#1EA808] bg-[#E6FFE2] py-1 px-2 rounded-full">
                         Uploaded All
                       </h1>
                       <img
-                        className="ml-10"
+                        className="mobile:mr-3 tabanddesk:ml-10"
                         src="../download.svg"
                         alt="Download SVG"
                       />
                       <button
                         onClick={() => router.push("/viewapplicationstatus")}
                         type="button"
-                        className="ml-10 h-10 font-gola border border-[#D5D5D5] text-[#0057E4] bg-[#F5F9FF] font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                        className="mobile:ml-3 tabanddesk:ml-10 h-10 font-gola border border-[#D5D5D5] text-[#0057E4] bg-[#F5F9FF] font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                       >
                         View
                       </button>
                     </div>
                   </div>
-                  <div className="flex justify-between mt-10">
-                    <h1 className="font-gola text-base">Work Experience</h1>
-                    <div className="flex items-center">
-                      <h1 className="text-[#A3A3A3] font-gola text-sm">
+                  <div className="flex items-center mobile:items-start justify-between mt-10">
+                    <div className="flex mobile:flex-col">
+                      <h1 className="mobile:min-w-[100px] font-gola text-base">
+                        Work Experience
+                      </h1>
+                      <h1 className="mt-3 tabanddesk:hidden w-[110px] text-center tabanddesk:ml-10 font-gola text-sm text-[#FF2222] bg-[#FFECEC] py-1 px-2 rounded-full">
+                        Pending
+                      </h1>
+                    </div>
+
+                    <div className="mobile:ml-3 flex items-center mobile:items-center">
+                      <h1 className="mobile:mr-5 text-[#A3A3A3] font-gola text-sm">
                         1/2 files
                       </h1>
-                      <h1 className="w-[110px] text-center ml-10 font-gola text-sm text-[#FF2222] bg-[#FFECEC] py-1 px-2 rounded-full">
+                      <h1 className="mobile:hidden mobile:mr-3 w-[110px] text-center tabanddesk:ml-10 font-gola text-sm text-[#FF2222] bg-[#FFECEC] py-1 px-2 rounded-full">
                         Pending
                       </h1>
                       <img
-                        className="ml-10"
+                        className="mobile:mr-3 tabanddesk:ml-10"
                         src="../download.svg"
                         alt="Download SVG"
                       />
                       <button
                         onClick={() => router.push("/viewapplicationstatus")}
                         type="button"
-                        className="ml-10 h-10 font-gola border border-[#D5D5D5] text-[#0057E4] bg-[#F5F9FF] font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                        className="mobile:ml-3 tabanddesk:ml-10 h-10 font-gola border border-[#D5D5D5] text-[#0057E4] bg-[#F5F9FF] font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                       >
                         View
                       </button>
                     </div>
                   </div>
-                  <div className="flex justify-between mt-10">
-                    <h1 className="font-gola text-base">PAN Card</h1>
-                    <div className="flex items-center">
-                      <h1 className="text-[#A3A3A3] font-gola text-sm">
+                  <div className="flex items-center mobile:items-start justify-between mt-10">
+                    <div className="flex mobile:flex-col">
+                      <h1 className="mobile:min-w-[100px] font-gola text-base">
+                        PAN Card
+                      </h1>
+                      <h1 className="mt-3 tabanddesk:hidden w-[110px] text-center tabanddesk:ml-10 font-gola text-sm text-[#1EA808] bg-[#E6FFE2] py-1 px-2 rounded-full">
+                        Uploaded All
+                      </h1>
+                    </div>
+
+                    <div className="mobile:ml-3 flex items-center mobile:items-center">
+                      <h1 className="mobile:mr-5 text-[#A3A3A3] font-gola text-sm">
                         1/1 file
                       </h1>
-                      <h1 className="w-[110px] ml-10 font-gola text-sm text-[#1EA808] bg-[#E6FFE2] py-1 px-2 rounded-full">
+                      <h1 className="mobile:hidden mobile:mr-3 w-[110px] text-center tabanddesk:ml-10 font-gola text-sm text-[#1EA808] bg-[#E6FFE2] py-1 px-2 rounded-full">
                         Uploaded All
                       </h1>
                       <img
-                        className="ml-10"
+                        className="mobile:mr-3 tabanddesk:ml-10"
                         src="../download.svg"
                         alt="Download SVG"
                       />
                       <button
                         onClick={() => router.push("/viewapplicationstatus")}
                         type="button"
-                        className="ml-10 h-10 font-gola border border-[#D5D5D5] text-[#0057E4] bg-[#F5F9FF] font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                        className="mobile:ml-3 tabanddesk:ml-10 h-10 font-gola border border-[#D5D5D5] text-[#0057E4] bg-[#F5F9FF] font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                       >
                         View
                       </button>
                     </div>
                   </div>
-                  <div className="flex justify-between mt-10">
-                    <h1 className="font-gola text-base">College Degree</h1>
-                    <div className="flex items-center">
-                      <h1 className="text-[#A3A3A3] font-gola text-sm">
-                        2/2 files
+                  <div className="flex items-center mobile:items-start justify-between mt-10">
+                    <div className="flex mobile:flex-col">
+                      <h1 className="mobile:min-w-[100px] font-gola text-base">
+                        College Degree
                       </h1>
-                      <h1 className="w-[110px] ml-10 font-gola text-sm text-[#1EA808] bg-[#E6FFE2] py-1 px-2 rounded-full">
-                        Uploaded All
+                      <h1 className="mt-3 tabanddesk:hidden w-[110px] text-center tabanddesk:ml-10 font-gola text-sm text-[#FF2222] bg-[#FFECEC] py-1 px-2 rounded-full">
+                        Pending
+                      </h1>
+                    </div>
+
+                    <div className="mobile:ml-3 flex items-center mobile:items-center">
+                      <h1 className="mobile:mr-5 text-[#A3A3A3] font-gola text-sm">
+                        1/2 files
+                      </h1>
+                      <h1 className="mobile:hidden mobile:mr-3 w-[110px] text-center tabanddesk:ml-10 font-gola text-sm text-[#FF2222] bg-[#FFECEC] py-1 px-2 rounded-full">
+                        Pending
                       </h1>
                       <img
-                        className="ml-10"
+                        className="mobile:mr-3 tabanddesk:ml-10"
                         src="../download.svg"
                         alt="Download SVG"
                       />
                       <button
                         onClick={() => router.push("/viewapplicationstatus")}
                         type="button"
-                        className="ml-10 h-10 font-gola border border-[#D5D5D5] text-[#0057E4] bg-[#F5F9FF] font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                        className="mobile:ml-3 tabanddesk:ml-10 h-10 font-gola border border-[#D5D5D5] text-[#0057E4] bg-[#F5F9FF] font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                       >
                         View
                       </button>
@@ -201,8 +248,8 @@ function viewapplicationstatus() {
                   </div>
                 </div>
               </TabPanel>
-              <TabPanel className="bg-[#F2F2F2]" style={{ padding: "2rem" }}>
-                <div className="grid grid-cols-3 gap-3 w-full mt-7">
+              <TabPanel className="desktop:p-[36px] p-[16px] bg-[#F2F2F2]">
+                <div className="grid desktop:grid-cols-3 tablet:grid-cols-2 gap-3 w-full desktop:mt-7 mt-3">
                   <div className="w-full">
                     <div className="block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
                       <h5 className="mb-2 uppercase text-sm font-semibold text-[#313131]">

@@ -1,16 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { Select } from "@chakra-ui/select";
+import MobileSidebar from "./reusable/MobileSidebar";
 
 function ApplicantsComp() {
   const router = useRouter();
+  const [isOpen, setIsOpen] = useState(false);
+  const onOpen = () => {
+    setIsOpen(true);
+  };
+  const onClose = () => {
+    setIsOpen(false);
+  };
   return (
     <div className="w-full flex justify-center">
       <Head>
         <title>Bank Applications</title>
       </Head>
       <div className="relative w-11/12 mb-20">
-        <div className="flex items-center mt-10">
+        <div className="mobile:hidden flex items-center mt-10">
           <h1 className="font-gola text-[28px] font-bold">Applications</h1>
           <div className="ml-5 relative">
             <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -87,7 +96,36 @@ function ApplicantsComp() {
             </label>
           </div>
         </div>
-        <div className="mt-10 relative overflow-x-auto">
+        <div className="tabanddesk:hidden">
+          <div className="mt-5 flex justify-between">
+            <div className="flex items-center mb-10">
+              <img onClick={onOpen} src="../menu.svg" alt="Menu Icon" />
+              <h1 className="ml-5 font-gola text-2xl font-bold">Applicants</h1>
+            </div>
+            <img src="/SearchIcon.svg" alt="Search Icon" />
+          </div>
+          <div className="w-full mt-5">
+            <Select bg="white">
+              <option value="option1">All</option>
+            </Select>
+          </div>
+          <div className="flex items-center mt-5">
+            <input
+              defaultChecked
+              id="checked-checkbox"
+              type="checkbox"
+              value=""
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+            />
+            <label
+              htmlFor="checked-checkbox"
+              className="ml-2 text-sm font-medium text-[#202020] font-gola"
+            >
+              Only show ‘With Collateral’
+            </label>
+          </div>
+        </div>
+        <div className="tablet:hidden mobile:hidden mt-10 relative overflow-x-auto">
           <table className="w-full text-sm text-left text-gray-500">
             <thead className="text-xs text-gray-700 uppercase border-b">
               <tr>
@@ -529,7 +567,281 @@ function ApplicantsComp() {
             </tbody>
           </table>
         </div>
+        <div className="desktop:hidden mt-5 grid tablet:grid-cols-2 gap-3">
+          <div
+            onClick={() => router.push("/viewapplication")}
+            className="cursor-pointer block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 "
+          >
+            <div className="flex item-center mb-2">
+              <h5 className=" mr-3 text-base font-semibold text-[#313131]">
+                Nikhil Mathew
+              </h5>
+              <img src="/rightIconGray.svg" alt="" />
+            </div>
+
+            <p className="font-gola text-sm text-[#7E7E7E]">
+              Coimbatore, TN - 641606
+            </p>
+            <div className="flex items-center justify-between mt-3">
+              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                Loan amount <br /> requested
+              </h1>
+              <h1 className="text-[#292929] font-medium text-base font-gola">
+                ₹40,00,000
+              </h1>
+            </div>
+            <div className="flex items-center justify-between mt-2">
+              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                Able to provide <br /> collateral
+              </h1>
+              <h1 className="text-[#292929] font-medium text-base font-gola">
+                Yes
+              </h1>
+            </div>
+            <div className="flex items-center justify-between mt-2">
+              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                Admit Status
+              </h1>
+              <h1 className="text-[#292929] font-medium text-base font-gola">
+                Yet to apply
+              </h1>
+            </div>
+            <div className="flex items-center justify-between mt-2">
+              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                Opted College Name
+              </h1>
+              <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+                University of California
+              </h1>
+            </div>
+            <div className="flex items-center justify-between mt-2">
+              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                Opted country
+              </h1>
+              <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+                United States of America
+              </h1>
+            </div>
+          </div>
+          <div
+            onClick={() => router.push("/viewapplication")}
+            className="cursor-pointer block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 "
+          >
+            <div className="flex item-center mb-2">
+              <h5 className=" mr-3 text-base font-semibold text-[#313131]">
+                Nikhil Mathew
+              </h5>
+              <img src="/rightIconGray.svg" alt="" />
+            </div>
+            <p className="font-gola text-sm text-[#7E7E7E]">
+              Coimbatore, TN - 641606
+            </p>
+            <div className="flex items-center justify-between mt-3">
+              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                Loan amount <br /> requested
+              </h1>
+              <h1 className="text-[#292929] font-medium text-base font-gola">
+                ₹40,00,000
+              </h1>
+            </div>
+            <div className="flex items-center justify-between mt-2">
+              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                Able to provide <br /> collateral
+              </h1>
+              <h1 className="text-[#292929] font-medium text-base font-gola">
+                Yes
+              </h1>
+            </div>
+            <div className="flex items-center justify-between mt-2">
+              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                Admit Status
+              </h1>
+              <h1 className="text-[#292929] font-medium text-base font-gola">
+                Yet to apply
+              </h1>
+            </div>
+            <div className="flex items-center justify-between mt-2">
+              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                Opted College Name
+              </h1>
+              <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+                University of California
+              </h1>
+            </div>
+            <div className="flex items-center justify-between mt-2">
+              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                Opted country
+              </h1>
+              <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+                United States of America
+              </h1>
+            </div>
+          </div>
+          <div
+            onClick={() => router.push("/viewapplication")}
+            className="cursor-pointer block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 "
+          >
+            <div className="flex item-center mb-2">
+              <h5 className=" mr-3 text-base font-semibold text-[#313131]">
+                Nikhil Mathew
+              </h5>
+              <img src="/rightIconGray.svg" alt="" />
+            </div>
+            <p className="font-gola text-sm text-[#7E7E7E]">
+              Coimbatore, TN - 641606
+            </p>
+            <div className="flex items-center justify-between mt-3">
+              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                Loan amount <br /> requested
+              </h1>
+              <h1 className="text-[#292929] font-medium text-base font-gola">
+                ₹40,00,000
+              </h1>
+            </div>
+            <div className="flex items-center justify-between mt-2">
+              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                Able to provide <br /> collateral
+              </h1>
+              <h1 className="text-[#292929] font-medium text-base font-gola">
+                Yes
+              </h1>
+            </div>
+            <div className="flex items-center justify-between mt-2">
+              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                Admit Status
+              </h1>
+              <h1 className="text-[#292929] font-medium text-base font-gola">
+                Yet to apply
+              </h1>
+            </div>
+            <div className="flex items-center justify-between mt-2">
+              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                Opted College Name
+              </h1>
+              <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+                University of California
+              </h1>
+            </div>
+            <div className="flex items-center justify-between mt-2">
+              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                Opted country
+              </h1>
+              <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+                United States of America
+              </h1>
+            </div>
+          </div>
+          <div
+            onClick={() => router.push("/viewapplication")}
+            className="cursor-pointer block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 "
+          >
+            <div className="flex item-center mb-2">
+              <h5 className=" mr-3 text-base font-semibold text-[#313131]">
+                Nikhil Mathew
+              </h5>
+              <img src="/rightIconGray.svg" alt="" />
+            </div>
+            <p className="font-gola text-sm text-[#7E7E7E]">
+              Coimbatore, TN - 641606
+            </p>
+            <div className="flex items-center justify-between mt-3">
+              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                Loan amount <br /> requested
+              </h1>
+              <h1 className="text-[#292929] font-medium text-base font-gola">
+                ₹40,00,000
+              </h1>
+            </div>
+            <div className="flex items-center justify-between mt-2">
+              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                Able to provide <br /> collateral
+              </h1>
+              <h1 className="text-[#292929] font-medium text-base font-gola">
+                Yes
+              </h1>
+            </div>
+            <div className="flex items-center justify-between mt-2">
+              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                Admit Status
+              </h1>
+              <h1 className="text-[#292929] font-medium text-base font-gola">
+                Yet to apply
+              </h1>
+            </div>
+            <div className="flex items-center justify-between mt-2">
+              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                Opted College Name
+              </h1>
+              <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+                University of California
+              </h1>
+            </div>
+            <div className="flex items-center justify-between mt-2">
+              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                Opted country
+              </h1>
+              <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+                United States of America
+              </h1>
+            </div>
+          </div>
+          <div
+            onClick={() => router.push("/viewapplication")}
+            className="cursor-pointer block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 "
+          >
+            <div className="flex item-center mb-2">
+              <h5 className=" mr-3 text-base font-semibold text-[#313131]">
+                Nikhil Mathew
+              </h5>
+              <img src="/rightIconGray.svg" alt="" />
+            </div>
+            <p className="font-gola text-sm text-[#7E7E7E]">
+              Coimbatore, TN - 641606
+            </p>
+            <div className="flex items-center justify-between mt-3">
+              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                Loan amount <br /> requested
+              </h1>
+              <h1 className="text-[#292929] font-medium text-base font-gola">
+                ₹40,00,000
+              </h1>
+            </div>
+            <div className="flex items-center justify-between mt-2">
+              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                Able to provide <br /> collateral
+              </h1>
+              <h1 className="text-[#292929] font-medium text-base font-gola">
+                Yes
+              </h1>
+            </div>
+            <div className="flex items-center justify-between mt-2">
+              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                Admit Status
+              </h1>
+              <h1 className="text-[#292929] font-medium text-base font-gola">
+                Yet to apply
+              </h1>
+            </div>
+            <div className="flex items-center justify-between mt-2">
+              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                Opted College Name
+              </h1>
+              <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+                University of California
+              </h1>
+            </div>
+            <div className="flex items-center justify-between mt-2">
+              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                Opted country
+              </h1>
+              <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+                United States of America
+              </h1>
+            </div>
+          </div>
+        </div>
       </div>
+      <MobileSidebar isOpen={isOpen} onClose={onClose} />
     </div>
   );
 }

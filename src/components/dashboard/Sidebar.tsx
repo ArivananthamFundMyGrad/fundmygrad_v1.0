@@ -7,7 +7,7 @@ function Sidebar() {
   return (
     <div
       style={{ border: "1px solid #E3E3E3" }}
-      className="flex flex-col items-center w-[80px]"
+      className="flex flex-col items-center min-w-[80px]"
     >
       <div className="mt-[26px]">
         <img src="../menu.svg" alt="Menu Icon" />

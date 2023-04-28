@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import { useRouter } from "next/router";
-import { useDisclosure } from "@chakra-ui/react";
+import { useDisclosure, useMediaQuery } from "@chakra-ui/react";
 import {
   Drawer,
   DrawerOverlay,
@@ -11,16 +11,16 @@ import Sidebar from "@/components/dashboard/Sidebar";
 
 function viewapplication() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-
+  const [isMobile] = useMediaQuery('(max-width: 767px)')  
   const router = useRouter();
   return (
     <div className="flex w-full">
       <Head>
         <title>Application Status</title>
       </Head>
-      <Sidebar />
+      {!isMobile && <Sidebar />}
       <div className="w-full flex flex-col">
-        <div className="w-full px-10 flex flex-col ">
+        <div className="w-full desktop:px-10 tablet:px-3 mobile:px-3 flex flex-col ">
           <div className="bg-white pt-3 pb-3 w-full items-center flex justify-between">
             <img width={120} src="../logo.svg" alt="" />
             <img src="../avatar.svg" alt="" />
@@ -47,7 +47,7 @@ function viewapplication() {
                 Send Offer
               </button>
             </div>
-            <div className="grid grid-cols-3 gap-3 w-full mt-7">
+            <div className="grid desktop:grid-cols-3 tablet:grid-cols-2 gap-3 w-full mt-7">
               <div className="w-full">
                 <div className="block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
                   <h5 className="mb-2 uppercase text-sm font-semibold text-[#313131]">
@@ -55,7 +55,7 @@ function viewapplication() {
                   </h5>
                   <div className="flex items-center justify-between mt-3">
                     <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
-                      Loan amount requested
+                      Loan amount {isMobile && <br/>} requested
                     </h1>
                     <h1 className="text-[#292929] font-medium text-base font-gola">
                       ₹40,00,000
@@ -63,7 +63,7 @@ function viewapplication() {
                   </div>
                   <div className="flex items-center justify-between mt-2">
                     <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
-                      Able to provide collateral
+                      Able to provide {isMobile && <br/>} collateral
                     </h1>
                     <h1 className="text-[#292929] font-medium text-base font-gola">
                       Yes
@@ -252,7 +252,7 @@ function viewapplication() {
                   </h5>
                   <div className="flex items-center justify-between mt-3">
                     <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
-                      Previous work experience
+                      Previous work {isMobile && <br/>} experience
                     </h1>
                     <h1 className="text-[#292929] font-medium text-base font-gola">
                       9 months

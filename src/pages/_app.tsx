@@ -9,6 +9,24 @@ const theme = extendTheme({
    Drawer:{
     parts: ['dialog', 'header', 'body'],
     variants: {
+      mobileDrawer:{
+        dialog:{
+          minW:'370px',
+          maxW:"720px",
+        }
+      },
+      tabletDrawer:{
+        dialog:{
+          minW:'720px',
+          maxW:"1034px",
+        }
+      },
+      desktopDrawer:{
+        dialog:{
+          minW:'1034px',
+          maxW:"1034px",
+        }
+      },
       secondary: {
         dialog: {
           minW: "1000px",
