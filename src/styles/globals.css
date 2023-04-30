@@ -50,3 +50,46 @@
 .recharts-default-legend{
   display: flex;
 }
+
+table {
+  border: 1px solid #cccccc;
+  font-family: "Golos Text";
+}
+
+tbody {
+  border: 1px solid #cccccc;
+}
+
+th {
+  border: 1px solid #cccccc;
+  padding: 2px 4px;
+}
+
+td{
+  border: 1px solid #cccccc;
+}
+
+thead{
+  background-color: #f3f3f3;
+}
+
+tfoot {
+  color: gray;
+}
+
+tfoot th {
+  font-weight: normal;
+}
+
+td,th{
+  /* padding: 1rem; */
+  text-align: center;
+}
+
+table{
+  width: 100%;
+}
+
+.table-text{
+  color:#0057E4
+}
