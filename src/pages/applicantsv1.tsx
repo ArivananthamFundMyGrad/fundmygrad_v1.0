@@ -345,10 +345,10 @@ function applicants1() {
               border: " 1px solid #cccccc",
               fontFamily: "Golos Text",
               width: "100%",
-              fontSize:'14px'
+              fontSize: "14px",
             }}
           >
-            <thead style={{ backgroundColor: "#f3f3f3" }}>
+            <thead style={{ backgroundColor: "#f3f3f3", height: "35px" }}>
               {table.getHeaderGroups().map((headerGroup) => (
                 <tr key={headerGroup.id}>
                   {headerGroup.headers.map((header) => (
@@ -377,13 +377,13 @@ function applicants1() {
               }}
             >
               {table.getRowModel().rows.map((row) => (
-                <tr key={row.id}>
+                <tr style={{ height: "35px" }} key={row.id}>
                   {row.getVisibleCells().map((cell) => (
                     <td
                       style={{
                         border: "1px solid #cccccc",
                         textAlign: "center",
-                        color: '#737474'
+                        color: "#737474",
                       }}
                       key={cell.id}
                     >
