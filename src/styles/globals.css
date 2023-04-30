@@ -91,5 +91,10 @@ table{
 }
 
 .table-text{
-  color:#0057E4
+  color:red;
+  font-weight: 500;
+}
+
+td{
+  color: #737474;
 }
