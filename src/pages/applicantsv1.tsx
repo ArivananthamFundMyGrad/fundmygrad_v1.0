@@ -195,36 +195,50 @@ const columnHelper = createColumnHelper<Person>();
 const columns = [
   columnHelper.accessor("ApplicantName", {
     cell: (info) => info.getValue(),
-    header: () => <span className="table-text">Applicant Name</span>,
+    header: () => (
+      <span style={{ color: "red", fontWeight: "500" }}>Applicant Name</span>
+    ),
     footer: (info) => info.column.id,
   }),
   columnHelper.accessor((row) => row.loanAmount, {
     id: "loanAmount",
     cell: (info) => info.getValue(),
-    header: () => <span className="table-text">Loan Amount</span>,
+    header: () => (
+      <span style={{ color: "red", fontWeight: "500" }}>Loan Amount</span>
+    ),
     footer: (info) => info.column.id,
   }),
   columnHelper.accessor("Collateral", {
-    header: () => <span className="table-text">Collateral</span>,
-    cell: (info) => info.renderValue() === "Yes" ? <span style={{color:"green"}}>Yes</span> : <h2 style={{color:'red'}}>No</h2>,
+    header: () => (
+      <span style={{ color: "red", fontWeight: "500" }}>Collateral</span>
+    ),
+    cell: (info) => info.renderValue(),
     footer: (info) => info.column.id,
   }),
   columnHelper.accessor("AdmitStatus", {
-    header: () => <span className="table-text">Admit Status</span>,
+    header: () => (
+      <span style={{ color: "red", fontWeight: "500" }}>Admit Status</span>
+    ),
     footer: (info) => info.column.id,
   }),
   columnHelper.accessor("OptCollege", {
-    header: () => <span className="table-text">Opt. College</span>,
+    header: () => (
+      <span style={{ color: "red", fontWeight: "500" }}>Opt. College</span>
+    ),
     footer: (info) => info.column.id,
   }),
   columnHelper.accessor("OptCountry", {
-    header: () => <span className="table-text">Opt. Country</span>,
+    header: () => (
+      <span style={{ color: "red", fontWeight: "500" }}>Opt. Country</span>
+    ),
     footer: (info) => info.column.id,
   }),
   columnHelper.accessor("Action", {
-    header: () => <span className="table-text">Action</span>,
+    header: () => (
+      <span style={{ color: "red", fontWeight: "500" }}>Action</span>
+    ),
     cell: (info) => (
-      <button className="h-10 px-5 my-2 font-gola text-white bg-primary-color focus:ring-4 focus:ring-blue-300 rounded-md font-medium text-sm focus:outline-none">
+      <button className="h-6 px-5 my-1 font-gola text-white bg-primary-color focus:ring-4 focus:ring-blue-300 rounded-md font-medium text-[12px] focus:outline-none">
         View
       </button>
     ),
@@ -326,12 +340,26 @@ function applicants1() {
               </label>
             </div>
           </div>
-          <table style={{position:'relative'}}>
-            <thead>
+          <table
+            style={{
+              border: " 1px solid #cccccc",
+              fontFamily: "Golos Text",
+              width: "100%",
+              fontSize:'14px'
+            }}
+          >
+            <thead style={{ backgroundColor: "#f3f3f3" }}>
               {table.getHeaderGroups().map((headerGroup) => (
                 <tr key={headerGroup.id}>
                   {headerGroup.headers.map((header) => (
-                    <th key={header.id}>
+                    <th
+                      style={{
+                        border: " 1px solid #cccccc",
+                        padding: " 2px 4px",
+                        textAlign: "center",
+                      }}
+                      key={header.id}
+                    >
                       {header.isPlaceholder
                         ? null
                         : flexRender(
@@ -343,11 +371,22 @@ function applicants1() {
                 </tr>
               ))}
             </thead>
-            <tbody>
+            <tbody
+              style={{
+                border: "1px solid #cccccc",
+              }}
+            >
               {table.getRowModel().rows.map((row) => (
                 <tr key={row.id}>
                   {row.getVisibleCells().map((cell) => (
-                    <td key={cell.id}>
+                    <td
+                      style={{
+                        border: "1px solid #cccccc",
+                        textAlign: "center",
+                        color: '#737474'
+                      }}
+                      key={cell.id}
+                    >
                       {flexRender(
                         cell.column.columnDef.cell,
                         cell.getContext()
