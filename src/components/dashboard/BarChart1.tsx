@@ -15,7 +15,7 @@ import {
   NameType,
   ValueType,
 } from "recharts/types/component/DefaultTooltipContent";
-import { useMediaQuery } from '@chakra-ui/react'
+import { useMediaQuery } from "@chakra-ui/react";
 const data = [
   {
     name: "JAN",
@@ -109,7 +109,7 @@ function getLabel(label: string) {
       return "JULY";
     case "AUG":
       return "AUGUST";
-      case "SEP":
+    case "SEP":
       return "SEPTEMBER";
     case "OCT":
       return "OCTOBER";
@@ -132,7 +132,9 @@ const CustomTooltip = ({
 
     return (
       <div style={{ width: "200px" }} className="custom-tooltip">
-        <p className="label text-[#949494] font-gola font-semibold mb-2">{`${getLabel(label)}`}</p>
+        <p className="label text-[#949494] font-gola font-semibold mb-2">{`${getLabel(
+          label
+        )}`}</p>
         <div className="flex justify-between">
           <div className="flex items-center">
             <div
@@ -167,7 +169,9 @@ const CustomTooltip = ({
 };
 
 export default function BarChart1() {
-  const [isMobile] = useMediaQuery('(max-width: 767px)')  
+  const [isMobile] = useMediaQuery("(max-width: 767px)");
+  const [isTablet] = useMediaQuery("(max-width: 1023px)");
+
 
   return (
     <ResponsiveContainer
@@ -180,10 +184,10 @@ export default function BarChart1() {
       <BarChart
         width={300}
         height={200}
-        data={data}
+        data={isMobile ? data.slice(0,5) :isTablet ? data.slice(0,7) : data}
         margin={{
           top: 30,
-          right: isMobile? 0 :10,
+          right: isMobile ? 0 : 10,
           left: 10,
           bottom: 5,
         }}

@@ -170,7 +170,7 @@ const CustomTooltip = ({
 };
 
 export default function BarChart3() {
-  const {isMobile} = screens()
+  const {isMobile,isTablet} = screens()
   return (
     <ResponsiveContainer
     minWidth={isMobile ? 320 : 400}
@@ -182,7 +182,7 @@ export default function BarChart3() {
       <BarChart
         width={400}
         height={200}
-        data={data}
+        data={isMobile ? data.slice(0,5) :isTablet ? data.slice(0,7) : data}
         margin={{
           top: 30,
           right: isMobile? 0 :10,

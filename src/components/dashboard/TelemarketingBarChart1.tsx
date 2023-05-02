@@ -1,4 +1,3 @@
-import screens from "@/utils/screens";
 import React from "react";
 import {
   BarChart,
@@ -10,86 +9,45 @@ import {
   Legend,
   ResponsiveContainer,
   Label,
-  TooltipProps,
 } from "recharts";
+import { TooltipProps } from "recharts";
 import {
   NameType,
   ValueType,
 } from "recharts/types/component/DefaultTooltipContent";
-
+import { useMediaQuery } from '@chakra-ui/react'
+import screens from "@/utils/screens";
 const data = [
   {
-    name: "JAN",
-    OFFEREDON: 50,
-    ACCEPTEDON: 90,
-    days: 20,
+    name: "APR 20",
+    CALLED: 20,
+    ANSWERED: 10,
   },
   {
-    name: "FEB",
-    OFFEREDON: 50,
-    ACCEPTEDON: 85,
-    days: 45,
+    name: "APR 21",
+    CALLED: 25,
+    ANSWERED: 15,
   },
   {
-    name: "MAR",
-    OFFEREDON: 65,
-    ACCEPTEDON: 110,
-    days: 50,
+    name: "APR 22",
+    CALLED: 20,
+    ANSWERED: 10,
   },
   {
-    name: "APR",
-    OFFEREDON: 65,
-    ACCEPTEDON: 90,
-    days: 30,
+    name: "APR 23",
+    CALLED: 40,
+    ANSWERED: 25,
   },
   {
-    name: "MAY",
-    OFFEREDON: 55,
-    ACCEPTEDON: 110,
-    days: 100,
+    name: "APR 24",
+    CALLED: 35,
+    ANSWERED: 30,
   },
   {
-    name: "JUN",
-    OFFEREDON: 60,
-    ACCEPTEDON: 120,
-    days: 220,
-  },
-  {
-    name: "JUL",
-    OFFEREDON: 55,
-    ACCEPTEDON: 70,
-    days: 230,
-  },
-  {
-    name: "AUG",
-    OFFEREDON: 65,
-    ACCEPTEDON: 90,
-    days: 210,
-  },
-  {
-    name: "SEP",
-    OFFEREDON: 65,
-    ACCEPTEDON: 70,
-    days: 170,
-  },
-  {
-    name: "OCT",
-    OFFEREDON: 70,
-    ACCEPTEDON: 50,
-    days: 250,
-  },
-  {
-    name: "NOV",
-    OFFEREDON: 65,
-    ACCEPTEDON: 40,
-    days: 2100,
-  },
-  {
-    name: "DEC",
-    OFFEREDON: 55,
-    ACCEPTEDON: 50,
-    days: 190,
-  },
+    name: "APR 25",
+    CALLED: 50,
+    ANSWERED: 30,
+  }
 ];
 
 function getLabel(label: string) {
@@ -110,7 +68,7 @@ function getLabel(label: string) {
       return "JULY";
     case "AUG":
       return "AUGUST";
-    case "SEP":
+      case "SEP":
       return "SEPTEMBER";
     case "OCT":
       return "OCTOBER";
@@ -129,25 +87,34 @@ const CustomTooltip = ({
   label,
 }: TooltipProps<ValueType, NameType>) => {
   if (active && payload) {
-    console.log(payload, active);
-
     return (
       <div style={{ width: "200px" }} className="custom-tooltip">
-        <p className="label text-[#949494] font-gola font-semibold mb-2">{`${getLabel(
-          label
-        )}`}</p>
+        <p className="label text-[#949494] font-gola font-semibold mb-2">{`${getLabel(label)}`}</p>
         <div className="flex justify-between">
           <div className="flex items-center">
             <div
               style={{
                 height: "6px",
                 width: "6px",
-                backgroundColor: "#33CDD7",
+                backgroundColor: "#205ED7",
               }}
             ></div>
-            <h1 className="text-sm font-gola ml-3">Days</h1>
+            <h1 className="text-sm font-gola ml-3">Called</h1>
           </div>
           <p className="desc"> {`${payload[0].value}`}</p>
+        </div>
+        <div className="flex justify-between">
+          <div className="flex items-center">
+            <div
+              style={{
+                height: "6px",
+                width: "6px",
+                backgroundColor: "#1BB621",
+              }}
+            ></div>
+            <h1 className="text-sm font-gola ml-3">Answered</h1>
+          </div>
+          <p className="desc"> {`${payload[1].value}`}</p>
         </div>
       </div>
     );
@@ -156,18 +123,19 @@ const CustomTooltip = ({
   return null;
 };
 
-export default function BarChart2() {
+export default function TelemarketingBarChart1() {
   const {isMobile,isTablet} = screens()
+
   return (
     <ResponsiveContainer
-      minWidth={isMobile ? 320 : 400}
+      minWidth={isMobile ? 300 : 400}
       maxHeight={500}
       minHeight={300}
       width={isMobile ? "95%" : "100%"}
       height="80%"
     >
       <BarChart
-        width={400}
+        width={300}
         height={200}
         data={isMobile ? data.slice(0,5) :isTablet ? data.slice(0,7) : data}
         margin={{
@@ -176,7 +144,7 @@ export default function BarChart2() {
           left: 10,
           bottom: 5,
         }}
-        barGap={-10}
+        barGap={isMobile ? -10  : isTablet ? -40 : -25}
       >
         <CartesianGrid vertical={false} color="#DDDDDD" strokeWidth={0.5} />
         <XAxis
@@ -204,7 +172,7 @@ export default function BarChart2() {
               fontFamily: "Golos Text",
               fontSize: "11px",
             }}
-            value="Days"
+            value="No. of Calls"
             angle={-90}
             position="left"
             dy={-10}
@@ -219,14 +187,19 @@ export default function BarChart2() {
             borderRadius: "10px",
           }}
           content={<CustomTooltip />}
-        />{" "}
+        />
         <Legend style={{ fontSize: "11px" }} align="center" iconType="square" />
         <Bar
-          name="DAYS"
           radius={[3, 3, 0, 0]}
           maxBarSize={10}
-          dataKey="ACCEPTEDON"
-          fill="#33CDD7"
+          dataKey="CALLED"
+          fill="#205ED7"
+        />
+        <Bar
+          radius={[3, 3, 0, 0]}
+          maxBarSize={10}
+          dataKey="ANSWERED"
+          fill="#1BB621"
         />
       </BarChart>
     </ResponsiveContainer>

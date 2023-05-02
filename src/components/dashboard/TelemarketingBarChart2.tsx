@@ -20,75 +20,63 @@ import {
 const data = [
   {
     name: "JAN",
-    OFFEREDON: 50,
-    ACCEPTEDON: 90,
-    days: 20,
+    CONVERTED: 100,
+    SUCCESSFUL: 30,
   },
   {
     name: "FEB",
-    OFFEREDON: 50,
-    ACCEPTEDON: 85,
-    days: 45,
+    CONVERTED: 120,
+    SUCCESSFUL: 25,
   },
   {
     name: "MAR",
-    OFFEREDON: 65,
-    ACCEPTEDON: 110,
-    days: 50,
+    CONVERTED: 90,
+    SUCCESSFUL: 29,
   },
   {
     name: "APR",
-    OFFEREDON: 65,
-    ACCEPTEDON: 90,
-    days: 30,
+    CONVERTED: 130,
+    SUCCESSFUL: 32,
   },
   {
     name: "MAY",
-    OFFEREDON: 55,
-    ACCEPTEDON: 110,
-    days: 100,
+    CONVERTED: 70,
+    SUCCESSFUL: 30,
   },
   {
     name: "JUN",
-    OFFEREDON: 60,
-    ACCEPTEDON: 120,
-    days: 220,
+    CONVERTED: 60,
+    SUCCESSFUL: 35,
   },
   {
     name: "JUL",
-    OFFEREDON: 55,
-    ACCEPTEDON: 70,
-    days: 230,
+    CONVERTED: 110,
+    SUCCESSFUL: 25,
   },
   {
     name: "AUG",
-    OFFEREDON: 65,
-    ACCEPTEDON: 90,
-    days: 210,
+    CONVERTED: 70,
+    SUCCESSFUL: 30,
   },
   {
     name: "SEP",
-    OFFEREDON: 65,
-    ACCEPTEDON: 70,
-    days: 170,
+    CONVERTED: 90,
+    SUCCESSFUL: 35,
   },
   {
     name: "OCT",
-    OFFEREDON: 70,
-    ACCEPTEDON: 50,
-    days: 250,
+    CONVERTED: 130,
+    SUCCESSFUL: 30,
   },
   {
     name: "NOV",
-    OFFEREDON: 65,
-    ACCEPTEDON: 40,
-    days: 2100,
+    CONVERTED: 80,
+    SUCCESSFUL: 25,
   },
   {
     name: "DEC",
-    OFFEREDON: 55,
-    ACCEPTEDON: 50,
-    days: 190,
+    CONVERTED: 70,
+    SUCCESSFUL: 25,
   },
 ];
 
@@ -145,9 +133,22 @@ const CustomTooltip = ({
                 backgroundColor: "#33CDD7",
               }}
             ></div>
-            <h1 className="text-sm font-gola ml-3">Days</h1>
+            <h1 className="text-sm font-gola ml-3">Converted</h1>
           </div>
           <p className="desc"> {`${payload[0].value}`}</p>
+        </div>
+        <div className="flex justify-between">
+          <div className="flex items-center">
+            <div
+              style={{
+                height: "6px",
+                width: "6px",
+                backgroundColor: "#0057FF",
+              }}
+            ></div>
+            <h1 className="text-sm font-gola ml-3">Successful</h1>
+          </div>
+          <p className="desc"> {`${payload[1].value}`}</p>
         </div>
       </div>
     );
@@ -156,12 +157,12 @@ const CustomTooltip = ({
   return null;
 };
 
-export default function BarChart2() {
+export default function TelemarketingBarChart2() {
   const {isMobile,isTablet} = screens()
   return (
     <ResponsiveContainer
-      minWidth={isMobile ? 320 : 400}
-      maxHeight={500}
+    minWidth={isMobile ? 320 : 400}
+    maxHeight={500}
       minHeight={300}
       width={isMobile ? "95%" : "100%"}
       height="80%"
@@ -219,14 +220,22 @@ export default function BarChart2() {
             borderRadius: "10px",
           }}
           content={<CustomTooltip />}
-        />{" "}
+        />
         <Legend style={{ fontSize: "11px" }} align="center" iconType="square" />
         <Bar
-          name="DAYS"
+          name="CONVERTED"
           radius={[3, 3, 0, 0]}
           maxBarSize={10}
-          dataKey="ACCEPTEDON"
+          dataKey="CONVERTED"
           fill="#33CDD7"
+
+        />
+        <Bar
+          name="SUCCESSFUL"
+          radius={[3, 3, 0, 0]}
+          maxBarSize={10}
+          dataKey="SUCCESSFUL"
+          fill="#205ED7"
         />
       </BarChart>
     </ResponsiveContainer>
