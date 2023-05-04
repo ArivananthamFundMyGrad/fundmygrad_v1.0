@@ -30,7 +30,7 @@ function MobileSidebar({ isOpen, onClose }: MobileSidebarProps) {
                 onClick={() => router.push("/bankportal")}
                 className={`${
                   currentRoute.includes("/bankportal")
-                    ? "bg-[#EBEBFF] pt-[11px] pb-[11px] pl-[16px] pr-[16px] rounded-lg"
+                    ? "bg-[#DFECFF] pt-[11px] pb-[11px] pl-[16px] pr-[16px] rounded-lg"
                     : ""
                 } cursor-pointer`}
               >
@@ -73,7 +73,7 @@ function MobileSidebar({ isOpen, onClose }: MobileSidebarProps) {
                 className={`${
                   currentRoute.includes("/applicants") ||
                   currentRoute.includes("/viewapplication")
-                    ? "bg-[#EBEBFF] pt-[11px] pb-[11px] pl-[16px] pr-[16px] rounded-lg"
+                    ? "bg-[#DFECFF] pt-[11px] pb-[11px] pl-[16px] pr-[16px] rounded-lg"
                     : ""
                 } cursor-pointer`}
               >
@@ -121,7 +121,7 @@ function MobileSidebar({ isOpen, onClose }: MobileSidebarProps) {
                 className={`${
                   currentRoute.includes("/tracking") ||
                   currentRoute.includes("/viewapplicationstatus")
-                    ? "bg-[#EBEBFF] pt-[11px] pb-[11px] pl-[16px] pr-[16px] rounded-lg"
+                    ? "bg-[#DFECFF] pt-[11px] pb-[11px] pl-[16px] pr-[16px] rounded-lg"
                     : ""
                 } cursor-pointer`}
               >

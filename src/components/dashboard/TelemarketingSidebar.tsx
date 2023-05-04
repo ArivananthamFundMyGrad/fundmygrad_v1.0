@@ -17,7 +17,7 @@ function TelemarketingSidebar() {
           onClick={() => router.push("/telemarketing")}
           className={`${
             currentRoute.includes("/telemarketing")
-              ? "bg-[#EBEBFF] pt-[11px] pb-[11px] pl-[16px] pr-[16px] rounded-lg"
+              ? "bg-[#DFECFF] pt-[11px] pb-[11px] pl-[16px] pr-[16px] rounded-lg"
               : ""
           } cursor-pointer`}
         >
@@ -53,7 +53,7 @@ function TelemarketingSidebar() {
           onClick={() => router.push("/calllogs")}
           className={`${
             currentRoute.includes("/calllogs") || currentRoute.includes("/viewapplication")
-              ? "bg-[#EBEBFF] pt-[11px] pb-[11px] pl-[16px] pr-[16px] rounded-lg"
+              ? "bg-[#DFECFF] pt-[11px] pb-[11px] pl-[16px] pr-[16px] rounded-lg"
               : ""
           } cursor-pointer`}
         >
@@ -89,7 +89,7 @@ function TelemarketingSidebar() {
           onClick={() => router.push("/calltracking")}
           className={`${
             currentRoute.includes("/calltracking") || currentRoute.includes("/viewapplicationstatus")
-              ? "bg-[#EBEBFF] pt-[11px] pb-[11px] pl-[16px] pr-[16px] rounded-lg"
+              ? "bg-[#DFECFF] pt-[11px] pb-[11px] pl-[16px] pr-[16px] rounded-lg"
               : ""
           } cursor-pointer`}
         >

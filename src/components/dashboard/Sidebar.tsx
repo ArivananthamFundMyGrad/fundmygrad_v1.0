@@ -17,7 +17,7 @@ function Sidebar() {
           onClick={() => router.push("/bankportal")}
           className={`${
             currentRoute.includes("/bankportal")
-              ? "bg-[#EBEBFF] pt-[11px] pb-[11px] pl-[16px] pr-[16px] rounded-lg"
+              ? "bg-[#DFECFF] pt-[11px] pb-[11px] pl-[16px] pr-[16px] rounded-lg"
               : ""
           } cursor-pointer`}
         >
@@ -53,7 +53,7 @@ function Sidebar() {
           onClick={() => router.push("/applicants")}
           className={`${
             currentRoute.includes("/applicants") || currentRoute.includes("/viewapplication")
-              ? "bg-[#EBEBFF] pt-[11px] pb-[11px] pl-[16px] pr-[16px] rounded-lg"
+              ? "bg-[#DFECFF] pt-[11px] pb-[11px] pl-[16px] pr-[16px] rounded-lg"
               : ""
           } cursor-pointer`}
         >
@@ -92,7 +92,7 @@ function Sidebar() {
           onClick={() => router.push("/tracking")}
           className={`${
             currentRoute.includes("/tracking") || currentRoute.includes("/viewapplicationstatus")
-              ? "bg-[#EBEBFF] pt-[11px] pb-[11px] pl-[16px] pr-[16px] rounded-lg"
+              ? "bg-[#DFECFF] pt-[11px] pb-[11px] pl-[16px] pr-[16px] rounded-lg"
               : ""
           } cursor-pointer`}
         >
