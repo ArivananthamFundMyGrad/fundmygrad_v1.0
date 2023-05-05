@@ -1,4 +1,4 @@
-import React, {  useState } from "react";
+import React, { useState } from "react";
 import Head from "next/head";
 import {
   Drawer,
@@ -8,66 +8,203 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 import StudentPortalTopbar from "@/components/reusable/StudentPortalTopbar";
+import StudentPortalMobileSidebar from "@/components/reusable/StudentPortalMobileSidebar";
+import { Select } from "@chakra-ui/select";
+import screens from "@/utils/screens";
+import { useRouter } from "next/router";
 
 function offers() {
-  const [activeTab, setActiveTab] = useState("1");
+  const [activeTab, setActiveTab] = useState("3");
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const router = useRouter()
 
-  const [isMobile] = useMediaQuery(["(min-width: 320px)"]);
-  const [isTablet] = useMediaQuery(["(min-width: 768px)"]);
-  const [isDesktop] = useMediaQuery(["(min-width: 1024px)"]);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const onSidebarOpen = () => {
+    setIsSidebarOpen(true);
+  };
+  const onSidebarClose = () => {
+    setIsSidebarOpen(false);
+  }
+  const { isMobile } = screens();
 
-  console.log(isMobile, isTablet, isDesktop);
+  const [isTablet1] = useMediaQuery(["(min-width: 768px)"]);
+  const [isDesktop1] = useMediaQuery(["(min-width: 1024px)"]);
 
   return (
-    <div className="w-full flex flex-col items-center bg-[#F1F4FA]">
+    <div className="w-full flex flex-col items-center desktop:bg-[#F1F4FA]">
       <Head>
         <title>Loan Offers</title>
       </Head>
-      <StudentPortalTopbar />
-
-      <div className="w-full mb-5 tabanddesk:px-10">
-        <div className="desktop:hidden flex flex-col mt-10">
-          <h1 className="font-gola text-[28px] font-bold">Loan Offers</h1>
-
-          <div className="mt-3 max-w-[400px] flex items-center bg-[#F0F0F0] p-1 rounded-md">
-            <div
-              onClick={() => setActiveTab("1")}
-              className={`${
-                activeTab === "1" ? "w-1/2 bg-white p-1.5 rounded-md" : "p-1.5"
-              } cursor-pointer flex items-center w-[55%]`}
-            >
-              <div className="flex px-2">
-                <h1 className="text-sm font-gola text-[#202020] pl-2">
-                  All Offers &nbsp;
-                  <span className="font-gola text-sm text-[#A3A3A3]">(28)</span>
-                </h1>
-                <h1 className="ml-[10px] text-[10px] font-gola text-[#6B37FF] bg-[#F8E2FF] px-[6px] py-[2px] rounded-lg">
-                  7 New
-                </h1>
-              </div>
+      {!isMobile && <StudentPortalTopbar />}
+      {isMobile && (
+        <StudentPortalMobileSidebar isOpen={isSidebarOpen} onClose={onSidebarClose} />
+      )}
+      <div className="w-full mb-5 tabanddesk:px-10 mobile:px-3 min-h-screen">
+        <div className="desktop:hidden flex flex-col justify-center mt-10">
+          <div className="mobile:hidden flex items-center">
+            <h1 className="font-gola text-[28px] font-bold">Loan Offers</h1>
+          </div>
+          <div className="flex items-center tablet:hidden justify-between">
+            <div className="flex">
+              <img
+                className="mr-5"
+                onClick={onSidebarOpen}
+                src="../menu.svg"
+                alt="Menu Icon"
+              />
+              <h1 className="text-2xl font-gola font-bold">Loan Offers</h1>
             </div>
             <div
-              onClick={() => setActiveTab("2")}
-              className={`${
-                activeTab === "2"
-                  ? "w-1/2 justify-center bg-white p-1.5 rounded-md"
-                  : "p-1.5"
-              } cursor-pointer flex items-center pl-3`}
+              className="cursor-pointer"
+              onClick={() => router.push("/studentprofile")}
             >
-              <div className="flex px-2">
-                <h1 className="text-sm font-gola text-[#202020]">
-                  Applied &nbsp;
-                  <span className="font-gola text-sm text-[#A3A3A3]">(03)</span>
-                </h1>
-                <h1 className="ml-[10px] text-[10px] font-gola text-[#FE4646] bg-[#FFE9E9] px-[6px] py-[2px] rounded-lg">
-                  2!
-                </h1>
+              <img
+                className="bg-[#F5F9FF] rounded-full p-[11px]"
+                src="/ProfileIcon.svg"
+                alt="Avatar"
+              />
+            </div>
+          </div>
+          <div className="flex mt-3">
+            <div className="tablet:w-2/5 mobile:w-[60%]">
+              <Select bg="white">
+                <option value="option1">University Of Calofornia</option>
+              </Select>
+            </div>
+            <div className="ml-5 flex items-center bg-[#EEEEEE] px-3 py-1.5 rounded-full">
+              <h1 className="font-gola text-[14px] font-medium text-[#254472]">
+                Yet to apply
+              </h1>
+              <img className="pl-2" src="/dropdown.svg" alt="dropdown icon" />
+            </div>
+          </div>
+          <div className="mobile:hidden flex mt-5">
+            <div className="min-w-[626px] flex items-center bg-[#F9F9F9] border-[1px] border-[#CECECE] p-1 rounded-md">
+              <div
+                onClick={() => setActiveTab("1")}
+                className={`${
+                  activeTab === "1"
+                    ? "bg-white p-1.5 rounded-md drop-shadow-md	"
+                    : "p-1.5"
+                } cursor-pointer flex items-center`}
+              >
+                <div className="flex px-2">
+                  <h1 className="text-sm font-gola text-[#202020] pl-2">
+                    Standard Offers &nbsp;
+                    <span className="font-gola text-sm text-[#A3A3A3]">
+                      (28)
+                    </span>
+                  </h1>
+                  <h1 className="ml-[10px] text-[10px] font-gola text-[#6B37FF] bg-[#F8E2FF] px-[6px] py-[2px] rounded-lg">
+                    7 New
+                  </h1>
+                </div>
+              </div>
+              <div
+                onClick={() => setActiveTab("2")}
+                className={`${
+                  activeTab === "2"
+                    ? "bg-white p-1.5 rounded-md drop-shadow-md	"
+                    : "p-1.5"
+                } cursor-pointer flex items-center ml-3`}
+              >
+                <div className="flex px-2">
+                  <h1 className="text-sm font-gola text-[#202020]">
+                    Banks Applied &nbsp;
+                    <span className="font-gola text-sm text-[#A3A3A3]">
+                      (03)
+                    </span>
+                  </h1>
+                  <h1 className="ml-[10px] text-[10px] font-gola text-[#FE4646] bg-[#FFE9E9] px-[6px] py-[2px] rounded-lg">
+                    2!
+                  </h1>
+                </div>
+              </div>
+              <div
+                onClick={() => setActiveTab("3")}
+                className={`${
+                  activeTab === "3"
+                    ? "bg-white p-1.5 rounded-md drop-shadow-md	"
+                    : "p-1.5"
+                } cursor-pointer flex items-center ml-3`}
+              >
+                <div className="flex px-2">
+                  <h1 className="text-sm font-gola text-[#202020]">
+                    Bids &nbsp;
+                    <span className="font-gola text-sm text-[#A3A3A3]">
+                      (03)
+                    </span>
+                  </h1>
+                  <h1 className="ml-[10px] text-[10px] font-gola text-[#6B37FF] bg-[#F8E2FF] px-[6px] py-[2px] rounded-lg">
+                    7 New
+                  </h1>
+                  <h1 className="ml-[10px] text-[10px] font-gola text-[#FE4646] bg-[#FFE9E9] px-[6px] py-[2px] rounded-lg">
+                    2!
+                  </h1>
+                </div>
               </div>
             </div>
           </div>
-          <div className="mt-5">
-            <div className="relative">
+          <div className="tablet:hidden flex mt-5">
+            <div className="min-w-full flex items-center bg-[#F9F9F9] border-[1px] border-[#CECECE] py-1 rounded-md">
+              <div
+                onClick={() => setActiveTab("1")}
+                className={`${
+                  activeTab === "1"
+                    ? "bg-white  rounded-md drop-shadow-md"
+                    : ""
+                } cursor-pointer flex items-center w-[33%] justify-center`}
+              >
+                <div className="flex py-2">
+                  <h1 className="text-sm font-gola text-[#202020] pl-0.5">
+                    Offers
+                    <span className="font-gola text-sm text-[#A3A3A3]">
+                      (28+2 N)
+                    </span>
+                  </h1>
+                </div>
+              </div>
+              <div
+                onClick={() => setActiveTab("2")}
+                className={`${
+                  activeTab === "2"
+                    ? "bg-white  rounded-md drop-shadow-md"
+                    : ""
+                } cursor-pointer flex items-center w-[33%] justify-center`}
+              >
+                <div className="flex py-2">
+                  <h1 className="text-sm font-gola text-[#202020]">
+                    Applied
+                    <span className="font-gola text-sm text-[#A3A3A3]">
+                      (03)
+                    </span>
+                  </h1>
+                  <h1 className="ml-[5px] text-[10px] font-gola text-[#FE4646] bg-[#FFE9E9] px-[6px] py-[2px] rounded-lg">
+                    !
+                  </h1>
+                </div>
+              </div>
+              <div
+                onClick={() => setActiveTab("3")}
+                className={`${
+                  activeTab === "3"
+                    ? "bg-white  rounded-md drop-shadow-md	"
+                    : ""
+                } cursor-pointer flex items-center ml-3 w-[33%] justify-center`}
+              >
+                <div className="flex py-2">
+                  <h1 className="text-sm font-gola text-[#202020]">
+                    Bids
+                    <span className="font-gola text-sm text-[#A3A3A3]">
+                      (03+2N)
+                    </span>
+                  </h1>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className="relative mt-3">
               <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                 <svg
                   width="14"
@@ -104,7 +241,142 @@ function offers() {
                 placeholder="Search"
               />
             </div>
-            <div className="mt-5 relative">
+            <div className="flex items-center mt-3">
+              <input
+                defaultChecked
+                id="checked-checkbox"
+                type="checkbox"
+                value=""
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+              <label
+                htmlFor="checked-checkbox"
+                className="ml-2 text-sm font-medium text-[#202020] font-gola"
+              >
+                No Collateral
+              </label>
+            </div>
+          </div>
+        </div>
+        <div className="mobile:hidden tablet:hidden flex flex-col justify-center mt-10">
+          <div className="flex items-center">
+            <h1 className="font-gola text-[28px] font-bold">Loan Offers</h1>
+            <div className="w-1/5 ml-5">
+              <Select bg="white">
+                <option value="option1">University Of Calofornia</option>
+              </Select>
+            </div>
+            <div className="ml-5 flex items-center bg-[#EEEEEE] px-3 py-1.5 rounded-full">
+              <h1 className="font-gola text-[14px] font-medium text-[#254472]">
+                Yet to apply
+              </h1>
+              <img className="pl-2" src="/dropdown.svg" alt="dropdown icon" />
+            </div>
+          </div>
+          <div className="flex mt-5">
+            <div className="min-w-[626px] flex items-center bg-[#F9F9F9] border-[1px] border-[#CECECE] p-1 rounded-md">
+              <div
+                onClick={() => setActiveTab("1")}
+                className={`${
+                  activeTab === "1"
+                    ? "bg-white p-1.5 rounded-md drop-shadow-md	"
+                    : "p-1.5"
+                } cursor-pointer flex items-center`}
+              >
+                <div className="flex px-2">
+                  <h1 className="text-sm font-gola text-[#202020] pl-2">
+                    Standard Offers &nbsp;
+                    <span className="font-gola text-sm text-[#A3A3A3]">
+                      (28)
+                    </span>
+                  </h1>
+                  <h1 className="ml-[10px] text-[10px] font-gola text-[#6B37FF] bg-[#F8E2FF] px-[6px] py-[2px] rounded-lg">
+                    7 New
+                  </h1>
+                </div>
+              </div>
+              <div
+                onClick={() => setActiveTab("2")}
+                className={`${
+                  activeTab === "2"
+                    ? "bg-white p-1.5 rounded-md drop-shadow-md	"
+                    : "p-1.5"
+                } cursor-pointer flex items-center ml-3`}
+              >
+                <div className="flex px-2">
+                  <h1 className="text-sm font-gola text-[#202020]">
+                    Banks Applied &nbsp;
+                    <span className="font-gola text-sm text-[#A3A3A3]">
+                      (03)
+                    </span>
+                  </h1>
+                  <h1 className="ml-[10px] text-[10px] font-gola text-[#FE4646] bg-[#FFE9E9] px-[6px] py-[2px] rounded-lg">
+                    2!
+                  </h1>
+                </div>
+              </div>
+              <div
+                onClick={() => setActiveTab("3")}
+                className={`${
+                  activeTab === "3"
+                    ? "bg-white p-1.5 rounded-md drop-shadow-md	"
+                    : "p-1.5"
+                } cursor-pointer flex items-center ml-3`}
+              >
+                <div className="flex px-2">
+                  <h1 className="text-sm font-gola text-[#202020]">
+                    Bids &nbsp;
+                    <span className="font-gola text-sm text-[#A3A3A3]">
+                      (03)
+                    </span>
+                  </h1>
+                  <h1 className="ml-[10px] text-[10px] font-gola text-[#6B37FF] bg-[#F8E2FF] px-[6px] py-[2px] rounded-lg">
+                    7 New
+                  </h1>
+                  <h1 className="ml-[10px] text-[10px] font-gola text-[#FE4646] bg-[#FFE9E9] px-[6px] py-[2px] rounded-lg">
+                    2!
+                  </h1>
+                </div>
+              </div>
+            </div>
+            <div className="ml-5 relative">
+              <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clipPath="url(#clip0_56_3185)">
+                    <rect
+                      width="14"
+                      height="14"
+                      fill="white"
+                      fillOpacity="0.01"
+                    />
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M9.47653 10.8907C8.49572 11.5892 7.29583 12 6 12C2.68629 12 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6C12 7.29583 11.5892 8.49572 10.8907 9.47653L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L9.47653 10.8907ZM10 6C10 8.20914 8.20914 10 6 10C3.79086 10 2 8.20914 2 6C2 3.79086 3.79086 2 6 2C8.20914 2 10 3.79086 10 6Z"
+                      fill="#6B778C"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_56_3185">
+                      <rect width="14" height="14" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <input
+                type="text"
+                id="input-group-1"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5"
+                placeholder="Search"
+              />
+            </div>
+            <div className="ml-5 relative">
               <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
                 <svg
                   width="12"
@@ -126,7 +398,7 @@ function offers() {
                 placeholder="Latest"
               />
             </div>
-            <div className="mt-5 flex items-center">
+            <div className="flex items-center ml-5">
               <input
                 defaultChecked
                 id="checked-checkbox"
@@ -141,117 +413,6 @@ function offers() {
                 No Collateral
               </label>
             </div>
-          </div>
-        </div>
-        <div className="mobile:hidden tablet:hidden  flex items-center mt-10">
-          <h1 className="font-gola text-[28px] font-bold">Loan Offers</h1>
-          <div className="flex items-center bg-[#F0F0F0] p-1 rounded-md ml-10">
-            <div
-              onClick={() => setActiveTab("1")}
-              className={`${
-                activeTab === "1" ? "bg-white p-1.5 rounded-md" : "p-1.5"
-              } cursor-pointer flex items-center`}
-            >
-              <div className="flex px-2">
-                <h1 className="text-sm font-gola text-[#202020] pl-2">
-                  All Offers &nbsp;
-                  <span className="font-gola text-sm text-[#A3A3A3]">(28)</span>
-                </h1>
-                <h1 className="ml-[10px] text-[10px] font-gola text-[#6B37FF] bg-[#F8E2FF] px-[6px] py-[2px] rounded-lg">
-                  7 New
-                </h1>
-              </div>
-            </div>
-            <div
-              onClick={() => setActiveTab("2")}
-              className={`${
-                activeTab === "2" ? "bg-white p-1.5 rounded-md" : "p-1.5"
-              } cursor-pointer flex items-center ml-3`}
-            >
-              <div className="flex px-2">
-                <h1 className="text-sm font-gola text-[#202020]">
-                  Applied &nbsp;
-                  <span className="font-gola text-sm text-[#A3A3A3]">(03)</span>
-                </h1>
-                <h1 className="ml-[10px] text-[10px] font-gola text-[#FE4646] bg-[#FFE9E9] px-[6px] py-[2px] rounded-lg">
-                  2!
-                </h1>
-              </div>
-            </div>
-          </div>
-          <div className="ml-5 relative">
-            <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clipPath="url(#clip0_56_3185)">
-                  <rect
-                    width="14"
-                    height="14"
-                    fill="white"
-                    fillOpacity="0.01"
-                  />
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M9.47653 10.8907C8.49572 11.5892 7.29583 12 6 12C2.68629 12 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6C12 7.29583 11.5892 8.49572 10.8907 9.47653L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L9.47653 10.8907ZM10 6C10 8.20914 8.20914 10 6 10C3.79086 10 2 8.20914 2 6C2 3.79086 3.79086 2 6 2C8.20914 2 10 3.79086 10 6Z"
-                    fill="#6B778C"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_56_3185">
-                    <rect width="14" height="14" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
-            <input
-              type="text"
-              id="input-group-1"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5"
-              placeholder="Search"
-            />
-          </div>
-          <div className="ml-5 relative">
-            <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-              <svg
-                width="12"
-                height="8"
-                viewBox="0 0 12 8"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6.70639 6.8275L10.9464 2.5875C11.0401 2.49454 11.1145 2.38394 11.1653 2.26208C11.216 2.14022 11.2422 2.00951 11.2422 1.8775C11.2422 1.74549 11.216 1.61478 11.1653 1.49292C11.1145 1.37107 11.0401 1.26046 10.9464 1.1675C10.759 0.98125 10.5056 0.876709 10.2414 0.876709C9.9772 0.876709 9.72375 0.98125 9.53639 1.1675L5.99639 4.7075L2.45639 1.1675C2.26903 0.98125 2.01557 0.876709 1.75139 0.876709C1.4872 0.876709 1.23375 0.98125 1.04639 1.1675C0.953708 1.26094 0.880383 1.37176 0.830618 1.49359C0.780853 1.61543 0.755629 1.74589 0.75639 1.8775C0.755629 2.00911 0.780853 2.13957 0.830618 2.26141C0.880382 2.38324 0.953708 2.49406 1.04639 2.5875L5.28639 6.8275C5.37935 6.92123 5.48995 6.99562 5.61181 7.04639C5.73367 7.09716 5.86438 7.1233 5.99639 7.1233C6.1284 7.1233 6.25911 7.09716 6.38097 7.04639C6.50282 6.99562 6.61343 6.92123 6.70639 6.8275Z"
-                  fill="#989898"
-                />
-              </svg>
-            </div>
-            <input
-              type="text"
-              id="input-group-1"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-              placeholder="Latest"
-            />
-          </div>
-          <div className="flex items-center ml-5">
-            <input
-              defaultChecked
-              id="checked-checkbox"
-              type="checkbox"
-              value=""
-              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-            />
-            <label
-              htmlFor="checked-checkbox"
-              className="ml-2 text-sm font-medium text-[#202020] font-gola"
-            >
-              No Collateral
-            </label>
           </div>
         </div>
         {activeTab === "1" && (
@@ -810,13 +971,305 @@ function offers() {
             </div>
           </>
         )}
+        {activeTab === "3" && (
+          <>
+            <div className="tablet:hidden mobile:hidden bg-white rounded-t-lg mt-10 w-full relative overflow-x-auto">
+              <table className="w-full text-sm text-left text-gray-500">
+                <thead className="text-xs text-gray-700 uppercase border-b">
+                  <tr>
+                    <th className="w-[20%]" scope="col">
+                      <div className="flex items-center justify-between border-r-[1px] p-[16px]">
+                        <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                          Applicant Name
+                        </h1>
+                        <svg
+                          width="12"
+                          height="12"
+                          viewBox="0 0 12 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M12 6L10.9425 4.9425L6.75 9.1275V0H5.25V9.1275L1.065 4.935L0 6L6 12L12 6Z"
+                            fill="#767676"
+                            fillOpacity="0.87"
+                          />
+                        </svg>
+                      </div>
+                    </th>
+                    <th scope="col" className="w-[15%]">
+                      <div className="flex items-center justify-between border-r-[1px] p-[16px]">
+                        <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                          Status
+                        </h1>
+                        <svg
+                          width="12"
+                          height="12"
+                          viewBox="0 0 12 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M12 6L10.9425 4.9425L6.75 9.1275V0H5.25V9.1275L1.065 4.935L0 6L6 12L12 6Z"
+                            fill="#767676"
+                            fillOpacity="0.87"
+                          />
+                        </svg>
+                      </div>
+                    </th>
+                    <th scope="col" className="w-[20%]">
+                      <div className="flex items-center justify-between border-r-[1px] p-[16px]">
+                        <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                          Documents Upload
+                        </h1>
+                        <div className="flex items-center">
+                          <svg
+                            width="12"
+                            height="12"
+                            viewBox="0 0 12 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M12 6L10.9425 4.9425L6.75 9.1275V0H5.25V9.1275L1.065 4.935L0 6L6 12L12 6Z"
+                              fill="#767676"
+                              fillOpacity="0.87"
+                            />
+                          </svg>
+                          <img
+                            className="ml-3"
+                            src="/filterIcon.svg"
+                            alt="Filter Icon"
+                          />
+                        </div>
+                      </div>
+                    </th>
+                    <th scope="col" className="w-[15%]">
+                      <div className="flex items-center justify-between border-r-[1px] p-[16px]">
+                        <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                          Bids
+                        </h1>
+                        <svg
+                          width="12"
+                          height="12"
+                          viewBox="0 0 12 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M12 6L10.9425 4.9425L6.75 9.1275V0H5.25V9.1275L1.065 4.935L0 6L6 12L12 6Z"
+                            fill="#767676"
+                            fillOpacity="0.87"
+                          />
+                        </svg>
+                      </div>
+                    </th>
+                    <th scope="col" className="w-[20%]">
+                      <div className="flex items-center justify-between border-r-[1px] p-[16px]">
+                        <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                          Latest Offer
+                        </h1>
+                        <div className="flex items-center">
+                          <svg
+                            width="12"
+                            height="12"
+                            viewBox="0 0 12 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M12 6L10.9425 4.9425L6.75 9.1275V0H5.25V9.1275L1.065 4.935L0 6L6 12L12 6Z"
+                              fill="#767676"
+                              fillOpacity="0.87"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </th>
+                    <th scope="col" className="w-[10%]">
+                      <div className="flex items-center justify-between border-r-[1px] p-[16px]">
+                        <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                          Action
+                        </h1>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="bg-white border-b">
+                    <th scope="row" className="px-6 py-4 flex items-center">
+                      <img src="/axis.svg" alt="Axis Bank" />
+                      <h1 className="ml-5 font-gola text-[14px] font-medium text-[#272727]">
+                        Axis Bank
+                      </h1>
+                    </th>
+                    <td className="px-6 py-4 font-gola text-sm font-medium text-[#272727]">
+                      -
+                    </td>
+                    <td className="px-6 py-4">
+                      <h1 className="font-gola text-[14px] font-medium text-[#272727]">
+                        Uploaded All
+                      </h1>
+                    </td>
+                    <td className="px-6 py-4">
+                      <h1 className="font-gola text-sm font-medium text-[#272727]">
+                        3rd offer
+                      </h1>
+                    </td>
+                    <td className="px-6 py-4">
+                      <h1 className="font-gola text-[14px] font-medium text-[#272727]">
+                        ₹40,00,000 | 9.85% | 24months
+                      </h1>
+                    </td>
+                    <td>
+                      <button
+                        type="button"
+                        className="ml-3 h-10 mt-5 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                      >
+                        Accept
+                      </button>
+                    </td>
+                  </tr>
+                  <tr className="bg-white rounded-b-lg border-b">
+                    <th scope="row" className="px-6 py-4 flex items-center">
+                      <img src="/hdfc.svg" alt="HDFC Bank" />
+                      <h1 className="ml-5 font-gola text-[14px] font-medium text-[#272727]">
+                        HDFC Bank
+                      </h1>
+                    </th>
+                    <td className="px-6 py-4">
+                      <h1 className="w-[90px] rounded-full font-gola text-[14px] font-medium text-[#128400] bg-[#EDFFEA] px-2 py-1">
+                        Accepted
+                      </h1>
+                    </td>
+                    <td className="px-6 py-4">
+                      <h1 className="font-gola text-[14px] font-medium text-[#272727]">
+                        Uploaded All
+                      </h1>
+                    </td>
+                    <td className="px-6 py-4">
+                      <h1 className="font-gola text-sm font-medium text-[#272727]">
+                        2nd offer
+                      </h1>
+                    </td>
+                    <td className="px-6 py-4">
+                      <h1 className="font-gola text-[14px] font-medium text-[#272727]">
+                        ₹40,00,000 | 9.85% | 24months
+                      </h1>
+                    </td>
+                    <td>
+                      <button
+                        type="button"
+                        className="ml-3 h-10 font-gola border border-[#D5D5D5] text-[#0057E4] bg-[#F5F9FF] font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                      >
+                        View
+                      </button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="desktop:hidden mt-10">
+              <div
+                className="py-[20px] px-[12px]"
+                style={{
+                  border: " 1px solid #EEEEEE",
+                  boxShadow: "0px 4px 4px rgba(184, 184, 184, 0.25)",
+                  borderRadius: "10px",
+                }}
+              >
+                <div className="flex items-center">
+                  <img src="/axis.svg" alt="Axis Bank" />
+                  <h1 className="ml-5 font-gola text-[14px] font-medium text-[#272727]">
+                    Axis Bank
+                  </h1>
+                </div>
+                <div className="mt-[15px]">
+                  <h1 className="font-gola text-[#767676DE] text-sm font-medium">
+                    Document Uploads:
+                  </h1>
+                  <h1 className="font-gola text-[#272727] text-[14px] font-bold">
+                    Uploaded All
+                  </h1>
+                </div>
+                <div className="mt-[15px]">
+                  <div className="flex items-center">
+                    <h1 className="font-gola text-[#767676DE] text-sm font-medium">
+                      Latest Offer (3rd Offer)
+                    </h1>
+                    <h1 className="ml-3 bg-[#FBEFFF] font-gola text-[14px] text-center w-[65px] font-medium px[12px] py-[5px] rounded-full text-[#6B37FF]">
+                      Latest
+                    </h1>
+                  </div>
+                  <h1 className="font-gola text-[#272727] text-[14px] font-bold">
+                    {" "}
+                    ₹40,00,000 | 9.85% | 24months
+                  </h1>
+                </div>
+                <div className="flex justify-end">
+                  <button
+                    type="button"
+                    className="mt-3 h-10 font-gola border border-[#D5D5D5] text-[#0057E4] bg-[#F5F9FF] font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                  >
+                    View
+                  </button>
+                </div>
+              </div>
+              <div
+                className="py-[20px] px-[12px] mt-5"
+                style={{
+                  border: " 1px solid #EEEEEE",
+                  boxShadow: "0px 4px 4px rgba(184, 184, 184, 0.25)",
+                  borderRadius: "10px",
+                }}
+              >
+                <div className="flex items-center">
+                  <img src="/hdfc.svg" alt="Axis Bank" />
+                  <h1 className="ml-5 font-gola text-[14px] font-medium text-[#272727]">
+                    HDFC Bank
+                  </h1>
+                </div>
+                <div className="mt-[15px]">
+                  <h1 className="font-gola text-[#767676DE] text-sm font-medium">
+                    Document Uploads:
+                  </h1>
+                  <h1 className="font-gola text-[#272727] text-[14px] font-bold">
+                    -
+                  </h1>
+                </div>
+                <div className="mt-[15px]">
+                  <div className="flex items-center">
+                    <h1 className="font-gola text-[#767676DE] text-sm font-medium">
+                      Latest Offer (2nd Offer)
+                    </h1>
+                    <h1 className="ml-3 bg-[#FBEFFF] font-gola text-[14px] text-center w-[65px] font-medium px[12px] py-[5px] rounded-full text-[#6B37FF]">
+                      Latest
+                    </h1>
+                  </div>
+                  <h1 className="font-gola text-[#272727] text-[14px] font-bold">
+                    {" "}
+                    ₹40,00,000 | 9.85% | 24months
+                  </h1>
+                </div>
+                <div className="flex justify-end">
+                  <button
+                    type="button"
+                    className="ml-3 h-10 mt-5 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                  >
+                    Accept
+                  </button>
+                </div>
+              </div>
+            </div>
+          </>
+        )}
       </div>
       <Drawer
         isOpen={isOpen}
         variant={
-          isDesktop
+          isDesktop1
             ? "desktopDrawer"
-            : isTablet
+            : isTablet1
             ? "tabletDrawer"
             : "mobileDrawer"
         }

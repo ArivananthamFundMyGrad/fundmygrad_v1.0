@@ -7,7 +7,6 @@ import { Select, useMediaQuery } from "@chakra-ui/react";
 import TelemarketingMobileSidebar from "@/components/reusable/TelemarketingMobileSidebar";
 
 function applicants() {
-  const router = useRouter();
   const [isMobile] = useMediaQuery("(max-width: 767px)");
   const [isOpen, setIsOpen] = useState(false);
   const onOpen = () => {
