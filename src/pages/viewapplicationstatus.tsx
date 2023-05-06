@@ -513,9 +513,13 @@ function viewapplicationstatus() {
                 </div>
               </TabPanel>
               <TabPanel>
-                <div className="p-20">
+                <div className="desktop:p-10 p:5 mt-5">
+                <div className="block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
+                  <h1 className="font-gola font-bold text-[16px]">
+                  OTHER BANK OFFERS
+                  </h1>
                 <OtherBankChart />
-
+</div>
                 </div>
               </TabPanel>
             </TabPanels>
