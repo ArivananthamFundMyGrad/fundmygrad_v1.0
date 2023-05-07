@@ -151,13 +151,13 @@ function dashboard() {
               </div>
             </div>
             <div className="grid desktop:grid-cols-2 gap-2 mt-5">
-              <div className="w-full px-3 pl-5 py-5 block bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100">
+              <div className="w-full px-3 pl-5 py-5 block bg-white border border-gray-200 rounded-lg shadow">
                 <h1 className="font-gola font-sm uppercase font-semibold">
                   Average Offer acceptance
                 </h1>
                 <BarChart1 />
               </div>
-              <div className="w-full px-3 pl-5 py-5 block bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100">
+              <div className="w-full px-3 pl-5 py-5 block bg-white border border-gray-200 rounded-lg shadow">
                 <div className="flex justify-between">
                   <h1 className="font-gola font-sm uppercase font-semibold">
                     Average {isMobile && <br />} Processing Time
@@ -171,7 +171,7 @@ function dashboard() {
               </div>
             </div>
             <div className="grid desktop:grid-cols-2 gap-2 mt-5 mb-5">
-              <div className="w-full px-3 pl-5 py-5 block bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100">
+              <div className="w-full px-3 pl-5 py-5 block bg-white border border-gray-200 rounded-lg shadow">
                 <h1 className="font-gola font-sm uppercase font-semibold">
                   Average - Offered time vs {isMobile && <br />} Accepted time
                 </h1>

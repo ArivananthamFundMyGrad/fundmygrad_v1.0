@@ -4,7 +4,7 @@ function FAQ() {
   const [accordion, setAccordion] = useState("1");
   return (
     <div className="w-full flex flex justify-center tabanddesk:mb-20">
-      <div className="desktop:w-8/12">
+      <div className="desktop:w-8/12 desktop:max-w-custom1300">
         <div className="w-full flex justify-center">
           <h1 className="my-12 text-center text-primary-color text-2xl font-semibold font-gola">
             FREQUENTLY ASKED QUESTIONS

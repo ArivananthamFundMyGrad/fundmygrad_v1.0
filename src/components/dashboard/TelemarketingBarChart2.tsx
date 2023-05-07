@@ -213,6 +213,8 @@ export default function TelemarketingBarChart2() {
           />
         </YAxis>
         <Tooltip
+                cursor={{fill: 'transparent'}}
+
           wrapperStyle={{
             backgroundColor: "#fff",
             outline: "none",

@@ -14,9 +14,9 @@ import screens from "@/utils/screens";
 import { useRouter } from "next/router";
 
 function offers() {
-  const [activeTab, setActiveTab] = useState("3");
+  const [activeTab, setActiveTab] = useState("1");
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const router = useRouter()
+  const router = useRouter();
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const onSidebarOpen = () => {
@@ -24,7 +24,7 @@ function offers() {
   };
   const onSidebarClose = () => {
     setIsSidebarOpen(false);
-  }
+  };
   const { isMobile } = screens();
 
   const [isTablet1] = useMediaQuery(["(min-width: 768px)"]);
@@ -37,7 +37,10 @@ function offers() {
       </Head>
       {!isMobile && <StudentPortalTopbar />}
       {isMobile && (
-        <StudentPortalMobileSidebar isOpen={isSidebarOpen} onClose={onSidebarClose} />
+        <StudentPortalMobileSidebar
+          isOpen={isSidebarOpen}
+          onClose={onSidebarClose}
+        />
       )}
       <div className="w-full mb-5 tabanddesk:px-10 mobile:px-3 min-h-screen">
         <div className="desktop:hidden flex flex-col justify-center mt-10">
@@ -150,9 +153,7 @@ function offers() {
               <div
                 onClick={() => setActiveTab("1")}
                 className={`${
-                  activeTab === "1"
-                    ? "bg-white  rounded-md drop-shadow-md"
-                    : ""
+                  activeTab === "1" ? "bg-white  rounded-md drop-shadow-md" : ""
                 } cursor-pointer flex items-center w-[33%] justify-center`}
               >
                 <div className="flex py-2">
@@ -167,9 +168,7 @@ function offers() {
               <div
                 onClick={() => setActiveTab("2")}
                 className={`${
-                  activeTab === "2"
-                    ? "bg-white  rounded-md drop-shadow-md"
-                    : ""
+                  activeTab === "2" ? "bg-white  rounded-md drop-shadow-md" : ""
                 } cursor-pointer flex items-center w-[33%] justify-center`}
               >
                 <div className="flex py-2">
@@ -187,9 +186,7 @@ function offers() {
               <div
                 onClick={() => setActiveTab("3")}
                 className={`${
-                  activeTab === "3"
-                    ? "bg-white  rounded-md drop-shadow-md	"
-                    : ""
+                  activeTab === "3" ? "bg-white  rounded-md drop-shadow-md	" : ""
                 } cursor-pointer flex items-center ml-3 w-[33%] justify-center`}
               >
                 <div className="flex py-2">
@@ -204,7 +201,8 @@ function offers() {
             </div>
           </div>
           <div>
-            <div className="relative mt-3">
+            <div className="flex mt-3 items-center">
+            <div className="relative  w-full">
               <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                 <svg
                   width="14"
@@ -237,11 +235,13 @@ function offers() {
               <input
                 type="text"
                 id="input-group-1"
-                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5"
+                className="border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5"
                 placeholder="Search"
               />
             </div>
-            <div className="flex items-center mt-3">
+            <img className="ml-[12px]" src="/filter_alt.svg" alt="Filter Image" />
+            </div>
+            {/* <div className="flex items-center mt-5">
               <input
                 defaultChecked
                 id="checked-checkbox"
@@ -255,7 +255,7 @@ function offers() {
               >
                 No Collateral
               </label>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="mobile:hidden tablet:hidden flex flex-col justify-center mt-10">
@@ -1178,10 +1178,15 @@ function offers() {
                   borderRadius: "10px",
                 }}
               >
-                <div className="flex items-center">
-                  <img src="/axis.svg" alt="Axis Bank" />
-                  <h1 className="ml-5 font-gola text-[14px] font-medium text-[#272727]">
-                    Axis Bank
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center">
+                    <img src="/axis.svg" alt="Axis Bank" />
+                    <h1 className="ml-5 font-gola text-[14px] font-medium text-[#272727]">
+                      Axis Bank
+                    </h1>
+                  </div>
+                  <h1 className="font-gola text-[14px] text-[#128400] font-medium bg-[#EDFFEA] py-[4px] px-[12px] w-[90px] rounded-full">
+                    Accepted
                   </h1>
                 </div>
                 <div className="mt-[15px]">
@@ -1402,6 +1407,12 @@ function offers() {
                         />
                       </div>
                     </div>
+                    <div
+                      style={{
+                        border: "1px solid #E8E8E8",
+                        margin: "15px 0",
+                      }}
+                    ></div>
                     <div className="flex tabanddesk:justify-between mt-3">
                       <h1 className="mobile:w-[120px] text-base font-gola font-normal">
                         Voter ID

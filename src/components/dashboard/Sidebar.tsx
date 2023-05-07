@@ -9,17 +9,14 @@ function Sidebar() {
       style={{ border: "1px solid #E3E3E3" }}
       className="flex flex-col items-center min-w-[80px]"
     >
-      <div className="mt-[26px]">
-        <img src="../menu.svg" alt="Menu Icon" />
-      </div>
-      <div className="flex flex-col items-center mt-[60px]">
+      <div className="flex flex-col items-center mt-[40px]">
         <div
           onClick={() => router.push("/bankportal")}
           className={`${
             currentRoute.includes("/bankportal")
-              ? "bg-[#DFECFF] pt-[11px] pb-[11px] pl-[16px] pr-[16px] rounded-lg"
+              ? "bg-[#DFECFF] "
               : ""
-          } cursor-pointer`}
+          } cursor-pointer pt-[11px] pb-[11px] pl-[16px] pr-[16px] rounded-lg`}
         >
           <svg
             width="24"
@@ -43,7 +40,7 @@ function Sidebar() {
             currentRoute.includes("/bankportal")
               ? "font-semibold"
               : "font-normal"
-          } mt-[14px] text-[11px] font-gola`}
+          } mt-[5px] text-[11px] font-gola`}
         >
           Dashboard
         </h1>
@@ -53,9 +50,9 @@ function Sidebar() {
           onClick={() => router.push("/applicants")}
           className={`${
             currentRoute.includes("/applicants") || currentRoute.includes("/viewapplication")
-              ? "bg-[#DFECFF] pt-[11px] pb-[11px] pl-[16px] pr-[16px] rounded-lg"
+              ? "bg-[#DFECFF] "
               : ""
-          } cursor-pointer`}
+          } cursor-pointer pt-[11px] pb-[11px] pl-[16px] pr-[16px] rounded-lg`}
         >
           <svg
             width="24"
@@ -82,7 +79,7 @@ function Sidebar() {
             currentRoute.includes("/applicants") || currentRoute.includes("/viewapplication")
               ? "font-semibold"
               : "font-normal"
-          } mt-[14px] text-[11px] font-gola`}
+          } mt-[5px] text-[11px] font-gola`}
         >
           Applicants
         </h1>
@@ -92,9 +89,9 @@ function Sidebar() {
           onClick={() => router.push("/tracking")}
           className={`${
             currentRoute.includes("/tracking") || currentRoute.includes("/viewapplicationstatus")
-              ? "bg-[#DFECFF] pt-[11px] pb-[11px] pl-[16px] pr-[16px] rounded-lg"
+              ? "bg-[#DFECFF] "
               : ""
-          } cursor-pointer`}
+          } cursor-pointer pt-[11px] pb-[11px] pl-[16px] pr-[16px] rounded-lg`}
         >
           <svg
             width="24"
@@ -128,7 +125,7 @@ function Sidebar() {
         <h1
           className={`${
             currentRoute.includes("/tracking") || currentRoute.includes("/viewapplicationstatus") ? "font-semibold" : "font-normal"
-          } mt-[14px] text-[11px] font-gola`}
+          } mt-[5px] text-[11px] font-gola`}
         >
           Tracking
         </h1>

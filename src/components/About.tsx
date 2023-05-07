@@ -5,22 +5,22 @@ function About() {
   return (
     <div className="w-full flex flex justify-center relative">
       <div className="aboutblob"></div>
-      <div className="desktop:w-10/12 desktop:max-w-custom1300 tablet:w-11/12 mobile:w-11/12	flex flex-col items-center">
+      <div className="desktop:w-10/12 desktop:max-w-custom1500 tablet:w-11/12 mobile:w-11/12	flex flex-col items-center">
         <h1 className="mt-12 text-primary-color text-2xl font-semibold font-gola">
           HOW IT WORKS
         </h1>
-        <div className="flex w-full my-20">
+        <div className="flex mobile:flex-col-reverse w-full tabanddesk:my-20 mobile:my-10">
           <div className="desktop:w-1/2 tablet:w-1/2 w-full tabanddesk:mr-10">
             <div
               onClick={() => setCurrentTab("1")}
-              className={`transition-all cursor-pointer opacity-100 duration-200 w-full flex items-center py-5 px-5 tababdedesk:mr-16 ${
+              className={`transition-all ease-in-out duration-500 cursor-pointer opacity-100 w-full flex items-center py-5 px-5 tababdedesk:mr-16 ${
                 currentTab === "1"
                   ? "bg-tab-color border border-tab-border-color rounded-md"
                   : ""
               }`}
             >
               <h1
-                className={`transition-all duration-200 font-gola desktop:text-2xl tablet:text-xl font-semibold rounded-full bg-grey-bg tabanddesk:w-14 tabanddesk:h-14 flex items-center justify-center
+                className={`transition-all ease-in-out duration-500 font-gola desktop:text-2xl tablet:text-xl font-semibold rounded-full bg-grey-bg tabanddesk:w-14 tabanddesk:h-14 flex items-center justify-center
                 ${
                   currentTab === "1"
                     ? "bg-primary-color text-white"
@@ -42,14 +42,14 @@ function About() {
             </div>
             <div
               onClick={() => setCurrentTab("2")}
-              className={`transition-all opacity-100 cursor-pointer duration-200 flex items-center py-5 px-5 tababdedesk:mr-16 ${
+              className={`transition-all ease-in-out duration-500  opacity-100 cursor-pointer flex items-center py-5 px-5 tababdedesk:mr-16 ${
                 currentTab === "2"
                   ? "bg-tab-color border border-tab-border-color rounded-md"
                   : ""
               }`}
             >
               <h1
-                className={`transition-all duration-200 font-gola desktop:text-2xl tablet:text-xl font-semibold rounded-full bg-grey-bg tabanddesk:w-14 tabanddesk:h-14 flex items-center justify-center
+                className={`transition-all ease-in-out duration-500 font-gola desktop:text-2xl tablet:text-xl font-semibold rounded-full bg-grey-bg tabanddesk:w-14 tabanddesk:h-14 flex items-center justify-center
                 ${
                   currentTab === "2"
                     ? "bg-primary-color text-white"
@@ -71,14 +71,14 @@ function About() {
             </div>
             <div
               onClick={() => setCurrentTab("3")}
-              className={`transition-all duration-200 opacity-100 cursor-pointer flex items-center py-5 px-5 tababdedesk:mr-16 ${
+              className={`transition-all ease-in-out duration-500 opacity-100 cursor-pointer flex items-center py-5 px-5 tababdedesk:mr-16 ${
                 currentTab === "3"
                   ? "bg-tab-color border border-tab-border-color rounded-md"
                   : ""
               }`}
             >
               <h1
-                className={`transition-all duration-200 font-gola desktop:text-2xl tablet:text-xl font-semibold rounded-full bg-grey-bg tabanddesk:w-14 tabanddesk:h-14 flex items-center justify-center
+                className={`transition-all ease-in-out duration-500 font-gola desktop:text-2xl tablet:text-xl font-semibold rounded-full bg-grey-bg tabanddesk:w-14 tabanddesk:h-14 flex items-center justify-center
                 ${
                   currentTab === "3"
                     ? "bg-primary-color text-white"
@@ -100,14 +100,14 @@ function About() {
             </div>
             <div
               onClick={() => setCurrentTab("4")}
-              className={`transition-all duration-200 opacity-100 cursor-pointer flex items-center py-5 px-5 tababdedesk:mr-16 ${
+              className={`transition-all ease-in-out duration-500 opacity-100 cursor-pointer flex items-center py-5 px-5 tababdedesk:mr-16 ${
                 currentTab === "4"
                   ? "bg-tab-color border border-tab-border-color rounded-md"
                   : ""
               }`}
             >
               <h1
-                className={`transition-all duration-200 font-gola desktop:text-2xl tablet:text-xl font-semibold rounded-full bg-grey-bg tabanddesk:w-14 tabanddesk:h-14 flex items-center justify-center
+                className={`transition-all ease-in-out duration-500 font-gola desktop:text-2xl tablet:text-xl font-semibold rounded-full bg-grey-bg tabanddesk:w-14 tabanddesk:h-14 flex items-center justify-center
                 ${
                   currentTab === "4"
                     ? "bg-primary-color text-white"
@@ -128,9 +128,9 @@ function About() {
               </div>
             </div>
           </div>
-          <div className="desktop:w-1/2 tablet:w-1/2 flex items-center h-full mobile:hidden opacity-100">
+          <div className="desktop:w-1/2 tablet:w-1/2 transition-all ease-in-out duration-500 flex items-center mobile:mb-10 h-full">
             <img
-              className="transition-all duration-200 opacity-100"
+              className="opacity-100"
               src={`${currentTab === "1" ? "./tab1.png" : "./tab2.png"}`}
               alt="Tab 1"
             />

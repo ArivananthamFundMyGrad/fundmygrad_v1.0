@@ -18,6 +18,16 @@ function mydocuments() {
     setIsOpen(false);
   };
 
+  const handleTabChange = () => {
+    document.getElementById("myID")?.scrollIntoView({ inline: "start" });
+    setTab("3")
+  };
+
+  const handleLastTabChange = () => {
+    document.getElementById("lastID")?.scrollIntoView({ inline: "start" });
+    setTab("5")
+  };
+
   return (
     <div className="w-full">
       <Head>
@@ -200,7 +210,7 @@ function mydocuments() {
           </div>
         </div>
         <div className="text-sm font-medium text-center text-gray-500 border-b border-gray-200">
-          <ul className="flex overflow-x-auto min-w-screen max-w-screen">
+          <ul className="flex overflow-x-scroll min-w-screen max-w-screen">
             <li className="mr-2">
               <div
                 onClick={() => setTab("1")}
@@ -227,7 +237,9 @@ function mydocuments() {
             </li>
             <li className="mr-2">
               <div
-                onClick={() => setTab("3")}
+                onClick={handleTabChange}
+                id="myID"
+
                 className={`${
                   tab === "3"
                     ? "border-b-2 text-[#0057FF] border-[#0057FF]"
@@ -251,7 +263,8 @@ function mydocuments() {
             </li>
             <li className="mr-2">
               <div
-                onClick={() => setTab("5")}
+                id="lastID"
+                onClick={handleLastTabChange}
                 className={`${
                   tab === "5"
                     ? "border-b-2 text-[#0057FF] border-[#0057FF]"
@@ -315,7 +328,7 @@ function mydocuments() {
             </div>
           </div>
         )}
-         {tab === "2" && (
+        {tab === "2" && (
           <div className="mt-[16px]">
             <h1 className="font-gola text-[14px] font-semibold text-[#0E0E0E]">
               Upload Documents{" "}
@@ -350,7 +363,7 @@ function mydocuments() {
             </div>
           </div>
         )}
-           {tab === "3" && (
+        {tab === "3" && (
           <div className="mt-[16px]">
             <h1 className="font-gola text-[14px] font-semibold text-[#0E0E0E]">
               Upload Documents
@@ -380,7 +393,7 @@ function mydocuments() {
             </div>
           </div>
         )}
-         {tab === "4" && (
+        {tab === "4" && (
           <div className="mt-[16px]">
             <h1 className="font-gola text-[14px] font-semibold text-[#0E0E0E]">
               Upload Documents
@@ -410,7 +423,7 @@ function mydocuments() {
             </div>
           </div>
         )}
-         {tab === "5" && (
+        {tab === "5" && (
           <div className="mt-[16px]">
             <h1 className="font-gola text-[14px] font-semibold text-[#0E0E0E]">
               Upload Documents

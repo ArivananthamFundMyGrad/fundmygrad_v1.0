@@ -11,7 +11,7 @@ import "pure-react-carousel/dist/react-carousel.es.css";
 export default function Index() {
   return (
     <div className="w-full flex flex justify-center">
-      <div className="w-11/12 mb-20">
+      <div className="w-11/12 desktop:max-w-custom1300 mb-20">
         <div className="flex w-full justify-center">
           <h1 className="text-2xl font-gola text-primary-color mb-10 font-semibold">
             TESTIMONIAL

@@ -212,6 +212,8 @@ export default function BarChart2() {
           />
         </YAxis>
         <Tooltip
+                cursor={{fill: 'transparent'}}
+
           wrapperStyle={{
             backgroundColor: "#fff",
             outline: "none",
