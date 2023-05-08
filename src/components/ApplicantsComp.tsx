@@ -3,10 +3,21 @@ import Head from "next/head";
 import { useRouter } from "next/router";
 import { Select } from "@chakra-ui/select";
 import MobileSidebar from "./reusable/MobileSidebar";
+import { Drawer, DrawerContent, DrawerOverlay } from "@chakra-ui/modal";
 
 function ApplicantsComp() {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
+  const [isFilterSidebarOpen, setIsFilterSidebarOpen] = useState(false);
+
+  const onFilterSidebarOpen = () => {
+    setIsFilterSidebarOpen(true);
+  };
+
+  const onFilterSidebarClose = () => {
+    setIsFilterSidebarOpen(false);
+  };
+
   const onOpen = () => {
     setIsOpen(true);
   };
@@ -20,80 +31,63 @@ function ApplicantsComp() {
       </Head>
       <div className="relative w-11/12 mb-20">
         <div className="mobile:hidden flex items-center mt-10">
-          <h1 className="font-gola text-[28px] font-bold">Applications</h1>
-          <div className="ml-5 relative">
-            <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-              <svg
-                width="14"
-                height="14"
-                viewBox="0 0 14 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clipPath="url(#clip0_56_3185)">
-                  <rect
-                    width="14"
-                    height="14"
-                    fill="white"
-                    fillOpacity="0.01"
-                  />
-                  <path
-                    fillRule="evenodd"
-                    clipRule="evenodd"
-                    d="M9.47653 10.8907C8.49572 11.5892 7.29583 12 6 12C2.68629 12 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6C12 7.29583 11.5892 8.49572 10.8907 9.47653L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L9.47653 10.8907ZM10 6C10 8.20914 8.20914 10 6 10C3.79086 10 2 8.20914 2 6C2 3.79086 3.79086 2 6 2C8.20914 2 10 3.79086 10 6Z"
-                    fill="#6B778C"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_56_3185">
-                    <rect width="14" height="14" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
+          <div className="flex items-center">
+            <h1 className="font-gola text-[28px] font-bold">Applications</h1>
+            <div className="ml-5 relative">
+              <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clipPath="url(#clip0_56_3185)">
+                    <rect
+                      width="14"
+                      height="14"
+                      fill="white"
+                      fillOpacity="0.01"
+                    />
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M9.47653 10.8907C8.49572 11.5892 7.29583 12 6 12C2.68629 12 0 9.31371 0 6C0 2.68629 2.68629 0 6 0C9.31371 0 12 2.68629 12 6C12 7.29583 11.5892 8.49572 10.8907 9.47653L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L9.47653 10.8907ZM10 6C10 8.20914 8.20914 10 6 10C3.79086 10 2 8.20914 2 6C2 3.79086 3.79086 2 6 2C8.20914 2 10 3.79086 10 6Z"
+                      fill="#6B778C"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_56_3185">
+                      <rect width="14" height="14" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <input
+                type="text"
+                id="input-group-1"
+                className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5"
+                placeholder="Search"
+              />
             </div>
-            <input
-              type="text"
-              id="input-group-1"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5"
-              placeholder="Search"
-            />
           </div>
-          <div className="ml-5 relative">
-            <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-              <svg
-                width="12"
-                height="8"
-                viewBox="0 0 12 8"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6.70639 6.8275L10.9464 2.5875C11.0401 2.49454 11.1145 2.38394 11.1653 2.26208C11.216 2.14022 11.2422 2.00951 11.2422 1.8775C11.2422 1.74549 11.216 1.61478 11.1653 1.49292C11.1145 1.37107 11.0401 1.26046 10.9464 1.1675C10.759 0.98125 10.5056 0.876709 10.2414 0.876709C9.9772 0.876709 9.72375 0.98125 9.53639 1.1675L5.99639 4.7075L2.45639 1.1675C2.26903 0.98125 2.01557 0.876709 1.75139 0.876709C1.4872 0.876709 1.23375 0.98125 1.04639 1.1675C0.953708 1.26094 0.880383 1.37176 0.830618 1.49359C0.780853 1.61543 0.755629 1.74589 0.75639 1.8775C0.755629 2.00911 0.780853 2.13957 0.830618 2.26141C0.880382 2.38324 0.953708 2.49406 1.04639 2.5875L5.28639 6.8275C5.37935 6.92123 5.48995 6.99562 5.61181 7.04639C5.73367 7.09716 5.86438 7.1233 5.99639 7.1233C6.1284 7.1233 6.25911 7.09716 6.38097 7.04639C6.50282 6.99562 6.61343 6.92123 6.70639 6.8275Z"
-                  fill="#989898"
-                />
-              </svg>
-            </div>
-            <input
-              type="text"
-              id="input-group-1"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-              placeholder="Latest"
-            />
-          </div>
-          <div className="flex items-center ml-5">
-            <input
-              defaultChecked
-              id="checked-checkbox"
-              type="checkbox"
-              value=""
-              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-            />
-            <label
-              htmlFor="checked-checkbox"
-              className="ml-2 text-sm font-medium text-[#202020] font-gola"
+          <div
+            onClick={onFilterSidebarOpen}
+            className="cursor-pointer flex items-center border-[#CECECE] border-[1px] rounded-lg ml-5"
+          >
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              Only show ‘With Collateral’
-            </label>
+              <path
+                d="M15.0484 14H25.0484L20.0384 20.3L15.0484 14ZM12.2984 13.61C14.3184 16.2 18.0484 21 18.0484 21V27C18.0484 27.55 18.4984 28 19.0484 28H21.0484C21.5984 28 22.0484 27.55 22.0484 27V21C22.0484 21 25.7684 16.2 27.7884 13.61C28.2984 12.95 27.8284 12 26.9984 12H13.0884C12.2584 12 11.7884 12.95 12.2984 13.61Z"
+                fill="#0057E4"
+              />
+            </svg>
+            <h1 className="font-gola text-base mr-[90px]">Filter</h1>
           </div>
         </div>
         <div className="tabanddesk:hidden">
@@ -129,7 +123,7 @@ function ApplicantsComp() {
           <table className="w-full text-sm text-left text-gray-500">
             <thead className="text-xs text-gray-700 uppercase border-b">
               <tr>
-                <th scope="col" className=" px-6 py-3">
+                <th scope="col" className="px-[0.5rem] py-3">
                   <div className="flex items-center">
                     <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                       Applicant Name
@@ -149,7 +143,47 @@ function ApplicantsComp() {
                     </svg>
                   </div>
                 </th>
-                <th scope="col" className=" px-6 py-3">
+                <th scope="col" className="px-[0.5rem] py-3">
+                  <div className="flex items-center">
+                    <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                      State
+                    </h1>
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 6L10.9425 4.9425L6.75 9.1275V0H5.25V9.1275L1.065 4.935L0 6L6 12L12 6Z"
+                        fill="#767676"
+                        fillOpacity="0.87"
+                      />
+                    </svg>
+                  </div>
+                </th>
+                <th scope="col" className="px-[0.5rem] py-3">
+                  <div className="flex items-center">
+                    <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                     City
+                    </h1>
+                    <svg
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 6L10.9425 4.9425L6.75 9.1275V0H5.25V9.1275L1.065 4.935L0 6L6 12L12 6Z"
+                        fill="#767676"
+                        fillOpacity="0.87"
+                      />
+                    </svg>
+                  </div>
+                </th>
+                <th scope="col" className="px-[0.5rem] py-3">
                   <div className="flex items-center">
                     <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                       Loan Amount
@@ -169,7 +203,7 @@ function ApplicantsComp() {
                     </svg>
                   </div>
                 </th>
-                <th scope="col" className=" px-6 py-3">
+                <th scope="col" className="px-[0.5rem] py-3">
                   <div className="flex items-center">
                     <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                       Collateral
@@ -189,27 +223,7 @@ function ApplicantsComp() {
                     </svg>
                   </div>
                 </th>
-                <th scope="col" className=" px-6 py-3">
-                  <div className="flex items-center">
-                    <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
-                      Admit status
-                    </h1>
-                    <svg
-                      width="12"
-                      height="12"
-                      viewBox="0 0 12 12"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12 6L10.9425 4.9425L6.75 9.1275V0H5.25V9.1275L1.065 4.935L0 6L6 12L12 6Z"
-                        fill="#767676"
-                        fillOpacity="0.87"
-                      />
-                    </svg>
-                  </div>
-                </th>
-                <th scope="col" className=" px-6 py-3">
+                <th scope="col" className="px-[0.5rem] py-3">
                   <div className="flex items-center">
                     <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                       Opt. College
@@ -229,7 +243,7 @@ function ApplicantsComp() {
                     </svg>
                   </div>
                 </th>
-                <th scope="col" className=" px-6 py-3">
+                <th scope="col" className="px-[0.5rem] py-3">
                   <div className="flex items-center">
                     <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                       Opt. Country
@@ -249,7 +263,7 @@ function ApplicantsComp() {
                     </svg>
                   </div>
                 </th>
-                <th scope="col" className=" px-6 py-3">
+                <th scope="col" className="px-[0.5rem]py-3">
                   <div className="flex items-center">
                     <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87]">
                       Action
@@ -260,32 +274,36 @@ function ApplicantsComp() {
             </thead>
             <tbody>
               <tr className="bg-white border-b">
-                <th scope="row" className="px-6 py-4">
+                <th scope="row" className="px-[0.5rem] py-4">
                   <h1 className="font-gola text-sm font-medium text-black">
                     Nikhil Mathew
                   </h1>
-                  <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
-                    Coimbatore, TN
-                  </h1>
                 </th>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
+                <td scope="row" className="px-[0.5rem] py-4">
+                  <h1 className="font-gola text-sm font-medium text-black">
+                  Delhi
+                  </h1>
+                </td>
+                <td scope="row" className="px-[0.5rem] py-4">
+                  <h1 className="font-gola text-sm font-medium text-black">
+                  West Delhi	
+                  </h1>
+                </td>
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                   ₹40,00,000
                 </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                   Yes
                 </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  Yet to apply
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                The University of Manchester
                 </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  University of California Midtown
-                </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  USA
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                  UK
                 </td>
                 <td>
                   <button
-                    onClick={() => router.push("/viewapplication")}
+                  onClick={()=>router.push("/viewapplication")}
                     type="button"
                     className="h-10 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                   >
@@ -294,130 +312,32 @@ function ApplicantsComp() {
                 </td>
               </tr>
               <tr className="bg-white border-b">
-                <th scope="row" className="px-6 py-4">
+                <th scope="row" className="px-[0.5rem] py-4">
                   <h1 className="font-gola text-sm font-medium text-black">
-                    Nikhil Mathew
-                  </h1>
-                  <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
-                    Coimbatore, TN
+                  Bhaskar Patil	
                   </h1>
                 </th>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  ₹40,00,000
-                </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  Yes
-                </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  Yet to apply
-                </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  University of California Midtown
-                </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  USA
-                </td>
-                <td>
-                  <button
-                    onClick={() => router.push("/viewapplication")}
-                    type="button"
-                    className="h-10 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
-                  >
-                    View
-                  </button>
-                </td>
-              </tr>
-              <tr className="bg-white border-b">
-                <th scope="row" className="px-6 py-4">
+                <td scope="row" className="px-[0.5rem] py-4">
                   <h1 className="font-gola text-sm font-medium text-black">
-                    Nikhil Mathew
+                  Maharashtra
                   </h1>
-                  <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
-                    Coimbatore, TN
-                  </h1>
-                </th>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  ₹40,00,000
                 </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  Yes
-                </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  Yet to apply
-                </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  University of California Midtown
-                </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  USA
-                </td>
-                <td>
-                  <button
-                    onClick={() => router.push("/viewapplication")}
-                    type="button"
-                    className="h-10 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
-                  >
-                    View
-                  </button>
-                </td>
-              </tr>
-              <tr className="bg-white border-b">
-                <th scope="row" className="px-6 py-4">
+                <td scope="row" className="px-[0.5rem] py-4">
                   <h1 className="font-gola text-sm font-medium text-black">
-                    Nikhil Mathew
+                  Pune		
                   </h1>
-                  <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
-                    Coimbatore, TN
-                  </h1>
-                </th>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  ₹40,00,000
                 </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  Yes
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                  ₹3,200,000	
                 </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  Yet to apply
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                  No
                 </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  University of California Midtown
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                Massachusetts Institute of Technology
                 </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  USA
-                </td>
-                <td>
-                  <button
-                    onClick={() => router.push("/viewapplication")}
-                    type="button"
-                    className="h-10 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
-                  >
-                    View
-                  </button>
-                </td>
-              </tr>
-              <tr className="bg-white border-b">
-                <th scope="row" className="px-6 py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
-                    Nikhil Mathew
-                  </h1>
-                  <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
-                    Coimbatore, TN
-                  </h1>
-                </th>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  ₹40,00,000
-                </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  Yes
-                </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  Yet to apply
-                </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  University of California Midtown
-                </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  USA
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                USA
                 </td>
                 <td>
                   <button
@@ -429,32 +349,35 @@ function ApplicantsComp() {
                 </td>
               </tr>
               <tr className="bg-white border-b">
-                <th scope="row" className="px-6 py-4">
+                <th scope="row" className="px-[0.5rem] py-4">
                   <h1 className="font-gola text-sm font-medium text-black">
-                    Nikhil Mathew
-                  </h1>
-                  <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
-                    Coimbatore, TN
+                  Arindam Saha		
                   </h1>
                 </th>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  ₹40,00,000
+                <td scope="row" className="px-[0.5rem] py-4">
+                  <h1 className="font-gola text-sm font-medium text-black">
+                  Tamil Nadu
+                  </h1>
                 </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
+                <td scope="row" className="px-[0.5rem] py-4">
+                  <h1 className="font-gola text-sm font-medium text-black">
+                  Chennai		
+                  </h1>
+                </td>
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                  ₹2,000,000		
+                </td>
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                   Yes
                 </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  Yet to apply
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                Carnegie Mellon University	
                 </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  University of California Midtown
-                </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  USA
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                USA
                 </td>
                 <td>
                   <button
-                    onClick={() => router.push("/viewapplication")}
                     type="button"
                     className="h-10 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                   >
@@ -463,32 +386,35 @@ function ApplicantsComp() {
                 </td>
               </tr>
               <tr className="bg-white border-b">
-                <th scope="row" className="px-6 py-4">
+                <th scope="row" className="px-[0.5rem] py-4">
                   <h1 className="font-gola text-sm font-medium text-black">
-                    Nikhil Mathew
-                  </h1>
-                  <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
-                    Coimbatore, TN
+                  Anamika Ranaut	
                   </h1>
                 </th>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  ₹40,00,000
+                <td scope="row" className="px-[0.5rem] py-4">
+                  <h1 className="font-gola text-sm font-medium text-black">
+                  Delhi
+                  </h1>
                 </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  Yes
+                <td scope="row" className="px-[0.5rem] py-4">
+                  <h1 className="font-gola text-sm font-medium text-black">
+                  Central Delhi		
+                  </h1>
                 </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  Yet to apply
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                  ₹3,500,000		
                 </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  University of California Midtown
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                  No
                 </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  USA
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                Heidelberg University	
+                </td>
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                Germany
                 </td>
                 <td>
                   <button
-                    onClick={() => router.push("/viewapplication")}
                     type="button"
                     className="h-10 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                   >
@@ -497,32 +423,35 @@ function ApplicantsComp() {
                 </td>
               </tr>
               <tr className="bg-white border-b">
-                <th scope="row" className="px-6 py-4">
+                <th scope="row" className="px-[0.5rem] py-4">
                   <h1 className="font-gola text-sm font-medium text-black">
-                    Nikhil Mathew
-                  </h1>
-                  <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
-                    Coimbatore, TN
+                  Aarif Khan	
                   </h1>
                 </th>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  ₹40,00,000
+                <td scope="row" className="px-[0.5rem] py-4">
+                  <h1 className="font-gola text-sm font-medium text-black">
+                  Rajasthan
+                  </h1>
                 </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
+                <td scope="row" className="px-[0.5rem] py-4">
+                  <h1 className="font-gola text-sm font-medium text-black">
+                  Jaipur		
+                  </h1>
+                </td>
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                  ₹4,500,000	
+                </td>
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                   Yes
                 </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  Yet to apply
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                University of Western Australia	
                 </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  University of California Midtown
-                </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  USA
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                Australia
                 </td>
                 <td>
                   <button
-                    onClick={() => router.push("/viewapplication")}
                     type="button"
                     className="h-10 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                   >
@@ -531,32 +460,183 @@ function ApplicantsComp() {
                 </td>
               </tr>
               <tr className="bg-white border-b">
-                <th scope="row" className="px-6 py-4">
+                <th scope="row" className="px-[0.5rem] py-4">
                   <h1 className="font-gola text-sm font-medium text-black">
-                    Nikhil Mathew
-                  </h1>
-                  <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
-                    Coimbatore, TN
+                  Ankit R Patel	
                   </h1>
                 </th>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  ₹40,00,000
+                <td scope="row" className="px-[0.5rem] py-4">
+                  <h1 className="font-gola text-sm font-medium text-black">
+                  Gujarat	
+                  </h1>
                 </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  Yes
+                <td scope="row" className="px-[0.5rem] py-4">
+                  <h1 className="font-gola text-sm font-medium text-black">
+                  Vadodara		
+                  </h1>
                 </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  Yet to apply
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                  ₹1,800,000	
                 </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  University of California Midtown
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                  No
                 </td>
-                <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                  USA
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                Paris College of Art		
+                </td>
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                France
                 </td>
                 <td>
                   <button
-                    onClick={() => router.push("/viewapplication")}
+                    type="button"
+                    className="h-10 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                  >
+                    View
+                  </button>
+                </td>
+              </tr>
+              <tr className="bg-white border-b">
+                <th scope="row" className="px-[0.5rem] py-4">
+                  <h1 className="font-gola text-sm font-medium text-black">
+                  Atraye Panchanan	
+                  </h1>
+                </th>
+                <td scope="row" className="px-[0.5rem] py-4">
+                  <h1 className="font-gola text-sm font-medium text-black">
+                  Punjab	
+                  </h1>
+                </td>
+                <td scope="row" className="px-[0.5rem] py-4">
+                  <h1 className="font-gola text-sm font-medium text-black">
+                  Ludhiana		
+                  </h1>
+                </td>
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                  ₹2,500,000
+                </td>
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                  Yes
+                </td>
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                Queen Mary University of London	
+                </td>
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                UK
+                </td>
+                <td>
+                  <button
+                    type="button"
+                    className="h-10 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                  >
+                    View
+                  </button>
+                </td>
+              </tr>
+              <tr className="bg-white border-b">
+                <th scope="row" className="px-[0.5rem] py-4">
+                  <h1 className="font-gola text-sm font-medium text-black">
+                  Ch.Anush Kumar		
+                  </h1>
+                </th>
+                <td scope="row" className="px-[0.5rem] py-4">
+                  <h1 className="font-gola text-sm font-medium text-black">
+                  Andhra Pradesh		
+                  </h1>
+                </td>
+                <td scope="row" className="px-[0.5rem] py-4">
+                  <h1 className="font-gola text-sm font-medium text-black">
+                  Visakhapatnam		
+                  </h1>
+                </td>
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                  ₹3,000,000
+                </td>
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                  Yes
+                </td>
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                Carleton University		
+                </td>
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                Canada
+                </td>
+                <td>
+                  <button
+                    type="button"
+                    className="h-10 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                  >
+                    View
+                  </button>
+                </td>
+              </tr>
+              <tr className="bg-white border-b">
+                <th scope="row" className="px-[0.5rem] py-4">
+                  <h1 className="font-gola text-sm font-medium text-black">
+                  Ananya.R	
+                  </h1>
+                </th>
+                <td scope="row" className="px-[0.5rem] py-4">
+                  <h1 className="font-gola text-sm font-medium text-black">
+                  Karnataka	
+                  </h1>
+                </td>
+                <td scope="row" className="px-[0.5rem] py-4">
+                  <h1 className="font-gola text-sm font-medium text-black">
+                  Bengaluru		
+                  </h1>
+                </td>
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                  ₹2,800,000	
+                </td>
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                  Yes
+                </td>
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                Swinburne University of Technology		
+                </td>
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                Australia
+                </td>
+                <td>
+                  <button
+                    type="button"
+                    className="h-10 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                  >
+                    View
+                  </button>
+                </td>
+              </tr>
+              <tr className="bg-white border-b">
+                <th scope="row" className="px-[0.5rem] py-4">
+                  <h1 className="font-gola text-sm font-medium text-black">
+                  Anchit Sahni		
+                  </h1>
+                </th>
+                <td scope="row" className="px-[0.5rem] py-4">
+                  <h1 className="font-gola text-sm font-medium text-black">
+                  West Bengal	
+                  </h1>
+                </td>
+                <td scope="row" className="px-[0.5rem] py-4">
+                  <h1 className="font-gola text-sm font-medium text-black">
+                  Kolkata	
+                  </h1>
+                </td>
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                  ₹2,200,000	
+                </td>
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                  Yes
+                </td>
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                University of Calgary		
+                </td>
+                <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                Canada
+                </td>
+                <td>
+                  <button
                     type="button"
                     className="h-10 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                   >
@@ -619,7 +699,7 @@ function ApplicantsComp() {
                 Opted country
               </h1>
               <h1 className="text-right text-[#292929] font-medium text-base font-gola">
-                United States of America
+               USA
               </h1>
             </div>
           </div>
@@ -673,7 +753,7 @@ function ApplicantsComp() {
                 Opted country
               </h1>
               <h1 className="text-right text-[#292929] font-medium text-base font-gola">
-                United States of America
+               USA
               </h1>
             </div>
           </div>
@@ -727,7 +807,7 @@ function ApplicantsComp() {
                 Opted country
               </h1>
               <h1 className="text-right text-[#292929] font-medium text-base font-gola">
-                United States of America
+               USA
               </h1>
             </div>
           </div>
@@ -781,7 +861,7 @@ function ApplicantsComp() {
                 Opted country
               </h1>
               <h1 className="text-right text-[#292929] font-medium text-base font-gola">
-                United States of America
+               USA
               </h1>
             </div>
           </div>
@@ -835,13 +915,90 @@ function ApplicantsComp() {
                 Opted country
               </h1>
               <h1 className="text-right text-[#292929] font-medium text-base font-gola">
-                United States of America
+               USA
               </h1>
             </div>
           </div>
         </div>
       </div>
       <MobileSidebar isOpen={isOpen} onClose={onClose} />
+      <Drawer
+        isOpen={isFilterSidebarOpen}
+        placement="right"
+        onClose={onFilterSidebarClose}
+        size={"md"}
+      >
+        <DrawerOverlay />
+        <DrawerContent>
+          <div className="flex flex-col h-full justify-between">
+            <div className="p-5">
+              <div className="w-full flex items-center justify-between">
+                <h1 className="text-2xl font-gola font-semibold">
+                  Filter Options
+                </h1>
+                <img
+                  onClick={onFilterSidebarClose}
+                  className="cursor-pointer"
+                  src="../close.svg"
+                  alt="Close Icon"
+                />
+              </div>
+              <div className="w-full mt-5">
+                <Select style={{ height: "45px" }} bg="white">
+                  <option value="option1">Latest</option>
+                  <option value="option1">Last 1 week</option>
+                  <option value="option1">Last 1 month</option>
+                </Select>
+              </div>
+              <div className="w-full mt-5">
+                <Select style={{ height: "45px" }} bg="white">
+                  <option value="option1">Select State</option>
+                  <option value="option1">Tamil Nadu</option>
+                  <option value="option1">Andhra Pradesh</option>
+                </Select>
+              </div>
+              <div className="w-full mt-5">
+                <Select style={{ height: "45px" }} bg="white">
+                  <option value="option1">Select District</option>
+                  <option value="option1">Chennai</option>
+                  <option value="option1">Banglore</option>
+                </Select>
+              </div>
+              <div className="w-full mt-5">
+                <Select style={{ height: "45px" }} bg="white">
+                  <option value="option1">Select Loan Amount Range</option>
+                  <option value="option1">Chennai</option>
+                  <option value="option1">Banglore</option>
+                </Select>
+              </div>
+              <div className="flex items-center mt-7">
+                <input
+                  defaultChecked
+                  id="checked-checkbox"
+                  type="checkbox"
+                  value=""
+                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                />
+                <label
+                  htmlFor="checked-checkbox"
+                  className="ml-3 text-sm font-medium text-[#202020] font-gola"
+                >
+                  Only show ‘With Collateral’
+                </label>
+              </div>
+            </div>
+            <div className="p-5 w-full">
+              <button
+                onClick={onFilterSidebarClose}
+                type="button"
+                className="w-full h-[45px] mt-5 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-base px-5 py-2.5 focus:outline-none"
+              >
+                Apply
+              </button>
+            </div>
+          </div>
+        </DrawerContent>
+      </Drawer>
     </div>
   );
 }

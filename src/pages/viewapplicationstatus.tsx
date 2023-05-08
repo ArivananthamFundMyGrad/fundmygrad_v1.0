@@ -5,7 +5,8 @@ import { useRouter } from "next/router";
 import { Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/tabs";
 import { Drawer, DrawerContent, DrawerOverlay } from "@chakra-ui/modal";
 import { useDisclosure, useMediaQuery } from "@chakra-ui/react";
-import OtherBankChart from "@/components/dashboard/OtherBankChart";
+import OtherBankChart from "@/components/dashboard/OtherBankOffers1";
+import NewChart from "@/components/NoSSRComp";
 
 function viewapplicationstatus() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -514,12 +515,12 @@ function viewapplicationstatus() {
               </TabPanel>
               <TabPanel>
                 <div className="desktop:p-10 p:5 mt-5">
-                <div className="block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
-                  <h1 className="font-gola font-bold text-[16px]">
-                  OTHER BANK OFFERS
-                  </h1>
-                <OtherBankChart />
-</div>
+                  <div className="block p-6 bg-white border border-gray-200 rounded-lg shadow ">
+                    <h1 className="font-gola font-bold text-[16px]">
+                      OTHER BANK OFFERS
+                    </h1>
+                    <NewChart />
+                  </div>
                 </div>
               </TabPanel>
             </TabPanels>

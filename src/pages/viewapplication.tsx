@@ -74,7 +74,7 @@ function viewapplication() {
                       Admit Status
                     </h1>
                     <h1 className="text-[#292929] font-medium text-base font-gola">
-                      Yet to apply
+                     Received Admit
                     </h1>
                   </div>
                   <div className="flex items-center justify-between mt-2">
@@ -98,7 +98,7 @@ function viewapplication() {
                       City, State
                     </h1>
                     <h1 className="text-[#292929] font-medium text-base font-gola">
-                      Coimbatore, 641606, TN
+                      Coimbatore, Tamil Nadu
                     </h1>
                   </div>
                 </div>
@@ -135,7 +135,7 @@ function viewapplication() {
                       Phone number
                     </h1>
                     <h1 className="text-[#292929] font-medium text-base font-gola">
-                      +91 9878675432
+                      +91 98786*****
                     </h1>
                   </div>
                   <div className="flex items-center justify-between mt-2">
@@ -143,7 +143,7 @@ function viewapplication() {
                       Email
                     </h1>
                     <h1 className="break-words text-right text-[#292929] font-medium text-base font-gola">
-                      muruaganandham@gmzil.com
+                      *****anandham@gmail.com
                     </h1>
                   </div>
                 </div>
@@ -158,7 +158,7 @@ function viewapplication() {
                       Prog. start date
                     </h1>
                     <h1 className="text-[#292929] font-medium text-base font-gola">
-                      1 Mar 2023
+                      1 Aug 2023
                     </h1>
                   </div>
                   <div className="flex items-center justify-between mt-2">
@@ -175,14 +175,6 @@ function viewapplication() {
                     </h1>
                     <h1 className="text-[#292929] font-medium text-base font-gola">
                       2 years
-                    </h1>
-                  </div>
-                  <div className="flex items-center justify-between mt-2">
-                    <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
-                      Admit Status
-                    </h1>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
-                      Yet to apply
                     </h1>
                   </div>
                 </div>
@@ -219,7 +211,7 @@ function viewapplication() {
                       Backlog
                     </h1>
                     <h1 className="text-[#292929] font-medium text-base font-gola">
-                      Yes
+                      No
                     </h1>
                   </div>
                 </div>
@@ -234,7 +226,7 @@ function viewapplication() {
                       Collateral type
                     </h1>
                     <h1 className="text-[#292929] font-medium text-base font-gola">
-                      1 Mar 2023
+                      Residential Property
                     </h1>
                   </div>
                   <div className="flex items-center justify-between mt-2">
@@ -252,7 +244,7 @@ function viewapplication() {
                   </h5>
                   <div className="flex items-center justify-between mt-3">
                     <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
-                      Previous work {isMobile && <br/>} experience
+                     Work {isMobile && <br/>} experience
                     </h1>
                     <h1 className="text-[#292929] font-medium text-base font-gola">
                       9 months
@@ -263,7 +255,7 @@ function viewapplication() {
                       Salary
                     </h1>
                     <h1 className="text-[#292929] font-medium text-base font-gola">
-                      ₹40,00,000
+                      ₹8,00,000 P.A
                     </h1>
                   </div>
                 </div>
@@ -279,20 +271,20 @@ function viewapplication() {
                       189
                     </h1>
                   </div>
-                  <div className="flex items-center justify-between mt-2">
+                  {/* <div className="flex items-center justify-between mt-2">
                     <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
                       GMAT
                     </h1>
                     <h1 className="text-[#292929] font-medium text-base font-gola">
                       177
                     </h1>
-                  </div>
+                  </div> */}
                   <div className="flex items-center justify-between mt-2">
                     <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
                       IELTS
                     </h1>
                     <h1 className="text-[#292929] font-medium text-base font-gola">
-                      166
+                      7.0
                     </h1>
                   </div>
                 </div>
@@ -307,6 +299,7 @@ function viewapplication() {
           >
             <DrawerOverlay />
             <DrawerContent>
+              <div className="flex flex-col h-full w-full justify-between">
               <div className="p-5">
                 <div className="w-full flex items-center justify-between">
                   <h1 className="text-2xl font-gola font-semibold">Offer</h1>
@@ -402,7 +395,7 @@ function viewapplication() {
                     During the Course
                   </label>
                 </div>
-                <div className="flex items-center mt-3">
+                {/* <div className="flex items-center mt-3">
                   <input
                     defaultChecked
                     id="checked-checkbox"
@@ -416,7 +409,17 @@ function viewapplication() {
                   >
                     Type 3
                   </label>
-                </div>
+                </div> */}
+              </div>
+              <div className="p-5 w-full">
+              <button
+                onClick={onClose}
+                type="button"
+                className="w-full h-10 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+              >
+                Submit
+              </button>
+              </div>
               </div>
             </DrawerContent>
           </Drawer>

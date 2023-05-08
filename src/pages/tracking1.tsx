@@ -261,6 +261,7 @@ function tracking() {
                                   </svg>
                                 </div>
                               </th>
+
                               <th scope="col" className="px-[0.5rem] py-3">
                                 <div className="flex items-center">
                                   <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87]">
@@ -294,12 +295,12 @@ function tracking() {
                                 7.50% | 36 M
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
+                              <h1 className="font-gola text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
                                   Fully Uploaded
                                 </h1>
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
+                                <h1 className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[100px] text-center rounded-lg">
                                   Accepted
                                 </h1>
                               </td>
@@ -309,7 +310,7 @@ function tracking() {
                                     router.push("/viewapplicationstatus")
                                   }
                                   type="button"
-                                  className="h-10 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                                  className="h-10 font-gola border border-[#D5D5D5] text-[#0057E4] bg-[#F5F9FF] font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                                 >
                                   View
                                 </button>
@@ -338,21 +339,16 @@ function tracking() {
                                 7.50% | 36 M
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#FFECEC] w-[140px] text-center rounded-lg">
-                                  2 Pending
+                              <h1 className="font-gola text-sm font-medium text-[black] bg-[#FFECEC] w-[140px] text-center rounded-lg">
+                              2 Pending
                                 </h1>
                               </td>
-
-                              <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
-                                  Accepted
-                                </h1>
+                             
+                              <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-[#1EA808]">
+                                Accepted
                               </td>
                               <td>
-                              <button
-                                  onClick={() =>
-                                    router.push("/viewapplicationstatus")
-                                  }
+                                <button
                                   type="button"
                                   className="h-10 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                                 >
@@ -385,16 +381,11 @@ function tracking() {
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                                 -
                               </td>
-                              <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#FFECEC] w-[140px] text-center rounded-lg">
-                                  Yet to Accept
-                                </h1>
+                              <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-[#FF2222]">
+                                Yet to Accept
                               </td>
                               <td>
-                                  <button
-                                  onClick={() =>
-                                    router.push("/viewapplicationstatus")
-                                  }
+                                <button
                                   type="button"
                                   className="h-10 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                                 >
@@ -424,21 +415,14 @@ function tracking() {
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                                 7.50% | 36 M
                               </td>
-                              <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
-                                  Fully Uploaded
-                                </h1>
+                              <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-[#1EA808]">
+                                Fully Uploaded
                               </td>
-                              <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
-                                  Accepted
-                                </h1>
+                              <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-[#1EA808]">
+                                Accepted
                               </td>
                               <td>
-                                  <button
-                                  onClick={() =>
-                                    router.push("/viewapplicationstatus")
-                                  }
+                                <button
                                   type="button"
                                   className="h-10 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                                 >
@@ -471,16 +455,11 @@ function tracking() {
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                                 -
                               </td>
-                              <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#FFECEC] w-[140px] text-center rounded-lg">
-                                  Yet to Accept
-                                </h1>
+                              <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-[#FF2222]">
+                                Yet to Accept
                               </td>
                               <td>
-                                  <button
-                                  onClick={() =>
-                                    router.push("/viewapplicationstatus")
-                                  }
+                                <button
                                   type="button"
                                   className="h-10 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                                 >
@@ -510,21 +489,14 @@ function tracking() {
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                                 7.50% | 36 M
                               </td>
-                              <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#FFECEC] w-[140px] text-center rounded-lg">
-                                  1 Pending
-                                </h1>
+                              <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-[#FF2222]">
+                                1 Pending
                               </td>
-                              <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
-                                  Accepted
-                                </h1>
+                              <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-[#1EA808]">
+                                Accepted
                               </td>
                               <td>
-                                  <button
-                                  onClick={() =>
-                                    router.push("/viewapplicationstatus")
-                                  }
+                                <button
                                   type="button"
                                   className="h-10 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                                 >
@@ -555,20 +527,13 @@ function tracking() {
                                 7.50% | 36 M
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
-                                  Fully Uploaded
-                                </h1>
+                                Fully Uploaded
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="py-[5px] font-gola text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
-                                  Accepted
-                                </h1>
+                                Accepted
                               </td>
                               <td>
-                                  <button
-                                  onClick={() =>
-                                    router.push("/viewapplicationstatus")
-                                  }
+                                <button
                                   type="button"
                                   className="h-10 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                                 >
@@ -601,16 +566,11 @@ function tracking() {
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                                 -
                               </td>
-                              <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="py-[5px] font-gola text-sm font-medium text-[black] bg-[#FFECEC] w-[140px] text-center rounded-lg">
-                                  Yet to Accept
-                                </h1>
+                              <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-[#FF2222]">
+                                Yet to Accept
                               </td>
                               <td>
-                                  <button
-                                  onClick={() =>
-                                    router.push("/viewapplicationstatus")
-                                  }
+                                <button
                                   type="button"
                                   className="h-10 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                                 >
@@ -643,16 +603,11 @@ function tracking() {
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                                 -
                               </td>
-                              <td className="px-[0.5rem] py- font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#FFECEC] w-[140px] text-center rounded-lg">
-                                  Yet to Accept
-                                </h1>
+                              <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
+                                Yet to Accept
                               </td>
                               <td>
-                                  <button
-                                  onClick={() =>
-                                    router.push("/viewapplicationstatus")
-                                  }
+                                <button
                                   type="button"
                                   className="h-10 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                                 >
@@ -683,27 +638,60 @@ function tracking() {
                                 7.50% | 36 M
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
-                                  Fully Uploaded
-                                </h1>
+                                University of Calgary
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
-                                  Accepted
-                                </h1>
+                                Canada
                               </td>
                               <td>
-                                  <button
+                                <button
+                                  type="button"
+                                  className="h-10 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                                >
+                                  Accepted
+                                </button>
+                              </td>
+                            </tr>
+                            {/* <tr className="bg-white border-b">
+                              <th scope="row" className="px-6 py-4">
+                                <h1 className="font-gola text-sm font-medium text-black">
+                                  Nikhil Mathew
+                                </h1>
+                                <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                                  Coimbatore, TN
+                                </h1>
+                              </th>
+                              <td className="px-6 py-4 font-gola text-sm font-medium text-black">
+                                <h1 className="font-gola text-sm font-medium text-black">
+                                  ₹40,00,000
+                                </h1>
+                                <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                                  9.85% | 24months
+                                </h1>
+                              </td>
+                              <td className="px-6 py-4 ">
+                                <h1 className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
+                                  2 pending
+                                </h1>
+                              </td>
+                              <td className="px-6 py-4">
+                                <h1 className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
+                                  Not Yet Accepted
+                                </h1>
+                              </td>
+                            
+                              <td>
+                                <button
                                   onClick={() =>
                                     router.push("/viewapplicationstatus")
                                   }
                                   type="button"
-                                  className="h-10 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
+                                  className="h-10 font-gola border border-[#D5D5D5] text-[#0057E4] bg-[#F5F9FF] font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
                                 >
                                   View
                                 </button>
                               </td>
-                            </tr>
+                            </tr> */}
                           </tbody>
                         </table>
                       </div>
