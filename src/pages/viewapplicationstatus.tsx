@@ -29,7 +29,7 @@ function viewapplicationstatus() {
             <div className="flex item-center">
               <img
                 className="cursor-pointer"
-                onClick={() => router.push("/applicants")}
+                onClick={() => router.push("/tracking")}
                 src="arrow_back.svg"
                 alt="Back Arrow"
               />
@@ -97,12 +97,11 @@ function viewapplicationstatus() {
               </Tab>
             </TabList>
             <TabPanels>
-              <TabPanel className="!desktop:p-[36px] !p-[8px] bg-[#F2F2F2]">
-                <div className="bg-white rounded-lg desktop:px-10 desktop:py-10 px-3 py-3 h-full">
+              <TabPanel className="!desktop:p-[36px] flex justify-center tablet:!p-[8px] mobile:!p-[8px] bg-[#F2F2F2]">
+                <div className="desktop:w-4/5 bg-white rounded-lg desktop:px-10 desktop:py-10 px-3 py-3 h-full">
                   <h1 className="font-gola text-xl text-[#313131] font-semibold">
                     Documents
                   </h1>
-
                   <div className="flex items-center mobile:items-start justify-between mt-10">
                     <div className="flex mobile:flex-col">
                       <h1 className="mobile:min-w-[100px] font-gola text-base">

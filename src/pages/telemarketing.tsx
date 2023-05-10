@@ -1,10 +1,8 @@
 import TelemarketingBarChart1 from "@/components/dashboard/TelemarketingBarChart1";
 import TelemarketingBarChart2 from "@/components/dashboard/TelemarketingBarChart2";
 import TelemarketingSidebar from "@/components/dashboard/TelemarketingSidebar";
-import MobileSidebar from "@/components/reusable/MobileSidebar";
 import TelemarketingMobileSidebar from "@/components/reusable/TelemarketingMobileSidebar";
 import { useMediaQuery } from "@chakra-ui/react";
-import { Select } from "@chakra-ui/select";
 import Head from "next/head";
 import React, { useState } from "react";
 
