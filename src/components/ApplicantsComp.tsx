@@ -87,14 +87,14 @@ function ApplicantsComp() {
                 fill="#0057E4"
               />
             </svg>
-            <h1 className="font-gola text-base mr-[90px]">Filter</h1>
+            <span className="font-gola text-base mr-[90px]">Filter</span>
           </div>
         </div>
         <div className="tabanddesk:hidden">
           <div className="mt-5 flex justify-between">
             <div className="flex items-center mb-10">
               <img onClick={onOpen} src="../menu.svg" alt="Menu Icon" />
-              <h1 className="ml-5 font-gola text-2xl font-bold">Applicants</h1>
+              <h1 className="ml-5 font-gola text-2xl font-bold">Applications</h1>
             </div>
             <img src="/SearchIcon.svg" alt="Search Icon" />
           </div>
@@ -125,9 +125,9 @@ function ApplicantsComp() {
               <tr>
                 <th scope="col" className="px-[0.5rem] py-3">
                   <div className="flex items-center">
-                    <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                    <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                       Applicant Name
-                    </h1>
+                    </span>
                     <svg
                       width="12"
                       height="12"
@@ -145,9 +145,9 @@ function ApplicantsComp() {
                 </th>
                 <th scope="col" className="px-[0.5rem] py-3">
                   <div className="flex items-center">
-                    <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                    <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                       State
-                    </h1>
+                    </span>
                     <svg
                       width="12"
                       height="12"
@@ -165,9 +165,9 @@ function ApplicantsComp() {
                 </th>
                 <th scope="col" className="px-[0.5rem] py-3">
                   <div className="flex items-center">
-                    <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                    <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                      City
-                    </h1>
+                    </span>
                     <svg
                       width="12"
                       height="12"
@@ -185,9 +185,9 @@ function ApplicantsComp() {
                 </th>
                 <th scope="col" className="px-[0.5rem] py-3">
                   <div className="flex items-center">
-                    <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                    <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                       Loan Amount
-                    </h1>
+                    </span>
                     <svg
                       width="12"
                       height="12"
@@ -205,9 +205,9 @@ function ApplicantsComp() {
                 </th>
                 <th scope="col" className="px-[0.5rem] py-3">
                   <div className="flex items-center">
-                    <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                    <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                       Collateral
-                    </h1>
+                    </span>
                     <svg
                       width="12"
                       height="12"
@@ -225,9 +225,9 @@ function ApplicantsComp() {
                 </th>
                 <th scope="col" className="px-[0.5rem] py-3">
                   <div className="flex items-center">
-                    <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                    <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                       Opt. College
-                    </h1>
+                    </span>
                     <svg
                       width="12"
                       height="12"
@@ -245,9 +245,9 @@ function ApplicantsComp() {
                 </th>
                 <th scope="col" className="px-[0.5rem] py-3">
                   <div className="flex items-center">
-                    <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                    <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                       Opt. Country
-                    </h1>
+                    </span>
                     <svg
                       width="12"
                       height="12"
@@ -265,9 +265,9 @@ function ApplicantsComp() {
                 </th>
                 <th scope="col" className="px-[0.5rem]py-3">
                   <div className="flex items-center">
-                    <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87]">
+                    <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87]">
                       Action
-                    </h1>
+                    </span>
                   </div>
                 </th>
               </tr>
@@ -275,19 +275,19 @@ function ApplicantsComp() {
             <tbody>
               <tr className="bg-white border-b">
                 <th scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                     Nikhil Mathew
-                  </h1>
+                  </span>
                 </th>
                 <td scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   Delhi
-                  </h1>
+                  </span>
                 </td>
                 <td scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   West Delhi	
-                  </h1>
+                  </span>
                 </td>
                 <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                   ₹40,00,000
@@ -313,19 +313,19 @@ function ApplicantsComp() {
               </tr>
               <tr className="bg-white border-b">
                 <th scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   Bhaskar Patil	
-                  </h1>
+                  </span>
                 </th>
                 <td scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   Maharashtra
-                  </h1>
+                  </span>
                 </td>
                 <td scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   Pune		
-                  </h1>
+                  </span>
                 </td>
                 <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                   ₹3,200,000	
@@ -350,19 +350,19 @@ function ApplicantsComp() {
               </tr>
               <tr className="bg-white border-b">
                 <th scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   Arindam Saha		
-                  </h1>
+                  </span>
                 </th>
                 <td scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   Tamil Nadu
-                  </h1>
+                  </span>
                 </td>
                 <td scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   Chennai		
-                  </h1>
+                  </span>
                 </td>
                 <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                   ₹2,000,000		
@@ -387,19 +387,19 @@ function ApplicantsComp() {
               </tr>
               <tr className="bg-white border-b">
                 <th scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   Anamika Ranaut	
-                  </h1>
+                  </span>
                 </th>
                 <td scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   Delhi
-                  </h1>
+                  </span>
                 </td>
                 <td scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   Central Delhi		
-                  </h1>
+                  </span>
                 </td>
                 <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                   ₹3,500,000		
@@ -424,19 +424,19 @@ function ApplicantsComp() {
               </tr>
               <tr className="bg-white border-b">
                 <th scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   Aarif Khan	
-                  </h1>
+                  </span>
                 </th>
                 <td scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   Rajasthan
-                  </h1>
+                  </span>
                 </td>
                 <td scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   Jaipur		
-                  </h1>
+                  </span>
                 </td>
                 <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                   ₹4,500,000	
@@ -461,19 +461,19 @@ function ApplicantsComp() {
               </tr>
               <tr className="bg-white border-b">
                 <th scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   Ankit R Patel	
-                  </h1>
+                  </span>
                 </th>
                 <td scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   Gujarat	
-                  </h1>
+                  </span>
                 </td>
                 <td scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   Vadodara		
-                  </h1>
+                  </span>
                 </td>
                 <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                   ₹1,800,000	
@@ -498,19 +498,19 @@ function ApplicantsComp() {
               </tr>
               <tr className="bg-white border-b">
                 <th scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   Atraye Panchanan	
-                  </h1>
+                  </span>
                 </th>
                 <td scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   Punjab	
-                  </h1>
+                  </span>
                 </td>
                 <td scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   Ludhiana		
-                  </h1>
+                  </span>
                 </td>
                 <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                   ₹2,500,000
@@ -535,19 +535,19 @@ function ApplicantsComp() {
               </tr>
               <tr className="bg-white border-b">
                 <th scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   Ch.Anush Kumar		
-                  </h1>
+                  </span>
                 </th>
                 <td scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   Andhra Pradesh		
-                  </h1>
+                  </span>
                 </td>
                 <td scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   Visakhapatnam		
-                  </h1>
+                  </span>
                 </td>
                 <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                   ₹3,000,000
@@ -572,19 +572,19 @@ function ApplicantsComp() {
               </tr>
               <tr className="bg-white border-b">
                 <th scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   Ananya.R	
-                  </h1>
+                  </span>
                 </th>
                 <td scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   Karnataka	
-                  </h1>
+                  </span>
                 </td>
                 <td scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   Bengaluru		
-                  </h1>
+                  </span>
                 </td>
                 <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                   ₹2,800,000	
@@ -609,19 +609,19 @@ function ApplicantsComp() {
               </tr>
               <tr className="bg-white border-b">
                 <th scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   Anchit Sahni		
-                  </h1>
+                  </span>
                 </th>
                 <td scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   West Bengal	
-                  </h1>
+                  </span>
                 </td>
                 <td scope="row" className="px-[0.5rem] py-4">
-                  <h1 className="font-gola text-sm font-medium text-black">
+                  <span className="font-gola text-sm font-medium text-black">
                   Kolkata	
-                  </h1>
+                  </span>
                 </td>
                 <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                   ₹2,200,000	
@@ -663,44 +663,44 @@ function ApplicantsComp() {
               Coimbatore, TN - 641606
             </p>
             <div className="flex items-center justify-between mt-3">
-              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+              <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                 Loan amount <br /> requested
-              </h1>
-              <h1 className="text-[#292929] font-medium text-base font-gola">
+              </span>
+              <span className="text-[#292929] font-medium text-base font-gola">
                 ₹40,00,000
-              </h1>
+              </span>
             </div>
             <div className="flex items-center justify-between mt-2">
-              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+              <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                 Able to provide <br /> collateral
-              </h1>
-              <h1 className="text-[#292929] font-medium text-base font-gola">
+              </span>
+              <span className="text-[#292929] font-medium text-base font-gola">
                 Yes
-              </h1>
+              </span>
             </div>
             <div className="flex items-center justify-between mt-2">
-              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+              <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                 Admit Status
-              </h1>
-              <h1 className="text-[#292929] font-medium text-base font-gola">
+              </span>
+              <span className="text-[#292929] font-medium text-base font-gola">
                 Yet to apply
-              </h1>
+              </span>
             </div>
             <div className="flex items-center justify-between mt-2">
-              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+              <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                 Opted College Name
-              </h1>
-              <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+              </span>
+              <span className="text-right text-[#292929] font-medium text-base font-gola">
                 University of California
-              </h1>
+              </span>
             </div>
             <div className="flex items-center justify-between mt-2">
-              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+              <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                 Opted country
-              </h1>
-              <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+              </span>
+              <span className="text-right text-[#292929] font-medium text-base font-gola">
                USA
-              </h1>
+              </span>
             </div>
           </div>
           <div
@@ -717,44 +717,44 @@ function ApplicantsComp() {
               Coimbatore, TN - 641606
             </p>
             <div className="flex items-center justify-between mt-3">
-              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+              <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                 Loan amount <br /> requested
-              </h1>
-              <h1 className="text-[#292929] font-medium text-base font-gola">
+              </span>
+              <span className="text-[#292929] font-medium text-base font-gola">
                 ₹40,00,000
-              </h1>
+              </span>
             </div>
             <div className="flex items-center justify-between mt-2">
-              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+              <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                 Able to provide <br /> collateral
-              </h1>
-              <h1 className="text-[#292929] font-medium text-base font-gola">
+              </span>
+              <span className="text-[#292929] font-medium text-base font-gola">
                 Yes
-              </h1>
+              </span>
             </div>
             <div className="flex items-center justify-between mt-2">
-              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+              <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                 Admit Status
-              </h1>
-              <h1 className="text-[#292929] font-medium text-base font-gola">
+              </span>
+              <span className="text-[#292929] font-medium text-base font-gola">
                 Yet to apply
-              </h1>
+              </span>
             </div>
             <div className="flex items-center justify-between mt-2">
-              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+              <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                 Opted College Name
-              </h1>
-              <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+              </span>
+              <span className="text-right text-[#292929] font-medium text-base font-gola">
                 University of California
-              </h1>
+              </span>
             </div>
             <div className="flex items-center justify-between mt-2">
-              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+              <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                 Opted country
-              </h1>
-              <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+              </span>
+              <span className="text-right text-[#292929] font-medium text-base font-gola">
                USA
-              </h1>
+              </span>
             </div>
           </div>
           <div
@@ -771,44 +771,44 @@ function ApplicantsComp() {
               Coimbatore, TN - 641606
             </p>
             <div className="flex items-center justify-between mt-3">
-              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+              <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                 Loan amount <br /> requested
-              </h1>
-              <h1 className="text-[#292929] font-medium text-base font-gola">
+              </span>
+              <span className="text-[#292929] font-medium text-base font-gola">
                 ₹40,00,000
-              </h1>
+              </span>
             </div>
             <div className="flex items-center justify-between mt-2">
-              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+              <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                 Able to provide <br /> collateral
-              </h1>
-              <h1 className="text-[#292929] font-medium text-base font-gola">
+              </span>
+              <span className="text-[#292929] font-medium text-base font-gola">
                 Yes
-              </h1>
+              </span>
             </div>
             <div className="flex items-center justify-between mt-2">
-              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+              <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                 Admit Status
-              </h1>
-              <h1 className="text-[#292929] font-medium text-base font-gola">
+              </span>
+              <span className="text-[#292929] font-medium text-base font-gola">
                 Yet to apply
-              </h1>
+              </span>
             </div>
             <div className="flex items-center justify-between mt-2">
-              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+              <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                 Opted College Name
-              </h1>
-              <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+              </span>
+              <span className="text-right text-[#292929] font-medium text-base font-gola">
                 University of California
-              </h1>
+              </span>
             </div>
             <div className="flex items-center justify-between mt-2">
-              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+              <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                 Opted country
-              </h1>
-              <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+              </span>
+              <span className="text-right text-[#292929] font-medium text-base font-gola">
                USA
-              </h1>
+              </span>
             </div>
           </div>
           <div
@@ -825,44 +825,44 @@ function ApplicantsComp() {
               Coimbatore, TN - 641606
             </p>
             <div className="flex items-center justify-between mt-3">
-              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+              <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                 Loan amount <br /> requested
-              </h1>
-              <h1 className="text-[#292929] font-medium text-base font-gola">
+              </span>
+              <span className="text-[#292929] font-medium text-base font-gola">
                 ₹40,00,000
-              </h1>
+              </span>
             </div>
             <div className="flex items-center justify-between mt-2">
-              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+              <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                 Able to provide <br /> collateral
-              </h1>
-              <h1 className="text-[#292929] font-medium text-base font-gola">
+              </span>
+              <span className="text-[#292929] font-medium text-base font-gola">
                 Yes
-              </h1>
+              </span>
             </div>
             <div className="flex items-center justify-between mt-2">
-              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+              <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                 Admit Status
-              </h1>
-              <h1 className="text-[#292929] font-medium text-base font-gola">
+              </span>
+              <span className="text-[#292929] font-medium text-base font-gola">
                 Yet to apply
-              </h1>
+              </span>
             </div>
             <div className="flex items-center justify-between mt-2">
-              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+              <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                 Opted College Name
-              </h1>
-              <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+              </span>
+              <span className="text-right text-[#292929] font-medium text-base font-gola">
                 University of California
-              </h1>
+              </span>
             </div>
             <div className="flex items-center justify-between mt-2">
-              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+              <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                 Opted country
-              </h1>
-              <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+              </span>
+              <span className="text-right text-[#292929] font-medium text-base font-gola">
                USA
-              </h1>
+              </span>
             </div>
           </div>
           <div
@@ -879,44 +879,44 @@ function ApplicantsComp() {
               Coimbatore, TN - 641606
             </p>
             <div className="flex items-center justify-between mt-3">
-              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+              <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                 Loan amount <br /> requested
-              </h1>
-              <h1 className="text-[#292929] font-medium text-base font-gola">
+              </span>
+              <span className="text-[#292929] font-medium text-base font-gola">
                 ₹40,00,000
-              </h1>
+              </span>
             </div>
             <div className="flex items-center justify-between mt-2">
-              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+              <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                 Able to provide <br /> collateral
-              </h1>
-              <h1 className="text-[#292929] font-medium text-base font-gola">
+              </span>
+              <span className="text-[#292929] font-medium text-base font-gola">
                 Yes
-              </h1>
+              </span>
             </div>
             <div className="flex items-center justify-between mt-2">
-              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+              <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                 Admit Status
-              </h1>
-              <h1 className="text-[#292929] font-medium text-base font-gola">
+              </span>
+              <span className="text-[#292929] font-medium text-base font-gola">
                 Yet to apply
-              </h1>
+              </span>
             </div>
             <div className="flex items-center justify-between mt-2">
-              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+              <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                 Opted College Name
-              </h1>
-              <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+              </span>
+              <span className="text-right text-[#292929] font-medium text-base font-gola">
                 University of California
-              </h1>
+              </span>
             </div>
             <div className="flex items-center justify-between mt-2">
-              <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+              <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                 Opted country
-              </h1>
-              <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+              </span>
+              <span className="text-right text-[#292929] font-medium text-base font-gola">
                USA
-              </h1>
+              </span>
             </div>
           </div>
         </div>
@@ -933,9 +933,9 @@ function ApplicantsComp() {
           <div className="flex flex-col h-full justify-between">
             <div className="p-5">
               <div className="w-full flex items-center justify-between">
-                <h1 className="text-2xl font-gola font-semibold">
+                <span className="text-2xl font-gola font-semibold">
                   Filter Options
-                </h1>
+                </span>
                 <img
                   onClick={onFilterSidebarClose}
                   className="cursor-pointer"

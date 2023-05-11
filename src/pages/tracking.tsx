@@ -1,4 +1,4 @@
-import Sidebar from "@/components/dashboard/Sidebar";
+import Sidebar from "@/components/reusable/Sidebar";
 import { Tab, TabList, TabPanel, TabPanels, Tabs } from "@chakra-ui/tabs";
 import Head from "next/head";
 import React, { useState } from "react";
@@ -25,11 +25,11 @@ function tracking() {
       {!isMobile && <Sidebar />}
       <div className="w-full flex justify-center">
         <div className="w-full min-h-screen flex flex-col items-center">
-          <div className="bg-white px-10 pt-3 pb-3 w-full flex justify-between">
+          <div className="bg-white tabanddesk:px-10 mobile:px-5 pt-3 pb-3 w-full flex justify-between">
             <img width={120} src="../logo.svg" alt="" />
             <img src="../avatar.svg" alt="" />
           </div>
-          <div className="w-full h-full p-[30px] bg-[#F2F2F2]">
+          <div className="w-full h-full tabanddesk:p-[30px] mobile:p-[10px] bg-[#F2F2F2]">
             <div className="p-[15px] bg-white w-full h-full rounded-md">
               <div className="tabanddesk:hidden flex items-center mb-10">
                 <img onClick={onOpen} src="../menu.svg" alt="Menu Icon" />
@@ -46,9 +46,9 @@ function tracking() {
                       borderBottom: "2px solid #0052CC",
                     }}
                   >
-                    <h1 className="font-gola text-sm font-semibold">
+                    <span className="font-gola text-sm font-semibold">
                       Preliminary Offer
-                    </h1>
+                    </span>
                   </Tab>
                   <Tab
                     _selected={{
@@ -56,9 +56,9 @@ function tracking() {
                       borderBottom: "2px solid #0052CC",
                     }}
                   >
-                    <h1 className="font-gola text-sm font-semibold">
+                    <span className="font-gola text-sm font-semibold">
                       Final Offer
-                    </h1>
+                    </span>
                   </Tab>
                 </TabList>
                 <TabPanels>
@@ -123,9 +123,9 @@ function tracking() {
                             <tr>
                               <th scope="col" className="px-[0.5rem] py-3">
                                 <div className="flex items-center">
-                                  <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                                  <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                                     Applicant Name
-                                  </h1>
+                                  </span>
                                   <svg
                                     width="12"
                                     height="12"
@@ -143,9 +143,9 @@ function tracking() {
                               </th>
                               <th scope="col" className="px-[0.5rem] py-3">
                                 <div className="flex items-center">
-                                  <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                                  <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                                     State
-                                  </h1>
+                                  </span>
                                   <svg
                                     width="12"
                                     height="12"
@@ -163,9 +163,9 @@ function tracking() {
                               </th>
                               <th scope="col" className="px-[0.5rem] py-3">
                                 <div className="flex items-center">
-                                  <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                                  <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                                     City
-                                  </h1>
+                                  </span>
                                   <svg
                                     width="12"
                                     height="12"
@@ -183,9 +183,9 @@ function tracking() {
                               </th>
                               <th scope="col" className="px-[0.5rem] py-3">
                                 <div className="flex items-center">
-                                  <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                                  <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                                     Last Offer
-                                  </h1>
+                                  </span>
                                   <svg
                                     width="12"
                                     height="12"
@@ -203,9 +203,9 @@ function tracking() {
                               </th>
                               <th scope="col" className="px-[0.5rem] py-3">
                                 <div className="flex items-center">
-                                  <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                                  <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                                     Interest & Tenure
-                                  </h1>
+                                  </span>
                                   <svg
                                     width="12"
                                     height="12"
@@ -223,9 +223,9 @@ function tracking() {
                               </th>
                               <th scope="col" className="px-[0.5rem] py-3">
                                 <div className="flex items-center">
-                                  <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                                  <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                                     Documents
-                                  </h1>
+                                  </span>
                                   <svg
                                     width="12"
                                     height="12"
@@ -243,9 +243,9 @@ function tracking() {
                               </th>
                               <th scope="col" className="px-[0.5rem] py-3">
                                 <div className="flex items-center">
-                                  <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                                  <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                                     Status
-                                  </h1>
+                                  </span>
                                   <svg
                                     width="12"
                                     height="12"
@@ -263,9 +263,9 @@ function tracking() {
                               </th>
                               <th scope="col" className="px-[0.5rem] py-3">
                                 <div className="flex items-center">
-                                  <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87]">
+                                  <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87]">
                                     Action
-                                  </h1>
+                                  </span>
                                 </div>
                               </th>
                             </tr>
@@ -273,19 +273,19 @@ function tracking() {
                           <tbody>
                             <tr className="bg-white border-b">
                               <th scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   Nikhil Mathew
-                                </h1>
+                                </span>
                               </th>
                               <td scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   Delhi
-                                </h1>
+                                </span>
                               </td>
                               <td scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   West Delhi
-                                </h1>
+                                </span>
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                                 ₹40,00,000
@@ -294,14 +294,14 @@ function tracking() {
                                 7.50% | 36 M
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
+                                <p className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
                                   Fully Uploaded
-                                </h1>
+                                </p>
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
+                                <p className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
                                   Accepted
-                                </h1>
+                                </p>
                               </td>
                               <td>
                                 <button
@@ -317,19 +317,19 @@ function tracking() {
                             </tr>
                             <tr className="bg-white border-b">
                               <th scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   Bhaskar Patil
-                                </h1>
+                                </span>
                               </th>
                               <td scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   Maharashtra
-                                </h1>
+                                </span>
                               </td>
                               <td scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   Pune
-                                </h1>
+                                </span>
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                                 ₹3,200,000
@@ -338,15 +338,15 @@ function tracking() {
                                 7.50% | 36 M
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#FFECEC] w-[140px] text-center rounded-lg">
+                                <p className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#FFECEC] w-[140px] text-center rounded-lg">
                                   2 Pending
-                                </h1>
+                                </p>
                               </td>
 
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
+                                <p className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
                                   Accepted
-                                </h1>
+                                </p>
                               </td>
                               <td>
                               <button
@@ -362,19 +362,19 @@ function tracking() {
                             </tr>
                             <tr className="bg-white border-b">
                               <th scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   Arindam Saha
-                                </h1>
+                                </span>
                               </th>
                               <td scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   Tamil Nadu
-                                </h1>
+                                </span>
                               </td>
                               <td scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   Chennai
-                                </h1>
+                                </span>
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                                 ₹2,000,000
@@ -386,9 +386,9 @@ function tracking() {
                                 -
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#FFECEC] w-[140px] text-center rounded-lg">
+                                <p className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#FFECEC] w-[140px] text-center rounded-lg">
                                   Yet to Accept
-                                </h1>
+                                </p>
                               </td>
                               <td>
                                   <button
@@ -404,19 +404,19 @@ function tracking() {
                             </tr>
                             <tr className="bg-white border-b">
                               <th scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   Anamika Ranaut
-                                </h1>
+                                </span>
                               </th>
                               <td scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   Delhi
-                                </h1>
+                                </span>
                               </td>
                               <td scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   Central Delhi
-                                </h1>
+                                </span>
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                                 ₹3,500,000
@@ -425,14 +425,14 @@ function tracking() {
                                 7.50% | 36 M
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
+                                <p className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
                                   Fully Uploaded
-                                </h1>
+                                </p>
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
+                                <p className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
                                   Accepted
-                                </h1>
+                                </p>
                               </td>
                               <td>
                                   <button
@@ -448,19 +448,19 @@ function tracking() {
                             </tr>
                             <tr className="bg-white border-b">
                               <th scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   Aarif Khan
-                                </h1>
+                                </span>
                               </th>
                               <td scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   Rajasthan
-                                </h1>
+                                </span>
                               </td>
                               <td scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   Jaipur
-                                </h1>
+                                </span>
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                                 ₹4,500,000
@@ -472,9 +472,9 @@ function tracking() {
                                 -
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#FFECEC] w-[140px] text-center rounded-lg">
+                                <p className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#FFECEC] w-[140px] text-center rounded-lg">
                                   Yet to Accept
-                                </h1>
+                                </p>
                               </td>
                               <td>
                                   <button
@@ -490,19 +490,19 @@ function tracking() {
                             </tr>
                             <tr className="bg-white border-b">
                               <th scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   Ankit R Patel
-                                </h1>
+                                </span>
                               </th>
                               <td scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   Gujarat
-                                </h1>
+                                </span>
                               </td>
                               <td scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   Vadodara
-                                </h1>
+                                </span>
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                                 ₹1,800,000
@@ -511,14 +511,14 @@ function tracking() {
                                 7.50% | 36 M
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#FFECEC] w-[140px] text-center rounded-lg">
+                                <p className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#FFECEC] w-[140px] text-center rounded-lg">
                                   1 Pending
-                                </h1>
+                                </p>
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
+                                <p className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
                                   Accepted
-                                </h1>
+                                </p>
                               </td>
                               <td>
                                   <button
@@ -534,19 +534,19 @@ function tracking() {
                             </tr>
                             <tr className="bg-white border-b">
                               <th scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   Atraye Panchanan
-                                </h1>
+                                </span>
                               </th>
                               <td scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   Punjab
-                                </h1>
+                                </span>
                               </td>
                               <td scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   Ludhiana
-                                </h1>
+                                </span>
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                                 ₹2,500,000
@@ -555,14 +555,14 @@ function tracking() {
                                 7.50% | 36 M
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
+                                <p className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
                                   Fully Uploaded
-                                </h1>
+                                </p>
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="py-[5px] font-gola text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
+                                <p className="py-[5px] font-gola text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
                                   Accepted
-                                </h1>
+                                </p>
                               </td>
                               <td>
                                   <button
@@ -578,19 +578,19 @@ function tracking() {
                             </tr>
                             <tr className="bg-white border-b">
                               <th scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   Ch.Anush Kumar
-                                </h1>
+                                </span>
                               </th>
                               <td scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   Andhra Pradesh
-                                </h1>
+                                </span>
                               </td>
                               <td scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   Visakhapatnam
-                                </h1>
+                                </span>
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                                 ₹3,000,000
@@ -602,9 +602,9 @@ function tracking() {
                                 -
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="py-[5px] font-gola text-sm font-medium text-[black] bg-[#FFECEC] w-[140px] text-center rounded-lg">
+                                <p className="py-[5px] font-gola text-sm font-medium text-[black] bg-[#FFECEC] w-[140px] text-center rounded-lg">
                                   Yet to Accept
-                                </h1>
+                                </p>
                               </td>
                               <td>
                                   <button
@@ -620,19 +620,19 @@ function tracking() {
                             </tr>
                             <tr className="bg-white border-b">
                               <th scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   Ananya.R
-                                </h1>
+                                </span>
                               </th>
                               <td scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   Karnataka
-                                </h1>
+                                </span>
                               </td>
                               <td scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   Bengaluru
-                                </h1>
+                                </span>
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                                 ₹2,800,000
@@ -644,9 +644,9 @@ function tracking() {
                                 -
                               </td>
                               <td className="px-[0.5rem] py- font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#FFECEC] w-[140px] text-center rounded-lg">
+                                <p className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#FFECEC] w-[140px] text-center rounded-lg">
                                   Yet to Accept
-                                </h1>
+                                </p>
                               </td>
                               <td>
                                   <button
@@ -662,19 +662,19 @@ function tracking() {
                             </tr>
                             <tr className="bg-white border-b">
                               <th scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   Anchit Sahni
-                                </h1>
+                                </span>
                               </th>
                               <td scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   West Bengal
-                                </h1>
+                                </span>
                               </td>
                               <td scope="row" className="px-[0.5rem] py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <span className="font-gola text-sm font-medium text-black">
                                   Kolkata
-                                </h1>
+                                </span>
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                                 ₹2,200,000
@@ -683,14 +683,14 @@ function tracking() {
                                 7.50% | 36 M
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
+                                <p className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
                                   Fully Uploaded
-                                </h1>
+                                </p>
                               </td>
                               <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
+                                <p className="font-gola py-[5px] text-sm font-medium text-[black] bg-[#C7E9B0] w-[140px] text-center rounded-lg">
                                   Accepted
-                                </h1>
+                                </p>
                               </td>
                               <td>
                                   <button
@@ -715,46 +715,45 @@ function tracking() {
                             </h5>
                             <img src="/rightIconGray.svg" alt="" />
                           </div>
-
                           <p className="font-gola text-sm text-[#7E7E7E]">
                             Coimbatore, TN - 641606
                           </p>
                           <div className="flex items-center justify-between mt-3">
-                            <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                            <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                               Last Offer
-                            </h1>
+                            </span>
                             <div className="flex flex-col items-end">
-                              <h1 className="text-[#292929] font-medium text-base font-gola">
+                              <span className="text-[#292929] font-medium text-base font-gola">
                                 ₹40,00,000
-                              </h1>
+                              </span>
                               <p className="font-gola text-sm text-[#7E7E7E]">
                                 9.85% | 24months
                               </p>
                             </div>
                           </div>
                           <div className="flex items-center justify-between mt-4">
-                            <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                            <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                               Documents
-                            </h1>
-                            <h1 className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
+                            </span>
+                            <span className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
                               2 pending
-                            </h1>
+                            </span>
                           </div>
                           <div className="flex items-center justify-between mt-4">
-                            <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                            <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                               Status
-                            </h1>
-                            <h1 className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
+                            </span>
+                            <span className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
                               Not Yet Accepted
-                            </h1>
+                            </span>
                           </div>
                           <div className="flex items-center justify-between mt-4">
-                            <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                            <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                               Contact
-                            </h1>
-                            <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+                            </span>
+                            <span className="text-right text-[#292929] font-medium text-base font-gola">
                               +91 9867676678
-                            </h1>
+                            </span>
                           </div>
                           <div className="flex items-center justify-end mt-5">
                             <button
@@ -780,41 +779,41 @@ function tracking() {
                             Coimbatore, TN - 641606
                           </p>
                           <div className="flex items-center justify-between mt-3">
-                            <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                            <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                               Last Offer
-                            </h1>
+                            </span>
                             <div className="flex flex-col items-end">
-                              <h1 className="text-[#292929] font-medium text-base font-gola">
+                              <span className="text-[#292929] font-medium text-base font-gola">
                                 ₹40,00,000
-                              </h1>
+                              </span>
                               <p className="font-gola text-sm text-[#7E7E7E]">
                                 9.85% | 24months
                               </p>
                             </div>
                           </div>
                           <div className="flex items-center justify-between mt-4">
-                            <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                            <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                               Documents
-                            </h1>
-                            <h1 className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
+                            </span>
+                            <span className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
                               2 pending
-                            </h1>
+                            </span>
                           </div>
                           <div className="flex items-center justify-between mt-4">
-                            <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                            <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                               Status
-                            </h1>
-                            <h1 className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
+                            </span>
+                            <span className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
                               Not Yet Accepted
-                            </h1>
+                            </span>
                           </div>
                           <div className="flex items-center justify-between mt-4">
-                            <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                            <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                               Contact
-                            </h1>
-                            <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+                            </span>
+                            <span className="text-right text-[#292929] font-medium text-base font-gola">
                               +91 9867676678
-                            </h1>
+                            </span>
                           </div>
                           <div className="flex items-center justify-end mt-5">
                             <button
@@ -840,41 +839,41 @@ function tracking() {
                             Coimbatore, TN - 641606
                           </p>
                           <div className="flex items-center justify-between mt-3">
-                            <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                            <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                               Last Offer
-                            </h1>
+                            </span>
                             <div className="flex flex-col items-end">
-                              <h1 className="text-[#292929] font-medium text-base font-gola">
+                              <span className="text-[#292929] font-medium text-base font-gola">
                                 ₹40,00,000
-                              </h1>
+                              </span>
                               <p className="font-gola text-sm text-[#7E7E7E]">
                                 9.85% | 24months
                               </p>
                             </div>
                           </div>
                           <div className="flex items-center justify-between mt-4">
-                            <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                            <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                               Documents
-                            </h1>
-                            <h1 className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
+                            </span>
+                            <span className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
                               2 pending
-                            </h1>
+                            </span>
                           </div>
                           <div className="flex items-center justify-between mt-4">
-                            <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                            <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                               Status
-                            </h1>
-                            <h1 className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
+                            </span>
+                            <span className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
                               Not Yet Accepted
-                            </h1>
+                            </span>
                           </div>
                           <div className="flex items-center justify-between mt-4">
-                            <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                            <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                               Contact
-                            </h1>
-                            <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+                            </span>
+                            <span className="text-right text-[#292929] font-medium text-base font-gola">
                               +91 9867676678
-                            </h1>
+                            </span>
                           </div>
                           <div className="flex items-center justify-end mt-5">
                             <button
@@ -900,41 +899,41 @@ function tracking() {
                             Coimbatore, TN - 641606
                           </p>
                           <div className="flex items-center justify-between mt-3">
-                            <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                            <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                               Last Offer
-                            </h1>
+                            </span>
                             <div className="flex flex-col items-end">
-                              <h1 className="text-[#292929] font-medium text-base font-gola">
+                              <span className="text-[#292929] font-medium text-base font-gola">
                                 ₹40,00,000
-                              </h1>
+                              </span>
                               <p className="font-gola text-sm text-[#7E7E7E]">
                                 9.85% | 24months
                               </p>
                             </div>
                           </div>
                           <div className="flex items-center justify-between mt-4">
-                            <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                            <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                               Documents
-                            </h1>
-                            <h1 className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
+                            </span>
+                            <span className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
                               2 pending
-                            </h1>
+                            </span>
                           </div>
                           <div className="flex items-center justify-between mt-4">
-                            <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                            <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                               Status
-                            </h1>
-                            <h1 className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
+                            </span>
+                            <span className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
                               Not Yet Accepted
-                            </h1>
+                            </span>
                           </div>
                           <div className="flex items-center justify-between mt-4">
-                            <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                            <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                               Contact
-                            </h1>
-                            <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+                            </span>
+                            <span className="text-right text-[#292929] font-medium text-base font-gola">
                               +91 9867676678
-                            </h1>
+                            </span>
                           </div>
                           <div className="flex items-center justify-end mt-5">
                             <button
@@ -960,41 +959,41 @@ function tracking() {
                             Coimbatore, TN - 641606
                           </p>
                           <div className="flex items-center justify-between mt-3">
-                            <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                            <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                               Last Offer
-                            </h1>
+                            </span>
                             <div className="flex flex-col items-end">
-                              <h1 className="text-[#292929] font-medium text-base font-gola">
+                              <span className="text-[#292929] font-medium text-base font-gola">
                                 ₹40,00,000
-                              </h1>
+                              </span>
                               <p className="font-gola text-sm text-[#7E7E7E]">
                                 9.85% | 24months
                               </p>
                             </div>
                           </div>
                           <div className="flex items-center justify-between mt-4">
-                            <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                            <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                               Documents
-                            </h1>
-                            <h1 className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
+                            </span>
+                            <span className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
                               2 pending
-                            </h1>
+                            </span>
                           </div>
                           <div className="flex items-center justify-between mt-4">
-                            <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                            <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                               Status
-                            </h1>
-                            <h1 className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
+                            </span>
+                            <span className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
                               Not Yet Accepted
-                            </h1>
+                            </span>
                           </div>
                           <div className="flex items-center justify-between mt-4">
-                            <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                            <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                               Contact
-                            </h1>
-                            <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+                            </span>
+                            <span className="text-right text-[#292929] font-medium text-base font-gola">
                               +91 9867676678
-                            </h1>
+                            </span>
                           </div>
                           <div className="flex items-center justify-end mt-5">
                             <button
@@ -1020,41 +1019,41 @@ function tracking() {
                             Coimbatore, TN - 641606
                           </p>
                           <div className="flex items-center justify-between mt-3">
-                            <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                            <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                               Last Offer
-                            </h1>
+                            </span>
                             <div className="flex flex-col items-end">
-                              <h1 className="text-[#292929] font-medium text-base font-gola">
+                              <span className="text-[#292929] font-medium text-base font-gola">
                                 ₹40,00,000
-                              </h1>
+                              </span>
                               <p className="font-gola text-sm text-[#7E7E7E]">
                                 9.85% | 24months
                               </p>
                             </div>
                           </div>
                           <div className="flex items-center justify-between mt-4">
-                            <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                            <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                               Documents
-                            </h1>
-                            <h1 className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
+                            </span>
+                            <span className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
                               2 pending
-                            </h1>
+                            </span>
                           </div>
                           <div className="flex items-center justify-between mt-4">
-                            <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                            <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                               Status
-                            </h1>
-                            <h1 className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
+                            </span>
+                            <span className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
                               Not Yet Accepted
-                            </h1>
+                            </span>
                           </div>
                           <div className="flex items-center justify-between mt-4">
-                            <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                            <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                               Contact
-                            </h1>
-                            <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+                            </span>
+                            <span className="text-right text-[#292929] font-medium text-base font-gola">
                               +91 9867676678
-                            </h1>
+                            </span>
                           </div>
                           <div className="flex items-center justify-end mt-5">
                             <button
@@ -1132,9 +1131,9 @@ function tracking() {
                             <tr>
                               <th scope="col" className=" px-6 py-3">
                                 <div className="flex items-center">
-                                  <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                                  <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                                     Applicant Name
-                                  </h1>
+                                  </span>
                                   <svg
                                     width="12"
                                     height="12"
@@ -1152,9 +1151,9 @@ function tracking() {
                               </th>
                               <th scope="col" className=" px-6 py-3">
                                 <div className="flex items-center">
-                                  <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                                  <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                                     Last Offer
-                                  </h1>
+                                  </span>
                                   <svg
                                     width="12"
                                     height="12"
@@ -1172,9 +1171,9 @@ function tracking() {
                               </th>
                               <th scope="col" className=" px-6 py-3">
                                 <div className="flex items-center">
-                                  <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                                  <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                                     Documents
-                                  </h1>
+                                  </span>
                                   <svg
                                     width="12"
                                     height="12"
@@ -1192,9 +1191,9 @@ function tracking() {
                               </th>
                               <th scope="col" className=" px-6 py-3">
                                 <div className="flex items-center">
-                                  <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                                  <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                                     Status
-                                  </h1>
+                                  </span>
                                   <svg
                                     width="12"
                                     height="12"
@@ -1212,9 +1211,9 @@ function tracking() {
                               </th>
                               <th scope="col" className=" px-6 py-3">
                                 <div className="flex items-center">
-                                  <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                                  <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                                     Contact
-                                  </h1>
+                                  </span>
                                   <svg
                                     width="12"
                                     height="12"
@@ -1232,9 +1231,9 @@ function tracking() {
                               </th>
                               <th scope="col" className=" px-6 py-3">
                                 <div className="flex items-center">
-                                  <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87]">
+                                  <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87]">
                                     Action
-                                  </h1>
+                                  </span>
                                 </div>
                               </th>
                             </tr>
@@ -1242,30 +1241,30 @@ function tracking() {
                           <tbody>
                             <tr className="bg-white border-b">
                               <th scope="row" className="px-6 py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <p className="font-gola text-sm font-medium text-black">
                                   Nikhil Mathew
-                                </h1>
-                                <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                                </p>
+                                <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                                   Coimbatore, TN
-                                </h1>
+                                </p>
                               </th>
                               <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <p className="font-gola text-sm font-medium text-black">
                                   ₹40,00,000
-                                </h1>
-                                <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                                </p>
+                                <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                                   9.85% | 24months
-                                </h1>
+                                </p>
                               </td>
                               <td className="px-6 py-4 ">
-                                <h1 className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
+                                <p className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
                                   2 pending
-                                </h1>
+                                </p>
                               </td>
                               <td className="px-6 py-4">
-                                <h1 className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
+                                <p className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
                                   Not Yet Accepted
-                                </h1>
+                                </p>
                               </td>
                               <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                                 -
@@ -1284,30 +1283,30 @@ function tracking() {
                             </tr>
                             <tr className="bg-white border-b">
                               <th scope="row" className="px-6 py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <p className="font-gola text-sm font-medium text-black">
                                   Nikhil Mathew
-                                </h1>
-                                <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                                </p>
+                                <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                                   Coimbatore, TN
-                                </h1>
+                                </p>
                               </th>
                               <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <p className="font-gola text-sm font-medium text-black">
                                   ₹40,00,000
-                                </h1>
-                                <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                                </p>
+                                <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                                   9.85% | 24months
-                                </h1>
+                                </p>
                               </td>
                               <td className="px-6 py-4 ">
-                                <h1 className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
+                                <p className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
                                   2 pending
-                                </h1>
+                                </p>
                               </td>
                               <td className="px-6 py-4">
-                                <h1 className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
+                                <p className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
                                   Not Yet Accepted
-                                </h1>
+                                </p>
                               </td>
                               <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                                 -
@@ -1326,30 +1325,30 @@ function tracking() {
                             </tr>
                             <tr className="bg-white border-b">
                               <th scope="row" className="px-6 py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <p className="font-gola text-sm font-medium text-black">
                                   Nikhil Mathew
-                                </h1>
-                                <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                                </p>
+                                <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                                   Coimbatore, TN
-                                </h1>
+                                </p>
                               </th>
                               <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <p className="font-gola text-sm font-medium text-black">
                                   ₹40,00,000
-                                </h1>
-                                <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                                </p>
+                                <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                                   9.85% | 24months
-                                </h1>
+                                </p>
                               </td>
                               <td className="px-6 py-4 ">
-                                <h1 className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
+                                <p className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
                                   2 pending
-                                </h1>
+                                </p>
                               </td>
                               <td className="px-6 py-4">
-                                <h1 className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
+                                <p className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
                                   Not Yet Accepted
-                                </h1>
+                                </p>
                               </td>
                               <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                                 -
@@ -1368,30 +1367,30 @@ function tracking() {
                             </tr>
                             <tr className="bg-white border-b">
                               <th scope="row" className="px-6 py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <p className="font-gola text-sm font-medium text-black">
                                   Nikhil Mathew
-                                </h1>
-                                <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                                </p>
+                                <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                                   Coimbatore, TN
-                                </h1>
+                                </p>
                               </th>
                               <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <p className="font-gola text-sm font-medium text-black">
                                   ₹40,00,000
-                                </h1>
-                                <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                                </p>
+                                <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                                   9.85% | 24months
-                                </h1>
+                                </p>
                               </td>
                               <td className="px-6 py-4 ">
-                                <h1 className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
+                                <p className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
                                   2 pending
-                                </h1>
+                                </p>
                               </td>
                               <td className="px-6 py-4">
-                                <h1 className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
+                                <p className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
                                   Not Yet Accepted
-                                </h1>
+                                </p>
                               </td>
                               <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                                 -
@@ -1410,30 +1409,30 @@ function tracking() {
                             </tr>
                             <tr className="bg-white border-b">
                               <th scope="row" className="px-6 py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <p className="font-gola text-sm font-medium text-black">
                                   Nikhil Mathew
-                                </h1>
-                                <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                                </p>
+                                <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                                   Coimbatore, TN
-                                </h1>
+                                </p>
                               </th>
                               <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <p className="font-gola text-sm font-medium text-black">
                                   ₹40,00,000
-                                </h1>
-                                <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                                </p>
+                                <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                                   9.85% | 24months
-                                </h1>
+                                </p>
                               </td>
                               <td className="px-6 py-4 ">
-                                <h1 className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
+                                <p className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
                                   2 pending
-                                </h1>
+                                </p>
                               </td>
                               <td className="px-6 py-4">
-                                <h1 className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
+                                <p className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
                                   Not Yet Accepted
-                                </h1>
+                                </p>
                               </td>
                               <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                                 -
@@ -1452,30 +1451,30 @@ function tracking() {
                             </tr>
                             <tr className="bg-white border-b">
                               <th scope="row" className="px-6 py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <p className="font-gola text-sm font-medium text-black">
                                   Nikhil Mathew
-                                </h1>
-                                <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                                </p>
+                                <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                                   Coimbatore, TN
-                                </h1>
+                                </p>
                               </th>
                               <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <p className="font-gola text-sm font-medium text-black">
                                   ₹40,00,000
-                                </h1>
-                                <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                                </p>
+                                <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                                   9.85% | 24months
-                                </h1>
+                                </p>
                               </td>
                               <td className="px-6 py-4 ">
-                                <h1 className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
+                                <p className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
                                   2 pending
-                                </h1>
+                                </p>
                               </td>
                               <td className="px-6 py-4">
-                                <h1 className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
+                                <p className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
                                   Not Yet Accepted
-                                </h1>
+                                </p>
                               </td>
                               <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                                 -
@@ -1494,30 +1493,30 @@ function tracking() {
                             </tr>
                             <tr className="bg-white border-b">
                               <th scope="row" className="px-6 py-4">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <p className="font-gola text-sm font-medium text-black">
                                   Nikhil Mathew
-                                </h1>
-                                <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                                </p>
+                                <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                                   Coimbatore, TN
-                                </h1>
+                                </p>
                               </th>
                               <td className="px-6 py-4 font-gola text-sm font-medium text-black">
-                                <h1 className="font-gola text-sm font-medium text-black">
+                                <p className="font-gola text-sm font-medium text-black">
                                   ₹40,00,000
-                                </h1>
-                                <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                                </p>
+                                <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                                   9.85% | 24months
-                                </h1>
+                                </p>
                               </td>
                               <td className="px-6 py-4 ">
-                                <h1 className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
+                                <p className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
                                   2 pending
-                                </h1>
+                                </p>
                               </td>
                               <td className="px-6 py-4">
-                                <h1 className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
+                                <p className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
                                   Not Yet Accepted
-                                </h1>
+                                </p>
                               </td>
                               <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                                 -

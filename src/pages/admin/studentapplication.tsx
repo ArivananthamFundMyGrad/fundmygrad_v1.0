@@ -35,9 +35,9 @@ function viewapplication() {
                   src="/arrow_back.svg"
                   alt="Back Arrow"
                 />
-                <h1 className="font-gola text-2xl text-[#252525] font-semibold ml-3">
+                <span className="font-gola text-2xl text-[#252525] font-semibold ml-3">
                   Nikhil Mathew
-                </h1>
+                </span>
               </div>
             </div>
             <div className="grid desktop:grid-cols-3 tablet:grid-cols-2 gap-3 w-full mt-7">
@@ -47,52 +47,52 @@ function viewapplication() {
                     Basic Info
                   </h5>
                   <div className="flex items-center justify-between mt-3">
-                    <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                    <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                       Loan amount {isMobile && <br />} requested
-                    </h1>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    </span>
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       ₹40,00,000
-                    </h1>
+                    </span>
                   </div>
                   <div className="flex items-center justify-between mt-2">
-                    <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                    <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                       Able to provide {isMobile && <br />} collateral
-                    </h1>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    </span>
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       Yes
-                    </h1>
+                    </span>
                   </div>
                   <div className="flex items-center justify-between mt-2">
-                    <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                    <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                       Admit Status
-                    </h1>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    </span>
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       Received Admit
-                    </h1>
+                    </span>
                   </div>
                   <div className="flex items-center justify-between mt-2">
-                    <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                    <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                       Opted College Name
-                    </h1>
-                    <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+                    </span>
+                    <span className="text-right text-[#292929] font-medium text-base font-gola">
                       University of California
-                    </h1>
+                    </span>
                   </div>
                   <div className="flex items-center justify-between mt-2">
-                    <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                    <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                       Opted country
-                    </h1>
-                    <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+                    </span>
+                    <span className="text-right text-[#292929] font-medium text-base font-gola">
                       United States of America
-                    </h1>
+                    </span>
                   </div>
                   <div className="flex items-center justify-between mt-2">
-                    <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                    <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                       City, State
-                    </h1>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    </span>
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       Coimbatore, Tamil Nadu
-                    </h1>
+                    </span>
                   </div>
                 </div>
                 <div className="mt-5 block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
@@ -100,44 +100,44 @@ function viewapplication() {
                     Co-applicant
                   </h5>
                   <div className="flex items-center justify-between mt-3">
-                    <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                    <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                       Co-applicant
-                    </h1>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    </span>
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       Father
-                    </h1>
+                    </span>
                   </div>
                   <div className="flex items-center justify-between mt-2">
-                    <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                    <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                       Collateral value
-                    </h1>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    </span>
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       Salaried
-                    </h1>
+                    </span>
                   </div>
                   <div className="flex items-center justify-between mt-2">
-                    <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                    <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                       Income p.a
-                    </h1>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    </span>
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       ₹10,00,000
-                    </h1>
+                    </span>
                   </div>
                   <div className="flex items-center justify-between mt-2">
-                    <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                    <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                       Phone number
-                    </h1>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    </span>
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       +91 98786*****
-                    </h1>
+                    </span>
                   </div>
                   <div className="flex items-center justify-between mt-2">
-                    <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                    <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                       Email
-                    </h1>
-                    <h1 className="break-words text-right text-[#292929] font-medium text-base font-gola">
+                    </span>
+                    <span className="break-words text-right text-[#292929] font-medium text-base font-gola">
                       *****anandham@gmail.com
-                    </h1>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -147,28 +147,28 @@ function viewapplication() {
                     OTHER DETAILS
                   </h5>
                   <div className="flex items-center justify-between mt-3">
-                    <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                    <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                       Prog. start date
-                    </h1>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    </span>
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       1 Aug 2023
-                    </h1>
+                    </span>
                   </div>
                   <div className="flex items-center justify-between mt-2">
-                    <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                    <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                       Course
-                    </h1>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    </span>
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       MS., Computer Science
-                    </h1>
+                    </span>
                   </div>
                   <div className="flex items-center justify-between mt-2">
-                    <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                    <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                       Course duration
-                    </h1>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    </span>
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       2 years
-                    </h1>
+                    </span>
                   </div>
                 </div>
                 <div className="mt-5 block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
@@ -176,36 +176,36 @@ function viewapplication() {
                     Education details
                   </h5>
                   <div className="flex items-center justify-between mt-3">
-                    <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                    <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                       Previous college
-                    </h1>
-                    <h1 className="break-words text-right text-[#292929] font-medium text-base font-gola">
+                    </span>
+                    <span className="break-words text-right text-[#292929] font-medium text-base font-gola">
                       Visveshwara College of Engineering
-                    </h1>
+                    </span>
                   </div>
                   <div className="flex items-center justify-between mt-2">
-                    <h1 className="break-words pr-2 text-[#000000]/[.30] font-medium text-base font-gola">
+                    <span className="break-words pr-2 text-[#000000]/[.30] font-medium text-base font-gola">
                       Highest degree
-                    </h1>
-                    <h1 className="break-words text-right text-[#292929] font-medium text-base font-gola">
+                    </span>
+                    <span className="break-words text-right text-[#292929] font-medium text-base font-gola">
                       BE., Computer Science
-                    </h1>
+                    </span>
                   </div>
                   <div className="flex items-center justify-between mt-2">
-                    <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                    <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                       CGPA
-                    </h1>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    </span>
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       8.9
-                    </h1>
+                    </span>
                   </div>
                   <div className="flex items-center justify-between mt-2">
-                    <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                    <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                       Backlog
-                    </h1>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    </span>
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       No
-                    </h1>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -215,20 +215,20 @@ function viewapplication() {
                     Collateral
                   </h5>
                   <div className="flex items-center justify-between mt-3">
-                    <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                    <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                       Collateral type
-                    </h1>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    </span>
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       Residential Property
-                    </h1>
+                    </span>
                   </div>
                   <div className="flex items-center justify-between mt-2">
-                    <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                    <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                       Collateral value
-                    </h1>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    </span>
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       ₹ 50,00,000
-                    </h1>
+                    </span>
                   </div>
                 </div>
                 <div className="mt-5 block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
@@ -236,20 +236,20 @@ function viewapplication() {
                     Work Experience
                   </h5>
                   <div className="flex items-center justify-between mt-3">
-                    <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                    <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                       Work {isMobile && <br />} experience
-                    </h1>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    </span>
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       9 months
-                    </h1>
+                    </span>
                   </div>
                   <div className="flex items-center justify-between mt-2">
-                    <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                    <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                       Salary
-                    </h1>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    </span>
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       ₹8,00,000 P.A
-                    </h1>
+                    </span>
                   </div>
                 </div>
                 <div className="mt-5 block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
@@ -257,28 +257,28 @@ function viewapplication() {
                     Test Score
                   </h5>
                   <div className="flex items-center justify-between mt-3">
-                    <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                    <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                       GRE
-                    </h1>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    </span>
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       189
-                    </h1>
+                    </span>
                   </div>
                   {/* <div className="flex items-center justify-between mt-2">
-                    <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                    <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                       GMAT
-                    </h1>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    </span>
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       177
-                    </h1>
+                    </span>
                   </div> */}
                   <div className="flex items-center justify-between mt-2">
-                    <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                    <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                       IELTS
-                    </h1>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    </span>
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       7.0
-                    </h1>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -295,7 +295,7 @@ function viewapplication() {
               <div className="flex flex-col h-full w-full justify-between">
                 <div className="p-5">
                   <div className="w-full flex items-center justify-between">
-                    <h1 className="text-2xl font-gola font-semibold">Offer</h1>
+                    <span className="text-2xl font-gola font-semibold">Offer</span>
                     <img
                       onClick={onClose}
                       className="cursor-pointer"

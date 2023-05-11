@@ -25,12 +25,12 @@ function Footer() {
           </div>
 
           <div className="ml-8">
-            <h1 className="font-golo text-footer-color text-base font-medium">
+            <span className="font-golo text-footer-color text-base font-medium">
               contact@fundmygrad.com
-            </h1>
-            <h1 className="text-right font-golo text-footer-color text-base font-medium">
+            </span>
+            <span className="text-right font-golo text-footer-color text-base font-medium">
               +91 9988776654
-            </h1>
+            </span>
           </div>
         </div>
       </div>

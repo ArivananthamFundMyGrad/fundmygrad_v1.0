@@ -19,7 +19,7 @@ function About() {
                   : ""
               }`}
             >
-              <h1
+              <h2
                 className={`transition-all ease-in-out duration-500 font-gola desktop:text-2xl tablet:text-xl font-semibold rounded-full bg-grey-bg tabanddesk:w-14 tabanddesk:h-14 flex items-center justify-center
                 ${
                   currentTab === "1"
@@ -30,14 +30,14 @@ function About() {
                 style={{ minWidth: "55px", height: "55px" }}
               >
                 01
-              </h1>
+              </h2>
               <div className="ml-6">
-                <h1 className="font-gola desktop:text-size28 tablet:text-xl font-semibold">
+                <h2 className="font-gola desktop:text-size28 tablet:text-xl font-semibold">
                   Fill the application
-                </h1>
-                <h1 className="font-gola text-base font-light">
+                </h2>
+                <p className="font-gola text-base font-light">
                   Sign up and create your profile
-                </h1>
+                </p>
               </div>
             </div>
             <div
@@ -48,7 +48,7 @@ function About() {
                   : ""
               }`}
             >
-              <h1
+              <h2
                 className={`transition-all ease-in-out duration-500 font-gola desktop:text-2xl tablet:text-xl font-semibold rounded-full bg-grey-bg tabanddesk:w-14 tabanddesk:h-14 flex items-center justify-center
                 ${
                   currentTab === "2"
@@ -59,14 +59,14 @@ function About() {
                 style={{ minWidth: "55px", height: "55px" }}
               >
                 02
-              </h1>
+              </h2>
               <div className="ml-6">
-                <h1 className="font-gola desktop:text-size28 tablet:text-xl font-semibold">
+                <h2 className="font-gola desktop:text-size28 tablet:text-xl font-semibold">
                   Let the banks bid
-                </h1>
-                <h1 className="font-gola text-base font-light">
+                </h2>
+                <p className="font-gola text-base font-light">
                   Wait for the banks to bid for your application
-                </h1>
+                </p>
               </div>
             </div>
             <div
@@ -77,7 +77,7 @@ function About() {
                   : ""
               }`}
             >
-              <h1
+              <h2
                 className={`transition-all ease-in-out duration-500 font-gola desktop:text-2xl tablet:text-xl font-semibold rounded-full bg-grey-bg tabanddesk:w-14 tabanddesk:h-14 flex items-center justify-center
                 ${
                   currentTab === "3"
@@ -88,14 +88,14 @@ function About() {
                 style={{ minWidth: "55px", height: "55px" }}
               >
                 03
-              </h1>
+              </h2>
               <div className="ml-6">
-                <h1 className="font-gola desktop:text-size28 tablet:text-xl font-semibold">
+                <h2 className="font-gola desktop:text-size28 tablet:text-xl font-semibold">
                   Accept a bid
-                </h1>
-                <h1 className="font-gola text-base font-light">
+                </h2>
+                <p className="font-gola text-base font-light">
                   Choose from various loan offers from banks
-                </h1>
+                </p>
               </div>
             </div>
             <div
@@ -106,7 +106,7 @@ function About() {
                   : ""
               }`}
             >
-              <h1
+              <h2
                 className={`transition-all ease-in-out duration-500 font-gola desktop:text-2xl tablet:text-xl font-semibold rounded-full bg-grey-bg tabanddesk:w-14 tabanddesk:h-14 flex items-center justify-center
                 ${
                   currentTab === "4"
@@ -117,14 +117,14 @@ function About() {
                 style={{ minWidth: "55px", height: "55px" }}
               >
                 04
-              </h1>
+              </h2>
               <div className="ml-6">
-                <h1 className="font-gola desktop:text-size28 tablet:text-xl font-semibold">
+                <h2 className="font-gola desktop:text-size28 tablet:text-xl font-semibold">
                   Choose Best Offers
-                </h1>
-                <h1 className="font-gola text-base font-light">
+                </h2>
+                <p className="font-gola text-base font-light">
                   Choose from various loan offers from banks
-                </h1>
+                </p>
               </div>
             </div>
           </div>

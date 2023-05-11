@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Partners from "@/components/Partners";
 import Stats from "@/components/Stats";
-import Index from "@/components/Testimonials";
+import Testimonials from "@/components/Testimonials";
 import Head from "next/head";
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
         <Stats />
         <Features />
         <About />
-        <Index/>
+        <Testimonials/>
         <FAQ/>
         <Partners />
         <Footer />

@@ -1,4 +1,4 @@
-import TelemarketingSidebar from "@/components/dashboard/TelemarketingSidebar";
+import TelemarketingSidebar from "@/components/reusable/TelemarketingSidebar";
 import AdminTelemarketingMobileSidebar from "@/components/reusable/AdminTelemarketingMobileSidebar";
 import AdminTelemarketingSidebar from "@/components/reusable/AdminTelemarketingSidebar";
 import TelemarketingMobileSidebar from "@/components/reusable/TelemarketingMobileSidebar";
@@ -32,15 +32,15 @@ function telemarketing() {
             <div className="tabanddesk:hidden">
               <div className="flex items-center mb-10">
                 <img onClick={onOpen} src="../menu.svg" alt="Menu Icon" />
-                <h1 className="ml-5 font-gola text-2xl font-bold">
+                <span className="ml-5 font-gola text-2xl font-bold">
                   Users List
-                </h1>
+                </span>
               </div>
             </div>
             <div className="flex justify-between">
-              <h1 className="mobile:hidden font-gola text-2xl font-bold">
+              <span className="mobile:hidden font-gola text-2xl font-bold">
                 Users List
-              </h1>
+              </span>
             </div>
             <div className="tabanddesk:hidden">
               <div className="w-full mt-5">
@@ -70,9 +70,9 @@ function telemarketing() {
                   <tr>
                     <th className="w-[20%]" scope="col">
                       <div className="flex items-center justify-between border-r-[1px] p-[16px]">
-                        <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                        <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                           Name
-                        </h1>
+                        </span>
                         <svg
                           width="12"
                           height="12"
@@ -90,9 +90,9 @@ function telemarketing() {
                     </th>
                     <th scope="col" className="w-[20%]">
                       <div className="flex items-center justify-between border-r-[1px] p-[16px]">
-                        <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                        <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                           Last Active Date
-                        </h1>
+                        </span>
                         <svg
                           width="12"
                           height="12"
@@ -110,9 +110,9 @@ function telemarketing() {
                     </th>
                     <th scope="col" className="w-[20%]">
                       <div className="flex items-center justify-between border-r-[1px] p-[16px]">
-                        <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                        <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                           Session Timing
-                        </h1>
+                        </span>
                         <div className="flex items-center">
                           <svg
                             width="12"
@@ -137,9 +137,9 @@ function telemarketing() {
                     </th>
                     <th scope="col" className="w-[20%]">
                       <div className="flex items-center justify-between border-r-[1px] p-[16px]">
-                        <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                        <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                           Successful Conversion
-                        </h1>
+                        </span>
                         <svg
                           width="12"
                           height="12"
@@ -157,9 +157,9 @@ function telemarketing() {
                     </th>
                     <th scope="col" className="w-[20%]">
                       <div className="flex items-center justify-between p-[16px]">
-                        <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                        <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                           Action
-                        </h1>
+                        </span>
                       </div>
                     </th>
                   </tr>
@@ -167,9 +167,9 @@ function telemarketing() {
                 <tbody>
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Ritesh
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       03/05/2023
@@ -178,9 +178,9 @@ function telemarketing() {
                       08:25:23
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         10 Students Converted
-                      </h1>
+                      </span>
                     </td>
                     <td className="px-[16px]">
                       <button
@@ -194,9 +194,9 @@ function telemarketing() {
                   </tr>
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Ritesh
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       03/05/2023
@@ -205,9 +205,9 @@ function telemarketing() {
                       08:25:23
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         10 Students Converted
-                      </h1>
+                      </span>
                     </td>
                     <td className="px-[16px]">
                       <button
@@ -221,9 +221,9 @@ function telemarketing() {
                   </tr>
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Ritesh
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       03/05/2023
@@ -232,9 +232,9 @@ function telemarketing() {
                       08:25:23
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         10 Students Converted
-                      </h1>
+                      </span>
                     </td>
                     <td className="px-[16px]">
                       <button
@@ -248,9 +248,9 @@ function telemarketing() {
                   </tr>
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Ritesh
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       03/05/2023
@@ -259,9 +259,9 @@ function telemarketing() {
                       08:25:23
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         10 Students Converted
-                      </h1>
+                      </span>
                     </td>
                     <td className="px-[16px]">
                       <button
@@ -275,9 +275,9 @@ function telemarketing() {
                   </tr>
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Ritesh
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       03/05/2023
@@ -286,9 +286,9 @@ function telemarketing() {
                       08:25:23
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         10 Students Converted
-                      </h1>
+                      </span>
                     </td>
                     <td className="px-[16px]">
                       <button
@@ -302,9 +302,9 @@ function telemarketing() {
                   </tr>
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Ritesh
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       03/05/2023
@@ -313,9 +313,9 @@ function telemarketing() {
                       08:25:23
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         10 Students Converted
-                      </h1>
+                      </span>
                     </td>
                     <td className="px-[16px]">
                       <button
@@ -329,9 +329,9 @@ function telemarketing() {
                   </tr>
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Ritesh
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       03/05/2023
@@ -340,9 +340,9 @@ function telemarketing() {
                       08:25:23
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         10 Students Converted
-                      </h1>
+                      </span>
                     </td>
                     <td className="px-[16px]">
                       <button
@@ -356,9 +356,9 @@ function telemarketing() {
                   </tr>
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Ritesh
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       03/05/2023
@@ -367,9 +367,9 @@ function telemarketing() {
                       08:25:23
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         10 Students Converted
-                      </h1>
+                      </span>
                     </td>
                     <td className="px-[16px]">
                       <button
@@ -383,9 +383,9 @@ function telemarketing() {
                   </tr>
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Ritesh
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       03/05/2023
@@ -394,9 +394,9 @@ function telemarketing() {
                       08:25:23
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         10 Students Converted
-                      </h1>
+                      </span>
                     </td>
                     <td className="px-[16px]">
                       <button
@@ -410,9 +410,9 @@ function telemarketing() {
                   </tr>
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Ritesh
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       03/05/2023
@@ -421,9 +421,9 @@ function telemarketing() {
                       08:25:23
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         10 Students Converted
-                      </h1>
+                      </span>
                     </td>
                     <td className="px-[16px]">
                       <button
@@ -447,29 +447,29 @@ function telemarketing() {
                   </h5>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Last Active Date
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     03/05/2023
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Session Timing
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     08:50:23
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Successful Conversion
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       10 Students
-                    </h1>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -480,29 +480,29 @@ function telemarketing() {
                   </h5>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Last Active Date
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     03/05/2023
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Session Timing
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     08:50:23
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Successful Conversion
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       10 Students
-                    </h1>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -513,29 +513,29 @@ function telemarketing() {
                   </h5>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Last Active Date
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     03/05/2023
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Session Timing
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     08:50:23
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Successful Conversion
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       10 Students
-                    </h1>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -546,29 +546,29 @@ function telemarketing() {
                   </h5>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Last Active Date
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     03/05/2023
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Session Timing
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     08:50:23
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Successful Conversion
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       10 Students
-                    </h1>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -579,29 +579,29 @@ function telemarketing() {
                   </h5>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Last Active Date
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     03/05/2023
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Session Timing
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     08:50:23
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Successful Conversion
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       10 Students
-                    </h1>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -612,29 +612,29 @@ function telemarketing() {
                   </h5>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Last Active Date
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     03/05/2023
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Session Timing
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     08:50:23
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Successful Conversion
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       10 Students
-                    </h1>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -645,29 +645,29 @@ function telemarketing() {
                   </h5>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Last Active Date
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     03/05/2023
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Session Timing
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     08:50:23
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Successful Conversion
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       10 Students
-                    </h1>
+                    </span>
                   </div>
                 </div>
               </div>
@@ -678,29 +678,29 @@ function telemarketing() {
                   </h5>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Last Active Date
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     03/05/2023
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Session Timing
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     08:50:23
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Successful Conversion
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       10 Students
-                    </h1>
+                    </span>
                   </div>
                 </div>
               </div>

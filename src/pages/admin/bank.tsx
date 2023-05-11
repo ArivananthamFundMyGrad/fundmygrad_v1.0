@@ -38,11 +38,11 @@ function bank() {
           <div className="w-full px-10">
             <div className="tabanddesk:hidden flex items-center mb-10">
               <img onClick={onOpen} src="../menu.svg" alt="Menu Icon" />
-              <h1 className="ml-5 font-gola text-2xl font-bold">Organization/Users</h1>
+              <span className="ml-5 font-gola text-2xl font-bold">Organization/Users</span>
             </div>
-            <h1 className="mobile:hidden font-gola text-2xl font-bold mb-5">
+            <span className="mobile:hidden font-gola text-2xl font-bold mb-5">
               Organization/Users
-            </h1>
+            </span>
             <Tabs>
               <TabList>
                 <Tab
@@ -51,9 +51,9 @@ function bank() {
                     borderBottom: "2px solid #0052CC",
                   }}
                 >
-                  <h1 className="font-gola text-sm font-semibold">
+                  <span className="font-gola text-sm font-semibold">
                     Organizations
-                  </h1>
+                  </span>
                 </Tab>
                 <Tab
                   _selected={{
@@ -61,7 +61,7 @@ function bank() {
                     borderBottom: "2px solid #0052CC",
                   }}
                 >
-                  <h1 className="font-gola text-sm font-semibold">Users</h1>
+                  <span className="font-gola text-sm font-semibold">Users</span>
                 </Tab>
               </TabList>
               <TabPanels>
@@ -126,9 +126,9 @@ function bank() {
                           <tr>
                             <th scope="col" className="px-[0.5rem] py-3">
                               <div className="flex items-center">
-                                <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                                <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                                   Organization Name
-                                </h1>
+                                </span>
                                 <svg
                                   width="12"
                                   height="12"
@@ -146,9 +146,9 @@ function bank() {
                             </th>
                             <th scope="col" className="px-[0.5rem] py-3">
                               <div className="flex items-center">
-                                <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                                <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                                   Mobile Number
-                                </h1>
+                                </span>
                                 <svg
                                   width="12"
                                   height="12"
@@ -167,9 +167,9 @@ function bank() {
 
                             <th scope="col" className="px-[0.5rem] py-3">
                               <div className="flex items-center">
-                                <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                                <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                                   Email Address
-                                </h1>
+                                </span>
                                 <svg
                                   width="12"
                                   height="12"
@@ -188,9 +188,9 @@ function bank() {
 
                             <th scope="col" className="px-[0.5rem] py-3">
                               <div className="flex items-center">
-                                <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                                <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                                   Last Online Time
-                                </h1>
+                                </span>
                                 <svg
                                   width="12"
                                   height="12"
@@ -208,9 +208,9 @@ function bank() {
                             </th>
                             <th scope="col" className="px-[0.5rem] py-3">
                               <div className="flex items-center">
-                                <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                                <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                                   Account Status
-                                </h1>
+                                </span>
                                 <svg
                                   width="12"
                                   height="12"
@@ -228,9 +228,9 @@ function bank() {
                             </th>
                             <th scope="col" className="px-[0.5rem] py-3">
                               <div className="flex items-center">
-                                <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87]">
+                                <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87]">
                                   Action
-                                </h1>
+                                </span>
                               </div>
                             </th>
                           </tr>
@@ -238,19 +238,19 @@ function bank() {
                         <tbody>
                           <tr className="bg-white border-b">
                             <th scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 HDFC Bank
-                              </h1>
+                              </span>
                             </th>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 +91 9789654189
-                              </h1>
+                              </span>
                             </td>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 southchennai@hdfc.com
-                              </h1>
+                              </span>
                             </td>
                             <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                               01/05/2023 08:34:54
@@ -272,19 +272,19 @@ function bank() {
                           </tr>
                           <tr className="bg-white border-b">
                             <th scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 HDFC Bank
-                              </h1>
+                              </span>
                             </th>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 +91 9789654189
-                              </h1>
+                              </span>
                             </td>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 southchennai@hdfc.com
-                              </h1>
+                              </span>
                             </td>
                             <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                               01/05/2023 08:34:54
@@ -306,19 +306,19 @@ function bank() {
                           </tr>
                           <tr className="bg-white border-b">
                             <th scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 HDFC Bank
-                              </h1>
+                              </span>
                             </th>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 +91 9789654189
-                              </h1>
+                              </span>
                             </td>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 southchennai@hdfc.com
-                              </h1>
+                              </span>
                             </td>
                             <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                               01/05/2023 08:34:54
@@ -340,19 +340,19 @@ function bank() {
                           </tr>
                           <tr className="bg-white border-b">
                             <th scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 HDFC Bank
-                              </h1>
+                              </span>
                             </th>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 +91 9789654189
-                              </h1>
+                              </span>
                             </td>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 southchennai@hdfc.com
-                              </h1>
+                              </span>
                             </td>
                             <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                               01/05/2023 08:34:54
@@ -374,19 +374,19 @@ function bank() {
                           </tr>
                           <tr className="bg-white border-b">
                             <th scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 HDFC Bank
-                              </h1>
+                              </span>
                             </th>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 +91 9789654189
-                              </h1>
+                              </span>
                             </td>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 southchennai@hdfc.com
-                              </h1>
+                              </span>
                             </td>
                             <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                               01/05/2023 08:34:54
@@ -408,19 +408,19 @@ function bank() {
                           </tr>
                           <tr className="bg-white border-b">
                             <th scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 HDFC Bank
-                              </h1>
+                              </span>
                             </th>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 +91 9789654189
-                              </h1>
+                              </span>
                             </td>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 southchennai@hdfc.com
-                              </h1>
+                              </span>
                             </td>
                             <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                               01/05/2023 08:34:54
@@ -442,19 +442,19 @@ function bank() {
                           </tr>
                           <tr className="bg-white border-b">
                             <th scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 HDFC Bank
-                              </h1>
+                              </span>
                             </th>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 +91 9789654189
-                              </h1>
+                              </span>
                             </td>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 southchennai@hdfc.com
-                              </h1>
+                              </span>
                             </td>
                             <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                               01/05/2023 08:34:54
@@ -476,19 +476,19 @@ function bank() {
                           </tr>
                           <tr className="bg-white border-b">
                             <th scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 HDFC Bank
-                              </h1>
+                              </span>
                             </th>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 +91 9789654189
-                              </h1>
+                              </span>
                             </td>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 southchennai@hdfc.com
-                              </h1>
+                              </span>
                             </td>
                             <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                               01/05/2023 08:34:54
@@ -510,19 +510,19 @@ function bank() {
                           </tr>
                           <tr className="bg-white border-b">
                             <th scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 HDFC Bank
-                              </h1>
+                              </span>
                             </th>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 +91 9789654189
-                              </h1>
+                              </span>
                             </td>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 southchennai@hdfc.com
-                              </h1>
+                              </span>
                             </td>
                             <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                               01/05/2023 08:34:54
@@ -558,41 +558,41 @@ function bank() {
                           Coimbatore, TN - 641606
                         </p>
                         <div className="flex items-center justify-between mt-3">
-                          <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                          <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                             Last Offer
-                          </h1>
+                          </span>
                           <div className="flex flex-col items-end">
-                            <h1 className="text-[#292929] font-medium text-base font-gola">
+                            <span className="text-[#292929] font-medium text-base font-gola">
                               ₹40,00,000
-                            </h1>
+                            </span>
                             <p className="font-gola text-sm text-[#7E7E7E]">
                               9.85% | 24months
                             </p>
                           </div>
                         </div>
                         <div className="flex items-center justify-between mt-4">
-                          <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                          <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                             Documents
-                          </h1>
-                          <h1 className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
+                          </span>
+                          <span className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
                             2 pending
-                          </h1>
+                          </span>
                         </div>
                         <div className="flex items-center justify-between mt-4">
-                          <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                          <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                             Status
-                          </h1>
-                          <h1 className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
+                          </span>
+                          <span className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
                             Not Yet Accepted
-                          </h1>
+                          </span>
                         </div>
                         <div className="flex items-center justify-between mt-4">
-                          <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                          <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                             Contact
-                          </h1>
-                          <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+                          </span>
+                          <span className="text-right text-[#292929] font-medium text-base font-gola">
                             +91 9867676678
-                          </h1>
+                          </span>
                         </div>
                         <div className="flex items-center justify-end mt-5">
                           <button
@@ -618,41 +618,41 @@ function bank() {
                           Coimbatore, TN - 641606
                         </p>
                         <div className="flex items-center justify-between mt-3">
-                          <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                          <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                             Last Offer
-                          </h1>
+                          </span>
                           <div className="flex flex-col items-end">
-                            <h1 className="text-[#292929] font-medium text-base font-gola">
+                            <span className="text-[#292929] font-medium text-base font-gola">
                               ₹40,00,000
-                            </h1>
+                            </span>
                             <p className="font-gola text-sm text-[#7E7E7E]">
                               9.85% | 24months
                             </p>
                           </div>
                         </div>
                         <div className="flex items-center justify-between mt-4">
-                          <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                          <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                             Documents
-                          </h1>
-                          <h1 className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
+                          </span>
+                          <span className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
                             2 pending
-                          </h1>
+                          </span>
                         </div>
                         <div className="flex items-center justify-between mt-4">
-                          <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                          <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                             Status
-                          </h1>
-                          <h1 className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
+                          </span>
+                          <span className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
                             Not Yet Accepted
-                          </h1>
+                          </span>
                         </div>
                         <div className="flex items-center justify-between mt-4">
-                          <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                          <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                             Contact
-                          </h1>
-                          <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+                          </span>
+                          <span className="text-right text-[#292929] font-medium text-base font-gola">
                             +91 9867676678
-                          </h1>
+                          </span>
                         </div>
                         <div className="flex items-center justify-end mt-5">
                           <button
@@ -678,41 +678,41 @@ function bank() {
                           Coimbatore, TN - 641606
                         </p>
                         <div className="flex items-center justify-between mt-3">
-                          <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                          <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                             Last Offer
-                          </h1>
+                          </span>
                           <div className="flex flex-col items-end">
-                            <h1 className="text-[#292929] font-medium text-base font-gola">
+                            <span className="text-[#292929] font-medium text-base font-gola">
                               ₹40,00,000
-                            </h1>
+                            </span>
                             <p className="font-gola text-sm text-[#7E7E7E]">
                               9.85% | 24months
                             </p>
                           </div>
                         </div>
                         <div className="flex items-center justify-between mt-4">
-                          <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                          <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                             Documents
-                          </h1>
-                          <h1 className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
+                          </span>
+                          <span className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
                             2 pending
-                          </h1>
+                          </span>
                         </div>
                         <div className="flex items-center justify-between mt-4">
-                          <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                          <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                             Status
-                          </h1>
-                          <h1 className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
+                          </span>
+                          <span className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
                             Not Yet Accepted
-                          </h1>
+                          </span>
                         </div>
                         <div className="flex items-center justify-between mt-4">
-                          <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                          <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                             Contact
-                          </h1>
-                          <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+                          </span>
+                          <span className="text-right text-[#292929] font-medium text-base font-gola">
                             +91 9867676678
-                          </h1>
+                          </span>
                         </div>
                         <div className="flex items-center justify-end mt-5">
                           <button
@@ -738,41 +738,41 @@ function bank() {
                           Coimbatore, TN - 641606
                         </p>
                         <div className="flex items-center justify-between mt-3">
-                          <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                          <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                             Last Offer
-                          </h1>
+                          </span>
                           <div className="flex flex-col items-end">
-                            <h1 className="text-[#292929] font-medium text-base font-gola">
+                            <span className="text-[#292929] font-medium text-base font-gola">
                               ₹40,00,000
-                            </h1>
+                            </span>
                             <p className="font-gola text-sm text-[#7E7E7E]">
                               9.85% | 24months
                             </p>
                           </div>
                         </div>
                         <div className="flex items-center justify-between mt-4">
-                          <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                          <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                             Documents
-                          </h1>
-                          <h1 className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
+                          </span>
+                          <span className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
                             2 pending
-                          </h1>
+                          </span>
                         </div>
                         <div className="flex items-center justify-between mt-4">
-                          <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                          <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                             Status
-                          </h1>
-                          <h1 className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
+                          </span>
+                          <span className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
                             Not Yet Accepted
-                          </h1>
+                          </span>
                         </div>
                         <div className="flex items-center justify-between mt-4">
-                          <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                          <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                             Contact
-                          </h1>
-                          <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+                          </span>
+                          <span className="text-right text-[#292929] font-medium text-base font-gola">
                             +91 9867676678
-                          </h1>
+                          </span>
                         </div>
                         <div className="flex items-center justify-end mt-5">
                           <button
@@ -798,41 +798,41 @@ function bank() {
                           Coimbatore, TN - 641606
                         </p>
                         <div className="flex items-center justify-between mt-3">
-                          <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                          <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                             Last Offer
-                          </h1>
+                          </span>
                           <div className="flex flex-col items-end">
-                            <h1 className="text-[#292929] font-medium text-base font-gola">
+                            <span className="text-[#292929] font-medium text-base font-gola">
                               ₹40,00,000
-                            </h1>
+                            </span>
                             <p className="font-gola text-sm text-[#7E7E7E]">
                               9.85% | 24months
                             </p>
                           </div>
                         </div>
                         <div className="flex items-center justify-between mt-4">
-                          <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                          <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                             Documents
-                          </h1>
-                          <h1 className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
+                          </span>
+                          <span className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
                             2 pending
-                          </h1>
+                          </span>
                         </div>
                         <div className="flex items-center justify-between mt-4">
-                          <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                          <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                             Status
-                          </h1>
-                          <h1 className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
+                          </span>
+                          <span className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
                             Not Yet Accepted
-                          </h1>
+                          </span>
                         </div>
                         <div className="flex items-center justify-between mt-4">
-                          <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                          <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                             Contact
-                          </h1>
-                          <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+                          </span>
+                          <span className="text-right text-[#292929] font-medium text-base font-gola">
                             +91 9867676678
-                          </h1>
+                          </span>
                         </div>
                         <div className="flex items-center justify-end mt-5">
                           <button
@@ -858,41 +858,41 @@ function bank() {
                           Coimbatore, TN - 641606
                         </p>
                         <div className="flex items-center justify-between mt-3">
-                          <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                          <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                             Last Offer
-                          </h1>
+                          </span>
                           <div className="flex flex-col items-end">
-                            <h1 className="text-[#292929] font-medium text-base font-gola">
+                            <span className="text-[#292929] font-medium text-base font-gola">
                               ₹40,00,000
-                            </h1>
+                            </span>
                             <p className="font-gola text-sm text-[#7E7E7E]">
                               9.85% | 24months
                             </p>
                           </div>
                         </div>
                         <div className="flex items-center justify-between mt-4">
-                          <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                          <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                             Documents
-                          </h1>
-                          <h1 className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
+                          </span>
+                          <span className="font-gola text-sm font-medium text-[#ED3B3B] bg-[#FFECEC] w-[94px] text-center rounded-lg">
                             2 pending
-                          </h1>
+                          </span>
                         </div>
                         <div className="flex items-center justify-between mt-4">
-                          <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                          <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                             Status
-                          </h1>
-                          <h1 className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
+                          </span>
+                          <span className="font-gola text-sm font-medium text-[#C96D02] bg-[#FFF0D4] w-[160px] text-center rounded-lg">
                             Not Yet Accepted
-                          </h1>
+                          </span>
                         </div>
                         <div className="flex items-center justify-between mt-4">
-                          <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                          <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                             Contact
-                          </h1>
-                          <h1 className="text-right text-[#292929] font-medium text-base font-gola">
+                          </span>
+                          <span className="text-right text-[#292929] font-medium text-base font-gola">
                             +91 9867676678
-                          </h1>
+                          </span>
                         </div>
                         <div className="flex items-center justify-end mt-5">
                           <button
@@ -970,9 +970,9 @@ function bank() {
                           <tr>
                             <th scope="col" className="px-[0.5rem] py-3">
                               <div className="flex items-center">
-                                <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                                <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                                   Organization Name
-                                </h1>
+                                </span>
                                 <svg
                                   width="12"
                                   height="12"
@@ -990,9 +990,9 @@ function bank() {
                             </th>
                             <th scope="col" className="px-[0.5rem] py-3">
                               <div className="flex items-center">
-                                <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                                <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                                   Mobile Number
-                                </h1>
+                                </span>
                                 <svg
                                   width="12"
                                   height="12"
@@ -1011,9 +1011,9 @@ function bank() {
 
                             <th scope="col" className="px-[0.5rem] py-3">
                               <div className="flex items-center">
-                                <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                                <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                                   Email Address
-                                </h1>
+                                </span>
                                 <svg
                                   width="12"
                                   height="12"
@@ -1032,9 +1032,9 @@ function bank() {
 
                             <th scope="col" className="px-[0.5rem] py-3">
                               <div className="flex items-center">
-                                <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                                <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                                   Last Online Time
-                                </h1>
+                                </span>
                                 <svg
                                   width="12"
                                   height="12"
@@ -1052,9 +1052,9 @@ function bank() {
                             </th>
                             <th scope="col" className="px-[0.5rem] py-3">
                               <div className="flex items-center">
-                                <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                                <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                                   Account Status
-                                </h1>
+                                </span>
                                 <svg
                                   width="12"
                                   height="12"
@@ -1072,9 +1072,9 @@ function bank() {
                             </th>
                             <th scope="col" className="px-[0.5rem] py-3">
                               <div className="flex items-center">
-                                <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87]">
+                                <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87]">
                                   Action
-                                </h1>
+                                </span>
                               </div>
                             </th>
                           </tr>
@@ -1082,19 +1082,19 @@ function bank() {
                         <tbody>
                           <tr className="bg-white border-b">
                             <th scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 Ramkumar
-                              </h1>
+                              </span>
                             </th>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 +91 9789654457
-                              </h1>
+                              </span>
                             </td>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 ramkumar@hdfc.com
-                              </h1>
+                              </span>
                             </td>
                             <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                               03/04/2023 01:23:12
@@ -1116,19 +1116,19 @@ function bank() {
                           </tr>
                           <tr className="bg-white border-b">
                             <th scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 Ramkumar
-                              </h1>
+                              </span>
                             </th>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 +91 9789654457
-                              </h1>
+                              </span>
                             </td>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 ramkumar@hdfc.com
-                              </h1>
+                              </span>
                             </td>
                             <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                               03/04/2023 01:23:12
@@ -1150,19 +1150,19 @@ function bank() {
                           </tr>
                           <tr className="bg-white border-b">
                             <th scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 Ramkumar
-                              </h1>
+                              </span>
                             </th>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 +91 9789654457
-                              </h1>
+                              </span>
                             </td>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 ramkumar@hdfc.com
-                              </h1>
+                              </span>
                             </td>
                             <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                               03/04/2023 01:23:12
@@ -1184,19 +1184,19 @@ function bank() {
                           </tr>
                           <tr className="bg-white border-b">
                             <th scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 Ramkumar
-                              </h1>
+                              </span>
                             </th>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 +91 9789654457
-                              </h1>
+                              </span>
                             </td>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 ramkumar@hdfc.com
-                              </h1>
+                              </span>
                             </td>
                             <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                               03/04/2023 01:23:12
@@ -1218,19 +1218,19 @@ function bank() {
                           </tr>
                           <tr className="bg-white border-b">
                             <th scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 Ramkumar
-                              </h1>
+                              </span>
                             </th>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 +91 9789654457
-                              </h1>
+                              </span>
                             </td>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 ramkumar@hdfc.com
-                              </h1>
+                              </span>
                             </td>
                             <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                               03/04/2023 01:23:12
@@ -1252,19 +1252,19 @@ function bank() {
                           </tr>
                           <tr className="bg-white border-b">
                             <th scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 Ramkumar
-                              </h1>
+                              </span>
                             </th>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 +91 9789654457
-                              </h1>
+                              </span>
                             </td>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 ramkumar@hdfc.com
-                              </h1>
+                              </span>
                             </td>
                             <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                               03/04/2023 01:23:12
@@ -1286,19 +1286,19 @@ function bank() {
                           </tr>
                           <tr className="bg-white border-b">
                             <th scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 Ramkumar
-                              </h1>
+                              </span>
                             </th>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 +91 9789654457
-                              </h1>
+                              </span>
                             </td>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 ramkumar@hdfc.com
-                              </h1>
+                              </span>
                             </td>
                             <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                               03/04/2023 01:23:12
@@ -1320,19 +1320,19 @@ function bank() {
                           </tr>
                           <tr className="bg-white border-b">
                             <th scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 Ramkumar
-                              </h1>
+                              </span>
                             </th>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 +91 9789654457
-                              </h1>
+                              </span>
                             </td>
                             <td scope="row" className="px-[0.5rem] py-4">
-                              <h1 className="font-gola text-sm font-medium text-black">
+                              <span className="font-gola text-sm font-medium text-black">
                                 ramkumar@hdfc.com
-                              </h1>
+                              </span>
                             </td>
                             <td className="px-[0.5rem] py-4 font-gola text-sm font-medium text-black">
                               03/04/2023 01:23:12
@@ -1372,7 +1372,7 @@ function bank() {
               <div className="flex flex-col h-full w-full justify-between">
               <div className="p-5">
                 <div className="w-full flex items-center justify-between">
-                  <h1 className="text-2xl font-gola font-semibold">Offer</h1>
+                  <span className="text-2xl font-gola font-semibold">Offer</span>
                   <img
                     onClick={onClose}
                     className="cursor-pointer"
@@ -1456,7 +1456,7 @@ function bank() {
               <div className="flex flex-col h-full w-full justify-between">
               <div className="p-5">
                 <div className="w-full flex items-center justify-between">
-                  <h1 className="text-2xl font-gola font-semibold">Offer</h1>
+                  <span className="text-2xl font-gola font-semibold">Offer</span>
                   <img
                     onClick={onUserSidebarClose}
                     className="cursor-pointer"

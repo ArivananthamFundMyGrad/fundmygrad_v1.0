@@ -1,5 +1,5 @@
 import Bankportal from "@/components/ApplicantsComp";
-import Sidebar from "@/components/dashboard/Sidebar";
+import Sidebar from "@/components/reusable/Sidebar";
 import { useMediaQuery } from "@chakra-ui/react";
 import Head from "next/head";
 import React from "react";

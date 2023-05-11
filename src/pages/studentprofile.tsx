@@ -36,12 +36,12 @@ function studentprofile() {
             >
               <div className="border-b-[1px] border-[#E4E4E4] pb-5 flex items-center justify-between">
                 <div>
-                  <h1 className="font-gola text-[14px] text-[#8B8B8B] font-normal">
+                  <p className="font-gola text-[14px] text-[#8B8B8B] font-normal">
                     Name
-                  </h1>
-                  <h1 className="font-gola text-base font-bold text-[#2F2F2F] mt-1">
+                  </p>
+                  <p className="font-gola text-base font-bold text-[#2F2F2F] mt-1">
                     Nikhil Mathew
-                  </h1>
+                  </p>
                 </div>
                 <button
                   type="button"
@@ -52,12 +52,12 @@ function studentprofile() {
               </div>
               <div className="flex items-center justify-between border-b-[1px] border-[#E4E4E4] pb-5 pt-5">
                 <div>
-                  <h1 className="font-gola text-[14px] text-[#8B8B8B] font-normal">
+                  <p className="font-gola text-[14px] text-[#8B8B8B] font-normal">
                     Email address
-                  </h1>
-                  <h1 className="font-gola text-base font-bold text-[#2F2F2F] mt-1">
+                  </p>
+                  <p className="font-gola text-base font-bold text-[#2F2F2F] mt-1">
                     nikhilmathew@gmail.com
-                  </h1>
+                  </p>
                 </div>
                 <div className="flex items-center">
                   <img src="menu_dots.svg" alt="" />
@@ -71,12 +71,12 @@ function studentprofile() {
               </div>
               <div className="flex items-center justify-between border-b-[1px] border-[#E4E4E4] pb-5 pt-5">
                 <div>
-                  <h1 className="font-gola text-[14px] text-[#8B8B8B] font-normal">
+                  <p className="font-gola text-[14px] text-[#8B8B8B] font-normal">
                     Phone number
-                  </h1>
-                  <h1 className="font-gola text-base font-bold text-[#2F2F2F] mt-1">
+                  </p>
+                  <p className="font-gola text-base font-bold text-[#2F2F2F] mt-1">
                     +91 9787665432
-                  </h1>
+                  </p>
                 </div>
                 <button
                   type="button"
@@ -87,17 +87,17 @@ function studentprofile() {
               </div>
               <div className="flex items-center justify-between border-b-[1px] border-[#E4E4E4] pb-5 pt-5">
                 <div>
-                  <h1 className="font-gola text-base font-bold text-[#2F2F2F]">
+                  <span className="font-gola text-base font-bold text-[#2F2F2F]">
                     Change Passoword
-                  </h1>
+                  </span>
                 </div>
                 <img src="rightIconGray.svg" alt="" />
               </div>
               <div className="flex items-center justify-between pb-5 pt-5">
                 <div>
-                  <h1 className="font-gola text-base font-bold text-[#0057E4]">
+                  <span className="font-gola text-base font-bold text-[#0057E4]">
                     Log Out
-                  </h1>
+                  </span>
                 </div>
               </div>
             </div>

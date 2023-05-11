@@ -48,9 +48,9 @@ function mydocuments() {
                 }}
                 className="flex justify-between items-center rounded-md bg-[#F7FAFF] p-[16px]"
               >
-                <h1 className="font-gola text-base font-semibold">
+                <span className="font-gola text-base font-semibold">
                   Aadhar Card
-                </h1>
+                </span>
                 <div className="flex items-center">
                   <p className="mr-3 font-gola text-[#8F8F8F] text-sm font-normal">
                     1/2 files
@@ -64,7 +64,7 @@ function mydocuments() {
                 }}
                 className="flex mt-3 justify-between items-center rounded-md p-[16px]"
               >
-                <h1 className="font-gola text-base font-semibold">PAN Card</h1>
+                <span className="font-gola text-base font-semibold">PAN Card</span>
                 <div className="flex items-center">
                   <p className="mr-3 font-gola text-[#8F8F8F] text-sm font-normal">
                     2/2 files
@@ -78,9 +78,9 @@ function mydocuments() {
                 }}
                 className="flex mt-3 justify-between items-center rounded-md p-[16px]"
               >
-                <h1 className="font-gola text-base font-semibold">
+                <span className="font-gola text-base font-semibold">
                   Birth Certificate
-                </h1>
+                </span>
                 <div className="flex items-center">
                   <p className="mr-3 font-gola text-[#8F8F8F] text-sm font-normal">
                     2/2 files
@@ -94,9 +94,9 @@ function mydocuments() {
                 }}
                 className="flex mt-3 justify-between items-center rounded-md p-[16px]"
               >
-                <h1 className="font-gola text-base font-semibold">
+                <span className="font-gola text-base font-semibold">
                   Marksheets
-                </h1>
+                </span>
                 <div className="flex items-center">
                   <p className="mr-3 font-gola text-[#8F8F8F] text-sm font-normal">
                     1/2 files
@@ -110,9 +110,9 @@ function mydocuments() {
                 }}
                 className="flex mt-3 justify-between items-center rounded-md p-[16px]"
               >
-                <h1 className="font-gola text-base font-semibold">
+                <span className="font-gola text-base font-semibold">
                   Graduation Certificate
-                </h1>
+                </span>
                 <div className="flex items-center">
                   <p className="mr-3 font-gola text-[#8F8F8F] text-sm font-normal">
                     2/2 files
@@ -128,27 +128,27 @@ function mydocuments() {
               className="desktop:w-[70%] tablet:w-[80%] py-10 rounded-md flex items-center justify-center desktop:ml-10 tablet:ml-5"
             >
               <div className="desktop:w-[70%] tablet:w-[80%]">
-                <h1 className="font-gola text-[20px] font-bold text-[#222222]">
+                <span className="font-gola text-[20px] font-bold text-[#222222]">
                   Aadhar Card
-                </h1>
+                </span>
                 <p className="mt-5 font-gola text-[14px] text-[#0E0E0E]">
                   Upload Documents
                 </p>
                 <p className="text-[#8F8F8F] font-gola text-[14px] font-normal">
                   Size should be less than 1mb (.jpg, .png, .svg,.pdf)
                 </p>
-                <h1 className="text-[14px] font-gola font-bold mt-5">
+                <span className="text-[14px] font-gola font-bold mt-5">
                   Front Side:
-                </h1>
+                </span>
                 <div
                   style={{ border: "0.5px solid #CBCBCB" }}
                   className="mt-2 desktop:px-[32px] tablet:px-[15px] py-[20px] rounded-md flex justify-between items-center"
                 >
                   <div className="flex tablet:flex-col items-center">
                     <img src="/pdf.svg" alt="PDF Icon" />
-                    <h1 className="font-gola text-sm font-medium text-[#2B2B2B] ml-3">
+                    <span className="font-gola text-sm font-medium text-[#2B2B2B] ml-3">
                       Filename001.pdf
-                    </h1>
+                    </span>
                   </div>
                   <div className="flex items-center">
                     <img src="/menu_dots.svg" alt="Menu Icon" />
@@ -165,16 +165,16 @@ function mydocuments() {
                     </button>
                   </div>
                 </div>
-                <h1 className="text-[14px] font-gola font-bold mt-5">
+                <span className="text-[14px] font-gola font-bold mt-5">
                   Back Side:
-                </h1>
+                </span>
                 <div
                   style={{ border: "0.5px solid #CBCBCB" }}
                   className="mt-2 px-[32px] py-[20px] rounded-md flex flex-col justify-center items-center"
                 >
-                  <h1 className="font-gola text-[#8E8E8E] text-[14px] font-normal">
+                  <span className="font-gola text-[#8E8E8E] text-[14px] font-normal">
                     No file has uploaded yet
-                  </h1>
+                  </span>
                   <button
                     type="button"
                     className="h-10 mt-3 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
@@ -196,7 +196,7 @@ function mydocuments() {
               src="../menu.svg"
               alt="Menu Icon"
             />
-            <h1 className="text-2xl font-gola font-bold">My Documents</h1>
+            <span className="text-2xl font-gola font-bold">My Documents</span>
           </div>
           <div
             className="cursor-pointer"
@@ -278,27 +278,27 @@ function mydocuments() {
         </div>
         {tab === "1" && (
           <div className="mt-[16px]">
-            <h1 className="font-gola text-[14px] font-semibold text-[#0E0E0E]">
+            <span className="font-gola text-[14px] font-semibold text-[#0E0E0E]">
               Upload Documents{" "}
-            </h1>
-            <h1 className="font-gola text-[14px] font-normal text-[#8F8F8F]">
+            </span>
+            <span className="font-gola text-[14px] font-normal text-[#8F8F8F]">
               Size should be less than 1mb (.jpg, .png, .svg,.pdf){" "}
-            </h1>
-            <h1 className="mt-[16px] font-gola text-base font-semibold text-[#222222]">
+            </span>
+            <span className="mt-[16px] font-gola text-base font-semibold text-[#222222]">
               Aadhar Card
-            </h1>
-            <h1 className="mt-[12px] font-gola text-[14px] font-normal text-[#8F8F8F]">
+            </span>
+            <span className="mt-[12px] font-gola text-[14px] font-normal text-[#8F8F8F]">
               Front Side:
-            </h1>
+            </span>
             <div
               style={{ border: "0.5px solid #CBCBCB" }}
               className="mt-2 px-[12px] py-[20px] rounded-md flex justify-between items-center"
             >
               <div className="flex  items-center">
                 <img src="/pdf.svg" alt="PDF Icon" />
-                <h1 className="font-gola text-sm font-medium text-[#2B2B2B] ml-3">
+                <span className="font-gola text-sm font-medium text-[#2B2B2B] ml-3">
                   Filename001.pdf
-                </h1>
+                </span>
               </div>
               <div className="flex items-center">
                 <img src="/menu_dots.svg" alt="Menu Icon" />
@@ -309,16 +309,16 @@ function mydocuments() {
                 />
               </div>
             </div>
-            <h1 className="mt-[12px] font-gola text-[14px] font-normal text-[#8F8F8F]">
+            <span className="mt-[12px] font-gola text-[14px] font-normal text-[#8F8F8F]">
               Back Side:
-            </h1>
+            </span>
             <div
               style={{ border: "0.5px solid #CBCBCB" }}
               className="mt-2 px-[32px] py-[20px] rounded-md flex flex-col justify-center items-center"
             >
-              <h1 className="font-gola text-[#8E8E8E] text-[14px] font-normal">
+              <span className="font-gola text-[#8E8E8E] text-[14px] font-normal">
                 No file has uploaded yet
-              </h1>
+              </span>
               <button
                 type="button"
                 className="h-10 mt-3 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
@@ -330,27 +330,27 @@ function mydocuments() {
         )}
         {tab === "2" && (
           <div className="mt-[16px]">
-            <h1 className="font-gola text-[14px] font-semibold text-[#0E0E0E]">
+            <span className="font-gola text-[14px] font-semibold text-[#0E0E0E]">
               Upload Documents{" "}
-            </h1>
-            <h1 className="font-gola text-[14px] font-normal text-[#8F8F8F]">
+            </span>
+            <span className="font-gola text-[14px] font-normal text-[#8F8F8F]">
               Size should be less than 1mb (.jpg, .png, .svg,.pdf){" "}
-            </h1>
-            <h1 className="mt-[16px] font-gola text-base font-semibold text-[#222222]">
+            </span>
+            <span className="mt-[16px] font-gola text-base font-semibold text-[#222222]">
               PAN Card
-            </h1>
-            <h1 className="mt-[12px] font-gola text-[14px] font-normal text-[#8F8F8F]">
+            </span>
+            <span className="mt-[12px] font-gola text-[14px] font-normal text-[#8F8F8F]">
               Front Side:
-            </h1>
+            </span>
             <div
               style={{ border: "0.5px solid #CBCBCB" }}
               className="mt-2 px-[12px] py-[20px] rounded-md flex justify-between items-center"
             >
               <div className="flex  items-center">
                 <img src="/pdf.svg" alt="PDF Icon" />
-                <h1 className="font-gola text-sm font-medium text-[#2B2B2B] ml-3">
+                <span className="font-gola text-sm font-medium text-[#2B2B2B] ml-3">
                   Filename001.pdf
-                </h1>
+                </span>
               </div>
               <div className="flex items-center">
                 <img src="/menu_dots.svg" alt="Menu Icon" />
@@ -365,25 +365,25 @@ function mydocuments() {
         )}
         {tab === "3" && (
           <div className="mt-[16px]">
-            <h1 className="font-gola text-[14px] font-semibold text-[#0E0E0E]">
+            <span className="font-gola text-[14px] font-semibold text-[#0E0E0E]">
               Upload Documents
-            </h1>
-            <h1 className="font-gola text-[14px] font-normal text-[#8F8F8F]">
+            </span>
+            <span className="font-gola text-[14px] font-normal text-[#8F8F8F]">
               Size should be less than 1mb (.jpg, .png, .svg,.pdf)
-            </h1>
-            <h1 className="mt-[16px] font-gola text-base font-semibold text-[#222222]">
+            </span>
+            <span className="mt-[16px] font-gola text-base font-semibold text-[#222222]">
               Birth Certificate
-            </h1>
-            <h1 className="mt-[12px] font-gola text-[14px] font-normal text-[#8F8F8F]">
+            </span>
+            <span className="mt-[12px] font-gola text-[14px] font-normal text-[#8F8F8F]">
               Front Side:
-            </h1>
+            </span>
             <div
               style={{ border: "0.5px solid #CBCBCB" }}
               className="mt-2 px-[32px] py-[20px] rounded-md flex flex-col justify-center items-center"
             >
-              <h1 className="font-gola text-[#8E8E8E] text-[14px] font-normal">
+              <span className="font-gola text-[#8E8E8E] text-[14px] font-normal">
                 No file has uploaded yet
-              </h1>
+              </span>
               <button
                 type="button"
                 className="h-10 mt-3 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
@@ -395,25 +395,25 @@ function mydocuments() {
         )}
         {tab === "4" && (
           <div className="mt-[16px]">
-            <h1 className="font-gola text-[14px] font-semibold text-[#0E0E0E]">
+            <span className="font-gola text-[14px] font-semibold text-[#0E0E0E]">
               Upload Documents
-            </h1>
-            <h1 className="font-gola text-[14px] font-normal text-[#8F8F8F]">
+            </span>
+            <span className="font-gola text-[14px] font-normal text-[#8F8F8F]">
               Size should be less than 1mb (.jpg, .png, .svg,.pdf)
-            </h1>
-            <h1 className="mt-[16px] font-gola text-base font-semibold text-[#222222]">
+            </span>
+            <span className="mt-[16px] font-gola text-base font-semibold text-[#222222]">
               Marksheet
-            </h1>
-            <h1 className="mt-[12px] font-gola text-[14px] font-normal text-[#8F8F8F]">
+            </span>
+            <span className="mt-[12px] font-gola text-[14px] font-normal text-[#8F8F8F]">
               Front Side:
-            </h1>
+            </span>
             <div
               style={{ border: "0.5px solid #CBCBCB" }}
               className="mt-2 px-[32px] py-[20px] rounded-md flex flex-col justify-center items-center"
             >
-              <h1 className="font-gola text-[#8E8E8E] text-[14px] font-normal">
+              <span className="font-gola text-[#8E8E8E] text-[14px] font-normal">
                 No file has uploaded yet
-              </h1>
+              </span>
               <button
                 type="button"
                 className="h-10 mt-3 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
@@ -425,25 +425,25 @@ function mydocuments() {
         )}
         {tab === "5" && (
           <div className="mt-[16px]">
-            <h1 className="font-gola text-[14px] font-semibold text-[#0E0E0E]">
+            <span className="font-gola text-[14px] font-semibold text-[#0E0E0E]">
               Upload Documents
-            </h1>
-            <h1 className="font-gola text-[14px] font-normal text-[#8F8F8F]">
+            </span>
+            <span className="font-gola text-[14px] font-normal text-[#8F8F8F]">
               Size should be less than 1mb (.jpg, .png, .svg,.pdf)
-            </h1>
-            <h1 className="mt-[16px] font-gola text-base font-semibold text-[#222222]">
+            </span>
+            <span className="mt-[16px] font-gola text-base font-semibold text-[#222222]">
               Graduation Certificate
-            </h1>
-            <h1 className="mt-[12px] font-gola text-[14px] font-normal text-[#8F8F8F]">
+            </span>
+            <span className="mt-[12px] font-gola text-[14px] font-normal text-[#8F8F8F]">
               Front Side:
-            </h1>
+            </span>
             <div
               style={{ border: "0.5px solid #CBCBCB" }}
               className="mt-2 px-[32px] py-[20px] rounded-md flex flex-col justify-center items-center"
             >
-              <h1 className="font-gola text-[#8E8E8E] text-[14px] font-normal">
+              <span className="font-gola text-[#8E8E8E] text-[14px] font-normal">
                 No file has uploaded yet
-              </h1>
+              </span>
               <button
                 type="button"
                 className="h-10 mt-3 font-gola	text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"

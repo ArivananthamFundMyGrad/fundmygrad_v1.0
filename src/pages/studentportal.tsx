@@ -82,24 +82,24 @@ function studentportaldashboard() {
           >
             <div className="flex items-center">
               <img src="/univ_logo.svg" alt="University Logo" />
-              <h1 className="pl-[12px] font-gola font-semibold text-base">
+              <span className="pl-[12px] font-gola font-semibold text-base">
                 University of California
-              </h1>
-              <h1 className="ml-[40px] bg-[#EEEEEE] px-[12px] py-[2.5px] rounded-full font-gola text-sm text-[#254472] font-medium">
+              </span>
+              <span className="ml-[40px] bg-[#EEEEEE] px-[12px] py-[2.5px] rounded-full font-gola text-sm text-[#254472] font-medium">
                 Yet to apply
-              </h1>
+              </span>
             </div>
             <div className="flex items-center">
-              <h1 className="font-gola text-sm font-semibold">20 Offers </h1>
+              <span className="font-gola text-sm font-semibold">20 Offers </span>
               <p className="ml-[12px] font-gola text-sm font-medium text-[#6B37FF] px-[12px] py-[2.5px] rounded-full bg-[#FBEFFF]">
                 2 New
               </p>
               <p className="ml-[12px] font-gola text-sm font-medium text-[#ED3B3B] px-[12px] py-[2.5px] rounded-full bg-[#FFECEC]">
                 2 Upload pending
               </p>
-              <h1 className="font-gola text-[20px] font-semibold ml-[40px]">
+              <span className="font-gola text-[20px] font-semibold ml-[40px]">
                 ₹40,00,000
-              </h1>
+              </span>
               <button
                 type="button"
                 className="h-10 ml-[40px] font-gola border border-[#D5D5D5] text-[#0057E4] bg-[#F5F9FF] font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
@@ -118,24 +118,24 @@ function studentportaldashboard() {
           >
             <div className="flex items-center">
               <img src="/univ_logo.svg" alt="University Logo" />
-              <h1 className="pl-[12px] font-gola font-semibold text-base">
+              <span className="pl-[12px] font-gola font-semibold text-base">
                 University of Texas
-              </h1>
-              <h1 className="ml-[40px] bg-[#EEEEEE] px-[12px] py-[2.5px] rounded-full font-gola text-sm text-[#254472] font-medium">
+              </span>
+              <span className="ml-[40px] bg-[#EEEEEE] px-[12px] py-[2.5px] rounded-full font-gola text-sm text-[#254472] font-medium">
                 Yet to apply
-              </h1>
+              </span>
             </div>
             <div className="flex items-center">
-              <h1 className="font-gola text-sm font-semibold">20 Offers </h1>
+              <span className="font-gola text-sm font-semibold">20 Offers </span>
               <p className="ml-[12px] font-gola text-sm font-medium text-[#6B37FF] px-[12px] py-[2.5px] rounded-full bg-[#FBEFFF]">
                 2 New
               </p>
               <p className="ml-[12px] font-gola text-sm font-medium text-[#ED3B3B] px-[12px] py-[2.5px] rounded-full bg-[#FFECEC]">
                 2 Upload pending
               </p>
-              <h1 className="font-gola text-[20px] font-semibold ml-[40px]">
+              <span className="font-gola text-[20px] font-semibold ml-[40px]">
                 ₹37,00,000
-              </h1>
+              </span>
               <button
                 type="button"
                 className="h-10 ml-[40px] font-gola border border-[#D5D5D5] text-[#0057E4] bg-[#F5F9FF] font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none"
@@ -157,30 +157,30 @@ function studentportaldashboard() {
             <div className="bg-[#F5F5F5] rounded-t-lg flex flex-col p-[12px]">
               <div className="flex items-center">
                 <img src="/univ_logo.svg" alt="University Logo" />
-                <h1 className="pl-[12px] font-gola font-semibold text-base">
+                <span className="pl-[12px] font-gola font-semibold text-base">
                   University of California
-                </h1>
+                </span>
                 <img
                   className="ml-3"
                   src="rightIconGray.svg"
                   alt="Right Icon"
                 />
               </div>
-              <h1 className="mt-3 w-[120px] text-center bg-[#E7E7E7] px-[12px] py-[2.5px] rounded-full font-gola text-sm text-[#254472] font-medium">
+              <span className="mt-3 w-[120px] text-center bg-[#E7E7E7] px-[12px] py-[2.5px] rounded-full font-gola text-sm text-[#254472] font-medium">
                 Yet to apply
-              </h1>
+              </span>
             </div>
             <div className="p-[12px]">
             <div className="flex justify-between  mt-[12px]">
-              <h1 className="text-[#999999] font-gola text-base font-medium">
+              <span className="text-[#999999] font-gola text-base font-medium">
                 Req Loan Amount
-              </h1>
-              <h1 className="text-[#272727] font-gola text-base font-medium">
+              </span>
+              <span className="text-[#272727] font-gola text-base font-medium">
                 ₹40,00,000
-              </h1>
+              </span>
             </div>
             <div className="flex justify-between items-center mt-[18px]">
-              <h1 className="font-gola text-sm font-semibold">20 Offers </h1>
+              <span className="font-gola text-sm font-semibold">20 Offers </span>
               <p className="ml-[12px] font-gola text-sm font-medium text-[#6B37FF] px-[12px] py-[2.5px] rounded-full bg-[#FBEFFF]">
                 2 New
               </p>
@@ -202,30 +202,30 @@ function studentportaldashboard() {
             <div className="bg-[#F5F5F5] rounded-t-lg flex flex-col p-[12px]">
               <div className="flex items-center">
                 <img src="/univ_logo.svg" alt="University Logo" />
-                <h1 className="pl-[12px] font-gola font-semibold text-base">
+                <span className="pl-[12px] font-gola font-semibold text-base">
                   University of California
-                </h1>
+                </span>
                 <img
                   className="ml-3"
                   src="rightIconGray.svg"
                   alt="Right Icon"
                 />
               </div>
-              <h1 className="mt-3 w-[120px] text-center bg-[#E7E7E7] px-[12px] py-[2.5px] rounded-full font-gola text-sm text-[#254472] font-medium">
+              <span className="mt-3 w-[120px] text-center bg-[#E7E7E7] px-[12px] py-[2.5px] rounded-full font-gola text-sm text-[#254472] font-medium">
                 Yet to apply
-              </h1>
+              </span>
             </div>
             <div className="p-[12px]">
             <div className="flex justify-between  mt-[12px]">
-              <h1 className="text-[#999999] font-gola text-base font-medium">
+              <span className="text-[#999999] font-gola text-base font-medium">
                 Req Loan Amount
-              </h1>
-              <h1 className="text-[#272727] font-gola text-base font-medium">
+              </span>
+              <span className="text-[#272727] font-gola text-base font-medium">
                 ₹40,00,000
-              </h1>
+              </span>
             </div>
             <div className="flex justify-between items-center mt-[18px]">
-              <h1 className="font-gola text-sm font-semibold">20 Offers </h1>
+              <span className="font-gola text-sm font-semibold">20 Offers </span>
               <p className="ml-[12px] font-gola text-sm font-medium text-[#6B37FF] px-[12px] py-[2.5px] rounded-full bg-[#FBEFFF]">
                 2 New
               </p>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
-import TelemarketingSidebar from "@/components/dashboard/TelemarketingSidebar";
+import TelemarketingSidebar from "@/components/reusable/TelemarketingSidebar";
 import { Select, useMediaQuery } from "@chakra-ui/react";
 import TelemarketingMobileSidebar from "@/components/reusable/TelemarketingMobileSidebar";
 
@@ -26,7 +26,7 @@ function calltracking() {
             <img width={120} src="../logo.svg" alt="" />
             <img src="../avatar.svg" alt="" />
           </div>
-          <div className="bg-[#F1F4FA] w-full min-h-screen relative px-10 pb-20">
+          <div className="bg-[#F1F4FA] w-full min-h-screen relative mobile:px-5 tabanddesk:px-10 pb-20">
             <div className="mobile:hidden flex items-center mt-10">
               <h1 className="font-gola text-[28px] font-bold">Tracking</h1>
               <div className="ml-5 relative">
@@ -68,11 +68,11 @@ function calltracking() {
               </div>
             </div>
             <div className="tabanddesk:hidden">
-              <div className="mt-5 flex justify-between">
-                <div className="flex items-center mb-10">
+              <div className="mt-5 mb-5 flex justify-between">
+                <div className="flex items-center">
                   <img onClick={onOpen} src="../menu.svg" alt="Menu Icon" />
                   <h1 className="ml-5 font-gola text-2xl font-bold">
-                    Applicants
+                    Tracking
                   </h1>
                 </div>
                 <img src="/SearchIcon.svg" alt="Search Icon" />
@@ -104,9 +104,9 @@ function calltracking() {
                   <tr>
                     <th className="w-[20%]" scope="col">
                       <div className="flex items-center justify-between border-r-[1px] p-[16px]">
-                        <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                        <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                           Name
-                        </h1>
+                        </span>
                         <svg
                           width="12"
                           height="12"
@@ -124,9 +124,9 @@ function calltracking() {
                     </th>
                     <th scope="col" className="w-[20%]">
                       <div className="flex items-center justify-between border-r-[1px] p-[16px]">
-                        <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                        <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                           Loan Documents
-                        </h1>
+                        </span>
                         <svg
                           width="12"
                           height="12"
@@ -144,9 +144,9 @@ function calltracking() {
                     </th>
                     <th scope="col" className="w-[20%]">
                       <div className="flex items-center justify-between border-r-[1px] p-[16px]">
-                        <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                        <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                           Bank Doc., Approval
-                        </h1>
+                        </span>
                         <div className="flex items-center">
                           <svg
                             width="12"
@@ -171,9 +171,9 @@ function calltracking() {
                     </th>
                     <th scope="col" className="w-[20%]">
                       <div className="flex items-center justify-between border-r-[1px] p-[16px]">
-                        <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                        <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                           Student Acceptance
-                        </h1>
+                        </span>
                         <svg
                           width="12"
                           height="12"
@@ -191,9 +191,9 @@ function calltracking() {
                     </th>
                     <th scope="col" className="w-[20%]">
                       <div className="flex items-center justify-between border-r-[1px] p-[16px]">
-                        <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                        <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                           Conclusion
-                        </h1>
+                        </span>
                         <div className="flex items-center">
                           <svg
                             width="12"
@@ -221,310 +221,310 @@ function calltracking() {
                 <tbody>
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Arun Kumar
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       Submitted
                     </td>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                        <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                           Not Answered
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Not Accepted
-                      </h1>
+                      </span>
                     </td>
                     <td className="px-6 py-4">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                        <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                           Unsuccessful
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                   </tr>
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Arun Kumar
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       Submitted
                     </td>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                        <span className="mr-2 font-gola text-[14px] text-[#128400]">
                           Answered
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Not Accepted
-                      </h1>
+                      </span>
                     </td>
                     <td className="px-6 py-4">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                        <span className="mr-2 font-gola text-[14px] text-[#128400]">
                           Successful
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                   </tr>
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Arun Kumar
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       Submitted
                     </td>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                        <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                           Not Answered
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Accepted
-                      </h1>
+                      </span>
                     </td>
                     <td className="px-6 py-4">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                        <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                           Unsuccessful
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                   </tr>
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Arun Kumar
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-[#ED3B3B]">
                       2 Pendings
                     </td>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                        <span className="mr-2 font-gola text-[14px] text-[#128400]">
                           Answered
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Accepted
-                      </h1>
+                      </span>
                     </td>
                     <td className="px-6 py-4">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                        <span className="mr-2 font-gola text-[14px] text-[#128400]">
                           Successful
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                   </tr>
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Arun Kumar
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       Submitted
                     </td>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                        <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                           Not Answered
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Accepted
-                      </h1>
+                      </span>
                     </td>
                     <td className="px-6 py-4">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                        <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                           Unsuccessful
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                   </tr>
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Arun Kumar
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       Submitted
                     </td>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                        <span className="mr-2 font-gola text-[14px] text-[#128400]">
                           Answered
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Not Accepted
-                      </h1>
+                      </span>
                     </td>
                     <td className="px-6 py-4">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                        <span className="mr-2 font-gola text-[14px] text-[#128400]">
                           Successful
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                   </tr>
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Arun Kumar
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-[#ED3B3B]">
                       3 Pendings
                     </td>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                        <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                           Not Answered
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Not Accepted
-                      </h1>
+                      </span>
                     </td>
                     <td className="px-6 py-4">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                        <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                           Unsuccessful
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                   </tr>
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Arun Kumar
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       Submitted
                     </td>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                        <span className="mr-2 font-gola text-[14px] text-[#128400]">
                           Answered
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Accepted
-                      </h1>
+                      </span>
                     </td>
                     <td className="px-6 py-4">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                        <span className="mr-2 font-gola text-[14px] text-[#128400]">
                           Successful
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                   </tr>
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Arun Kumar
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-[#ED3B3B]">
                       1 pending
                     </td>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                        <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                           Not Answered
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Accepted
-                      </h1>
+                      </span>
                     </td>
                     <td className="px-6 py-4">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                        <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                           Unsuccessful
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                   </tr>
                   <tr className="bg-white rounded-b-lg border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Arun Kumar
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       Submitted
                     </td>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                        <span className="mr-2 font-gola text-[14px] text-[#128400]">
                           Answered
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Accepted
-                      </h1>
+                      </span>
                     </td>
                     <td className="px-6 py-4">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                        <span className="mr-2 font-gola text-[14px] text-[#128400]">
                           Successful
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
@@ -540,39 +540,39 @@ function calltracking() {
                   </h5>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Loan Documents
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     Submitted
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Bank Doc., Approval
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     Not Approved
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Student Acceptance
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       Not Accepted
-                    </h1>
+                    </span>
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Conclusion
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                    <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                       Unsuccessful
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
@@ -584,39 +584,39 @@ function calltracking() {
                   </h5>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Loan Documents
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     Submitted
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Bank Doc., Approval
-                  </h1>
-                  <h1 className="text-[#ED3B3B] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#ED3B3B] font-medium text-base font-gola">
                     2 pending{" "}
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Student Acceptance
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       Not Accepted
-                    </h1>
+                    </span>
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Conclusion
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                    <span className="mr-2 font-gola text-[14px] text-[#128400]">
                       Sucessful
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
@@ -628,39 +628,39 @@ function calltracking() {
                   </h5>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Loan Documents
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     Submitted
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Bank Doc., Approval
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     Not Approved
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Student Acceptance
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       Not Accepted
-                    </h1>
+                    </span>
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Conclusion
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                    <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                       Unsuccessful
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
@@ -672,39 +672,39 @@ function calltracking() {
                   </h5>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Loan Documents
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     Submitted
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Bank Doc., Approval
-                  </h1>
-                  <h1 className="text-[#ED3B3B] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#ED3B3B] font-medium text-base font-gola">
                     2 pending{" "}
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Student Acceptance
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       Not Accepted
-                    </h1>
+                    </span>
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Conclusion
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                    <span className="mr-2 font-gola text-[14px] text-[#128400]">
                       Sucessful
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
@@ -716,39 +716,39 @@ function calltracking() {
                   </h5>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Loan Documents
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     Submitted
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Bank Doc., Approval
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     Not Approved
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Student Acceptance
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       Not Accepted
-                    </h1>
+                    </span>
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Conclusion
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                    <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                       Unsuccessful
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
@@ -760,39 +760,39 @@ function calltracking() {
                   </h5>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Loan Documents
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     Submitted
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Bank Doc., Approval
-                  </h1>
-                  <h1 className="text-[#ED3B3B] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#ED3B3B] font-medium text-base font-gola">
                     2 pending{" "}
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Student Acceptance
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       Not Accepted
-                    </h1>
+                    </span>
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Conclusion
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                    <span className="mr-2 font-gola text-[14px] text-[#128400]">
                       Sucessful
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
@@ -804,39 +804,39 @@ function calltracking() {
                   </h5>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Loan Documents
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     Submitted
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Bank Doc., Approval
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     Not Approved
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Student Acceptance
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       Not Accepted
-                    </h1>
+                    </span>
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Conclusion
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                    <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                       Unsuccessful
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
@@ -848,39 +848,39 @@ function calltracking() {
                   </h5>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Loan Documents
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     Submitted
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Bank Doc., Approval
-                  </h1>
-                  <h1 className="text-[#ED3B3B] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#ED3B3B] font-medium text-base font-gola">
                     2 pending{" "}
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Student Acceptance
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       Not Accepted
-                    </h1>
+                    </span>
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Conclusion
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                    <span className="mr-2 font-gola text-[14px] text-[#128400]">
                       Sucessful
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
@@ -892,39 +892,39 @@ function calltracking() {
                   </h5>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Loan Documents
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     Submitted
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Bank Doc., Approval
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     Not Approved
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Student Acceptance
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       Not Accepted
-                    </h1>
+                    </span>
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Conclusion
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                    <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                       Unsuccessful
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
@@ -936,39 +936,39 @@ function calltracking() {
                   </h5>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Loan Documents
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     Submitted
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Bank Doc., Approval
-                  </h1>
-                  <h1 className="text-[#ED3B3B] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#ED3B3B] font-medium text-base font-gola">
                     2 pending{" "}
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Student Acceptance
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       Not Accepted
-                    </h1>
+                    </span>
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Conclusion
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                    <span className="mr-2 font-gola text-[14px] text-[#128400]">
                       Sucessful
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
@@ -980,39 +980,39 @@ function calltracking() {
                   </h5>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Loan Documents
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     Submitted
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Bank Doc., Approval
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     Not Approved
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Student Acceptance
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       Not Accepted
-                    </h1>
+                    </span>
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Conclusion
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                    <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                       Unsuccessful
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
@@ -1024,39 +1024,39 @@ function calltracking() {
                   </h5>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Loan Documents
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     Submitted
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Bank Doc., Approval
-                  </h1>
-                  <h1 className="text-[#ED3B3B] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#ED3B3B] font-medium text-base font-gola">
                     2 pending{" "}
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Student Acceptance
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       Not Accepted
-                    </h1>
+                    </span>
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Conclusion
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                    <span className="mr-2 font-gola text-[14px] text-[#128400]">
                       Sucessful
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>

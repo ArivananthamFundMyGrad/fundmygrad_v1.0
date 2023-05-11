@@ -35,7 +35,7 @@ function OtherBankOffers1() {
             </tr>
             <tr style={{ height: "70%", width: "15px" }}>
               <th className="font-gola text-[12px] pl-[7px]" scope="row">
-                COA ₹ 22,39,648
+                CTA ₹ 22,39,648
               </th>
               <td className="coa"></td>
             </tr>
@@ -67,7 +67,7 @@ function OtherBankOffers1() {
             </tr>
             <tr style={{ height: "67%", width: "15px" }}>
               <th className="font-gola text-[12px] pl-[7px]" scope="row">
-                COA ₹ 21,70,910
+                CTA ₹ 21,70,910
               </th>
               <td className="coa"></td>
             </tr>
@@ -99,7 +99,7 @@ function OtherBankOffers1() {
             </tr>
             <tr style={{ height: "75%", width: "15px" }}>
               <th className="font-gola text-[12px] pl-[7px]" scope="row">
-                COA ₹ 23,66,237
+                CTA ₹ 23,66,237
               </th>
               <td className="coa"></td>
             </tr>
@@ -131,7 +131,7 @@ function OtherBankOffers1() {
             </tr>
             <tr style={{ height: "67%", width: "15px" }}>
               <th className="font-gola text-[12px] pl-[7px]" scope="row">
-                COA ₹ 21,75,291
+                CTA ₹ 21,75,291
               </th>
               <td className="coa"></td>
             </tr>
@@ -163,7 +163,7 @@ function OtherBankOffers1() {
             </tr>
             <tr style={{ height: "77%", width: "15px" }}>
               <th className="font-gola text-[12px] pl-[7px]" scope="row">
-                COA ₹ 24,04,554
+                CTA ₹ 24,04,554
               </th>
               <td className="coa"></td>
             </tr>
@@ -195,7 +195,7 @@ function OtherBankOffers1() {
             </tr>
             <tr style={{ height: "71%", width: "15px" }}>
               <th className="font-gola text-[12px] pl-[7px]" scope="row">
-                COA ₹ 22,69,528
+                CTA ₹ 22,69,528
               </th>
               <td className="coa"></td>
             </tr>
@@ -227,7 +227,7 @@ function OtherBankOffers1() {
             </tr>
             <tr style={{ height: "73%", width: "15px" }}>
               <th className="font-gola text-[12px] pl-[7px]" scope="row">
-                COA ₹ 23,25,657
+                CTA ₹ 23,25,657
               </th>
               <td className="coa"></td>
             </tr>
@@ -259,7 +259,7 @@ function OtherBankOffers1() {
             </tr>
             <tr style={{ height: "74.3%", width: "15px" }}>
               <th className="font-gola text-[12px] pl-[7px]" scope="row">
-                COA ₹ 23,39,137
+                CTA ₹ 23,39,137
               </th>
               <td className="coa"></td>
             </tr>
@@ -291,7 +291,7 @@ function OtherBankOffers1() {
             </tr>
             <tr style={{ height: "73%", width: "15px" }}>
               <th className="font-gola text-[12px] pl-[7px]" scope="row">
-                COA ₹ 21,73,100
+                CTA ₹ 21,73,100
               </th>
               <td className="coa"></td>
             </tr>
@@ -323,7 +323,7 @@ function OtherBankOffers1() {
             </tr>
             <tr style={{ height: "75%", width: "15px" }}>
               <th className="font-gola text-[12px] pl-[7px]" scope="row">
-                COA ₹ 23,57,183
+                CTA ₹ 23,57,183
               </th>
               <td className="coa"></td>
             </tr>

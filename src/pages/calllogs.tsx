@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useRouter } from "next/router";
 import Head from "next/head";
-import TelemarketingSidebar from "@/components/dashboard/TelemarketingSidebar";
+import TelemarketingSidebar from "@/components/reusable/TelemarketingSidebar";
 import MobileSidebar from "@/components/reusable/MobileSidebar";
 import { Select, useMediaQuery } from "@chakra-ui/react";
 import TelemarketingMobileSidebar from "@/components/reusable/TelemarketingMobileSidebar";
@@ -28,7 +28,7 @@ function applicants() {
             <img width={120} src="../logo.svg" alt="" />
             <img src="../avatar.svg" alt="" />
           </div>
-          <div className="bg-[#F1F4FA] w-full relative px-10 pb-20">
+          <div className="bg-[#F1F4FA] w-full relative tabanddesk:px-10 mobile:px-5 pb-20">
             <div className="mobile:hidden flex items-center mt-10">
               <h1 className="font-gola text-[28px] font-bold">Call Logs</h1>
               <div className="ml-5 relative">
@@ -70,12 +70,12 @@ function applicants() {
               </div>
             </div>
             <div className="tabanddesk:hidden">
-              <div className="mt-5 flex justify-between">
-                <div className="flex items-center mb-10">
+              <div className="mt-5 mb-5 flex justify-between">
+                <div className="flex items-center">
                   <img onClick={onOpen} src="../menu.svg" alt="Menu Icon" />
-                  <h1 className="ml-5 font-gola text-2xl font-bold">
-                    Applicants
-                  </h1>
+                  <span className="ml-5 font-gola text-2xl font-bold">
+                    Call Logs
+                  </span>
                 </div>
                 <img src="/SearchIcon.svg" alt="Search Icon" />
               </div>
@@ -84,21 +84,6 @@ function applicants() {
                   <option value="option1">All</option>
                 </Select>
               </div>
-              <div className="flex items-center mt-5">
-                <input
-                  defaultChecked
-                  id="checked-checkbox"
-                  type="checkbox"
-                  value=""
-                  className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
-                />
-                <label
-                  htmlFor="checked-checkbox"
-                  className="ml-2 text-sm font-medium text-[#202020] font-gola"
-                >
-                  Only show ‘With Collateral’
-                </label>
-              </div>
             </div>
             <div className="tablet:hidden mobile:hidden bg-white rounded-t-lg mt-10 w-full relative overflow-x-auto">
               <table className="w-full text-sm text-left text-gray-500">
@@ -106,9 +91,9 @@ function applicants() {
                   <tr>
                     <th className="w-[20%]" scope="col">
                       <div className="flex items-center justify-between border-r-[1px] p-[16px]">
-                        <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                        <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                           Name
-                        </h1>
+                        </span>
                         <svg
                           width="12"
                           height="12"
@@ -126,9 +111,9 @@ function applicants() {
                     </th>
                     <th scope="col" className="w-[20%]">
                       <div className="flex items-center justify-between border-r-[1px] p-[16px]">
-                        <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                        <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                           Phone Number
-                        </h1>
+                        </span>
                         <svg
                           width="12"
                           height="12"
@@ -146,9 +131,9 @@ function applicants() {
                     </th>
                     <th scope="col" className="w-[20%]">
                       <div className="flex items-center justify-between border-r-[1px] p-[16px]">
-                        <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                        <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                           Answered / Not
-                        </h1>
+                        </span>
                         <div className="flex items-center">
                           <svg
                             width="12"
@@ -173,9 +158,9 @@ function applicants() {
                     </th>
                     <th scope="col" className="w-[20%]">
                       <div className="flex items-center justify-between border-r-[1px] p-[16px]">
-                        <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                        <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                           Location
-                        </h1>
+                        </span>
                         <svg
                           width="12"
                           height="12"
@@ -193,9 +178,9 @@ function applicants() {
                     </th>
                     <th scope="col" className="w-[20%]">
                       <div className="flex items-center justify-between border-r-[1px] p-[16px]">
-                        <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                        <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                           Converted / Not
-                        </h1>
+                        </span>
                         <div className="flex items-center">
                           <svg
                             width="12"
@@ -223,340 +208,340 @@ function applicants() {
                 <tbody>
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Arun Kumar
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       +91 9786564432
                     </td>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                        <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                           Not Answered
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <p className="font-gola text-sm font-medium text-black">
                         Coimbatore,
-                      </h1>
-                      <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                      </p>
+                      <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                         Tamil Nadu - 641604
-                      </h1>
+                      </p>
                     </td>
                     <td className="px-6 py-4">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                        <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                           Not Converted
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                   </tr>
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Arun Kumar
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       +91 9786564432
                     </td>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                        <span className="mr-2 font-gola text-[14px] text-[#128400]">
                           Answered
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <p className="font-gola text-sm font-medium text-black">
                         Coimbatore,
-                      </h1>
-                      <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                      </p>
+                      <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                         Tamil Nadu - 641604
-                      </h1>
+                      </p>
                     </td>
                     <td className="px-6 py-4">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                        <span className="mr-2 font-gola text-[14px] text-[#128400]">
                           Converted
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                   </tr>
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Arun Kumar
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       +91 9786564432
                     </td>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                        <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                           Not Answered
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <p className="font-gola text-sm font-medium text-black">
                         Coimbatore,
-                      </h1>
-                      <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                      </p>
+                      <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                         Tamil Nadu - 641604
-                      </h1>
+                      </p>
                     </td>
                     <td className="px-6 py-4">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                        <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                           Not Converted
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                   </tr>
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Arun Kumar
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       +91 9786564432
                     </td>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                        <span className="mr-2 font-gola text-[14px] text-[#128400]">
                           Answered
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <p className="font-gola text-sm font-medium text-black">
                         Coimbatore,
-                      </h1>
-                      <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                      </p>
+                      <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                         Tamil Nadu - 641604
-                      </h1>
+                      </p>
                     </td>
                     <td className="px-6 py-4">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                        <span className="mr-2 font-gola text-[14px] text-[#128400]">
                           Converted
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                   </tr>
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Arun Kumar
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       +91 9786564432
                     </td>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                        <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                           Not Answered
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <p className="font-gola text-sm font-medium text-black">
                         Coimbatore,
-                      </h1>
-                      <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                      </p>
+                      <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                         Tamil Nadu - 641604
-                      </h1>
+                      </p>
                     </td>
                     <td className="px-6 py-4">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                        <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                           Not Converted
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                   </tr>
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Arun Kumar
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       +91 9786564432
                     </td>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                        <span className="mr-2 font-gola text-[14px] text-[#128400]">
                           Answered
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <p className="font-gola text-sm font-medium text-black">
                         Coimbatore,
-                      </h1>
-                      <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                      </p>
+                      <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                         Tamil Nadu - 641604
-                      </h1>
+                      </p>
                     </td>
                     <td className="px-6 py-4">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                        <span className="mr-2 font-gola text-[14px] text-[#128400]">
                           Converted
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                   </tr>
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Arun Kumar
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       +91 9786564432
                     </td>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                        <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                           Not Answered
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <p className="font-gola text-sm font-medium text-black">
                         Coimbatore,
-                      </h1>
-                      <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                      </p>
+                      <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                         Tamil Nadu - 641604
-                      </h1>
+                      </p>
                     </td>
                     <td className="px-6 py-4">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                        <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                           Not Converted
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                   </tr>
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Arun Kumar
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       +91 9786564432
                     </td>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                        <span className="mr-2 font-gola text-[14px] text-[#128400]">
                           Answered
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <p className="font-gola text-sm font-medium text-black">
                         Coimbatore,
-                      </h1>
-                      <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                      </p>
+                      <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                         Tamil Nadu - 641604
-                      </h1>
+                      </p>
                     </td>
                     <td className="px-6 py-4">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                        <span className="mr-2 font-gola text-[14px] text-[#128400]">
                           Converted
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                   </tr>
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Arun Kumar
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       +91 9786564432
                     </td>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                        <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                           Not Answered
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <p className="font-gola text-sm font-medium text-black">
                         Coimbatore,
-                      </h1>
-                      <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                      </p>
+                      <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                         Tamil Nadu - 641604
-                      </h1>
+                      </p>
                     </td>
                     <td className="px-6 py-4">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                        <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                           Not Converted
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                   </tr>
                   <tr className="bg-white rounded-b-lg border-b">
                     <th scope="row" className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <span className="font-gola text-sm font-medium text-black">
                         Arun Kumar
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       +91 9786564432
                     </td>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                        <span className="mr-2 font-gola text-[14px] text-[#128400]">
                           Answered
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-black">
+                      <p className="font-gola text-sm font-medium text-black">
                         Coimbatore,
-                      </h1>
-                      <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                      </p>
+                      <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                         Tamil Nadu - 641604
-                      </h1>
+                      </p>
                     </td>
                     <td className="px-6 py-4">
                       <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                        <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                        <span className="mr-2 font-gola text-[14px] text-[#128400]">
                           Converted
-                        </h1>
+                        </span>
                         <img src="/PointedDown.svg" alt="Pointed Down" />
                       </div>
                     </td>
@@ -573,42 +558,42 @@ function applicants() {
                 </div>
 
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Phone Number
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     +91 9786564432
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Answered / Not
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                    <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                       Not Converted
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Location
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       Coimbatore
-                    </h1>
+                    </span>
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Converted / Not
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                    <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                       Not Converted
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
@@ -621,42 +606,42 @@ function applicants() {
                 </div>
 
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Phone Number
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     +91 9786564432
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Answered / Not
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                    <span className="mr-2 font-gola text-[14px] text-[#128400]">
                       Answered
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Location
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       Coimbatore
-                    </h1>
+                    </span>
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Converted / Not
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                    <span className="mr-2 font-gola text-[14px] text-[#128400]">
                       Converted
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
@@ -669,42 +654,42 @@ function applicants() {
                 </div>
 
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Phone Number
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     +91 9786564432
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Answered / Not
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                    <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                       Not Converted
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Location
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       Coimbatore
-                    </h1>
+                    </span>
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Converted / Not
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                    <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                       Not Converted
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
@@ -717,42 +702,42 @@ function applicants() {
                 </div>
 
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Phone Number
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     +91 9786564432
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Answered / Not
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                    <span className="mr-2 font-gola text-[14px] text-[#128400]">
                       Answered
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Location
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       Coimbatore
-                    </h1>
+                    </span>
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Converted / Not
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                    <span className="mr-2 font-gola text-[14px] text-[#128400]">
                       Converted
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
@@ -765,42 +750,42 @@ function applicants() {
                 </div>
 
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Phone Number
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     +91 9786564432
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Answered / Not
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                    <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                       Not Converted
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Location
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       Coimbatore
-                    </h1>
+                    </span>
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Converted / Not
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                    <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                       Not Converted
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
@@ -813,42 +798,42 @@ function applicants() {
                 </div>
 
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Phone Number
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     +91 9786564432
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Answered / Not
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                    <span className="mr-2 font-gola text-[14px] text-[#128400]">
                       Answered
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Location
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       Coimbatore
-                    </h1>
+                    </span>
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Converted / Not
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                    <span className="mr-2 font-gola text-[14px] text-[#128400]">
                       Converted
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
@@ -861,42 +846,42 @@ function applicants() {
                 </div>
 
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Phone Number
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     +91 9786564432
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Answered / Not
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                    <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                       Not Converted
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Location
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       Coimbatore
-                    </h1>
+                    </span>
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Converted / Not
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                    <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                       Not Converted
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
@@ -909,42 +894,42 @@ function applicants() {
                 </div>
 
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Phone Number
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     +91 9786564432
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Answered / Not
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                    <span className="mr-2 font-gola text-[14px] text-[#128400]">
                       Answered
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Location
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       Coimbatore
-                    </h1>
+                    </span>
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Converted / Not
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                    <span className="mr-2 font-gola text-[14px] text-[#128400]">
                       Converted
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
@@ -957,42 +942,42 @@ function applicants() {
                 </div>
 
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Phone Number
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     +91 9786564432
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Answered / Not
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                    <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                       Not Converted
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Location
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       Coimbatore
-                    </h1>
+                    </span>
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Converted / Not
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#FFF0D4] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#C96D02]">
+                    <span className="mr-2 font-gola text-[14px] text-[#C96D02]">
                       Not Converted
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
@@ -1005,42 +990,42 @@ function applicants() {
                 </div>
 
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Phone Number
-                  </h1>
-                  <h1 className="text-[#292929] font-medium text-base font-gola">
+                  </span>
+                  <span className="text-[#292929] font-medium text-base font-gola">
                     +91 9786564432
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Answered / Not
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                    <span className="mr-2 font-gola text-[14px] text-[#128400]">
                       Answered
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Location
-                  </h1>
+                  </span>
                   <div>
-                    <h1 className="text-[#292929] font-medium text-base font-gola">
+                    <span className="text-[#292929] font-medium text-base font-gola">
                       Coimbatore
-                    </h1>
+                    </span>
                   </div>
                 </div>
                 <div className="flex items-center justify-between mt-3">
-                  <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                  <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                     Converted / Not
-                  </h1>
+                  </span>
                   <div className="w-[150px] rounded-full justify-center flex bg-[#EDFFEA] px-2 py-1 items-center">
-                    <h1 className="mr-2 font-gola text-[14px] text-[#128400]">
+                    <span className="mr-2 font-gola text-[14px] text-[#128400]">
                       Converted
-                    </h1>
+                    </span>
                     <img src="/PointedDown.svg" alt="Pointed Down" />
                   </div>
                 </div>

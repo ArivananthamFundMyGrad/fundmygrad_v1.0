@@ -1,14 +1,14 @@
+import React, { useState } from "react";
+import Head from "next/head";
 import BarChart1 from "@/components/dashboard/BarChart1";
 import BarChart2 from "@/components/dashboard/BarChart2";
 import BarChart3 from "@/components/dashboard/BarChart3";
-import Sidebar from "@/components/dashboard/Sidebar";
+import Sidebar from "@/components/reusable/Sidebar";
 import MobileSidebar from "@/components/reusable/MobileSidebar";
 import {
   useMediaQuery,
 } from "@chakra-ui/react";
 import { Select } from "@chakra-ui/select";
-import Head from "next/head";
-import React, { useState } from "react";
 
 function dashboard() {
   const [isMobile] = useMediaQuery("(max-width: 767px)");
@@ -65,9 +65,9 @@ function dashboard() {
                 <div className="flex items-center justify-between">
                   <p className="text-sm font-gola">All Offers</p>
                   <div className="flex items-center">
-                    <h1 className="text-[20px] font-gola font-medium mr-3">
+                    <span className="text-[20px] font-gola font-medium mr-3">
                       112
-                    </h1>
+                    </span>
                     <svg
                       width="9"
                       height="15"
@@ -87,9 +87,9 @@ function dashboard() {
                 <div className="flex items-center justify-between">
                   <p className="text-sm font-gola">Outstanding Offers</p>
                   <div className="flex items-center">
-                    <h1 className="text-[20px] font-gola font-medium mr-3">
+                    <span className="text-[20px] font-gola font-medium mr-3">
                       21
-                    </h1>
+                    </span>
                     <svg
                       width="9"
                       height="15"
@@ -109,9 +109,9 @@ function dashboard() {
                 <div className="flex items-center justify-between">
                   <p className="text-sm font-gola">Not Yet Accepted</p>
                   <div className="flex items-center">
-                    <h1 className="text-[20px] font-gola font-medium mr-3">
+                    <span className="text-[20px] font-gola font-medium mr-3">
                       06
-                    </h1>
+                    </span>
                     <svg
                       width="9"
                       height="15"
@@ -131,9 +131,9 @@ function dashboard() {
                 <div className="flex items-center justify-between">
                   <p className="text-sm font-gola">Accepted offers</p>
                   <div className="flex items-center">
-                    <h1 className="text-[20px] font-gola font-medium mr-3">
+                    <span className="text-[20px] font-gola font-medium mr-3">
                       06
-                    </h1>
+                    </span>
                     <svg
                       width="9"
                       height="15"
@@ -152,16 +152,16 @@ function dashboard() {
             </div>
             <div className="grid desktop:grid-cols-2 gap-2 mt-5">
               <div className="w-full px-3 pl-5 py-5 block bg-white border border-gray-200 rounded-lg shadow">
-                <h1 className="font-gola font-sm uppercase font-semibold">
+                <span className="font-gola font-sm uppercase font-semibold">
                   Average Offer acceptance
-                </h1>
+                </span>
                 <BarChart1 />
               </div>
               <div className="w-full px-3 pl-5 py-5 block bg-white border border-gray-200 rounded-lg shadow">
                 <div className="flex justify-between">
-                  <h1 className="font-gola font-sm uppercase font-semibold">
+                  <span className="font-gola font-sm uppercase font-semibold">
                     Average {isMobile && <br />} Processing Time
-                  </h1>
+                  </span>
                   <p className="text-right">
                     23% higher than {isMobile && <br />} prev. year
                   </p>
@@ -172,9 +172,9 @@ function dashboard() {
             </div>
             <div className="grid desktop:grid-cols-2 gap-2 mt-5 mb-5">
               <div className="w-full px-3 pl-5 py-5 block bg-white border border-gray-200 rounded-lg shadow">
-                <h1 className="font-gola font-sm uppercase font-semibold">
+                <span className="font-gola font-sm uppercase font-semibold">
                   Average - Offered time vs {isMobile && <br />} Accepted time
-                </h1>
+                </span>
                 <BarChart3 />
               </div>
               <div className="block px-6 py-3"></div>

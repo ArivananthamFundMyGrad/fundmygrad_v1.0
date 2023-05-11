@@ -1,4 +1,5 @@
 import React, { useMemo } from "react";
+import screens from "@/utils/screens";
 
 export type Props = {
   value: string;
@@ -7,6 +8,7 @@ export type Props = {
 };
 
 export default function OtpInput({ value, valueLength, onChange }: Props) {
+  const {isMobile} = screens()
   const RE_DIGIT = new RegExp(/^\d+$/);
   const valueItems = useMemo(() => {
     const valueArray = value.split("");
@@ -123,7 +125,7 @@ export default function OtpInput({ value, valueLength, onChange }: Props) {
   };
 
   return (
-    <div className="otp-group">
+    <div className={`${isMobile ? "otp-group-mobile" : "otp-group"}`}>
       {valueItems.map((digit, idx) => (
         <input
           key={idx}
@@ -132,7 +134,7 @@ export default function OtpInput({ value, valueLength, onChange }: Props) {
           autoComplete="one-time-code"
           pattern="\d{1}"
           maxLength={valueLength}
-          className="otp-input"
+          className={`${isMobile ? "otp-input-mobile" : "otp-input"}`}
           value={digit}
           onChange={(e) => inputOnChange(e, idx)}
           onKeyDown={inputOnKeyDown}

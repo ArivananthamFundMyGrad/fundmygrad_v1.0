@@ -43,7 +43,6 @@ function Header() {
             </button>
           </div>
         </div>
-
         {/* Header */}
       </div>
       <div className="tabanddesk:w-11/12 desktop:max-w-custom1300 mobile:w-width95 flex tabanddesk:pt-20 mobile:pt-16 justify-between">
@@ -56,22 +55,6 @@ function Header() {
             <span className="text-primary-color">fund</span> your study overseas
             easier
           </h1>
-          {/* <div className="tabanddesk:hidden mt-10 w-full flex item-start justify-start">
-            <button
-              type="button"
-              className="h-10 mr-3 font-gola text-button-text hover:text-black border border-border-color focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2 text-center inline-flex items-center"
-            >
-              <img width={20} src="./whatsapp.png" alt="Whatsapp Image" />
-              &nbsp; Need assitance?
-            </button>
-            <button
-              onClick={() => router.push("/student-auth")}
-              type="button"
-              className="h-10 font-gola text-white bg-primary-color focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-1 focus:outline-none"
-            >
-              Student Login
-            </button>
-          </div> */}
         </div>
         <div className="mobile:hidden w-1/2 py-16">
           <img

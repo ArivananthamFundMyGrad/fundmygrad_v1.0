@@ -29,7 +29,7 @@ function dataupload() {
           </div>
           <div className="bg-[#F1F4FA] w-full min-h-screen relative px-5 pb-20">
             <div className="mobile:hidden flex items-center justify-between mt-10">
-              <h1 className="font-gola text-[28px] font-bold">Data Upload</h1>
+              <span className="font-gola text-[28px] font-bold">Data Upload</span>
               <button
                 onClick={() => setIsDataUploaded(true)}
                 type="button"
@@ -90,9 +90,9 @@ function dataupload() {
               <div className="mt-5 w-full flex justify-between">
                 <div className="flex w-full items-center">
                   <img onClick={onOpen} src="../menu.svg" alt="Menu Icon" />
-                  <h1 className="ml-5 font-gola text-2xl font-bold">
+                  <span className="ml-5 font-gola text-2xl font-bold">
                     Data Upload
-                  </h1>
+                  </span>
                 </div>
                 <div>
                 <button
@@ -162,9 +162,9 @@ function dataupload() {
                       <tr>
                         <th className="w-[20%]" scope="col">
                           <div className="flex items-center justify-between border-r-[1px] p-[16px]">
-                            <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                            <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                               Name
-                            </h1>
+                            </span>
                             <input
                               checked
                               id="default-checkbox"
@@ -176,9 +176,9 @@ function dataupload() {
                         </th>
                         <th scope="col" className="w-[20%]">
                           <div className="flex items-center justify-between border-r-[1px] p-[16px]">
-                            <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                            <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                               Phone Number
-                            </h1>
+                            </span>
                             <input
                               checked
                               id="default-checkbox"
@@ -190,9 +190,9 @@ function dataupload() {
                         </th>
                         <th scope="col" className="w-[20%]">
                           <div className="flex items-center justify-between border-r-[1px] p-[16px]">
-                            <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                            <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                               Loan Amount
-                            </h1>
+                            </span>
                             <input
                               checked
                               id="default-checkbox"
@@ -204,9 +204,9 @@ function dataupload() {
                         </th>
                         <th scope="col" className="w-[20%]">
                           <div className="flex items-center justify-between border-r-[1px] p-[16px]">
-                            <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                            <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                               Location
-                            </h1>
+                            </span>
                             <input
                               id="default-checkbox"
                               type="checkbox"
@@ -217,9 +217,9 @@ function dataupload() {
                         </th>
                         <th scope="col" className="w-[20%]">
                           <div className="flex items-center justify-between border-r-[1px] p-[16px]">
-                            <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                            <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                               University
-                            </h1>
+                            </span>
                             <input
                               id="default-checkbox"
                               type="checkbox"
@@ -233,9 +233,9 @@ function dataupload() {
                     <tbody>
                       <tr className="bg-white border-b">
                         <th scope="row" className="px-6 py-4">
-                          <h1 className="font-gola text-sm font-medium text-black">
+                          <span className="font-gola text-sm font-medium text-black">
                             Arun Kumar
-                          </h1>
+                          </span>
                         </th>
                         <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                           +91 9786564432
@@ -244,12 +244,12 @@ function dataupload() {
                           ₹ 20,00,000
                         </td>
                         <td className="px-6 py-4">
-                          <h1 className="font-gola text-sm font-medium text-black">
+                          <p className="font-gola text-sm font-medium text-black">
                             Coimbatore,
-                          </h1>
-                          <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                          </p>
+                          <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                             Tamil Nadu - 641604
-                          </h1>
+                          </p>
                         </td>
                         <td className="px-6 py-4 mr-2 font-medium font-gola text-black text-[14px]">
                           The University of Melbourne
@@ -257,9 +257,9 @@ function dataupload() {
                       </tr>
                       <tr className="bg-white border-b">
                         <th scope="row" className="px-6 py-4">
-                          <h1 className="font-gola text-sm font-medium text-black">
+                          <span className="font-gola text-sm font-medium text-black">
                             Arun Kumar
-                          </h1>
+                          </span>
                         </th>
                         <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                           +91 9786564432
@@ -268,12 +268,12 @@ function dataupload() {
                           ₹ 20,00,000
                         </td>
                         <td className="px-6 py-4">
-                          <h1 className="font-gola text-sm font-medium text-black">
+                          <p className="font-gola text-sm font-medium text-black">
                             Coimbatore,
-                          </h1>
-                          <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                          </p>
+                          <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                             Tamil Nadu - 641604
-                          </h1>
+                          </p>
                         </td>
                         <td className="px-6 py-4 mr-2 font-medium font-gola text-black text-[14px]">
                           The University of Melbourne
@@ -281,9 +281,9 @@ function dataupload() {
                       </tr>
                       <tr className="bg-white border-b">
                         <th scope="row" className="px-6 py-4">
-                          <h1 className="font-gola text-sm font-medium text-black">
+                          <span className="font-gola text-sm font-medium text-black">
                             Arun Kumar
-                          </h1>
+                          </span>
                         </th>
                         <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                           +91 9786564432
@@ -292,12 +292,12 @@ function dataupload() {
                           ₹ 20,00,000
                         </td>
                         <td className="px-6 py-4">
-                          <h1 className="font-gola text-sm font-medium text-black">
+                          <p className="font-gola text-sm font-medium text-black">
                             Coimbatore,
-                          </h1>
-                          <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                          </p>
+                          <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                             Tamil Nadu - 641604
-                          </h1>
+                          </p>
                         </td>
                         <td className="px-6 py-4 mr-2 font-medium font-gola text-black text-[14px]">
                           The University of Melbourne
@@ -305,9 +305,9 @@ function dataupload() {
                       </tr>
                       <tr className="bg-white border-b">
                         <th scope="row" className="px-6 py-4">
-                          <h1 className="font-gola text-sm font-medium text-black">
+                          <span className="font-gola text-sm font-medium text-black">
                             Arun Kumar
-                          </h1>
+                          </span>
                         </th>
                         <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                           +91 9786564432
@@ -316,12 +316,12 @@ function dataupload() {
                           ₹ 20,00,000
                         </td>
                         <td className="px-6 py-4">
-                          <h1 className="font-gola text-sm font-medium text-black">
+                          <p className="font-gola text-sm font-medium text-black">
                             Coimbatore,
-                          </h1>
-                          <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                          </p>
+                          <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                             Tamil Nadu - 641604
-                          </h1>
+                          </p>
                         </td>
                         <td className="px-6 py-4 mr-2 font-medium font-gola text-black text-[14px]">
                           The University of Melbourne
@@ -329,9 +329,9 @@ function dataupload() {
                       </tr>
                       <tr className="bg-white border-b">
                         <th scope="row" className="px-6 py-4">
-                          <h1 className="font-gola text-sm font-medium text-black">
+                          <span className="font-gola text-sm font-medium text-black">
                             Arun Kumar
-                          </h1>
+                          </span>
                         </th>
                         <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                           +91 9786564432
@@ -340,12 +340,12 @@ function dataupload() {
                           ₹ 20,00,000
                         </td>
                         <td className="px-6 py-4">
-                          <h1 className="font-gola text-sm font-medium text-black">
+                          <p className="font-gola text-sm font-medium text-black">
                             Coimbatore,
-                          </h1>
-                          <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                          </p>
+                          <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                             Tamil Nadu - 641604
-                          </h1>
+                          </p>
                         </td>
                         <td className="px-6 py-4 mr-2 font-medium font-gola text-black text-[14px]">
                           The University of Melbourne
@@ -353,9 +353,9 @@ function dataupload() {
                       </tr>
                       <tr className="bg-white border-b">
                         <th scope="row" className="px-6 py-4">
-                          <h1 className="font-gola text-sm font-medium text-black">
+                          <span className="font-gola text-sm font-medium text-black">
                             Arun Kumar
-                          </h1>
+                          </span>
                         </th>
                         <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                           +91 9786564432
@@ -364,12 +364,12 @@ function dataupload() {
                           ₹ 20,00,000
                         </td>
                         <td className="px-6 py-4">
-                          <h1 className="font-gola text-sm font-medium text-black">
+                          <p className="font-gola text-sm font-medium text-black">
                             Coimbatore,
-                          </h1>
-                          <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                          </p>
+                          <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                             Tamil Nadu - 641604
-                          </h1>
+                          </p>
                         </td>
                         <td className="px-6 py-4 mr-2 font-medium font-gola text-black text-[14px]">
                           The University of Melbourne
@@ -377,9 +377,9 @@ function dataupload() {
                       </tr>
                       <tr className="bg-white border-b">
                         <th scope="row" className="px-6 py-4">
-                          <h1 className="font-gola text-sm font-medium text-black">
+                          <span className="font-gola text-sm font-medium text-black">
                             Arun Kumar
-                          </h1>
+                          </span>
                         </th>
                         <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                           +91 9786564432
@@ -388,12 +388,12 @@ function dataupload() {
                           ₹ 20,00,000
                         </td>
                         <td className="px-6 py-4">
-                          <h1 className="font-gola text-sm font-medium text-black">
+                          <p className="font-gola text-sm font-medium text-black">
                             Coimbatore,
-                          </h1>
-                          <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                          </p>
+                          <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                             Tamil Nadu - 641604
-                          </h1>
+                          </p>
                         </td>
                         <td className="px-6 py-4 mr-2 font-medium font-gola text-black text-[14px]">
                           The University of Melbourne
@@ -401,9 +401,9 @@ function dataupload() {
                       </tr>
                       <tr className="bg-white border-b">
                         <th scope="row" className="px-6 py-4">
-                          <h1 className="font-gola text-sm font-medium text-black">
+                          <span className="font-gola text-sm font-medium text-black">
                             Arun Kumar
-                          </h1>
+                          </span>
                         </th>
                         <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                           +91 9786564432
@@ -412,12 +412,12 @@ function dataupload() {
                           ₹ 20,00,000
                         </td>
                         <td className="px-6 py-4">
-                          <h1 className="font-gola text-sm font-medium text-black">
+                          <p className="font-gola text-sm font-medium text-black">
                             Coimbatore,
-                          </h1>
-                          <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                          </p>
+                          <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                             Tamil Nadu - 641604
-                          </h1>
+                          </p>
                         </td>
                         <td className="px-6 py-4 mr-2 font-medium font-gola text-black text-[14px]">
                           The University of Melbourne
@@ -425,9 +425,9 @@ function dataupload() {
                       </tr>
                       <tr className="bg-white border-b">
                         <th scope="row" className="px-6 py-4">
-                          <h1 className="font-gola text-sm font-medium text-black">
+                          <span className="font-gola text-sm font-medium text-black">
                             Arun Kumar
-                          </h1>
+                          </span>
                         </th>
                         <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                           +91 9786564432
@@ -436,12 +436,12 @@ function dataupload() {
                           ₹ 20,00,000
                         </td>
                         <td className="px-6 py-4">
-                          <h1 className="font-gola text-sm font-medium text-black">
+                          <p className="font-gola text-sm font-medium text-black">
                             Coimbatore,
-                          </h1>
-                          <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                          </p>
+                          <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                             Tamil Nadu - 641604
-                          </h1>
+                          </p>
                         </td>
                         <td className="px-6 py-4 mr-2 font-medium font-gola text-black text-[14px]">
                           The University of Melbourne
@@ -449,9 +449,9 @@ function dataupload() {
                       </tr>
                       <tr className="bg-white border-b">
                         <th scope="row" className="px-6 py-4">
-                          <h1 className="font-gola text-sm font-medium text-black">
+                          <span className="font-gola text-sm font-medium text-black">
                             Arun Kumar
-                          </h1>
+                          </span>
                         </th>
                         <td className="px-6 py-4 font-gola text-sm font-medium text-black">
                           +91 9786564432
@@ -460,12 +460,12 @@ function dataupload() {
                           ₹ 20,00,000
                         </td>
                         <td className="px-6 py-4">
-                          <h1 className="font-gola text-sm font-medium text-black">
+                          <p className="font-gola text-sm font-medium text-black">
                             Coimbatore,
-                          </h1>
-                          <h1 className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
+                          </p>
+                          <p className="font-gola text-xs font-medium text-[#7E7E7E] mt-1">
                             Tamil Nadu - 641604
-                          </h1>
+                          </p>
                         </td>
                         <td className="px-6 py-4 mr-2 font-medium font-gola text-black text-[14px]">
                           The University of Melbourne
@@ -482,38 +482,38 @@ function dataupload() {
                       </h5>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         Phone Number
-                      </h1>
-                      <h1 className="text-[#292929] font-medium text-base font-gola">
+                      </span>
+                      <span className="text-[#292929] font-medium text-base font-gola">
                         +91 9786564432
-                      </h1>
+                      </span>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         Loan Amount
-                      </h1>
-                      <h1 className="text-[#292929] font-medium text-base font-gola">
+                      </span>
+                      <span className="text-[#292929] font-medium text-base font-gola">
                         ₹ 20,00,000
-                      </h1>
+                      </span>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         Location
-                      </h1>
+                      </span>
                       <div>
-                        <h1 className="text-[#292929] font-medium text-base font-gola">
+                        <span className="text-[#292929] font-medium text-base font-gola">
                           Coimbatore
-                        </h1>
+                        </span>
                       </div>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         University
-                      </h1>
-                      <h1 className="text-[#292929] font-medium text-base font-gola">
+                      </span>
+                      <span className="text-[#292929] font-medium text-base font-gola">
                         The University of Melbourne
-                      </h1>
+                      </span>
                     </div>
                   </div>
                   <div className="block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
@@ -523,38 +523,38 @@ function dataupload() {
                       </h5>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         Phone Number
-                      </h1>
-                      <h1 className="text-[#292929] font-medium text-base font-gola">
+                      </span>
+                      <span className="text-[#292929] font-medium text-base font-gola">
                         +91 9786564432
-                      </h1>
+                      </span>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         Loan Amount
-                      </h1>
-                      <h1 className="text-[#292929] font-medium text-base font-gola">
+                      </span>
+                      <span className="text-[#292929] font-medium text-base font-gola">
                         ₹ 20,00,000
-                      </h1>
+                      </span>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         Location
-                      </h1>
+                      </span>
                       <div>
-                        <h1 className="text-[#292929] font-medium text-base font-gola">
+                        <span className="text-[#292929] font-medium text-base font-gola">
                           Coimbatore
-                        </h1>
+                        </span>
                       </div>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         University
-                      </h1>
-                      <h1 className="text-[#292929] font-medium text-base font-gola">
+                      </span>
+                      <span className="text-[#292929] font-medium text-base font-gola">
                         The University of Melbourne
-                      </h1>
+                      </span>
                     </div>
                   </div>
                   <div className="block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
@@ -564,38 +564,38 @@ function dataupload() {
                       </h5>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         Phone Number
-                      </h1>
-                      <h1 className="text-[#292929] font-medium text-base font-gola">
+                      </span>
+                      <span className="text-[#292929] font-medium text-base font-gola">
                         +91 9786564432
-                      </h1>
+                      </span>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         Loan Amount
-                      </h1>
-                      <h1 className="text-[#292929] font-medium text-base font-gola">
+                      </span>
+                      <span className="text-[#292929] font-medium text-base font-gola">
                         ₹ 20,00,000
-                      </h1>
+                      </span>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         Location
-                      </h1>
+                      </span>
                       <div>
-                        <h1 className="text-[#292929] font-medium text-base font-gola">
+                        <span className="text-[#292929] font-medium text-base font-gola">
                           Coimbatore
-                        </h1>
+                        </span>
                       </div>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         University
-                      </h1>
-                      <h1 className="text-[#292929] font-medium text-base font-gola">
+                      </span>
+                      <span className="text-[#292929] font-medium text-base font-gola">
                         The University of Melbourne
-                      </h1>
+                      </span>
                     </div>
                   </div>
                   <div className="block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
@@ -605,38 +605,38 @@ function dataupload() {
                       </h5>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         Phone Number
-                      </h1>
-                      <h1 className="text-[#292929] font-medium text-base font-gola">
+                      </span>
+                      <span className="text-[#292929] font-medium text-base font-gola">
                         +91 9786564432
-                      </h1>
+                      </span>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         Loan Amount
-                      </h1>
-                      <h1 className="text-[#292929] font-medium text-base font-gola">
+                      </span>
+                      <span className="text-[#292929] font-medium text-base font-gola">
                         ₹ 20,00,000
-                      </h1>
+                      </span>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         Location
-                      </h1>
+                      </span>
                       <div>
-                        <h1 className="text-[#292929] font-medium text-base font-gola">
+                        <span className="text-[#292929] font-medium text-base font-gola">
                           Coimbatore
-                        </h1>
+                        </span>
                       </div>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         University
-                      </h1>
-                      <h1 className="text-[#292929] font-medium text-base font-gola">
+                      </span>
+                      <span className="text-[#292929] font-medium text-base font-gola">
                         The University of Melbourne
-                      </h1>
+                      </span>
                     </div>
                   </div>
                   <div className="block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
@@ -646,38 +646,38 @@ function dataupload() {
                       </h5>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         Phone Number
-                      </h1>
-                      <h1 className="text-[#292929] font-medium text-base font-gola">
+                      </span>
+                      <span className="text-[#292929] font-medium text-base font-gola">
                         +91 9786564432
-                      </h1>
+                      </span>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         Loan Amount
-                      </h1>
-                      <h1 className="text-[#292929] font-medium text-base font-gola">
+                      </span>
+                      <span className="text-[#292929] font-medium text-base font-gola">
                         ₹ 20,00,000
-                      </h1>
+                      </span>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         Location
-                      </h1>
+                      </span>
                       <div>
-                        <h1 className="text-[#292929] font-medium text-base font-gola">
+                        <span className="text-[#292929] font-medium text-base font-gola">
                           Coimbatore
-                        </h1>
+                        </span>
                       </div>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         University
-                      </h1>
-                      <h1 className="text-[#292929] font-medium text-base font-gola">
+                      </span>
+                      <span className="text-[#292929] font-medium text-base font-gola">
                         The University of Melbourne
-                      </h1>
+                      </span>
                     </div>
                   </div>
                   <div className="block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
@@ -687,38 +687,38 @@ function dataupload() {
                       </h5>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         Phone Number
-                      </h1>
-                      <h1 className="text-[#292929] font-medium text-base font-gola">
+                      </span>
+                      <span className="text-[#292929] font-medium text-base font-gola">
                         +91 9786564432
-                      </h1>
+                      </span>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         Loan Amount
-                      </h1>
-                      <h1 className="text-[#292929] font-medium text-base font-gola">
+                      </span>
+                      <span className="text-[#292929] font-medium text-base font-gola">
                         ₹ 20,00,000
-                      </h1>
+                      </span>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         Location
-                      </h1>
+                      </span>
                       <div>
-                        <h1 className="text-[#292929] font-medium text-base font-gola">
+                        <span className="text-[#292929] font-medium text-base font-gola">
                           Coimbatore
-                        </h1>
+                        </span>
                       </div>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         University
-                      </h1>
-                      <h1 className="text-[#292929] font-medium text-base font-gola">
+                      </span>
+                      <span className="text-[#292929] font-medium text-base font-gola">
                         The University of Melbourne
-                      </h1>
+                      </span>
                     </div>
                   </div>
                   <div className="block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
@@ -728,38 +728,38 @@ function dataupload() {
                       </h5>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         Phone Number
-                      </h1>
-                      <h1 className="text-[#292929] font-medium text-base font-gola">
+                      </span>
+                      <span className="text-[#292929] font-medium text-base font-gola">
                         +91 9786564432
-                      </h1>
+                      </span>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         Loan Amount
-                      </h1>
-                      <h1 className="text-[#292929] font-medium text-base font-gola">
+                      </span>
+                      <span className="text-[#292929] font-medium text-base font-gola">
                         ₹ 20,00,000
-                      </h1>
+                      </span>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         Location
-                      </h1>
+                      </span>
                       <div>
-                        <h1 className="text-[#292929] font-medium text-base font-gola">
+                        <span className="text-[#292929] font-medium text-base font-gola">
                           Coimbatore
-                        </h1>
+                        </span>
                       </div>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         University
-                      </h1>
-                      <h1 className="text-[#292929] font-medium text-base font-gola">
+                      </span>
+                      <span className="text-[#292929] font-medium text-base font-gola">
                         The University of Melbourne
-                      </h1>
+                      </span>
                     </div>
                   </div>
                   <div className="block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
@@ -769,38 +769,38 @@ function dataupload() {
                       </h5>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         Phone Number
-                      </h1>
-                      <h1 className="text-[#292929] font-medium text-base font-gola">
+                      </span>
+                      <span className="text-[#292929] font-medium text-base font-gola">
                         +91 9786564432
-                      </h1>
+                      </span>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         Loan Amount
-                      </h1>
-                      <h1 className="text-[#292929] font-medium text-base font-gola">
+                      </span>
+                      <span className="text-[#292929] font-medium text-base font-gola">
                         ₹ 20,00,000
-                      </h1>
+                      </span>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         Location
-                      </h1>
+                      </span>
                       <div>
-                        <h1 className="text-[#292929] font-medium text-base font-gola">
+                        <span className="text-[#292929] font-medium text-base font-gola">
                           Coimbatore
-                        </h1>
+                        </span>
                       </div>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         University
-                      </h1>
-                      <h1 className="text-[#292929] font-medium text-base font-gola">
+                      </span>
+                      <span className="text-[#292929] font-medium text-base font-gola">
                         The University of Melbourne
-                      </h1>
+                      </span>
                     </div>
                   </div>
                   <div className="block p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 ">
@@ -810,38 +810,38 @@ function dataupload() {
                       </h5>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         Phone Number
-                      </h1>
-                      <h1 className="text-[#292929] font-medium text-base font-gola">
+                      </span>
+                      <span className="text-[#292929] font-medium text-base font-gola">
                         +91 9786564432
-                      </h1>
+                      </span>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         Loan Amount
-                      </h1>
-                      <h1 className="text-[#292929] font-medium text-base font-gola">
+                      </span>
+                      <span className="text-[#292929] font-medium text-base font-gola">
                         ₹ 20,00,000
-                      </h1>
+                      </span>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         Location
-                      </h1>
+                      </span>
                       <div>
-                        <h1 className="text-[#292929] font-medium text-base font-gola">
+                        <span className="text-[#292929] font-medium text-base font-gola">
                           Coimbatore
-                        </h1>
+                        </span>
                       </div>
                     </div>
                     <div className="flex items-center justify-between mt-3">
-                      <h1 className="text-[#000000]/[.30] font-medium text-base font-gola">
+                      <span className="text-[#000000]/[.30] font-medium text-base font-gola">
                         University
-                      </h1>
-                      <h1 className="text-[#292929] font-medium text-base font-gola">
+                      </span>
+                      <span className="text-[#292929] font-medium text-base font-gola">
                         The University of Melbourne
-                      </h1>
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -849,9 +849,9 @@ function dataupload() {
             )}
             {!isDataUploaded && (
               <div className="w-full justify-center">
-                <h1 className="font-gola text-md font-medium text-center mt-10 text-black opacity-50">
+                <span className="font-gola text-md font-medium text-center mt-10 text-black opacity-50">
                   Please upload your data to categorize
-                </h1>
+                </span>
               </div>
             )}
           </div>

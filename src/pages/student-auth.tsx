@@ -35,7 +35,7 @@ function student() {
           </div>
             {choosenTab === "mobileSignIn" && (
               <div>
-                <h1 className="text-3xl font-semibold">Sign in</h1>
+                <span className="text-3xl font-semibold">Sign in</span>
                 <p className="text-sm	font-normal text-subtext opacity-70 mt-5">
                   Enter your mobile number
                 </p>
@@ -58,30 +58,30 @@ function student() {
                   Continue
                 </button>
                 <div className="flex flex-col items-center w-full">
-                  <h1
+                  <span
                     onClick={() => setChoosenTab("emailSignIn")}
                     className="cursor-pointer mt-6 text-primary-color text-base font-semibold font-gola"
                   >
                     Sign in using email address
-                  </h1>
+                  </span>
                   <div className="flex items-center mt-6">
                     <p className="text-base font-gola opacity-70 text-subtext">
                       New User?
                     </p>
                     &nbsp;
-                    <h1
+                    <span
                       className="cursor-pointer text-primary-color text-base font-semibold font-gola"
                       onClick={() => setChoosenTab("CreateAccMobile")}
                     >
                       Create account
-                    </h1>
+                    </span>
                   </div>
                 </div>
               </div>
             )}
             {choosenTab === "emailSignIn" && (
               <div>
-                <h1 className="text-3xl font-semibold">Sign in</h1>
+                <span className="text-3xl font-semibold">Sign in</span>
                 <p className="text-sm	font-normal text-subtext opacity-70 mt-5">
                   Email
                 </p>
@@ -111,35 +111,35 @@ function student() {
                   Continue
                 </button>
                 <div className="flex flex-col items-center w-full">
-                  <h1
+                  <span
                     onClick={() => setChoosenTab("mobileSignIn")}
                     className="cursor-pointer mt-6 text-primary-color text-base font-semibold font-gola"
                   >
                     Sign in using mobile number
-                  </h1>
+                  </span>
                   <div className="flex items-center mt-6">
                     <p className="text-base font-gola opacity-70 text-subtext">
                       New User?{" "}
                     </p>{" "}
                     &nbsp;
-                    <h1
+                    <span
                       className="cursor-pointer text-primary-color text-base font-semibold font-gola"
                       onClick={() => setChoosenTab("CreateAccMobile")}
                     >
                       Create account
-                    </h1>
+                    </span>
                   </div>
                 </div>
               </div>
             )}
             {choosenTab === "OTPPage" && (
               <div>
-                <h1 className="text-3xl font-semibold">Enter OTP</h1>
-                <div className="flex item-center mt-5">
+                <span className="text-3xl font-semibold">Enter OTP</span>
+                <div className="tabanddesk:flex mobile:flex-col item-center mt-5">
                   <p className="text-sm	font-normal text-subtext opacity-70 ">
                     Enter the OTP we sent to +919977665534 &nbsp;
                   </p>
-                  <p className="text-sm text-primary-color font-semibold">
+                  <p className="text-sm mobile:mt-2 text-primary-color font-semibold">
                     Change number
                   </p>
                 </div>
@@ -158,36 +158,36 @@ function student() {
                   Verify
                 </button>
                 <div className="flex w-full justify-between mt-3">
-                  <h1 className="font-gola font-normal text-base">01:57</h1>
-                  <h1 className="font-gola font-semibold text-base text-primary-color opacity-30">
+                  <span className="font-gola font-normal text-base">01:57</span>
+                  <span className="font-gola font-semibold text-base text-primary-color opacity-30">
                     Resend OTP
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex flex-col items-center w-full">
-                  <h1
+                  <span
                     onClick={() => setChoosenTab("emailSignIn")}
                     className="cursor-pointer mt-6 text-primary-color text-base font-semibold font-gola"
                   >
                     Sign in using email address
-                  </h1>
+                  </span>
                   <div className="flex items-center mt-6">
                     <p className="text-base font-gola opacity-70 text-subtext">
                       New User?
                     </p>
                     &nbsp;
-                    <h1
+                    <span
                       className="cursor-pointer text-primary-color text-base font-semibold font-gola"
                       onClick={() => setChoosenTab("CreateAccMobile")}
                     >
                       Create account
-                    </h1>
+                    </span>
                   </div>
                 </div>
               </div>
             )}
             {choosenTab === "CreateAccMobile" && (
               <div>
-                <h1 className="text-3xl font-semibold">Create account</h1>
+                <span className="text-3xl font-semibold">Create account</span>
                 <p className="text-sm	font-normal text-subtext opacity-70 mt-5">
                   Enter your mobile number
                 </p>
@@ -210,30 +210,30 @@ function student() {
                   Continue
                 </button>
                 <div className="flex flex-col items-center w-full">
-                  <h1
+                  <span
                     onClick={() => setChoosenTab("CreateAccEmail")}
                     className="cursor-pointer mt-6 text-primary-color text-base font-semibold font-gola"
                   >
                     Create account using email address
-                  </h1>
+                  </span>
                   <div className="flex items-center mt-6">
                     <p className="text-base font-gola opacity-70 text-subtext">
                       Already have an account?
                     </p>
                     &nbsp;
-                    <h1
+                    <span
                       onClick={() => setChoosenTab("mobileSignIn")}
                       className="text-primary-color text-base font-semibold font-gola"
                     >
                       Sign in
-                    </h1>
+                    </span>
                   </div>
                 </div>
               </div>
             )}
             {choosenTab === "CreateAccEmail" && (
               <div>
-                <h1 className="text-3xl font-semibold">Create account</h1>
+                <span className="text-3xl font-semibold">Create account</span>
                 <div className="w-full justify-between flex items-center">
                   <div style={{ width: "49%" }}>
                     <p className="text-sm	font-normal text-subtext opacity-70 mt-5">
@@ -309,23 +309,23 @@ function student() {
                   Continue
                 </button>
                 <div className="flex flex-col items-center w-full">
-                  <h1
+                  <span
                     onClick={() => setChoosenTab("CreateAccMobile")}
                     className="cursor-pointer mt-6 text-primary-color text-base font-semibold font-gola"
                   >
                     Create account using mobile number
-                  </h1>
+                  </span>
                   <div className="flex items-center mt-6">
                     <p className="text-base font-gola opacity-70 text-subtext">
                       Already have an account?
                     </p>
                     &nbsp;
-                    <h1
+                    <span
                       onClick={() => setChoosenTab("mobileSignIn")}
                       className="text-primary-color text-base font-semibold font-gola"
                     >
                       Sign in
-                    </h1>
+                    </span>
                   </div>
                 </div>
               </div>

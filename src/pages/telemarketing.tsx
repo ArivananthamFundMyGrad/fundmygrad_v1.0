@@ -1,8 +1,10 @@
 import TelemarketingBarChart1 from "@/components/dashboard/TelemarketingBarChart1";
 import TelemarketingBarChart2 from "@/components/dashboard/TelemarketingBarChart2";
-import TelemarketingSidebar from "@/components/dashboard/TelemarketingSidebar";
+import TelemarketingSidebar from "@/components/reusable/TelemarketingSidebar";
+import MobileSidebar from "@/components/reusable/MobileSidebar";
 import TelemarketingMobileSidebar from "@/components/reusable/TelemarketingMobileSidebar";
 import { useMediaQuery } from "@chakra-ui/react";
+import { Select } from "@chakra-ui/select";
 import Head from "next/head";
 import React, { useState } from "react";
 
@@ -42,13 +44,13 @@ function telemarketing() {
             </div>
             <div className="grid desktop:grid-cols-2 gap-2 mt-5">
               <div className="w-full px-3 pl-5 py-5 block bg-white border border-gray-200 rounded-lg shadow">
-                <h1 className="font-gola text-[24px] font-semibold border-[#E0E0E0] border-b-[1px] pb-[12px]">
+                <h2 className="font-gola text-[24px] font-semibold border-[#E0E0E0] border-b-[1px] pb-[12px]">
                   Hi, Ritesh
-                </h1>
+                </h2>
                 <div className="flex justify-between mt-[16px]">
-                  <h1 className="font-gola text-[#ABABAB] text-base font-bold">
+                  <p className="font-gola text-[#ABABAB] text-base font-bold">
                     YOUR SESSION
-                  </h1>
+                  </p>
                   <h1 className="font-gola text-[24px] font-medium">
                     01:01:28
                   </h1>
@@ -62,21 +64,21 @@ function telemarketing() {
               </div>
               <div className="w-full px-3 pl-5 py-5 block bg-white border border-gray-200 rounded-lg shadow">
                 <div className="flex justify-between mt-[16px]">
-                  <h1 className="font-gola text-[#ABABAB] text-base font-bold">
+                  <h2 className="font-gola text-[#ABABAB] text-base font-bold">
                     ONGOING CALL
-                  </h1>
-                  <h1 className="font-gola text-[24px] font-medium">01:28</h1>
+                  </h2>
+                  <h2 className="font-gola text-[24px] font-medium">01:28</h2>
                 </div>
-                <h1 className="font-gola text-[24px] font-semibold border-[#E0E0E0] border-b-[1px] pb-[12px]">
+                <h2 className="font-gola text-[24px] font-semibold border-[#E0E0E0] border-b-[1px] pb-[12px]">
                   Nikhil Mathew
-                </h1>
+                </h2>
                 <div className="flex mt-[16px]">
-                  <h1 className="font-gola pr-[12px] text-[14px] border-r-[1px] border-[#B8B8B8] font-normal">
+                  <p className="font-gola pr-[12px] text-[14px] border-r-[1px] border-[#B8B8B8] font-normal">
                     +919675643213
-                  </h1>
-                  <h1 className="font-gola pl-[12px] text-[14px] font-normal">
+                  </p>
+                  <p className="font-gola pl-[12px] text-[14px] font-normal">
                     nikkilmathew@gmail.com
-                  </h1>
+                  </p>
                 </div>
                 <div className="flex items-center mt-[30px]">
                   <div className="flex items-center">
@@ -99,15 +101,15 @@ function telemarketing() {
             </div>
             <div className="grid desktop:grid-cols-2 gap-2 mt-5">
               <div className="w-full px-3 pl-5 py-5 block bg-white border border-gray-200 rounded-lg shadow">
-                <h1 className="font-gola font-sm uppercase font-semibold">
+                <p className="font-gola font-sm uppercase font-semibold">
                   CALLED VS ANSWERED
-                </h1>
+                </p>
                 <TelemarketingBarChart1 />
               </div>
               <div className="w-full px-3 pl-5 py-5 block bg-white border border-gray-200 rounded-lg shadow">
-                <h1 className="font-gola font-sm uppercase font-semibold">
+                <p className="font-gola font-sm uppercase font-semibold">
                   CONVERTED VS SUCCESSFUL
-                </h1>
+                </p>
                 <TelemarketingBarChart2 />
               </div>
             </div>

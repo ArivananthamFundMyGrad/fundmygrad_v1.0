@@ -14,10 +14,10 @@ function Stats() {
               src="../stat1.svg"
               alt="Stat Image 1"
             />
-            <h1 className="font-gola text-2xl font-medium mt-5">400+</h1>
-            <h1 className="font-gola text-base font-normal mt-2">
+            <span className="font-gola text-2xl font-medium mt-5">400+</span>
+            <span className="font-gola text-base font-normal mt-2">
               Loan processed
-            </h1>
+            </span>
           </div>
           <div className="mobile:mt-8 flex flex-col w-full items-center">
             <div style={{ height: "70px" }}>
@@ -27,10 +27,10 @@ function Stats() {
                 alt="Stat Image 2"
               />
             </div>
-            <h1 className="font-gola text-2xl font-medium mt-5">121 Cr+</h1>
-            <h1 className="font-gola text-base font-normal mt-2">
+            <span className="font-gola text-2xl font-medium mt-5">121 Cr+</span>
+            <span className="font-gola text-base font-normal mt-2">
               Rupees processed
-            </h1>
+            </span>
           </div>
           <div className="mobile:mt-8 flex flex-col w-full items-center">
             <img
@@ -38,10 +38,10 @@ function Stats() {
               src="../stat3.svg"
               alt="Stat Image 3"
             />
-            <h1 className="font-gola text-2xl font-medium mt-5">{"<12hrs"}</h1>
-            <h1 className="font-gola text-base font-normal mt-2">
+            <span className="font-gola text-2xl font-medium mt-5">{"<12hrs"}</span>
+            <span className="font-gola text-base font-normal mt-2">
               Average turn around time
-            </h1>
+            </span>
           </div>
           <div className="mobile:mt-8 flex flex-col w-full items-center">
             <img
@@ -49,10 +49,10 @@ function Stats() {
               src="../stat4.svg"
               alt="Stat Image 4"
             />
-            <h1 className="font-gola text-2xl font-medium mt-5">25+</h1>
-            <h1 className="font-gola text-base font-normal mt-2">
+            <span className="font-gola text-2xl font-medium mt-5">25+</span>
+            <span className="font-gola text-base font-normal mt-2">
               Partner banks
-            </h1>
+            </span>
           </div>
         </div>
       </div>

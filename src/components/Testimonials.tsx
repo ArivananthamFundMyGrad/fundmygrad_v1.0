@@ -8,7 +8,7 @@ import {
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 
-export default function Index() {
+export default function Testimonials() {
   return (
     <div className="w-full flex flex justify-center">
       <div className="w-11/12 desktop:max-w-custom1300 mb-20">
@@ -130,11 +130,11 @@ export default function Index() {
                               </svg>
                             </div>
                             <div className="flex mt-4 space-x-3 md:mt-6">
-                              <h1 className="text-center text-sm font-gola font-normal">
+                              <span className="text-center text-sm font-gola font-normal">
                                 Lorem ipsum Amet minim mollit non deserunt
                                 ullamco est sit aliqua dolor do amet sint. Velit
                                 officia consequat duis enim velit mollit.
-                              </h1>
+                              </span>
                             </div>
                           </div>
                         </div>
@@ -216,11 +216,11 @@ export default function Index() {
                               </svg>
                             </div>
                             <div className="flex mt-4 space-x-3 md:mt-6">
-                              <h1 className="text-center text-sm font-gola font-normal">
+                              <span className="text-center text-sm font-gola font-normal">
                                 Lorem ipsum Amet minim mollit non deserunt
                                 ullamco est sit aliqua dolor do amet sint. Velit
                                 officia consequat duis enim velit mollit.
-                              </h1>
+                              </span>
                             </div>
                           </div>
                         </div>
@@ -302,11 +302,11 @@ export default function Index() {
                               </svg>
                             </div>
                             <div className="flex mt-4 space-x-3 md:mt-6">
-                              <h1 className="text-center text-sm font-gola font-normal">
+                              <span className="text-center text-sm font-gola font-normal">
                                 Lorem ipsum Amet minim mollit non deserunt
                                 ullamco est sit aliqua dolor do amet sint. Velit
                                 officia consequat duis enim velit mollit.
-                              </h1>
+                              </span>
                             </div>
                           </div>
                         </div>
@@ -388,11 +388,11 @@ export default function Index() {
                               </svg>
                             </div>
                             <div className="flex mt-4 space-x-3 md:mt-6">
-                              <h1 className="text-center text-sm font-gola font-normal">
+                              <span className="text-center text-sm font-gola font-normal">
                                 Lorem ipsum Amet minim mollit non deserunt
                                 ullamco est sit aliqua dolor do amet sint. Velit
                                 officia consequat duis enim velit mollit.
-                              </h1>
+                              </span>
                             </div>
                           </div>
                         </div>
@@ -474,11 +474,11 @@ export default function Index() {
                               </svg>
                             </div>
                             <div className="flex mt-4 space-x-3 md:mt-6">
-                              <h1 className="text-center text-sm font-gola font-normal">
+                              <span className="text-center text-sm font-gola font-normal">
                                 Lorem ipsum Amet minim mollit non deserunt
                                 ullamco est sit aliqua dolor do amet sint. Velit
                                 officia consequat duis enim velit mollit.
-                              </h1>
+                              </span>
                             </div>
                           </div>
                         </div>
@@ -560,11 +560,11 @@ export default function Index() {
                               </svg>
                             </div>
                             <div className="flex mt-4 space-x-3 md:mt-6">
-                              <h1 className="text-center text-sm font-gola font-normal">
+                              <span className="text-center text-sm font-gola font-normal">
                                 Lorem ipsum Amet minim mollit non deserunt
                                 ullamco est sit aliqua dolor do amet sint. Velit
                                 officia consequat duis enim velit mollit.
-                              </h1>
+                              </span>
                             </div>
                           </div>
                         </div>
@@ -702,11 +702,11 @@ export default function Index() {
                               </svg>
                             </div>
                             <div className="flex mt-4 space-x-3 md:mt-6">
-                              <h1 className="text-center text-sm font-gola font-normal">
+                              <span className="text-center text-sm font-gola font-normal">
                                 Lorem ipsum Amet minim mollit non deserunt
                                 ullamco est sit aliqua dolor do amet sint. Velit
                                 officia consequat duis enim velit mollit.
-                              </h1>
+                              </span>
                             </div>
                           </div>
                         </div>
@@ -785,11 +785,11 @@ export default function Index() {
                               </svg>
                             </div>
                             <div className="flex mt-4 space-x-3 md:mt-6">
-                              <h1 className="text-center text-sm font-gola font-normal">
+                              <span className="text-center text-sm font-gola font-normal">
                                 Lorem ipsum Amet minim mollit non deserunt
                                 ullamco est sit aliqua dolor do amet sint. Velit
                                 officia consequat duis enim velit mollit.
-                              </h1>
+                              </span>
                             </div>
                           </div>
                         </div>
@@ -868,11 +868,11 @@ export default function Index() {
                               </svg>
                             </div>
                             <div className="flex mt-4 space-x-3 md:mt-6">
-                              <h1 className="text-center text-sm font-gola font-normal">
+                              <span className="text-center text-sm font-gola font-normal">
                                 Lorem ipsum Amet minim mollit non deserunt
                                 ullamco est sit aliqua dolor do amet sint. Velit
                                 officia consequat duis enim velit mollit.
-                              </h1>
+                              </span>
                             </div>
                           </div>
                         </div>
@@ -951,11 +951,11 @@ export default function Index() {
                               </svg>
                             </div>
                             <div className="flex mt-4 space-x-3 md:mt-6">
-                              <h1 className="text-center text-sm font-gola font-normal">
+                              <span className="text-center text-sm font-gola font-normal">
                                 Lorem ipsum Amet minim mollit non deserunt
                                 ullamco est sit aliqua dolor do amet sint. Velit
                                 officia consequat duis enim velit mollit.
-                              </h1>
+                              </span>
                             </div>
                           </div>
                         </div>
@@ -1034,11 +1034,11 @@ export default function Index() {
                               </svg>
                             </div>
                             <div className="flex mt-4 space-x-3 md:mt-6">
-                              <h1 className="text-center text-sm font-gola font-normal">
+                              <span className="text-center text-sm font-gola font-normal">
                                 Lorem ipsum Amet minim mollit non deserunt
                                 ullamco est sit aliqua dolor do amet sint. Velit
                                 officia consequat duis enim velit mollit.
-                              </h1>
+                              </span>
                             </div>
                           </div>
                         </div>
@@ -1117,11 +1117,11 @@ export default function Index() {
                               </svg>
                             </div>
                             <div className="flex mt-4 space-x-3 md:mt-6">
-                              <h1 className="text-center text-sm font-gola font-normal">
+                              <span className="text-center text-sm font-gola font-normal">
                                 Lorem ipsum Amet minim mollit non deserunt
                                 ullamco est sit aliqua dolor do amet sint. Velit
                                 officia consequat duis enim velit mollit.
-                              </h1>
+                              </span>
                             </div>
                           </div>
                         </div>
@@ -1251,431 +1251,16 @@ export default function Index() {
                               </svg>
                             </div>
                             <div className="flex mt-4 space-x-3 md:mt-6">
-                              <h1 className="text-center text-sm font-gola font-normal">
+                              <span className="text-center text-sm font-gola font-normal">
                                 Lorem ipsum Amet minim mollit non deserunt
                                 ullamco est sit aliqua dolor do amet sint. Velit
                                 officia consequat duis enim velit mollit.
-                              </h1>
+                              </span>
                             </div>
                           </div>
                         </div>
                       </div>
                     </Slide>
-                    {/* <Slide index={1}>
-                      <div style={{ left: "40%" }} className="relative top-10">
-                        <img
-                          style={{
-                            width: "80px",
-                            height: "80px",
-                          }}
-                          src="./avatar2.svg"
-                          alt="Avatar"
-                        />
-                      </div>
-                      <div className="flex flex-shrink-0 w-full sm:w-auto">
-                        <div className="w-full max-w-sm bg-white border border-gray-200 shadow">
-                          <div className="flex flex-col items-center pb-10">
-                            <h5 className="mt-14 font-gola text-base font-medium">
-                              Joe William
-                            </h5>
-                            <span className="mt-1 text-xs font-gola">
-                              Student in University of Callifornia
-                            </span>
-                            <div className="mt-3 flex items-center">
-                              <svg
-                                aria-hidden="true"
-                                className="w-5 h-5 text-yellow-400"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>First star</title>
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                              </svg>
-                              <svg
-                                aria-hidden="true"
-                                className="w-5 h-5 text-yellow-400"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>Second star</title>
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                              </svg>
-                              <svg
-                                aria-hidden="true"
-                                className="w-5 h-5 text-yellow-400"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>Third star</title>
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                              </svg>
-                              <svg
-                                aria-hidden="true"
-                                className="w-5 h-5 text-yellow-400"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>Fourth star</title>
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                              </svg>
-                              <svg
-                                aria-hidden="true"
-                                className="w-5 h-5 text-gray-300 dark:text-gray-500"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>Fifth star</title>
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                              </svg>
-                            </div>
-                            <div className="flex mt-4 space-x-3 md:mt-6">
-                              <h1 className="text-center text-sm font-gola font-normal">
-                                Lorem ipsum Amet minim mollit non deserunt
-                                ullamco est sit aliqua dolor do amet sint. Velit
-                                officia consequat duis enim velit mollit.
-                              </h1>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </Slide>
-                    <Slide index={2}>
-                      <div style={{ left: "40%" }} className="relative top-10">
-                        <img
-                          style={{
-                            width: "80px",
-                            height: "80px",
-                          }}
-                          src="./avatar3.svg"
-                          alt="Avatar"
-                        />
-                      </div>
-                      <div className="flex flex-shrink-0 w-full sm:w-auto">
-                        <div className="w-full max-w-sm bg-white border border-gray-200 shadow">
-                          <div className="flex flex-col items-center pb-10">
-                            <h5 className="mt-14 font-gola text-base font-medium">
-                              Emily Rose
-                            </h5>
-                            <span className="mt-1 text-xs font-gola">
-                              Student in University of Callifornia
-                            </span>
-                            <div className="mt-3 flex items-center">
-                              <svg
-                                aria-hidden="true"
-                                className="w-5 h-5 text-yellow-400"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>First star</title>
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                              </svg>
-                              <svg
-                                aria-hidden="true"
-                                className="w-5 h-5 text-yellow-400"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>Second star</title>
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                              </svg>
-                              <svg
-                                aria-hidden="true"
-                                className="w-5 h-5 text-yellow-400"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>Third star</title>
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                              </svg>
-                              <svg
-                                aria-hidden="true"
-                                className="w-5 h-5 text-yellow-400"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>Fourth star</title>
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                              </svg>
-                              <svg
-                                aria-hidden="true"
-                                className="w-5 h-5 text-gray-300 dark:text-gray-500"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>Fifth star</title>
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                              </svg>
-                            </div>
-                            <div className="flex mt-4 space-x-3 md:mt-6">
-                              <h1 className="text-center text-sm font-gola font-normal">
-                                Lorem ipsum Amet minim mollit non deserunt
-                                ullamco est sit aliqua dolor do amet sint. Velit
-                                officia consequat duis enim velit mollit.
-                              </h1>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </Slide>
-                    <Slide index={3}>
-                      <div style={{ left: "40%" }} className="relative top-10">
-                        <img
-                          style={{
-                            width: "80px",
-                            height: "80px",
-                          }}
-                          src="./avatar1.svg"
-                          alt="Avatar"
-                        />
-                      </div>
-                      <div className="flex flex-shrink-0 w-full sm:w-auto">
-                        <div className="w-full max-w-sm bg-white border border-gray-200 shadow">
-                          <div className="flex flex-col items-center pb-10">
-                            <h5 className="mt-14 font-gola text-base font-medium">
-                              John Doe
-                            </h5>
-                            <span className="mt-1 text-xs font-gola">
-                              Student in University of Callifornia
-                            </span>
-                            <div className="mt-3 flex items-center">
-                              <svg
-                                aria-hidden="true"
-                                className="w-5 h-5 text-yellow-400"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>First star</title>
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                              </svg>
-                              <svg
-                                aria-hidden="true"
-                                className="w-5 h-5 text-yellow-400"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>Second star</title>
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                              </svg>
-                              <svg
-                                aria-hidden="true"
-                                className="w-5 h-5 text-yellow-400"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>Third star</title>
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                              </svg>
-                              <svg
-                                aria-hidden="true"
-                                className="w-5 h-5 text-yellow-400"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>Fourth star</title>
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                              </svg>
-                              <svg
-                                aria-hidden="true"
-                                className="w-5 h-5 text-gray-300 dark:text-gray-500"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>Fifth star</title>
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                              </svg>
-                            </div>
-                            <div className="flex mt-4 space-x-3 md:mt-6">
-                              <h1 className="text-center text-sm font-gola font-normal">
-                                Lorem ipsum Amet minim mollit non deserunt
-                                ullamco est sit aliqua dolor do amet sint. Velit
-                                officia consequat duis enim velit mollit.
-                              </h1>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </Slide>
-                    <Slide index={4}>
-                      <div style={{ left: "40%" }} className="relative top-10">
-                        <img
-                          style={{
-                            width: "80px",
-                            height: "80px",
-                          }}
-                          src="./avatar2.svg"
-                          alt="Avatar"
-                        />
-                      </div>
-                      <div className="flex flex-shrink-0 w-full sm:w-auto">
-                        <div className="w-full max-w-sm bg-white border border-gray-200 shadow">
-                          <div className="flex flex-col items-center pb-10">
-                            <h5 className="mt-14 font-gola text-base font-medium">
-                              Francis Turner
-                            </h5>
-                            <span className="mt-1 text-xs font-gola">
-                              Student in University of Callifornia
-                            </span>
-                            <div className="mt-3 flex items-center">
-                              <svg
-                                aria-hidden="true"
-                                className="w-5 h-5 text-yellow-400"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>First star</title>
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                              </svg>
-                              <svg
-                                aria-hidden="true"
-                                className="w-5 h-5 text-yellow-400"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>Second star</title>
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                              </svg>
-                              <svg
-                                aria-hidden="true"
-                                className="w-5 h-5 text-yellow-400"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>Third star</title>
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                              </svg>
-                              <svg
-                                aria-hidden="true"
-                                className="w-5 h-5 text-yellow-400"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>Fourth star</title>
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                              </svg>
-                              <svg
-                                aria-hidden="true"
-                                className="w-5 h-5 text-gray-300 dark:text-gray-500"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>Fifth star</title>
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                              </svg>
-                            </div>
-                            <div className="flex mt-4 space-x-3 md:mt-6">
-                              <h1 className="text-center text-sm font-gola font-normal">
-                                Lorem ipsum Amet minim mollit non deserunt
-                                ullamco est sit aliqua dolor do amet sint. Velit
-                                officia consequat duis enim velit mollit.
-                              </h1>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </Slide>
-                    <Slide index={5}>
-                      <div style={{ left: "40%" }} className="relative top-10">
-                        <img
-                          style={{
-                            width: "80px",
-                            height: "80px",
-                          }}
-                          src="./avatar3.svg"
-                          alt="Avatar"
-                        />
-                      </div>
-                      <div className="flex flex-shrink-0 w-full sm:w-auto">
-                        <div className="w-full max-w-sm bg-white border border-gray-200 shadow">
-                          <div className="flex flex-col items-center pb-10">
-                            <h5 className="mt-14 font-gola text-base font-medium">
-                              Bertram Ross
-                            </h5>
-                            <span className="mt-1 text-xs font-gola">
-                              Student in University of Callifornia
-                            </span>
-                            <div className="mt-3 flex items-center">
-                              <svg
-                                aria-hidden="true"
-                                className="w-5 h-5 text-yellow-400"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>First star</title>
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                              </svg>
-                              <svg
-                                aria-hidden="true"
-                                className="w-5 h-5 text-yellow-400"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>Second star</title>
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                              </svg>
-                              <svg
-                                aria-hidden="true"
-                                className="w-5 h-5 text-yellow-400"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>Third star</title>
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                              </svg>
-                              <svg
-                                aria-hidden="true"
-                                className="w-5 h-5 text-yellow-400"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>Fourth star</title>
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                              </svg>
-                              <svg
-                                aria-hidden="true"
-                                className="w-5 h-5 text-gray-300 dark:text-gray-500"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <title>Fifth star</title>
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                              </svg>
-                            </div>
-                            <div className="flex mt-4 space-x-3 md:mt-6">
-                              <h1 className="text-center text-sm font-gola font-normal">
-                                Lorem ipsum Amet minim mollit non deserunt
-                                ullamco est sit aliqua dolor do amet sint. Velit
-                                officia consequat duis enim velit mollit.
-                              </h1>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </Slide> */}
                   </div>
                 </Slider>
               </div>

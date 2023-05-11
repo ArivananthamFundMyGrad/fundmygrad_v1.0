@@ -55,7 +55,7 @@ function offers() {
                 src="../menu.svg"
                 alt="Menu Icon"
               />
-              <h1 className="text-2xl font-gola font-bold">Loan Offers</h1>
+              <span className="text-2xl font-gola font-bold">Loan Offers</span>
             </div>
             <div
               className="cursor-pointer"
@@ -75,9 +75,9 @@ function offers() {
               </Select>
             </div>
             <div className="ml-5 flex items-center bg-[#EEEEEE] px-3 py-1.5 rounded-full">
-              <h1 className="font-gola text-[14px] font-medium text-[#254472]">
+              <span className="font-gola text-[14px] font-medium text-[#254472]">
                 Yet to apply
-              </h1>
+              </span>
               <img className="pl-2" src="/dropdown.svg" alt="dropdown icon" />
             </div>
           </div>
@@ -92,15 +92,15 @@ function offers() {
                 } cursor-pointer flex items-center`}
               >
                 <div className="flex px-2">
-                  <h1 className="text-sm font-gola text-[#202020] pl-2">
+                  <span className="text-sm font-gola text-[#202020] pl-2">
                     Standard Offers &nbsp;
                     <span className="font-gola text-sm text-[#A3A3A3]">
                       (28)
                     </span>
-                  </h1>
-                  <h1 className="ml-[10px] text-[10px] font-gola text-[#6B37FF] bg-[#F8E2FF] px-[6px] py-[2px] rounded-lg">
+                  </span>
+                  <span className="ml-[10px] text-[10px] font-gola text-[#6B37FF] bg-[#F8E2FF] px-[6px] py-[2px] rounded-lg">
                     7 New
-                  </h1>
+                  </span>
                 </div>
               </div>
               <div
@@ -112,15 +112,15 @@ function offers() {
                 } cursor-pointer flex items-center ml-3`}
               >
                 <div className="flex px-2">
-                  <h1 className="text-sm font-gola text-[#202020]">
+                  <span className="text-sm font-gola text-[#202020]">
                     Banks Applied &nbsp;
                     <span className="font-gola text-sm text-[#A3A3A3]">
                       (03)
                     </span>
-                  </h1>
-                  <h1 className="ml-[10px] text-[10px] font-gola text-[#FE4646] bg-[#FFE9E9] px-[6px] py-[2px] rounded-lg">
+                  </span>
+                  <span className="ml-[10px] text-[10px] font-gola text-[#FE4646] bg-[#FFE9E9] px-[6px] py-[2px] rounded-lg">
                     2!
-                  </h1>
+                  </span>
                 </div>
               </div>
               <div
@@ -132,18 +132,18 @@ function offers() {
                 } cursor-pointer flex items-center ml-3`}
               >
                 <div className="flex px-2">
-                  <h1 className="text-sm font-gola text-[#202020]">
+                  <span className="text-sm font-gola text-[#202020]">
                     Bids &nbsp;
                     <span className="font-gola text-sm text-[#A3A3A3]">
                       (03)
                     </span>
-                  </h1>
-                  <h1 className="ml-[10px] text-[10px] font-gola text-[#6B37FF] bg-[#F8E2FF] px-[6px] py-[2px] rounded-lg">
+                  </span>
+                  <span className="ml-[10px] text-[10px] font-gola text-[#6B37FF] bg-[#F8E2FF] px-[6px] py-[2px] rounded-lg">
                     7 New
-                  </h1>
-                  <h1 className="ml-[10px] text-[10px] font-gola text-[#FE4646] bg-[#FFE9E9] px-[6px] py-[2px] rounded-lg">
+                  </span>
+                  <span className="ml-[10px] text-[10px] font-gola text-[#FE4646] bg-[#FFE9E9] px-[6px] py-[2px] rounded-lg">
                     2!
-                  </h1>
+                  </span>
                 </div>
               </div>
             </div>
@@ -157,12 +157,12 @@ function offers() {
                 } cursor-pointer flex items-center w-[33%] justify-center`}
               >
                 <div className="flex py-2">
-                  <h1 className="text-sm font-gola text-[#202020] pl-0.5">
+                  <span className="text-sm font-gola text-[#202020] pl-0.5">
                     Offers
                     <span className="font-gola text-sm text-[#A3A3A3]">
                       (28+2 N)
                     </span>
-                  </h1>
+                  </span>
                 </div>
               </div>
               <div
@@ -172,15 +172,15 @@ function offers() {
                 } cursor-pointer flex items-center w-[33%] justify-center`}
               >
                 <div className="flex py-2">
-                  <h1 className="text-sm font-gola text-[#202020]">
+                  <span className="text-sm font-gola text-[#202020]">
                     Applied
                     <span className="font-gola text-sm text-[#A3A3A3]">
                       (03)
                     </span>
-                  </h1>
-                  <h1 className="ml-[5px] text-[10px] font-gola text-[#FE4646] bg-[#FFE9E9] px-[6px] py-[2px] rounded-lg">
+                  </span>
+                  <span className="ml-[5px] text-[10px] font-gola text-[#FE4646] bg-[#FFE9E9] px-[6px] py-[2px] rounded-lg">
                     !
-                  </h1>
+                  </span>
                 </div>
               </div>
               <div
@@ -190,12 +190,12 @@ function offers() {
                 } cursor-pointer flex items-center ml-3 w-[33%] justify-center`}
               >
                 <div className="flex py-2">
-                  <h1 className="text-sm font-gola text-[#202020]">
+                  <span className="text-sm font-gola text-[#202020]">
                     Bids
                     <span className="font-gola text-sm text-[#A3A3A3]">
                       (03+2N)
                     </span>
-                  </h1>
+                  </span>
                 </div>
               </div>
             </div>
@@ -260,16 +260,16 @@ function offers() {
         </div>
         <div className="mobile:hidden tablet:hidden flex flex-col justify-center mt-10">
           <div className="flex items-center">
-            <h1 className="font-gola text-[28px] font-bold">Loan Offers</h1>
+            <span className="font-gola text-[28px] font-bold">Loan Offers</span>
             <div className="w-1/5 ml-5">
               <Select bg="white">
                 <option value="option1">University Of Calofornia</option>
               </Select>
             </div>
             <div className="ml-5 flex items-center bg-[#EEEEEE] px-3 py-1.5 rounded-full">
-              <h1 className="font-gola text-[14px] font-medium text-[#254472]">
+              <span className="font-gola text-[14px] font-medium text-[#254472]">
                 Yet to apply
-              </h1>
+              </span>
               <img className="pl-2" src="/dropdown.svg" alt="dropdown icon" />
             </div>
           </div>
@@ -284,15 +284,15 @@ function offers() {
                 } cursor-pointer flex items-center`}
               >
                 <div className="flex px-2">
-                  <h1 className="text-sm font-gola text-[#202020] pl-2">
+                  <span className="text-sm font-gola text-[#202020] pl-2">
                     Standard Offers &nbsp;
                     <span className="font-gola text-sm text-[#A3A3A3]">
                       (28)
                     </span>
-                  </h1>
-                  <h1 className="ml-[10px] text-[10px] font-gola text-[#6B37FF] bg-[#F8E2FF] px-[6px] py-[2px] rounded-lg">
+                  </span>
+                  <span className="ml-[10px] text-[10px] font-gola text-[#6B37FF] bg-[#F8E2FF] px-[6px] py-[2px] rounded-lg">
                     7 New
-                  </h1>
+                  </span>
                 </div>
               </div>
               <div
@@ -304,15 +304,15 @@ function offers() {
                 } cursor-pointer flex items-center ml-3`}
               >
                 <div className="flex px-2">
-                  <h1 className="text-sm font-gola text-[#202020]">
+                  <span className="text-sm font-gola text-[#202020]">
                     Banks Applied &nbsp;
                     <span className="font-gola text-sm text-[#A3A3A3]">
                       (03)
                     </span>
-                  </h1>
-                  <h1 className="ml-[10px] text-[10px] font-gola text-[#FE4646] bg-[#FFE9E9] px-[6px] py-[2px] rounded-lg">
+                  </span>
+                  <span className="ml-[10px] text-[10px] font-gola text-[#FE4646] bg-[#FFE9E9] px-[6px] py-[2px] rounded-lg">
                     2!
-                  </h1>
+                  </span>
                 </div>
               </div>
               <div
@@ -324,18 +324,18 @@ function offers() {
                 } cursor-pointer flex items-center ml-3`}
               >
                 <div className="flex px-2">
-                  <h1 className="text-sm font-gola text-[#202020]">
+                  <span className="text-sm font-gola text-[#202020]">
                     Bids &nbsp;
                     <span className="font-gola text-sm text-[#A3A3A3]">
                       (03)
                     </span>
-                  </h1>
-                  <h1 className="ml-[10px] text-[10px] font-gola text-[#6B37FF] bg-[#F8E2FF] px-[6px] py-[2px] rounded-lg">
+                  </span>
+                  <span className="ml-[10px] text-[10px] font-gola text-[#6B37FF] bg-[#F8E2FF] px-[6px] py-[2px] rounded-lg">
                     7 New
-                  </h1>
-                  <h1 className="ml-[10px] text-[10px] font-gola text-[#FE4646] bg-[#FFE9E9] px-[6px] py-[2px] rounded-lg">
+                  </span>
+                  <span className="ml-[10px] text-[10px] font-gola text-[#FE4646] bg-[#FFE9E9] px-[6px] py-[2px] rounded-lg">
                     2!
-                  </h1>
+                  </span>
                 </div>
               </div>
             </div>
@@ -429,9 +429,9 @@ function offers() {
                 <div className="flex mobile:flex-col">
                   <img width={40} src="../axis.svg" alt="" />
                   <div className="tabanddesk:pl-4 mobile:pt-3">
-                    <h1 className="text-[#292929] text-xl font-gola font-semibold">
+                    <span className="text-[#292929] text-xl font-gola font-semibold">
                       Axis Bank
-                    </h1>
+                    </span>
                     <div className="flex">
                       <img width={20} src="../bolt.svg" alt="" />
                       <p className="text-xs font-gola text-[#2E2E2E]">
@@ -444,9 +444,9 @@ function offers() {
                   <p className="text-sm font-gola font-semibold opacity-30">
                     Max. loan amount
                   </p>
-                  <h1 className="ml-5 text-2xl font-gola font-semibold text-[#292929]">
+                  <span className="ml-5 text-2xl font-gola font-semibold text-[#292929]">
                     ₹2 crores
-                  </h1>
+                  </span>
                 </div>
               </div>
               <div
@@ -564,9 +564,9 @@ function offers() {
                 <div className="flex mobile:flex-col">
                   <img src="../hdfc.svg" alt="" />
                   <div className="tabanddesk:pl-4 mobile:pt-3">
-                    <h1 className="text-[#292929] text-xl font-gola font-semibold">
+                    <span className="text-[#292929] text-xl font-gola font-semibold">
                       HDFC Bank
-                    </h1>
+                    </span>
                     <div className="flex">
                       <img src="../star.svg" alt="" />
                       <p className="text-xs font-gola text-[#2E2E2E]">
@@ -579,9 +579,9 @@ function offers() {
                   <p className="text-sm font-gola font-semibold opacity-30">
                     Max. loan amount
                   </p>
-                  <h1 className="ml-5 text-2xl font-gola font-semibold text-[#292929]">
+                  <span className="ml-5 text-2xl font-gola font-semibold text-[#292929]">
                     ₹2 crores
-                  </h1>
+                  </span>
                 </div>
               </div>
               <div
@@ -703,9 +703,9 @@ function offers() {
                 <div className="flex mobile:flex-col">
                   <img width={40} src="../axis.svg" alt="" />
                   <div className="tabanddesk:pl-4 mobile:pt-3">
-                    <h1 className="text-[#292929] text-xl font-gola font-semibold">
+                    <span className="text-[#292929] text-xl font-gola font-semibold">
                       Axis Bank
-                    </h1>
+                    </span>
                     <div className="flex">
                       <img width={20} src="../bolt.svg" alt="" />
                       <p className="text-xs font-gola text-[#2E2E2E]">
@@ -718,9 +718,9 @@ function offers() {
                   <p className="text-sm font-gola font-semibold opacity-30">
                     Max. loan amount
                   </p>
-                  <h1 className="ml-5 text-2xl font-gola font-semibold text-[#292929]">
+                  <span className="ml-5 text-2xl font-gola font-semibold text-[#292929]">
                     ₹2 crores
-                  </h1>
+                  </span>
                 </div>
               </div>
               <div
@@ -815,9 +815,9 @@ function offers() {
               ></div>
               <div className="flex items-center justify-between w-full mt-5">
                 <div className="flex item-center">
-                  <h1 className="text-sm font-gola font-medium text-[#0747A6] bg-[#B3D4FF] py-1 px-2 rounded-md">
+                  <span className="text-sm font-gola font-medium text-[#0747A6] bg-[#B3D4FF] py-1 px-2 rounded-md">
                     In Progress
-                  </h1>
+                  </span>
                 </div>
                 <button
                   type="button"
@@ -842,9 +842,9 @@ function offers() {
                 <div className="flex mobile:flex-col">
                   <img src="../hdfc.svg" alt="" />
                   <div className="tabanddesk:pl-4 mobile:pt-3">
-                    <h1 className="text-[#292929] text-xl font-gola font-semibold">
+                    <span className="text-[#292929] text-xl font-gola font-semibold">
                       HDFC Bank
-                    </h1>
+                    </span>
                     <div className="flex">
                       <img src="../star.svg" alt="" />
                       <p className="text-xs font-gola text-[#2E2E2E]">
@@ -857,9 +857,9 @@ function offers() {
                   <p className="text-sm font-gola font-semibold opacity-30">
                     Max. loan amount
                   </p>
-                  <h1 className="ml-5 text-2xl font-gola font-semibold text-[#292929]">
+                  <span className="ml-5 text-2xl font-gola font-semibold text-[#292929]">
                     ₹2 crores
-                  </h1>
+                  </span>
                 </div>
               </div>
               <div
@@ -954,9 +954,9 @@ function offers() {
               ></div>
               <div className="flex items-center justify-between w-full mt-5">
                 <div>
-                  <h1 className="text-sm font-gola font-medium text-[#FF2222] bg-[#FFECEC] py-1 px-2 rounded-md">
+                  <span className="text-sm font-gola font-medium text-[#FF2222] bg-[#FFECEC] py-1 px-2 rounded-md">
                     Upload Documents
-                  </h1>
+                  </span>
                 </div>
                 <button
                   type="button"
@@ -979,9 +979,9 @@ function offers() {
                   <tr>
                     <th className="w-[20%]" scope="col">
                       <div className="flex items-center justify-between border-r-[1px] p-[16px]">
-                        <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                        <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                           Applicant Name
-                        </h1>
+                        </span>
                         <svg
                           width="12"
                           height="12"
@@ -999,9 +999,9 @@ function offers() {
                     </th>
                     <th scope="col" className="w-[15%]">
                       <div className="flex items-center justify-between border-r-[1px] p-[16px]">
-                        <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                        <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                           Status
-                        </h1>
+                        </span>
                         <svg
                           width="12"
                           height="12"
@@ -1019,9 +1019,9 @@ function offers() {
                     </th>
                     <th scope="col" className="w-[20%]">
                       <div className="flex items-center justify-between border-r-[1px] p-[16px]">
-                        <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                        <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                           Documents Upload
-                        </h1>
+                        </span>
                         <div className="flex items-center">
                           <svg
                             width="12"
@@ -1046,9 +1046,9 @@ function offers() {
                     </th>
                     <th scope="col" className="w-[15%]">
                       <div className="flex items-center justify-between border-r-[1px] p-[16px]">
-                        <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                        <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                           Bids
-                        </h1>
+                        </span>
                         <svg
                           width="12"
                           height="12"
@@ -1066,9 +1066,9 @@ function offers() {
                     </th>
                     <th scope="col" className="w-[20%]">
                       <div className="flex items-center justify-between border-r-[1px] p-[16px]">
-                        <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                        <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                           Latest Offer
-                        </h1>
+                        </span>
                         <div className="flex items-center">
                           <svg
                             width="12"
@@ -1088,9 +1088,9 @@ function offers() {
                     </th>
                     <th scope="col" className="w-[10%]">
                       <div className="flex items-center justify-between border-r-[1px] p-[16px]">
-                        <h1 className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
+                        <span className="capitalize text-sm font-gola font-medium text-[#767676DE]/[.87] mr-3">
                           Action
-                        </h1>
+                        </span>
                       </div>
                     </th>
                   </tr>
@@ -1099,27 +1099,27 @@ function offers() {
                   <tr className="bg-white border-b">
                     <th scope="row" className="px-6 py-4 flex items-center">
                       <img src="/axis.svg" alt="Axis Bank" />
-                      <h1 className="ml-5 font-gola text-[14px] font-medium text-[#272727]">
+                      <span className="ml-5 font-gola text-[14px] font-medium text-[#272727]">
                         Axis Bank
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4 font-gola text-sm font-medium text-[#272727]">
                       -
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-[14px] font-medium text-[#272727]">
+                      <span className="font-gola text-[14px] font-medium text-[#272727]">
                         Uploaded All
-                      </h1>
+                      </span>
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-[#272727]">
+                      <span className="font-gola text-sm font-medium text-[#272727]">
                         3rd offer
-                      </h1>
+                      </span>
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-[14px] font-medium text-[#272727]">
+                      <span className="font-gola text-[14px] font-medium text-[#272727]">
                         ₹40,00,000 | 9.85% | 24months
-                      </h1>
+                      </span>
                     </td>
                     <td>
                       <button
@@ -1133,29 +1133,29 @@ function offers() {
                   <tr className="bg-white rounded-b-lg border-b">
                     <th scope="row" className="px-6 py-4 flex items-center">
                       <img src="/hdfc.svg" alt="HDFC Bank" />
-                      <h1 className="ml-5 font-gola text-[14px] font-medium text-[#272727]">
+                      <span className="ml-5 font-gola text-[14px] font-medium text-[#272727]">
                         HDFC Bank
-                      </h1>
+                      </span>
                     </th>
                     <td className="px-6 py-4">
-                      <h1 className="w-[90px] rounded-full font-gola text-[14px] font-medium text-[#128400] bg-[#EDFFEA] px-2 py-1">
+                      <span className="w-[90px] rounded-full font-gola text-[14px] font-medium text-[#128400] bg-[#EDFFEA] px-2 py-1">
                         Accepted
-                      </h1>
+                      </span>
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-[14px] font-medium text-[#272727]">
+                      <span className="font-gola text-[14px] font-medium text-[#272727]">
                         Uploaded All
-                      </h1>
+                      </span>
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-sm font-medium text-[#272727]">
+                      <span className="font-gola text-sm font-medium text-[#272727]">
                         2nd offer
-                      </h1>
+                      </span>
                     </td>
                     <td className="px-6 py-4">
-                      <h1 className="font-gola text-[14px] font-medium text-[#272727]">
+                      <span className="font-gola text-[14px] font-medium text-[#272727]">
                         ₹40,00,000 | 9.85% | 24months
-                      </h1>
+                      </span>
                     </td>
                     <td>
                       <button
@@ -1181,35 +1181,35 @@ function offers() {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center">
                     <img src="/axis.svg" alt="Axis Bank" />
-                    <h1 className="ml-5 font-gola text-[14px] font-medium text-[#272727]">
+                    <span className="ml-5 font-gola text-[14px] font-medium text-[#272727]">
                       Axis Bank
-                    </h1>
+                    </span>
                   </div>
-                  <h1 className="font-gola text-[14px] text-[#128400] font-medium bg-[#EDFFEA] py-[4px] px-[12px] w-[90px] rounded-full">
+                  <span className="font-gola text-[14px] text-[#128400] font-medium bg-[#EDFFEA] py-[4px] px-[12px] w-[90px] rounded-full">
                     Accepted
-                  </h1>
+                  </span>
                 </div>
                 <div className="mt-[15px]">
-                  <h1 className="font-gola text-[#767676DE] text-sm font-medium">
+                  <span className="font-gola text-[#767676DE] text-sm font-medium">
                     Document Uploads:
-                  </h1>
-                  <h1 className="font-gola text-[#272727] text-[14px] font-bold">
+                  </span>
+                  <span className="font-gola text-[#272727] text-[14px] font-bold">
                     Uploaded All
-                  </h1>
+                  </span>
                 </div>
                 <div className="mt-[15px]">
                   <div className="flex items-center">
-                    <h1 className="font-gola text-[#767676DE] text-sm font-medium">
+                    <span className="font-gola text-[#767676DE] text-sm font-medium">
                       Latest Offer (3rd Offer)
-                    </h1>
-                    <h1 className="ml-3 bg-[#FBEFFF] font-gola text-[14px] text-center w-[65px] font-medium px[12px] py-[5px] rounded-full text-[#6B37FF]">
+                    </span>
+                    <span className="ml-3 bg-[#FBEFFF] font-gola text-[14px] text-center w-[65px] font-medium px[12px] py-[5px] rounded-full text-[#6B37FF]">
                       Latest
-                    </h1>
+                    </span>
                   </div>
-                  <h1 className="font-gola text-[#272727] text-[14px] font-bold">
+                  <span className="font-gola text-[#272727] text-[14px] font-bold">
                     {" "}
                     ₹40,00,000 | 9.85% | 24months
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex justify-end">
                   <button
@@ -1230,31 +1230,31 @@ function offers() {
               >
                 <div className="flex items-center">
                   <img src="/hdfc.svg" alt="Axis Bank" />
-                  <h1 className="ml-5 font-gola text-[14px] font-medium text-[#272727]">
+                  <span className="ml-5 font-gola text-[14px] font-medium text-[#272727]">
                     HDFC Bank
-                  </h1>
+                  </span>
                 </div>
                 <div className="mt-[15px]">
-                  <h1 className="font-gola text-[#767676DE] text-sm font-medium">
+                  <span className="font-gola text-[#767676DE] text-sm font-medium">
                     Document Uploads:
-                  </h1>
-                  <h1 className="font-gola text-[#272727] text-[14px] font-bold">
+                  </span>
+                  <span className="font-gola text-[#272727] text-[14px] font-bold">
                     -
-                  </h1>
+                  </span>
                 </div>
                 <div className="mt-[15px]">
                   <div className="flex items-center">
-                    <h1 className="font-gola text-[#767676DE] text-sm font-medium">
+                    <span className="font-gola text-[#767676DE] text-sm font-medium">
                       Latest Offer (2nd Offer)
-                    </h1>
-                    <h1 className="ml-3 bg-[#FBEFFF] font-gola text-[14px] text-center w-[65px] font-medium px[12px] py-[5px] rounded-full text-[#6B37FF]">
+                    </span>
+                    <span className="ml-3 bg-[#FBEFFF] font-gola text-[14px] text-center w-[65px] font-medium px[12px] py-[5px] rounded-full text-[#6B37FF]">
                       Latest
-                    </h1>
+                    </span>
                   </div>
-                  <h1 className="font-gola text-[#272727] text-[14px] font-bold">
+                  <span className="font-gola text-[#272727] text-[14px] font-bold">
                     {" "}
                     ₹40,00,000 | 9.85% | 24months
-                  </h1>
+                  </span>
                 </div>
                 <div className="flex justify-end">
                   <button
@@ -1285,7 +1285,7 @@ function offers() {
         <DrawerContent>
           <div className="w-full p-6 min-h-screen">
             <div className="flex justify-between">
-              <h1 className="text-3xl font-semibold font-gola">Loan Offers</h1>
+              <span className="text-3xl font-semibold font-gola">Loan Offers</span>
               <img
                 onClick={onClose}
                 className="cursor-pointer"
@@ -1302,18 +1302,18 @@ function offers() {
                   <div className="flex items-center mt-5">
                     <img src="../axis.svg" alt="" />
                     <div className="pl-4">
-                      <h1 className="text-[#292929] text-xl font-gola font-semibold">
+                      <span className="text-[#292929] text-xl font-gola font-semibold">
                         Axis Bank
-                      </h1>
+                      </span>
                     </div>
                   </div>
                   <div className=" flex justify-between items-center mt-5">
                     <p className="text-sm font-gola font-semibold opacity-30">
                       Max. loan amount
                     </p>
-                    <h1 className="ml-5 text-2xl font-gola font-semibold text-[#292929]">
+                    <span className="ml-5 text-2xl font-gola font-semibold text-[#292929]">
                       ₹2 crores
-                    </h1>
+                    </span>
                   </div>
                   <div
                     style={{ border: "1px solid #E8E8E8", margin: "20px 0" }}
@@ -1368,9 +1368,9 @@ function offers() {
                   </div>
                 </div>
                 <div className="min-w-[48%]">
-                  <h1 className="mt-[26px] text-[20px] font-gola font-semibold text-[#313131]">
+                  <span className="mt-[26px] text-[20px] font-gola font-semibold text-[#313131]">
                     Required Documents
-                  </h1>
+                  </span>
                   <div className="flex items-center mt-3">
                     <input
                       defaultChecked
@@ -1388,17 +1388,17 @@ function offers() {
                   </div>
                   <div className="mt-10">
                     <div className="flex tabanddesk:justify-between">
-                      <h1 className="mobile:w-[120px] tabanddesk:w-[40%] text-base font-gola font-normal">
+                      <span className="mobile:w-[120px] tabanddesk:w-[40%] text-base font-gola font-normal">
                         Aadhar Card
-                      </h1>
+                      </span>
                       <div className="flex tabanddesk:w-[60%] tabanddesk:justify-between">
-                        <h1 className="mobile:w-[65px] text-[#A3A3A3] ">
+                        <span className="mobile:w-[65px] text-[#A3A3A3] ">
                           1/2 files
-                        </h1>
+                        </span>
                         <div className="flex tabanddesk:w-[150px] mobile:w-[120px] justify-start">
-                          <h1 className="ml-3 text-[#FF2222] text-sm font-medium bg-[#FFECEC] px-2 py-1 rounded-md">
+                          <span className="ml-3 text-[#FF2222] text-sm font-medium bg-[#FFECEC] px-2 py-1 rounded-md">
                             Pending
-                          </h1>
+                          </span>
                         </div>
                         <img
                           className="ml-10"
@@ -1414,17 +1414,17 @@ function offers() {
                       }}
                     ></div>
                     <div className="flex tabanddesk:justify-between mt-3">
-                      <h1 className="mobile:w-[120px] text-base font-gola font-normal">
+                      <span className="mobile:w-[120px] text-base font-gola font-normal">
                         Voter ID
-                      </h1>
+                      </span>
                       <div className="flex tabanddesk:w-[60%] tabanddesk:justify-between">
-                        <h1 className="mobile:w-[65px] text-[#A3A3A3] ">
+                        <span className="mobile:w-[65px] text-[#A3A3A3] ">
                           2/2 files
-                        </h1>
+                        </span>
                         <div className="flex tabanddesk:w-[150px] mobile:w-[120px] justify-start">
-                          <h1 className="ml-3 text-[#1EA808] text-sm font-medium bg-[#E6FFE2] px-2 py-1 rounded-md">
+                          <span className="ml-3 text-[#1EA808] text-sm font-medium bg-[#E6FFE2] px-2 py-1 rounded-md">
                             Uploaded All
-                          </h1>
+                          </span>
                         </div>
                         <img
                           className="ml-10"
@@ -1440,17 +1440,17 @@ function offers() {
                       }}
                     ></div>
                     <div className="flex tabanddesk:justify-between mt-3">
-                      <h1 className="mobile:w-[120px] text-base font-gola font-normal">
+                      <span className="mobile:w-[120px] text-base font-gola font-normal">
                         PAN Card
-                      </h1>
+                      </span>
                       <div className="flex tabanddesk:w-[60%] tabanddesk:justify-between">
-                        <h1 className="mobile:w-[65px] text-[#A3A3A3] ">
+                        <span className="mobile:w-[65px] text-[#A3A3A3] ">
                           1/2 files
-                        </h1>
+                        </span>
                         <div className="flex tabanddesk:w-[150px] mobile:w-[120px] justify-start">
-                          <h1 className="ml-3 text-[#FF2222] text-sm font-medium bg-[#FFECEC] px-2 py-1 rounded-md">
+                          <span className="ml-3 text-[#FF2222] text-sm font-medium bg-[#FFECEC] px-2 py-1 rounded-md">
                             Pending
-                          </h1>
+                          </span>
                         </div>
                         <img
                           className="ml-10"
@@ -1467,19 +1467,19 @@ function offers() {
                     ></div>
                     <div className="flex tabanddesk:justify-between mt-3">
                       <div>
-                        <h1 className="mobile:w-[120px] text-base font-gola font-normal">
+                        <span className="mobile:w-[120px] text-base font-gola font-normal">
                           Work Experience
-                        </h1>
+                        </span>
                       </div>
 
                       <div className="flex tabanddesk:w-[60%] tabanddesk:justify-between mobile:justify-start">
-                        <h1 className="mobile:w-[65px] text-[#A3A3A3] ">
+                        <span className="mobile:w-[65px] text-[#A3A3A3] ">
                           1/2 files
-                        </h1>
+                        </span>
                         <div className="flex tabanddesk:w-[150px] mobile:w-[120px] justify-start">
-                          <h1 className=" mobile:h-[28px] ml-3 text-[#FF2222] text-sm font-medium bg-[#FFECEC] px-2 py-1 rounded-md">
+                          <span className=" mobile:h-[28px] ml-3 text-[#FF2222] text-sm font-medium bg-[#FFECEC] px-2 py-1 rounded-md">
                             Pending
-                          </h1>
+                          </span>
                         </div>
                         <img
                           className="ml-10 mobile h-[15px]"
@@ -1495,17 +1495,17 @@ function offers() {
                       }}
                     ></div>
                     <div className="flex tabanddesk:justify-between mt-3">
-                      <h1 className="mobile:w-[120px] text-base font-gola font-normal">
+                      <span className="mobile:w-[120px] text-base font-gola font-normal">
                         College Degree
-                      </h1>
+                      </span>
                       <div className="flex tabanddesk:w-[60%] tabanddesk:justify-between">
-                        <h1 className="text-[#A3A3A3] mobile:w-[65px]">
+                        <span className="text-[#A3A3A3] mobile:w-[65px]">
                           2/2 files
-                        </h1>
+                        </span>
                         <div className="flex tabanddesk:w-[150px] mobile:w-[120px] justify-start">
-                          <h1 className="ml-3 text-[#1EA808] text-sm font-medium bg-[#E6FFE2] px-2 py-1 rounded-md">
+                          <span className="ml-3 text-[#1EA808] text-sm font-medium bg-[#E6FFE2] px-2 py-1 rounded-md">
                             Uploaded All
-                          </h1>
+                          </span>
                         </div>
                         <img
                           className="ml-10"
